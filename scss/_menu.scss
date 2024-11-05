@@ -1,25 +1,52 @@
 @import "variables_princ";
 
-.logo_registro{
+
+.menu_container{
     background-color: $colorprinc;
-    align-items: center;
-}
-#head{
     padding: 0;
-    margin: 0;
+    margin: 5px 0 0 0;
 }
 
-.logo{
-    img{
-        height: 60px;
-        width: 400px;
-        margin-left: 400px;
+#nav{
+    margin: 0 25% 0 25%;
+    width: 50%;
+}
+ul{
+    list-style: none;
+    font-size: 0;
+    ul{
+        position: absolute;
+        display: none;
+        li{
+            display: block;
+            color: white;
+            width: 70px;
+        }
+    }
+    li{
+        &:hover{
+            ul{
+                display: block;
+                background-color: $colorprinc;
+            }
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
     }
 }
+li{
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px;
+}
 
-.linkregister{
-    a{
-        color: white;
-        text-decoration: none;
+#imgprinc{
+    margin: 0;
+    padding: 0;
+    img{
+        width: 100%;
     }
 }
