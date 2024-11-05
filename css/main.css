@@ -1,5 +1,5 @@
 .logo_registro {
-  background-color: #1C468E;
+  background-color: #5079C0;
   align-items: center; }
 
 #head {
@@ -8,4 +8,9 @@
 
 .logo img {
   height: 60px;
-  width: 400px; }
+  width: 400px;
+  margin-left: 400px; }
+
+.linkregister a {
+  color: white;
+  text-decoration: none; }
