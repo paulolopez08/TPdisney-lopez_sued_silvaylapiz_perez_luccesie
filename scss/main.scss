@@ -21,3 +21,96 @@ body{
     background-color: $colorfondo;
 }
 
+#textini{
+    margin: 0;
+    padding: 0;
+    background-color: #95B8D1;
+
+    p{
+        color: white;
+        font-size: 20px;
+        text-align:justify;
+        padding:50px 90px 20px 90px ;
+    }
+}
+#cont_parquesT{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.tarjeta{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: $colorfondo;
+
+    .contenido{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        h2{
+            margin: 0;
+            font-size: 24px;
+            opacity: 0;
+        }
+        p{
+            margin: 10px 0 0;
+            font-size: 16px;
+            opacity: 0;
+        }
+    }
+
+    .imgtar_container{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 
+            0.5s ease-in-out;
+            border-radius: 8px;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 2px solid white;
+        border-radius: inherit;
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+    }
+    &:hover{
+        img{
+            filter: 
+            grayscale(1)
+            brightness(0.4);
+        }
+        .contenido{
+            h2{
+                scale: 1;
+                opacity: 1;
+            }
+            p{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+    &:hover::after{
+        opacity: 1;
+        inset: 20px;
+    }
+}
+
