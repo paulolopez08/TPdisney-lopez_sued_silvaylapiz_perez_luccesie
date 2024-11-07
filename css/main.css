@@ -1,7 +1,9 @@
 @charset "UTF-8";
 /*no lo usen al final paso las cosas yo*/
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Kablammo&family=Modak&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Kablammo&family=Modak&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 .menu_container {
   background-color: #809BCE;
   padding: 0; }
@@ -58,60 +60,118 @@ li {
 
 /*no lo usen al final paso las cosas yo*/
 .bodySesión {
-  background: linear-gradient(to bottom, #00A9F2, #172D9D);
+  background: linear-gradient(to bottom, #00a9f2, #172D9D); }
+
+.contenedor-Disney-Login {
+  width: 100%; }
+
+.Disney-Login {
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container {
+  align-items: center;
   font-family: Arial, sans-serif; }
 
 .form-container {
-  max-width: 400px;
-  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px #000; }
+  width: 600px;
+  height: 690px;
+  background: #fff;
+  border-radius: 9px;
+  box-shadow: 4px 8px 8px #000; }
 
-.textoDisney {
-  font-family: "DisneyFont", sans-serif;
+.MyDisney {
+  font-family: "Atma", serif;
+  font-weight: 600;
+  font-style: normal;
   color: #000; }
 
-.form-label {
-  color: #555; }
+.form-titulo {
+  color: #000;
+  margin-bottom: 5px; }
 
-.form-Control {
-  color: #555; }
+.cambiarDeForm {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px; }
 
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff; }
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3; }
+.BotonVolver {
+  position: absolute;
+  top: 30px;
+  right: 35px; }
+
+.footer-Login {
+  background-color: #5c92cc;
+  color: #ffffff; }
+  .footer-Login .footer-Login-link {
+    color: #ffffff;
+    margin-right: 15px;
+    text-decoration: none; }
+    .footer-Login .footer-Login-link:hover {
+      text-decoration: underline;
+      color: white; }
+  .footer-Login .text-muted {
+    color: white; }
 
 .bodySesión {
-  background: linear-gradient(to bottom, #00A9F2, #172D9D);
+  background: linear-gradient(to bottom, #00a9f2, #172D9D); }
+
+.contenedor-Disney-Login {
+  width: 100%; }
+
+.Disney-Login {
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container {
+  align-items: center;
   font-family: Arial, sans-serif; }
 
-.form-container {
-  max-width: 400px;
-  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+.form-container-sesion {
+  width: 500px;
+  height: 460px;
+  background: #fff;
+  border-radius: 9px;
+  box-shadow: 4px 8px 8px #000; }
 
-.textoDisney {
-  font-family: "DisneyFont", sans-serif;
-  color: #333; }
+.MyDisney {
+  font-family: "Atma", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #000; }
 
-.form-label {
-  color: #555; }
+.form-titulo {
+  color: #000;
+  margin-bottom: 5px; }
 
-.boton {
+.cambiarDeFormRegistro {
+  text-align: center;
+  color: #000;
+  margin: 10px; }
+
+.BotonVolver {
   position: absolute;
-  top: 10px;
-  right: 10px; }
+  top: 30px;
+  right: 35px; }
 
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff; }
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3; }
+.footer-Login {
+  background-color: #5c92cc;
+  color: #ffffff; }
+  .footer-Login .footer-Login-link {
+    color: #ffffff;
+    margin-right: 15px;
+    text-decoration: none; }
+    .footer-Login .footer-Login-link:hover {
+      text-decoration: underline;
+      color: white; }
+  .footer-Login .text-muted {
+    color: white; }
 
 * {
   margin: 0;
