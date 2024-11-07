@@ -3,9 +3,17 @@
     padding: 0;
 }
 
+$colorbody: #FFF4E7;
+$colorCeleste1: #90E0EF;
+$colorCeleste2: #48CAE4;
+$colorCeleste3: #ADE8F4;
+
+body{
+    background-color: $colorbody;
+}
 
 #menu1{
-    background-color: #81DAEC !important;
+    background-color: $colorCeleste1 !important;
     height: 120px ;
     margin: 0 ;
     padding: 0;
@@ -24,7 +32,7 @@
 }
 
 #menu2{
-    background-color: #39A8CA !important;
+    background-color:$colorCeleste2 !important;
     height: 65px ;
     margin: 0 ;
     padding: 0;
@@ -72,4 +80,20 @@
     color: #fff2e1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Times New Roman', Times, serif;
+}
+
+#contTexto{
+    background-color: $colorCeleste3;
+    width: 100%;
+    height: 300px;
+    border: solid 30px $colorbody;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contTexto_texto{
+    text-align: justify;
+    font-size: 25px;
 }
