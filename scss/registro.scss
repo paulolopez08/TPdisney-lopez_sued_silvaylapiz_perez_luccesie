@@ -1,37 +1,84 @@
 // Import Bootstrap
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Kablammo&family=Modak&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+$footer-bg-color: #5c92cc;
+$footer-text-color: #ffffff;
+$footer-link-color: #ffffff;
+$primary-color: #00a9f2;
+$secondary-color: #172D9D;
+$white: #fff;
+$black: #000;
+$font-family-base: Arial, sans-serif;
+$font-family-title: "Atma", serif;
+
 
 .bodySesión {
-    background: linear-gradient(to bottom, #00A9F2, #172D9D);
-    font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+}
+
+.contenedor-Disney-Login {
+  width: 100%; 
+}
+
+.Disney-Login {
+  width: 200px;
+  height: 100px;
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  align-items: center;
+  font-family: $font-family-base;
 }
 
 .form-container {
-    max-width: 400px;
-    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #000;
+  width: 600px;
+  height: 690px;
+  background: $white;
+  border-radius: 9px;
+  box-shadow: 4px 8px 8px $black;
 }
 
-.textoDisney {
-    font-family: "DisneyFont", sans-serif;
-    color: #000;
+.MyDisney {
+  font-family: $font-family-title;
+  font-weight: 600;
+  font-style: normal;
+  color: $black;
 }
 
-.form-label {
-    color: #555;
+.form-titulo {
+  color: $black;
+  margin-bottom: 5px;
 }
 
-.form-Control{
-    color: #555;
+.cambiarDeForm {
+  text-align: center;
+  color: $white;
+  margin-top: 10px;
 }
 
+.BotonVolver {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+}
 
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    &:hover {
-        background-color: #0056b3;
-        border-color: #0056b3;
+.footer-Login {
+    background-color: $footer-bg-color;
+    color: $footer-text-color;
+    .footer-Login-link {
+        color: $footer-link-color;
+        margin-right: 15px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: lighten($footer-link-color, 10%);
+        }
+    }
+    .text-muted {
+        color: lighten($footer-text-color, 20%);
     }
 }

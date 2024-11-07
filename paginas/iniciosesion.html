@@ -8,37 +8,51 @@
     <title>Inicio de sesión</title>
 </head>
 <body class="bodySesión">
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="card p-4 form-container position-relative">
-            <h2 class="text-center mb-4">My Disney</h2>
+
+    <div class="contenedor-Disney-Login">
+        <img class="Disney-Login" src="../assets/imagenes/logowaltdisneyinicio.png" alt="logowaltDisney">
+    </div>
+
+    <a href="../index.html" class="btn btn-outline-light BotonVolver">Volver al Inicio</a>
+    
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 margen">
+        <div class="card p-4 form-container-sesion">
+            <h2 class="text-left mb-4 MyDisney">MY DISNEY</h2>
+            <p>Inicia sesión en Walt Disney con tu cuenta MyDisney. 
+                Si no tienes una, tendrás que crearla.</p>
             <form>
                 <div class="mb-3">
-                    <label for="firstName" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Nombre">
+                    <label for="firstName" class="form-titulo">Nombre de Usuario o dirección de correo</label>
+                    <input type="usuario" class="form-control" placeholder="Nombre de Usuario o dirección de correo" required>
                 </div>
                 <div class="mb-3">
-                    <label for="lastName" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Apellido">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Dirección de correo</label>
-                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
-                </div>
-                <div class="mb-3">
-                    <label for="confirmPassword" class="form-label">Repita contraseña</label>
-                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmar contraseña">
-                </div>
-                <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" id="terms">
-                    <label class="form-check-label" for="terms">He leído y acepto Términos y Condiciones</label>
+                    <label for="password" class="form-titulo">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña" required>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Continuar</button>
+                <p class="cambiarDeFormRegistro">¿No tienes una cuenta? Registrate</p>
+                <a href="../paginas/Registro.html" class="btn btn-outline-secondary w-100">Crear una cuenta</a>
             </form>
         </div>
     </div>
+
+    <footer class="footer-Login mt-auto py-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <a href="#" class="footer-Login-link">Política de privacidad</a>
+                    <a href="#" class="footer-Login-link">Términos de uso de Disney</a>
+                    <a href="#" class="footer-Login-link">Acuerdo de suscripción</a>
+                    <a href="#" class="footer-Login-link">Ayuda</a>
+                    <a href="#" class="footer-Login-link">Política de cookies</a>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <p class="text-muted small">© Disney. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
