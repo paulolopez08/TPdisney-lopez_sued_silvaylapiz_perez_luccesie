@@ -57,6 +57,69 @@ li {
   text-decoration: none; }
 
 /*no lo usen al final paso las cosas yo*/
+* {
+  margin: 0;
+  padding: 0; }
+
+#menu1 {
+  background-color: #81DAEC !important;
+  height: 120px;
+  margin: 0;
+  padding: 0; }
+
+#menu1_contLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#menu1_contLogo_logo {
+  font-family: 'WaltographRegular';
+  color: #00509D;
+  font-size: 75px; }
+
+#menu2 {
+  background-color: #39A8CA !important;
+  height: 65px;
+  margin: 0;
+  padding: 0; }
+
+#menu2_contItems {
+  display: flex;
+  justify-content: space-evenly; }
+
+.menu2_items {
+  color: #FDF1E4 !important;
+  font-size: 25px; }
+
+#contImgPrinc {
+  padding: 0;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+#contImgPrinc_imgPrinc {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0; }
+
+#contTitulo {
+  width: 500px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%); }
+
+#contTitulo_titulo {
+  font-size: 40px;
+  margin: 5px;
+  color: #fff2e1;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'Times New Roman', Times, serif; }
+
 .bodySesión {
   background: linear-gradient(to bottom, #00A9F2, #172D9D);
   font-family: Arial, sans-serif; }
