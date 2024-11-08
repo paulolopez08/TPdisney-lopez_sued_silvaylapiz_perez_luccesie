@@ -67,8 +67,8 @@ body {
   background-color: #FFF4E7; }
 
 #menu1 {
-  background-color: #90E0EF !important;
-  height: 120px;
+  background-color: #A7BFEE !important;
+  height: 110px;
   margin: 0;
   padding: 0; }
 
@@ -83,8 +83,8 @@ body {
   font-size: 75px; }
 
 #menu2 {
-  background-color: #48CAE4 !important;
-  height: 65px;
+  background-color: #8AABE3 !important;
+  height: 55px;
   margin: 0;
   padding: 0; }
 
@@ -93,8 +93,35 @@ body {
   justify-content: space-evenly; }
 
 .menu2_items {
-  color: #FDF1E4 !important;
-  font-size: 25px; }
+  color: #FFF4E7 !important;
+  font-size: 25px;
+  transition: color 0.3s ease;
+  font-family: "Merriweather", serif;
+  position: relative;
+  padding-bottom: 5px; }
+
+.menu2_items::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #C3E2F8, transparent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+  /* Comienza el destello desde la derecha */ }
+
+.menu2_items:hover {
+  color: #C3E2F8 !important;
+  /* Cambia el color del texto */ }
+
+.menu2_items:hover::after {
+  transform: scaleX(1);
+  /* Muestra el subrayado con el gradiente */
+  transform-origin: left;
+  /* Hace que el destello recorra de derecha a izquierda */ }
 
 #contImgPrinc {
   padding: 0;
@@ -126,7 +153,7 @@ body {
   font-family: 'Times New Roman', Times, serif; }
 
 #contTexto {
-  background-color: #ADE8F4;
+  background-color: #C3E2F8;
   width: 100%;
   height: 300px;
   border: solid 30px #FFF4E7;
@@ -138,6 +165,27 @@ body {
 #contTexto_texto {
   text-align: justify;
   font-size: 25px; }
+
+.contcarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.contcarousel_carousel {
+  width: 50%; }
+
+#contTit {
+  margin: 0;
+  padding: 0;
+  border-top: solid 50px #FFF4E7;
+  width: 100%;
+  height: 120px;
+  background-color: #8AABE3;
+  align-items: center; }
+
+#contTit_tit {
+  text-align: center; }
 
 .bodySesión {
   background: linear-gradient(to bottom, #00a9f2, #172D9D); }

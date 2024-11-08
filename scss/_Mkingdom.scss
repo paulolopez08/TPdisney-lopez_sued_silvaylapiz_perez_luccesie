@@ -4,9 +4,9 @@
 }
 
 $colorbody: #FFF4E7;
-$colorCeleste1: #90E0EF;
-$colorCeleste2: #48CAE4;
-$colorCeleste3: #ADE8F4;
+$colorCeleste1: #A7BFEE;
+$colorCeleste2: #8AABE3;
+$colorCeleste3: #C3E2F8;
 
 body{
     background-color: $colorbody;
@@ -14,7 +14,7 @@ body{
 
 #menu1{
     background-color: $colorCeleste1 !important;
-    height: 120px ;
+    height: 110px ;
     margin: 0 ;
     padding: 0;
 }
@@ -33,7 +33,7 @@ body{
 
 #menu2{
     background-color:$colorCeleste2 !important;
-    height: 65px ;
+    height: 55px ;
     margin: 0 ;
     padding: 0;
 }
@@ -43,11 +43,36 @@ body{
     justify-content: space-evenly;
 }
 
-.menu2_items{
-    color: #FDF1E4 !important;
+.menu2_items {
+    color: $colorbody !important;
     font-size: 25px;
+    transition: color 0.3s ease;
+    font-family: "Merriweather", serif;
+    position: relative;
+    padding-bottom: 5px;
 }
 
+.menu2_items::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #C3E2F8, transparent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: right; /* Comienza el destello desde la derecha */
+}
+
+.menu2_items:hover {
+    color: #C3E2F8 !important; /* Cambia el color del texto */
+}
+
+.menu2_items:hover::after {
+    transform: scaleX(1); /* Muestra el subrayado con el gradiente */
+    transform-origin: left; /* Hace que el destello recorra de derecha a izquierda */
+}
 
 #contImgPrinc{
     padding: 0;
@@ -96,4 +121,31 @@ body{
 #contTexto_texto{
     text-align: justify;
     font-size: 25px;
+}
+
+.contcarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.contcarousel_carousel{
+    width: 50%;
+
+}
+
+#contTit{
+    margin: 0;
+    padding: 0;
+    border-top: solid 50px $colorbody;
+    width: 100%;
+    height: 120px;
+    background-color: $colorCeleste2;
+    align-items: center;
+}
+
+#contTit_tit{
+    text-align: center;
 }
