@@ -20,9 +20,18 @@
 <body>
     
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary row container-fluid" id="menu1">
-            <div class="container-md col-lg-12" id="menu1_contLogo">
+        <nav class="navbar" id="menu1">
+            <div id="menu1_contLogo">
                 <h1 id="menu1_contLogo_logo">WaltDisney</h1>
+                <!-- Estrellas adicionales alrededor del título -->
+                <div class="star star-1">✦</div>
+                <div class="star star-2">✧</div>
+                <div class="star star-3">✦</div>
+                <div class="star star-4">✧</div>
+                <div class="star star-5">✦</div>
+                <div class="star star-6">✧</div>
+                <div class="star star-7">✦</div>
+                <div class="star star-8">✧</div>
             </div>
         </nav>
 
@@ -88,36 +97,48 @@
             <h1 id="contTit_tit">Atracciones Destacadas</h1>
         </div>
 
-        <div class="row container-fluid">
-            <div class="col-lg-6">
-                <img src="../assets/imagenes/atraccion1.png" alt="">
-                <h1>Pirates of the Caribbean</h1>
-                <p>Un clásico paseo en bote que lleva a los visitantes a un mundo de piratas.</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col contCard">
+              <div class="contCard_card">
+                <img src="../assets/imagenes/atraccion1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pirates of the Caribbean</h5>
+                  <p class="card-text">Un clásico paseo en bote que lleva a los visitantes a un mundo de piratas.</p>
+                </div>
+              </div>
             </div>
+            <div class="col contCard">
+              <div class="contCard_card">
+                <img src="../assets/imagenes/atraccion2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Space Mountain</h5>
+                  <p class="card-text">Una montaña rusa en la oscuridad ambientada en el espacio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col contCard">
+              <div class="contCard_card">
+                <img src="../assets/imagenes/atraccion3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Haunted Mansion</h5>
+                  <p class="card-text">Un recorrido encantado en una mansión llena de fantasmas y efectos especiales.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col contCard">
+              <div class="contCard_card">
+                <img src="../assets/imagenes/atraccion4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Seven Dwarfs Mine Train</h5>
+                  <p class="card-text">Una montaña rusa familiar inspirada en Blanca Nieves y los Siete Enanitos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <div class="col-lg-6">
-                <img src="../assets/imagenes/atraccion2.png" alt="">
-                <h1>Space Mountain</h1>
-                <p>Una montaña rusa en la oscuridad ambientada en el espacio.</p>
-            </div>
-        </div>
-        
-        <div class="row container-fluid">
-            <div class="col-lg-6">
-                <img src="../assets/imagenes/atraccion3.png" alt="">
-                <h1>Haunted Mansion</h1>
-                <p>UUn recorrido encantado en una mansión llena de fantasmas y efectos especiales.</p>
-            </div>
-
-            <div class="col-lg-6">
-                <img src="../assets/imagenes/atraccion4.png" alt="">
-                <h1>Seven Dwarfs Mine Train</h1>
-                <p>Una montaña rusa familiar inspirada en Blanca Nieves y los Siete Enanitos.</p>
-            </div>
-        </div>
 
         <div class="row container-fluid col-lg-12">
-            <img src="../assets/imagenes/separadorCeleste.png" alt="">
+            <img id="separador" src="../assets/imagenes/separadorCeleste.png" alt="">
         </div>
 
     </section>

@@ -67,20 +67,99 @@ body {
   background-color: #FFF4E7; }
 
 #menu1 {
-  background-color: #A7BFEE !important;
+  background-color: #A7BFEE;
   height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   margin: 0;
   padding: 0; }
 
 #menu1_contLogo {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center; }
 
 #menu1_contLogo_logo {
-  font-family: 'WaltographRegular';
+  font-family: 'WaltographRegular', sans-serif;
   color: #00509D;
-  font-size: 75px; }
+  font-size: 75px;
+  position: relative; }
+
+/* Estilos para las estrellas */
+.star {
+  position: absolute;
+  font-size: 18px;
+  color: #1E90FF;
+  /* Azul */
+  animation: sparkle 1.5s ease-in-out infinite; }
+
+.star-1 {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #4DA6FF;
+  animation-delay: 0s; }
+
+.star-2 {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #87CEFA;
+  animation-delay: 0.3s; }
+
+.star-3 {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #4682B4;
+  animation-delay: 0.6s; }
+
+.star-4 {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #B0E0E6;
+  animation-delay: 0.9s; }
+
+.star-5 {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #5CACEE;
+  animation-delay: 1.2s; }
+
+.star-6 {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #63B8FF;
+  animation-delay: 1.5s; }
+
+.star-7 {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #00BFFF;
+  animation-delay: 1.8s; }
+
+.star-8 {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #4682B4;
+  animation-delay: 2s; }
+
+/* Animación de brillo */
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.8); }
+  50% {
+    opacity: 1;
+    transform: scale(1.2); } }
 
 #menu2 {
   background-color: #8AABE3 !important;
@@ -185,7 +264,27 @@ body {
   align-items: center; }
 
 #contTit_tit {
+  margin: 0;
+  padding: 0;
   text-align: center; }
+
+.contCard {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contCard_card {
+  margin: 0;
+  padding: 0;
+  width: 65%;
+  height: 65%; }
+
+#separador {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
 
 .bodySesión {
   background: linear-gradient(to bottom, #00a9f2, #172D9D); }
