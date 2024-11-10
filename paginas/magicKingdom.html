@@ -27,10 +27,10 @@
 
     <link rel="stylesheet" href="../css/main.css">
 </head>
-<body class="bodyMKingdom">
+
     
-    <header>
-      <nav class="navbar" id="menu1">
+<header>
+    <nav class="navbar" id="menu1">
         <div id="menu1_contLogo">
             <h1 id="menu1_contLogo_logo">
                 <span class="char">W</span>
@@ -44,143 +44,77 @@
                 <span class="char">e</span>
                 <span class="char">y</span>
             </h1>
-                <!-- Estrellas adicionales alrededor del título -->
-                <div class="star star-1">✦</div>
-                <div class="star star-2">✧</div>
-                <div class="star star-3">✦</div>
-                <div class="star star-4">✧</div>
-                <div class="star star-5">✦</div>
-                <div class="star star-6">✧</div>
-                <div class="star star-7">✦</div>
-                <div class="star star-8">✧</div>
+
+        
+            <div class="star" id="star-1">✦</div>
+            <div class="star" id="star-2">✧</div>
+            <div class="star" id="star-3">✦</div>
+            <div class="star" id="star-4">✧</div>
+            <div class="star" id="star-5">✦</div>
+            <div class="star" id="star-6">✧</div>
+            <div class="star" id="star-7">✦</div>
+            <div class="star" id="star-8">✧</div>
+        </div>
+    </nav>
+
+    <div class="position-relative row container-fluid" id="contImgPrinc">
+        <img id="contImgPrinc_imgPrinc" class="img-fluid col-lg-12" src="../assets/imagenes/Mk.png" alt="">
+      
+        <nav class="navbar navbar-expand-lg bg-body-tertiary row container-fluid" id="menu2">
+            <div class="navbar-nav col-lg-12" id="menu2_contItems">
+                <a class="nav-link active menu2_items" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active menu2_items" aria-current="page" href="#">Mapa del parque</a>
+                <a class="nav-link active menu2_items" aria-current="page" href="#">Hoteles</a>
+                <a class="nav-link active menu2_items" aria-current="page" href="#">Tienda</a>
+                <a class="nav-link active menu2_items" aria-current="page" href="#">Personajes</a>
             </div>
         </nav>
+    </div>
+</header>
 
-        <div class="position-relative row container-fluid" id="contImgPrinc">
-          <img id="contImgPrinc_imgPrinc" class="img-fluid col-lg-12" src="../assets/imagenes/Mk.png" alt="">
-          
-          <!-- Menú encima de la imagen -->
-          <nav class="navbar navbar-expand-lg bg-body-tertiary row container-fluid" id="menu2">
-              <div class="navbar-nav col-lg-12" id="menu2_contItems">
-                  <a class="nav-link active menu2_items" aria-current="page" href="#">Inicio</a>
-                  <a class="nav-link active menu2_items" aria-current="page" href="#">Mapa del parque</a>
-                  <a class="nav-link active menu2_items" aria-current="page" href="#">Hoteles</a>
-                  <a class="nav-link active menu2_items" aria-current="page" href="#">Tienda</a>
-                  <a class="nav-link active menu2_items" aria-current="page" href="#">Personajes</a>
-              </div>
-          </nav>
-      </div>
-    </header>
 
-    <main class="row container-fluid col-lg-12 contCarouselTexto">
-      
-        <div class="contcarousel">
-          <div id="carouselExample" class="carousel slide contcarousel_carousel">
-              <div class="carousel-inner">
-                  <div class="carousel-item active">
-                      <img src="../assets/imagenes/carousel1.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                      <img src="../assets/imagenes/carousel2.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                      <img src="../assets/imagenes/carousel3.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                      <img src="../assets/imagenes/carousel4.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                      <img src="../assets/imagenes/carousel5.png" class="d-block w-100" alt="...">
-                  </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-              </button>
-          </div>
+<main class="row container-fluid col-lg-12 " id="contCarouselTexto">
+
+    <div id="contcarousel">
+        <div id="carouselExample" class="carousel slide contcarousel_carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/imagenes/carousel1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/imagenes/carousel2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/imagenes/carousel3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/imagenes/carousel4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/imagenes/carousel5.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-  
-      <div id="contCarouselTexto_contTexto">
-          <p id="contCarouselTexto_contTexto_texto">Entra a una Tierra‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Donde Reina la Fantasía</p>
-      </div>
+    </div>
 
+    <div id="contCarouselTexto_contTexto">
+        <p id="contCarouselTexto_contTexto_texto">Entra a una Tierra‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Donde Reina la Fantasía</p>
+    </div>
+</main>
 
-
-    </main>
-
-
-    <section >
-
-      <div class="row container-fluid col-lg-12" id="contTexto">
+<section>
+    <div class="row container-fluid col-lg-12" id="contTexto">
         <p id="contTexto_texto">Inaugurado el 1 de octubre de 1971, Magic Kingdom es el parque más tradicional de Walt Disney World y está inspirado en los cuentos de hadas y los personajes clásicos de Disney. El Castillo de Cenicienta simboliza la magia y la fantasía, siendo el corazón del parque y representando el mundo de los cuentos de hadas. Es el punto central desde donde se pueden ver los fuegos artificiales y desfiles.</p>
-      </div>
-
-    </section>
-
-
-
-
-
-
-
-
-
-    <section>
-        <div class="row container-fluid col-lg-12" id="contTit">
-            <h1 id="contTit_tit">Atracciones Destacadas</h1>
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-2 g-4" id="contCards">
-            <div class="col contCard">
-              <div class="contCard_card">
-                <img src="../assets/imagenes/atraccion1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Pirates of the Caribbean</h5>
-                  <p class="card-text">Un clásico paseo en bote que lleva a los visitantes a un mundo de piratas.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col contCard">
-              <div class="contCard_card">
-                <img src="../assets/imagenes/atraccion2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Space Mountain</h5>
-                  <p class="card-text">Una montaña rusa en la oscuridad ambientada en el espacio.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col contCard">
-              <div class="contCard_card">
-                <img src="../assets/imagenes/atraccion3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Haunted Mansion</h5>
-                  <p class="card-text">Un recorrido encantado en una mansión llena de fantasmas y efectos especiales.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col contCard">
-              <div class="contCard_card">
-                <img src="../assets/imagenes/atraccion4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Seven Dwarfs Mine Train</h5>
-                  <p class="card-text">Una montaña rusa familiar inspirada en Blanca Nieves y los Siete Enanitos.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        <div class="row container-fluid col-lg-12">
-            <img id="separador" src="../assets/imagenes/separadorCeleste.png" alt="">
-        </div>
-
-    </section>
-
-
+    </div>
+</section>
 
 </body>
 </html>

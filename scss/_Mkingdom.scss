@@ -78,16 +78,17 @@ body{
     font-size: 18px;
     color: #1E90FF; 
     animation: sparkle 1.5s ease-in-out infinite;
+    opacity: 0;
 }
 
-.star-1 { top: -15px; left: -30px; font-size: 15px; color: #4DA6FF; animation-delay: 0s; }
-.star-2 { top: -20px; right: -25px; font-size: 12px; color: #87CEFA; animation-delay: 0.3s; }
-.star-3 { bottom: -15px; left: -20px; font-size: 18px; color: #4682B4; animation-delay: 0.6s; }
-.star-4 { bottom: -10px; right: -30px; font-size: 10px; color: #B0E0E6; animation-delay: 0.9s; }
-.star-5 { top: -5px; left: 10px; font-size: 14px; color: #5CACEE; animation-delay: 1.2s; }
-.star-6 { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
-.star-7 { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
-.star-8 { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
+#star-1 { top: -15px; left: -30px; font-size: 15px; color: #4DA6FF; animation-delay: 0s; }
+#star-2 { top: -20px; right: -25px; font-size: 12px; color: #87CEFA; animation-delay: 0.3s; }
+#star-3 { bottom: -15px; left: -20px; font-size: 18px; color: #4682B4; animation-delay: 0.6s; }
+#star-4 { bottom: -10px; right: -30px; font-size: 10px; color: #B0E0E6; animation-delay: 0.9s; }
+#star-5 { top: -5px; left: 10px; font-size: 14px; color: #5CACEE; animation-delay: 1.2s; }
+#star-6 { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
+#star-7 { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
+#star-8 { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
 
 
 @keyframes sparkle {
@@ -223,7 +224,7 @@ body{
 
 
 
-.contCarouselTexto {
+#contCarouselTexto {
     display: flex;
     align-items: center;
     justify-content: space-around; 
@@ -242,7 +243,7 @@ body{
     }
 }
 
-.contcarousel {
+#contcarousel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,7 +298,10 @@ body{
     background-color: $colorCeleste3;
     width: 100%;
     height: 200px;
-    border: solid 30px $colorbody;
+    border-top: solid 30px $colorbody;
+    border-bottom: solid 30px $colorbody;
+    border-left: solid 50px $colorbody;
+    border-right: solid 50px $colorbody;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -311,48 +315,3 @@ body{
     color: $colorLogo;
 }
 
-
-#contTit{
-    margin: 0;
-    padding: 0;
-    border-top: solid 50px $colorbody;
-    width: 100%;
-    height: 120px;
-    background-color: $colorCeleste2;
-    align-items: center;
-}
-
-#contTit_tit{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#contCards{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-}
-
-.contCard{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contCard_card{
-    background-color: $colorbody;
-    margin: 0;
-    padding: 0;
-    width: 65%;
-    height: 65%;
-}
-
-#separador{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
