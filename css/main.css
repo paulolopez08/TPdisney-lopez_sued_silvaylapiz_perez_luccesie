@@ -481,7 +481,7 @@ button {
   transition: all 0.3s ease-in-out;
   cursor: pointer; }
 
-.star-1 {
+.star-1Login {
   position: absolute;
   top: 20%;
   left: 20%;
@@ -491,7 +491,7 @@ button {
   z-index: -5;
   transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96); }
 
-.star-2 {
+.star-2Login {
   position: absolute;
   top: 45%;
   left: 45%;
@@ -501,7 +501,7 @@ button {
   z-index: -5;
   transition: all 1s cubic-bezier(0, 0.4, 0, 1.01); }
 
-.star-3 {
+.star-3Login {
   position: absolute;
   top: 40%;
   left: 40%;
@@ -511,7 +511,7 @@ button {
   z-index: -5;
   transition: all 1s cubic-bezier(0, 0.4, 0, 1.01); }
 
-.star-4 {
+.star-4Login {
   position: absolute;
   top: 20%;
   left: 40%;
@@ -521,7 +521,7 @@ button {
   z-index: -5;
   transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01); }
 
-.star-5 {
+.star-5Login {
   position: absolute;
   top: 25%;
   left: 45%;
@@ -531,7 +531,7 @@ button {
   z-index: -5;
   transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01); }
 
-.star-6 {
+.star-6Login {
   position: absolute;
   top: 5%;
   left: 50%;
@@ -546,7 +546,7 @@ button:hover {
   color: #000;
   box-shadow: 0 0 25px #fec1958c; }
 
-button:hover .star-1 {
+button:hover .star-1Login {
   position: absolute;
   top: -80%;
   left: -30%;
@@ -555,7 +555,7 @@ button:hover .star-1 {
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2; }
 
-button:hover .star-2 {
+button:hover .star-2Login {
   position: absolute;
   top: -25%;
   left: 10%;
@@ -564,7 +564,7 @@ button:hover .star-2 {
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2; }
 
-button:hover .star-3 {
+button:hover .star-3Login {
   position: absolute;
   top: 55%;
   left: 25%;
@@ -573,7 +573,7 @@ button:hover .star-3 {
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2; }
 
-button:hover .star-4 {
+button:hover .star-4Login {
   position: absolute;
   top: 30%;
   left: 80%;
@@ -582,7 +582,7 @@ button:hover .star-4 {
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2; }
 
-button:hover .star-5 {
+button:hover .star-5Login {
   position: absolute;
   top: 25%;
   left: 115%;
@@ -591,7 +591,7 @@ button:hover .star-5 {
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2; }
 
-button:hover .star-6 {
+button:hover .star-6Login {
   position: absolute;
   top: 5%;
   left: 60%;
