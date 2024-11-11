@@ -18,7 +18,6 @@ body{
 
 
 
-
 #menu1 {
     background-color:$colorCeleste1;
     height: 110px;
@@ -79,16 +78,17 @@ body{
     font-size: 18px;
     color: #1E90FF; 
     animation: sparkle 1.5s ease-in-out infinite;
+    opacity: 0;
 }
 
-.star-1 { top: -15px; left: -30px; font-size: 15px; color: #4DA6FF; animation-delay: 0s; }
-.star-2 { top: -20px; right: -25px; font-size: 12px; color: #87CEFA; animation-delay: 0.3s; }
-.star-3 { bottom: -15px; left: -20px; font-size: 18px; color: #4682B4; animation-delay: 0.6s; }
-.star-4 { bottom: -10px; right: -30px; font-size: 10px; color: #B0E0E6; animation-delay: 0.9s; }
-.star-5 { top: -5px; left: 10px; font-size: 14px; color: #5CACEE; animation-delay: 1.2s; }
-.star-6 { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
-.star-7 { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
-.star-8 { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
+#star-1 { top: -15px; left: -30px; font-size: 15px; color: #4DA6FF; animation-delay: 0s; }
+#star-2 { top: -20px; right: -25px; font-size: 12px; color: #87CEFA; animation-delay: 0.3s; }
+#star-3 { bottom: -15px; left: -20px; font-size: 18px; color: #4682B4; animation-delay: 0.6s; }
+#star-4 { bottom: -10px; right: -30px; font-size: 10px; color: #B0E0E6; animation-delay: 0.9s; }
+#star-5 { top: -5px; left: 10px; font-size: 14px; color: #5CACEE; animation-delay: 1.2s; }
+#star-6 { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
+#star-7 { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
+#star-8 { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
 
 
 @keyframes sparkle {
@@ -112,6 +112,7 @@ body{
     object-fit: cover;
     margin: 0;
     padding: 0;
+    animation: aparecer 5s 1;
 }
 
 
@@ -120,28 +121,28 @@ body{
     height: 55px;
     margin: 0;
     padding: 0;
-    position: absolute; /* El menú se posiciona sobre la imagen */
-    top: 0; /* Posiciona el menú en la parte superior de la imagen */
+    position: absolute; 
+    top: 0; 
     left: 0;
     width: 100%;
     animation: aparecer 4s 1;
-    transition: background-color 0.3s ease; /* Transición para el cambio de color del fondo */
+    transition: background-color 0.3s ease; 
 }
 
 #menu2:hover {
-    background-color: $colorCeleste2 !important;   /* Fondo sólido oscuro cuando se pasa el mouse sobre el menú */
+    background-color: $colorCeleste2 !important;   
 }
 
-/* Estilo para los elementos del menú */
+
 #menu2_contItems {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100%; /* Asegura que los ítems estén centrados verticalmente */
+    height: 100%; 
 }
 
 .menu2_items {
-    color: $colorbody !important;
+    color: #376188!important;
     font-size: 25px;
     transition: color 0.3s ease;
     font-family: "Crimson Pro", serif;
@@ -150,15 +151,15 @@ body{
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 1s ease forwards;
-    z-index: 1; /* Asegura que los ítems estén encima de la imagen */
+    z-index: 1; 
 }
 
-/* Añadimos el delay para cada ítem del menú */
-.menu2_items:nth-child(1) { animation-delay: 0.2s; }
-.menu2_items:nth-child(2) { animation-delay: 0.4s; }
-.menu2_items:nth-child(3) { animation-delay: 0.6s; }
-.menu2_items:nth-child(4) { animation-delay: 0.8s; }
-.menu2_items:nth-child(5) { animation-delay: 1s; }
+
+.menu2_items:nth-child(1) { animation-delay: 1s}
+.menu2_items:nth-child(2) { animation-delay: 1.5s; }
+.menu2_items:nth-child(3) { animation-delay: 2s; }
+.menu2_items:nth-child(4) { animation-delay: 2.5s; }
+.menu2_items:nth-child(5) { animation-delay: 3s; }
 
 @keyframes slideIn {
     from {
@@ -220,27 +221,10 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#contTexto{
-    background-color: $colorCeleste3;
-    width: 100%;
-    height: 200px;
-    border: solid 30px $colorbody;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#contTexto_texto{
-    font-family: "Crimson Pro", serif;
-    text-align: justify;
-    font-size: 20px;
-    color: $colorLogo;
-}
 
 
 
-.contCarouselTexto {
+#contCarouselTexto {
     display: flex;
     align-items: center;
     justify-content: space-around; 
@@ -259,7 +243,7 @@ body{
     }
 }
 
-.contcarousel {
+#contcarousel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,7 +255,7 @@ body{
 .contcarousel_carousel {
     width: 100%; 
     margin: 0;
-    padding: 0;
+    padding: 25px 0px 0px 25px;
 
     view-timeline-name: --image;
     view-timeline-axis: block;
@@ -309,47 +293,25 @@ body{
     transition: width 3s;
 }
 
-#contTit{
-    margin: 0;
-    padding: 0;
-    border-top: solid 50px $colorbody;
+
+#contTexto{
+    background-color: $colorCeleste3;
     width: 100%;
-    height: 120px;
-    background-color: $colorCeleste2;
-    align-items: center;
-}
-
-#contTit_tit{
+    height: 200px;
+    border-top: solid 30px $colorbody;
+    border-bottom: solid 30px $colorbody;
+    border-left: solid 50px $colorbody;
+    border-right: solid 50px $colorbody;
     margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#contCards{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-}
-
-.contCard{
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contCard_card{
-    background-color: $colorbody;
-    margin: 0;
-    padding: 0;
-    width: 65%;
-    height: 65%;
+#contTexto_texto{
+    font-family: "Crimson Pro", serif;
+    text-align: justify;
+    font-size: 20px;
+    color: $colorLogo;
 }
 
-#separador{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
