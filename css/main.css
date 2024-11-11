@@ -377,7 +377,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly; }
 
-.card {
+.contCardsAtracciones_cards {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -386,36 +386,36 @@ body {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
 
-.card:hover {
+.contCardsAtracciones_cards:hover {
   transform: scale(1.08);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); }
 
-.card .image img {
+.contCardsAtracciones_cards .contCardsAtracciones_cards_img img {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease; }
 
-.card:hover .image img {
+.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_img img {
   transform: scale(1.1); }
 
-.card .text {
+.contCardsAtracciones_cards.contCardsAtracciones_cards_texto {
   padding: 20px;
   background-color: #e6eaf0; }
 
-.card .text h3 {
+.contCardsAtracciones_cards .contCardsAtracciones_cards_texto h3 {
   font-size: 22px;
   color: #333;
   transition: color 0.3s ease; }
 
-.card .text p {
+.contCardsAtracciones_cards .contCardsAtracciones_cards_texto p {
   font-size: 16px;
   color: #666;
   transition: color 0.3s ease; }
 
-.card:hover .text h3 {
+.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_texto h3 {
   color: #0056b3; }
 
-.card:hover .text p {
+.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_texto p {
   color: #333; }
 
 #contSeparador {
