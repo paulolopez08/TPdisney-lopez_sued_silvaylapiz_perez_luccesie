@@ -347,7 +347,7 @@ body{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 
@@ -356,7 +356,7 @@ body{
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    width: 500px; 
+    width: 320px; 
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
