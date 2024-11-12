@@ -758,7 +758,7 @@ body {
 #contMapa {
   width: 100%;
   height: 700px;
-  background-color: #8AABE3;
+  background-color: #A7BFEE;
   border-left: 50px solid #FFF4E7;
   border-right: 50px solid #FFF4E7;
   border-bottom: 25px solid #FFF4E7;
@@ -784,8 +784,109 @@ body {
   width: 80%;
   height: 450px; }
 
+/*no lo usen al final paso las cosas yo*/
+/*colores foter magic kingdom*/
 .colorFooterMK {
-  background-color: black; }
+  background-color: #8AABE3; }
+
+.colorLineaMK {
+  background-color: #A7BFEE; }
+
+/*Footer general*/
+footer {
+  margin: 125px 0px 0px 0px;
+  width: 100%;
+  height: 290px; }
+
+.contItemsFooter {
+  width: 50%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center; }
+
+.contItemsFooter_items {
+  text-decoration: none;
+  color: #11477a;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color; }
+
+.contItemsFooter_items:focus,
+.contItemsFooter_items:hover {
+  color: #C3E2F8; }
+
+.contItemsFooter_items:focus:after,
+.contItemsFooter_items:hover:after {
+  width: 100%;
+  left: 0%; }
+
+.contItemsFooter_items:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #C3E2F8;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left; }
+
+#contLineaFooter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#contLineaFooter_linea {
+  border: none;
+  height: 2px;
+  width: 90%;
+  margin: 0px 0px 30px 15px;
+  opacity: 0.7; }
+
+#footerSecciones {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 0px 0px 250px; }
+
+#footerSecciones_contacto {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column; }
+
+#footerSecciones_redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+#footerSecciones_cuenta {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: column; }
+
+#contDerechosFooter {
+  margin-top: auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%; }
+
+#contDerechosFooter_derechos {
+  font-size: 14px;
+  padding: 10px; }
 
 * {
   margin: 0;
