@@ -12,24 +12,53 @@
 }
 
 .menu_navbarMK{
-    background-color: transparent !important; 
+    background-color: transparent !important;
+    &:hover{
+        background-color: $colorCeleste2 !important; 
+    } 
 }
-.menu_navbarMK:hover{
-    background-color: $colorCeleste2 !important; 
-}
+
 .menu_navbar_itemscolorMK{
     color: #376188 !important;
+
+    &:hover{
+        color: #C3E2F8 !important;
+    }
+    &::after{
+        background: linear-gradient(90deg, transparent, #C3E2F8, transparent);
+    }
 }
-.menu_navbar_itemscolorMK::after{
-    background: linear-gradient(90deg, transparent, #C3E2F8, transparent);
+
+
+/*incio y mas*/
+.fondomenu_IN{
+    background-color:#809BCE;
+}
+.color_logo_IN{
+    color: white;
+}
+.star_colorIN{
+    color: #145da5; 
 }
 
-.menu_navbar_itemscolorMK:hover {
-    color: #C3E2F8 !important;
+.menu_navbarIN{
+    background-color: transparent !important; 
+    &:hover{
+        background-color: #5079C0 !important; 
+    }
 }
 
+.menu_navbar_itemscolorIN{
+    color: #8ba8dd !important;
+    &:hover{
+        color: #C3E2F8 !important;
+    }
+    &::after{
+        background: linear-gradient(90deg, transparent, #C3E2F8, transparent);
+    }
+}
 
-
+/*cosas generales del menu*/
 #menu1 {
 
     height: 110px;
