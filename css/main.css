@@ -12,19 +12,39 @@
 
 .menu_navbarMK {
   background-color: transparent !important; }
-
-.menu_navbarMK:hover {
-  background-color: #8AABE3 !important; }
+  .menu_navbarMK:hover {
+    background-color: #8AABE3 !important; }
 
 .menu_navbar_itemscolorMK {
   color: #376188 !important; }
+  .menu_navbar_itemscolorMK:hover {
+    color: #C3E2F8 !important; }
+  .menu_navbar_itemscolorMK::after {
+    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
 
-.menu_navbar_itemscolorMK::after {
-  background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
+/*incio y mas*/
+.fondomenu_IN {
+  background-color: #809BCE; }
 
-.menu_navbar_itemscolorMK:hover {
-  color: #C3E2F8 !important; }
+.color_logo_IN {
+  color: white; }
 
+.star_colorIN {
+  color: #145da5; }
+
+.menu_navbarIN {
+  background-color: transparent !important; }
+  .menu_navbarIN:hover {
+    background-color: #5079C0 !important; }
+
+.menu_navbar_itemscolorIN {
+  color: #8ba8dd !important; }
+  .menu_navbar_itemscolorIN:hover {
+    color: #C3E2F8 !important; }
+  .menu_navbar_itemscolorIN::after {
+    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
+
+/*cosas generales del menu*/
 #menu1 {
   height: 110px;
   display: flex;
@@ -278,19 +298,39 @@
 
 .menu_navbarMK {
   background-color: transparent !important; }
-
-.menu_navbarMK:hover {
-  background-color: #8AABE3 !important; }
+  .menu_navbarMK:hover {
+    background-color: #8AABE3 !important; }
 
 .menu_navbar_itemscolorMK {
   color: #376188 !important; }
+  .menu_navbar_itemscolorMK:hover {
+    color: #C3E2F8 !important; }
+  .menu_navbar_itemscolorMK::after {
+    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
 
-.menu_navbar_itemscolorMK::after {
-  background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
+/*incio y mas*/
+.fondomenu_IN {
+  background-color: #809BCE; }
 
-.menu_navbar_itemscolorMK:hover {
-  color: #C3E2F8 !important; }
+.color_logo_IN {
+  color: white; }
 
+.star_colorIN {
+  color: #145da5; }
+
+.menu_navbarIN {
+  background-color: transparent !important; }
+  .menu_navbarIN:hover {
+    background-color: #5079C0 !important; }
+
+.menu_navbar_itemscolorIN {
+  color: #8ba8dd !important; }
+  .menu_navbar_itemscolorIN:hover {
+    color: #C3E2F8 !important; }
+  .menu_navbar_itemscolorIN::after {
+    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
+
+/*cosas generales del menu*/
 #menu1 {
   height: 110px;
   display: flex;
@@ -758,7 +798,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #95B8D1; }
-  #textini p {
+  #textini #textini_parrafo {
     color: white;
     font-size: 20px;
     text-align: justify;

@@ -8,6 +8,7 @@
 @import "hoteles";
 @import "tienda";
 @import "personajes";
+@import "footer";
 
 
 
@@ -28,7 +29,7 @@
     padding: 0;
     background-color: #95B8D1;
 
-    p{
+    #textini_parrafo{
         color: white;
         font-size: 20px;
         text-align:justify;
