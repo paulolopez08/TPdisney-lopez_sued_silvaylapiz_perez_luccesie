@@ -13,75 +13,9 @@ $font-family-base: Arial, sans-serif;
 $font-family-title: "Atma", serif;
 
 
-.bodySesión {
+#bodySesión {
     background: linear-gradient(to bottom, $primary-color, $secondary-color);
 }
-
-#menu1Login {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#menu1Login_logoLogin {
-    font-family: 'WaltographRegular', sans-serif;
-    color: $colorLogo;
-    font-size: 75px;
-    display: flex;
-}
-
-.charLogin {
-    opacity: 0;
-    animation: fadeIn 1.5s ease forwards;
-}
-
-/* Aplica un retraso diferente a cada letra para el efecto de aparición */
-.charLogin:nth-child(1) { animation-delay: 0.1s; }
-.charLogin:nth-child(2) { animation-delay: 0.2s; }
-.charLogin:nth-child(3) { animation-delay: 0.3s; }
-.charLogin:nth-child(4) { animation-delay: 0.4s; }
-.charLogin:nth-child(5) { animation-delay: 0.5s; }
-.charLogin:nth-child(6) { animation-delay: 0.6s; }
-.charLogin:nth-child(7) { animation-delay: 0.7s; }
-.charLogin:nth-child(8) { animation-delay: 0.8s; }
-.charLogin:nth-child(9) { animation-delay: 0.9s; }
-.charLoginn:nth-child(10) { animation-delay: 1s; }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-.starLogin {
-    position: absolute;
-    font-size: 18px;
-    color: #1E90FF; 
-    animation: sparkle 1.5s ease-in-out infinite;
-}
-
-.star-1Login { top: -15px; left: -30px; font-size: 15px; color: #4DA6FF; animation-delay: 0s; }
-.star-2Login { top: -20px; right: -25px; font-size: 12px; color: #87CEFA; animation-delay: 0.3s; }
-.star-3Login { bottom: -15px; left: -20px; font-size: 18px; color: #4682B4; animation-delay: 0.6s; }
-.star-4Login { bottom: -10px; right: -30px; font-size: 10px; color: #B0E0E6; animation-delay: 0.9s; }
-.star-5Login { top: -5px; left: 10px; font-size: 14px; color: #5CACEE; animation-delay: 1.2s; }
-.star-6Login { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
-.star-7Login { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
-.star-8Login { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
-
-
-@keyframes sparkle {
-    0%, 100% { opacity: 0; transform: scale(0.8); }
-    50% { opacity: 1; transform: scale(1.2); }
-}
-
 
 .container {
     align-items: center;
