@@ -1,0 +1,234 @@
+// Import Bootstrap
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Kablammo&family=Modak&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+$footer-bg-color: #5c92cc;
+$footer-text-color: #ffffff;
+$footer-link-color: #ffffff;
+$primary-color: #00a9f2;
+$secondary-color: #172D9D;
+$white: #fff;
+$black: #000;
+$font-family-base: Arial, sans-serif;
+$font-family-title: "Atma", serif;
+
+
+.bodySesión {
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+}
+
+.contenedor-Disney-Login {
+  width: 100%; 
+}
+
+.Disney-Login {
+  width: 200px;
+  height: 100px;
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  align-items: center;
+  font-family: $font-family-base;
+}
+
+.form-container {
+  width: 600px;
+  height: 690px;
+  background: $white;
+  border-radius: 9px;
+  box-shadow: 4px 8px 8px $black;
+}
+
+.MyDisney {
+  font-family: $font-family-title;
+  font-weight: 600;
+  font-style: normal;
+  color: $black;
+}
+
+.form-titulo {
+  color: $black;
+  margin-bottom: 5px;
+}
+
+.cambiarDeForm {
+  text-align: center;
+  color: $white;
+  margin-top: 10px;
+}
+
+button {
+    position: relative;
+    padding: 12px 35px;
+    background: #00a9f2;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 0 #ff00008c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .star-1Login {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2Login {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3Login {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4Login {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5Login {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6Login {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  button:hover {
+    background: transparent;
+    color: #000;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  button:hover .star-1Login {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-2Login {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-3Login {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-4Login {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-5Login {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-6Login {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fffdef;
+  }
+
+.BotonVolver {
+    position: absolute;
+    top: 30px;
+    right: 35px;  
+}
+
+.footer-Login {
+    background-color: $footer-bg-color;
+    color: $footer-text-color;
+    .footer-Login-link {
+        color: $footer-link-color;
+        margin-right: 15px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: lighten($footer-link-color, 10%);
+        }
+    }
+    .text-muted {
+        color: lighten($footer-text-color, 20%);
+    }
+}
