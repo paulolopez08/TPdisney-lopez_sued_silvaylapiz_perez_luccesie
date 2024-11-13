@@ -1,4 +1,4 @@
-@import "menu";
+
 @import "variables_princ";
 
 
@@ -10,7 +10,7 @@
 
 
 
-body{
+#bodyGeneral{
     background-color: $colorbody;
 }
 
@@ -34,6 +34,7 @@ body{
         scale: 100%;
     }
 }
+
 
 #contcarousel {
     display: flex;
