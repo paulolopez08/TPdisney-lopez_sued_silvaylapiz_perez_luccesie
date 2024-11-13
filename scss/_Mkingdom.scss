@@ -184,8 +184,28 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
     margin-top: 30px;
+
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; /* O puedes mantener "block" si prefieres */
+    animation-timeline: --text-slide;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; /* Duración de la animación */
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
 }
 
+
+@keyframes slideIn2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%); /* Empieza fuera de la pantalla, en el lado izquierdo */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Termina en su posición original */
+    }
+}
 
 
 #contCardsAtracciones {
@@ -203,7 +223,46 @@ body{
     position: relative;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block;
+    animation-timeline: --text-slide;
+    animation-name: slideIn3;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+    animation-range: entry 15% cover 40%; /* Aparece antes */
+    opacity: 0;
 }
+
+/* Añadir retraso incremental para cada tarjeta */
+#card1:nth-child(1) {
+    animation-delay: 0s;
+}
+#card2:nth-child(2) {
+    animation-delay: 0.2s; 
+}
+#card3:nth-child(3) {
+    animation-delay: 0.4s; 
+}
+#card4:nth-child(4) {
+    animation-delay: 0.6s; 
+}
+
+/* Keyframes para el deslizamiento desde la derecha */
+@keyframes slideIn3 {
+    from {
+        opacity: 0;
+        transform: translateX(100%); /* Empieza desde fuera de pantalla a la derecha */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* En posición final */
+    }
+}
+
+
+
+
 
 #card1, #card2, #card3, #card4 {
     background-size: cover;
@@ -298,55 +357,148 @@ body{
 
 
 
-
-
-#contMapa{
-    width: 100%;
-    height: 700px;
+#contMapa {
+    width: 90%;
+    height: 825px;
     background-color: $colorCeleste1;
-    border-left: 50px solid $colorbody;
-    border-right: 50px solid $colorbody;
-    border-bottom: 25px solid $colorbody;
-    border-radius: 10px;
+    margin: 10px 50px 25px 50px;
+    justify-self: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
 
 }
 
-#contMapa_contTit{
+#contMapa_contTit {
     display: flex;
     justify-content: left;
-    
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+
 }
 
-#contMapa_contTit_tit{
+#contMapa_contTit_tit {
     color: $colorCeleste3;
     font-family: 'WaltographRegular', sans-serif;
     font-size: 70px;
     padding: 30px 0px 15px 40px;
-
-    background: linear-gradient( to bottom, $colorCeleste1, #4A90E2, #1E3A8A);
+    background: linear-gradient(to bottom, $colorCeleste1, #4A90E2, #1E3A8A);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-
-
 }
 
-
-
-
-
-#contMapa_contMapa{
+#contMapa_contMapa {
     padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+
 }
 
-#contMapa_contMapa_mapa{
-
+#contMapa_contMapa_mapa {
+    padding: 10px 10px 10px 10px;
     width: 80%;
     height: 450px;
+    border-radius: 15px;
+    filter: drop-shadow(
+        0 4px 8px rgba(0, 0, 0, 0.3)
+    )
 }
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.button {
+    position: relative;
+    padding: 17px 32px;
+    border-radius: 7px;
+    border: 2px solid rgb(62, 98, 216);
+    font-size: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: rgb(224, 232, 255);
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.button:hover {
+    background: rgb(62, 98, 216);
+    box-shadow: 0 0 30px 5px rgba(5, 104, 170, 0.815);
+    transition: all 0.2s ease-out;
+}
+
+.button:hover::before {
+    animation: sh02 0.5s 0s linear;
+}
+
+.button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.button:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in;
+}
+
+
 
 
 @import "footer.scss";
