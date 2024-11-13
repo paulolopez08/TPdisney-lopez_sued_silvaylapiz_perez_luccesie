@@ -1,0 +1,59 @@
+// Variables 
+$purple: #7d5ab5;
+$red: #e74c3c;
+$blue: #3498db;
+$green: #2ecc71;
+$orange: #f39c12;
+$pink: #ff6b81;
+$brown: #8d6e63;
+$gray: #bdc3c7;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(4, 150px);
+    gap: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+        width: 70px;
+        height: auto;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.card-purple { background-color: $purple; }
+.card-red { background-color: $red; }
+.card-blue { background-color: $blue; }
+.card-green { background-color: $green; }
+.card-orange { background-color: $orange; }
+.card-pink { background-color: $pink; }
+.card-brown { background-color: $brown; }
+.card-gray { background-color: $gray; }

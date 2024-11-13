@@ -1087,6 +1087,64 @@ footer {
   color: #11477a;
   font-size: 14px; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(4, 150px);
+  gap: 20px; }
+
+.card {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .card img {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+
+.card-purple {
+  background-color: #7d5ab5; }
+
+.card-red {
+  background-color: #e74c3c; }
+
+.card-blue {
+  background-color: #3498db; }
+
+.card-green {
+  background-color: #2ecc71; }
+
+.card-orange {
+  background-color: #f39c12; }
+
+.card-pink {
+  background-color: #ff6b81; }
+
+.card-brown {
+  background-color: #8d6e63; }
+
+.card-gray {
+  background-color: #bdc3c7; }
+
 /*no lo usen al final paso las cosas yo*/
 /*colores foter magic kingdom*/
 .colorFooterMK {
