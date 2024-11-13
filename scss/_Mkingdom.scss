@@ -94,10 +94,12 @@ body{
     
 }
 
+
+
 #contCarouselTexto_ContTitulosPrinc_tit {
     font-size: 60px;
-    color: #333; 
-    font-family: "Italianno", cursive;
+    color: $colorCeleste2; 
+    font-family: "Mouse Memoirs", sans-serif;
     margin: 0;
     padding: 0;
 
@@ -110,13 +112,15 @@ body{
     animation-range: entry 10% cover 50%;
     animation-fill-mode: both;
     transition: width 3s;
+
 }
+
 
 #contCarouselTexto_ContTitulosPrinc_frase {
     font-size: 40px;
-    color: #333; 
-    font-family: "Italianno", cursive;
-    margin: 0;
+    color: $colorCeleste2; 
+    font-family: "Mouse Memoirs", sans-serif;
+    margin-top: 30px;
     padding: 0;
 
     view-timeline-name: --image;
@@ -128,7 +132,11 @@ body{
     animation-range: entry 10% cover 50%;
     animation-fill-mode: both;
     transition: width 3s;
+
+
 }
+
+
 
 
 #contTexto{
@@ -199,6 +207,7 @@ body{
     height: 395px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 #contCardsAtracciones_cards:hover {
