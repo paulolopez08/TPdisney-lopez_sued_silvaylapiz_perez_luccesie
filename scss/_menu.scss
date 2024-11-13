@@ -2,7 +2,10 @@
 
 /*MK colors*/
 .fondomenu_MK{
-    background-color:$colorCeleste1;
+    
+    background: linear-gradient( to top, $colorCeleste3, #9bb2f2, #6688e7);
+
+
 }
 .color_logo_MK{
     color: $colorLogo;
@@ -32,10 +35,10 @@
 
 /*incio y mas*/
 .fondomenu_IN{
-    background-color:#809BCE;
+    background: linear-gradient( to top, #8aa7f9 , #5a78cb, #334e97);
 }
 .color_logo_IN{
-    color: white;
+    color: $colorbody;
 }
 .star_colorIN{
     color: #145da5; 
@@ -238,3 +241,4 @@
 
     }
 }
+
