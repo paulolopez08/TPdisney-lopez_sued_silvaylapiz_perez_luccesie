@@ -1445,7 +1445,6 @@
   /* Aparece antes */
   opacity: 0; }
 
-/* Añadir retraso incremental para cada tarjeta */
 #card1Personajes:nth-child(1) {
   animation-delay: 0s; }
 

@@ -1,55 +1,92 @@
+// Define colors and mixins
+$bg-color: #1b1b1b;
+$text-color: #00ffcc;
+$button-bg: linear-gradient(135deg, #00ffcc, #0066ff);
+$button-hover-bg: linear-gradient(135deg, #0066ff, #00ffcc);
 
-$footer-bg-color: #5c92cc;
-$footer-text-color: #ffffff;
-$footer-link-color: #ffffff;
-$primary-color: #00a9f2;
-$secondary-color: #172D9D;
-$white: #fff;
-$black: #000;
-$font-family-base: Arial, sans-serif;
-$font-family-title: "Atma", serif;
-
-#bodySesion {
-    background: linear-gradient(to bottom, $primary-color, $secondary-color);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.form-container-sesion {
-    width: 500px;
-    height: 460px;
-    background: $white;
-    border-radius: 9px;
-    box-shadow: 4px 8px 8px $black;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $bg-color;
+    font-family: Arial, sans-serif;
+    color: $text-color;
 }
 
-.form-titulo {
-    color: $black;
-    margin-bottom: 5px;
-}
-.cambiarDeFormRegistro {
+.login-container {
+    background: #222;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
-    color: $black;
-    margin: 10px;
-}
-.BotonVolver {
-    position: absolute;
-    top: 30px;
-    right: 35px;
-}
+    width: 300px;
 
-.footer-Login {
-    background-color: $footer-bg-color;
-    color: $footer-text-color;
-    .footer-Login-link {
-        color: $footer-link-color;
-        margin-right: 15px;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-            color: lighten($footer-link-color, 10%);
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .input-container {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            color: $text-color;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+            text-align: left;
+        }
+
+        input {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background-color: #333;
+            color: $text-color;
         }
     }
-}
 
-.text-muted {
-    color: lighten($footer-text-color, 20%);
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        button {
+            padding: 0.6rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            background: $button-bg;
+            transition: background 0.3s;
+
+            &:hover {
+                background: $button-hover-bg;
+            }
+        }
+
+        .login-btn {
+            margin-top: 1rem;
+        }
+
+        .signup-btn,
+        .forgot-btn {
+            background: none;
+            color: $text-color;
+            &:hover {
+                color: lighten($text-color, 20%);
+            }
+        }
+    }
 }
