@@ -1708,7 +1708,7 @@ footer {
   opacity: 0; }
 
 /* Añadir retraso incremental para cada tarjeta */
-#card1:nth-child(1) {
+#card1Personajes:nth-child(1) {
   animation-delay: 0s; }
 
 #card2:nth-child(2) {
@@ -1731,11 +1731,11 @@ footer {
     transform: translateX(0);
     /* En posición final */ } }
 
-#card1, #card2, #card3, #card4 {
+#card1Personajes, #card2, #card3, #card4 {
   background-size: cover;
   background-position: center; }
 
-#card1 {
+#card1Personajes {
   background-image: url("../assets/imagenes/woody.png"); }
 
 #card2 {
