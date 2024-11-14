@@ -1,4 +1,22 @@
-@import "variables_princ";
+
+
+/*Colores Magic Kingdom*/
+
+$colorprinc:#809BCE;
+$colorbody: #FFF4E7;
+$colorCeleste1: #A7BFEE;
+$colorCeleste2: #8AABE3;
+$colorCeleste3: #C3E2F8;
+$colorLogo: #00509D;
+
+
+/*Colores Epcot*/
+$colorVioleta1: #A06CD5;
+$colorVioleta2: #b98ae3;
+$colorVioleta3: #D2B7E5;
+$colorLogo2: #ac6adb;
+
+
 
 /*colores footer magic kingdom*/
 .colorFooterMK{
@@ -7,8 +25,117 @@
 }
 
 .colorLineaMK{
-    background-color: $colorCeleste1 ;
+    background-color: $colorVioleta3 ;
 }
+
+
+/*colores footer epcot*/
+.colorFooterep{
+    background-color: white;
+    background: linear-gradient( to top, #72449a, #8d61b6, $colorbody);
+}
+
+.colorLineaep{
+    background-color: #6b499d ;
+}
+
+
+
+
+.contItemsFooter_itemsep{
+    margin-top: 170px;
+    text-decoration: none;
+    color: #4c2e7a;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.contItemsFooter_itemsep:focus,
+.contItemsFooter_itemsep:hover {
+    color: #b396df;
+}
+
+.contItemsFooter_itemsep:focus:after,
+.contItemsFooter_itemsep:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.contItemsFooter_itemsep:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #b396df ;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+
+
+
+.footerSecciones_titulosep {
+    color: #4c2e7a;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
+.footerSecciones_titulos_contRedes_redesep {
+    font-size: 2rem;
+    color: #4c2e7a; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footerSecciones_titulos_contRedes_redesep:hover {
+    color: #b396df; 
+    transform: translateY(-5px); 
+}
+
+.footerSecciones_titulos_itemsep{
+    text-decoration: none;
+    color: #4c2e7a;
+    font-family: "Raleway", sans-serif;
+    font-size: 19px;
+    position: relative;
+    border: none;
+    background: none;
+    transition: color 0.3s ease;
+}
+
+.footerSecciones_titulos_itemsep:hover{
+    color: #b396df;
+
+}
+
+
+#contDerechosFooter_derechosep{
+    color: #4c2e7a;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*Footer general*/
 
 footer{

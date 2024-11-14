@@ -1,3 +1,7 @@
+
+
+/*Colores Magic Kingdom*/
+
 $colorprinc:#809BCE;
 $colorbody: #FFF4E7;
 $colorCeleste1: #A7BFEE;
@@ -5,10 +9,12 @@ $colorCeleste2: #8AABE3;
 $colorCeleste3: #C3E2F8;
 $colorLogo: #00509D;
 
+
+/*Colores Epcot*/
 $colorVioleta1: #A06CD5;
-$colorVioleta2: #815AC0;
+$colorVioleta2: #b98ae3;
 $colorVioleta3: #D2B7E5;
-$colorLogo2: #c5a2dd;
+$colorLogo2: #ac6adb;
 
 /*MK colors*/
 .fondomenu_MK{
@@ -42,19 +48,27 @@ $colorLogo2: #c5a2dd;
     }
 }
 
+#star-1 { top: -15px; left: -30px; font-size: 15px; color: #4DA6FF; animation-delay: 0s; }
+#star-2 { top: -20px; right: -25px; font-size: 12px; color: #87CEFA; animation-delay: 0.3s; }
+#star-3 { bottom: -15px; left: -20px; font-size: 18px; color: #4682B4; animation-delay: 0.6s; }
+#star-4 { bottom: -10px; right: -30px; font-size: 10px; color: #B0E0E6; animation-delay: 0.9s; }
+#star-5 { top: -5px; left: 10px; font-size: 14px; color: #5CACEE; animation-delay: 1.2s; }
+#star-6 { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
+#star-7 { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
+#star-8 { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
+
 /*Epcot*/
 .fondomenu_ep{
-    
-    background: linear-gradient( to top, $colorVioleta3, #412455, #D2B7E5);
+    background: linear-gradient( to top, #e4c8ff, #c49de7,#9e74c3);
+
 
 
 }
 .color_logo_ep{
     color: $colorLogo2;
 }
-.star_colorep{
-    color: #1E90FF; 
-}
+
+
 
 .menu_navbarep{
     background-color: transparent !important;
@@ -64,15 +78,46 @@ $colorLogo2: #c5a2dd;
 }
 
 .menu_navbar_itemscolorep{
-    color: #376188 !important;
+    color: #4c2e7a !important;
 
     &:hover{
-        color: #C3E2F8 !important;
+        color: #ead3ff !important;
     }
     &::after{
-        background: linear-gradient(90deg, transparent, #C3E2F8, transparent);
+        background: linear-gradient(90deg, transparent, #ead3ff , transparent);
     }
 }
+
+#star-1ep { top: -15px; left: -30px; font-size: 15px; color: #a04de4; animation-delay: 0s; }
+#star-2ep { top: -20px; right: -25px; font-size: 12px; color: #b868f0; animation-delay: 0.3s; }
+#star-3ep { bottom: -15px; left: -20px; font-size: 18px; color: #8846b4; animation-delay: 0.6s; }
+#star-4ep { bottom: -10px; right: -30px; font-size: 10px; color: #c9b0e6; animation-delay: 0.9s; }
+#star-5ep { top: -5px; left: 10px; font-size: 14px; color: #a75cee; animation-delay: 1.2s; }
+#star-6ep { bottom: 5px; right: 15px; font-size: 16px; color: #ae63ff; animation-delay: 1.5s; }
+#star-7ep { top: 0px; right: 50px; font-size: 12px; color: #8127f6; animation-delay: 1.8s; }
+#star-8ep { bottom: 0px; left: 50px; font-size: 13px; color: #7246b4; animation-delay: 2s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*incio y mas*/
 .fondomenu_IN{
@@ -164,14 +209,7 @@ $colorLogo2: #c5a2dd;
     opacity: 0;
 }
 
-#star-1 { top: -15px; left: -30px; font-size: 15px; color: #4DA6FF; animation-delay: 0s; }
-#star-2 { top: -20px; right: -25px; font-size: 12px; color: #87CEFA; animation-delay: 0.3s; }
-#star-3 { bottom: -15px; left: -20px; font-size: 18px; color: #4682B4; animation-delay: 0.6s; }
-#star-4 { bottom: -10px; right: -30px; font-size: 10px; color: #B0E0E6; animation-delay: 0.9s; }
-#star-5 { top: -5px; left: 10px; font-size: 14px; color: #5CACEE; animation-delay: 1.2s; }
-#star-6 { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
-#star-7 { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
-#star-8 { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
+
 
 
 @keyframes sparkle {

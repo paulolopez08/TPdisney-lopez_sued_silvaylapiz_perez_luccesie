@@ -1,3 +1,120 @@
+
+
+
+
+
+#contCarouselTexto_ContTitulosPrinc_titep {
+    font-size: 60px;
+    color: $colorCeleste2; 
+    font-family: "Mouse Memoirs", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+
+    animation-range: entry 10% cover 50%;
+
+    background: linear-gradient( to top, #e4c8ff, #c49de7,#9e74c3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+
+#contCarouselTexto_ContTitulosPrinc_fraseep {
+    font-size: 40px;
+    color: $colorCeleste2; 
+    font-family: "Mouse Memoirs", sans-serif;
+    margin-top: 30px;
+    padding: 0;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+
+    background: linear-gradient( to top, #e4c8ff, #c49de7,#9e74c3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+}
+
+#contTextoep{
+    background-color: $colorVioleta3;
+    width: 93%;
+    height: 180px;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    
+
+}
+
+#contTexto_textoep{
+    font-family: "Faculty Glyphic", sans-serif;
+    text-align: justify;
+    font-size: 19px;
+    color: #4c2e7a;
+    
+
+}
+
+
+#contTitAtrac_titep{
+    text-align: center;
+    color: $colorCeleste2;
+    font-family: 'WaltographRegular', sans-serif;
+    font-size: 70px;
+
+    background: linear-gradient( to top, #e4c8ff, #c49de7,#9e74c3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 30px;
+
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+}
+
+
+
+
+
 #card1ep:nth-child(1) {
     animation-delay: 0s;
 }
@@ -11,15 +128,15 @@
     animation-delay: 1.2s; 
 }
 
-/* Keyframes para el deslizamiento desde un poco más a la derecha */
+
 @keyframes slideIn3 {
     from {
         opacity: 0;
-        transform: translateX(30px); /* Inicia ligeramente desplazado a la derecha */
+        transform: translateX(30px);
     }
     to {
         opacity: 1;
-        transform: translateX(0); /* Termina en su posición original */
+        transform: translateX(0);
     }
 }
 
@@ -32,17 +149,168 @@
 }
 
 #card1ep {
-    background-image: url('../assets/imagenes/atraccion1.png');
+    background-image: url('../assets/imagenes/atraccion1ep.png');
 }
 
 #card2ep {
-    background-image: url('../assets/imagenes/atraccion2.png');
+    background-image: url('../assets/imagenes/atraccion2ep.png');
 }
 
 #card3ep {
-    background-image: url('../assets/imagenes/atraccion3.png');
+    background-image: url('../assets/imagenes/atraccion3ep.png');
 }
 
 #card4ep {
-    background-image: url('../assets/imagenes/atraccion4.png');
+    background-image: url('../assets/imagenes/atraccion4ep.png');
 }
+
+
+.contCardsAtracciones_cards_infoep {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(136, 102, 155, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    text-align: center;
+}
+
+.contCardsAtracciones_cards_info_tituloep {
+    color: #ddbffa;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: 30px;
+    margin-bottom: 0.5em;
+}
+
+.contCardsAtracciones_cards_info_textoep {
+    color: #f8e8ff;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 17px;
+    padding: 0 15px;
+}
+
+.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_infoep {
+    
+    opacity: 3;
+}
+
+
+
+#contMapaep {
+    width: 90%;
+    height: 825px;
+    background-color: #e4c8ff;
+    margin: 10px 50px 25px 50px;
+    justify-self: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+
+}
+
+
+#contMapa_contTit_titep {
+    color: $colorCeleste3;
+    font-family: 'WaltographRegular', sans-serif;
+    font-size: 70px;
+    padding: 30px 0px 15px 40px;
+    background: linear-gradient( to top, #b283dd, #9e6bce ,rgb(130, 83, 171));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#contMapa_contMapa_mapaep {
+    padding: 10px 10px 10px 10px;
+    width: 90%;
+    height: 450px;
+    border-radius: 15px;
+    filter: drop-shadow(
+        0 4px 8px rgba(0, 0, 0, 0.3)
+    )
+}
+
+
+.buttonep {
+    position: relative;
+    padding: 17px 32px;
+    border-radius: 7px;
+    border: 2px solid rgb(124, 62, 216);
+    font-size: 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: rgb(159, 117, 189);
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.buttonep:hover {
+    background:  rgb(124, 62, 216);
+    box-shadow: 0 0 30px 5px rgba(82, 5, 170, 0.815);
+    transition: all 0.2s ease-out;
+}
+
+.buttonep:hover::before {
+    animation: sh02 0.5s 0s linear;
+}
+
+.buttonep::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.buttonep:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in;
+}
+
+
+
+
