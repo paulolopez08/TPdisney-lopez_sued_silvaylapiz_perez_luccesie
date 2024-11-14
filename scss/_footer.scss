@@ -1,6 +1,6 @@
 @import "variables_princ";
 
-/*colores foter magic kingdom*/
+/*colores footer magic kingdom*/
 .colorFooterMK{
     background-color: white;
     background: linear-gradient(to bottom, $colorbody, $colorCeleste2, #3879b7); 
@@ -86,31 +86,31 @@ footer{
 #footerSecciones {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Distribuye las secciones a los lados */
+    justify-content: space-between; 
     padding: 0 250px;
 }
 
 .footerSecciones_contacto {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea a la izquierda */
+    align-items: flex-start; 
 }
 
 .footerSecciones_redes {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra la sección de redes sociales */
+    align-items: center; 
 }
 
 .footerSecciones_cuenta {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Alinea a la derecha */
+    align-items: flex-end; 
 }
 
 .footerSecciones_titulos {
     color: #11477a;
-    font-family: "Raleway", sans-serif;
+    font-family: "Faculty Glyphic", sans-serif;
     font-size: 23px;
     margin-bottom: 10px;
 }

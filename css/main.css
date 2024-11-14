@@ -22,6 +22,28 @@
   .menu_navbar_itemscolorMK::after {
     background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
 
+/*Epcot*/
+.fondomenu_ep {
+  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
+
+.color_logo_ep {
+  color: #00509D; }
+
+.star_colorep {
+  color: #1E90FF; }
+
+.menu_navbarep {
+  background-color: transparent !important; }
+  .menu_navbarep:hover {
+    background-color: #8AABE3 !important; }
+
+.menu_navbar_itemscolorep {
+  color: #376188 !important; }
+  .menu_navbar_itemscolorep:hover {
+    color: #C3E2F8 !important; }
+  .menu_navbar_itemscolorep::after {
+    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
+
 /*incio y mas*/
 .fondomenu_IN {
   background: linear-gradient(to top, #8aa7f9, #5a78cb, #334e97); }
@@ -285,7 +307,7 @@
   text-decoration: none; }
 
 /*no lo usen al final paso las cosas yo*/
-/*no lo usen al final paso las cosas yo*/
+/*Magic Kingdom*/
 * {
   margin: 0;
   padding: 0; }
@@ -418,11 +440,9 @@
   margin-top: 30px;
   view-timeline-name: --text-slide;
   view-timeline-axis: block;
-  /* O puedes mantener "block" si prefieres */
   animation-timeline: --text-slide;
   animation-name: slideIn2;
   animation-duration: 1.5s;
-  /* Duración de la animación */
   animation-range: entry 10% cover 50%;
   animation-fill-mode: both;
   transition: width 3s; }
@@ -430,12 +450,10 @@
 @keyframes slideIn2 {
   from {
     opacity: 0;
-    transform: translateX(-100%);
-    /* Empieza fuera de la pantalla, en el lado izquierdo */ }
+    transform: translateX(-100%); }
   to {
     opacity: 1;
-    transform: translateX(0);
-    /* Termina en su posición original */ } }
+    transform: translateX(0); } }
 
 #contCardsAtracciones {
   display: flex;
@@ -444,7 +462,7 @@
   gap: 60px; }
 
 .contCardsAtracciones_cards {
-  width: 310px;
+  width: 305px;
   height: 400px;
   border-radius: 1rem;
   overflow: hidden;
@@ -460,7 +478,6 @@
   animation-range: entry 15% cover 40%;
   opacity: 0; }
 
-/* Añadir retraso incremental para cada tarjeta */
 #card1:nth-child(1) {
   animation-delay: 0s; }
 
@@ -473,16 +490,13 @@
 #card4:nth-child(4) {
   animation-delay: 1.2s; }
 
-/* Keyframes para el deslizamiento desde un poco más a la derecha */
 @keyframes slideIn3 {
   from {
     opacity: 0;
-    transform: translateX(30px);
-    /* Inicia ligeramente desplazado a la derecha */ }
+    transform: translateX(30px); }
   to {
     opacity: 1;
-    transform: translateX(0);
-    /* Termina en su posición original */ } }
+    transform: translateX(0); } }
 
 #card1, #card2, #card3, #card4 {
   background-size: cover;
@@ -547,10 +561,18 @@
   transform: scale(1.05); }
 
 #contSeparador {
-  margin: 70px 30px 70px 70px;
+  margin: 80px 50px 70px 70px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contSeparador_separador {
   width: 75%;
@@ -665,160 +687,7 @@
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
-/*no lo usen al final paso las cosas yo*/
-/*colores foter magic kingdom*/
-.colorFooterMK {
-  background-color: white;
-  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
-
-.colorLineaMK {
-  background-color: #A7BFEE; }
-
-/*Footer general*/
-footer {
-  margin: 90px 0px 0px 0px;
-  width: 100%;
-  height: 480px; }
-
-.contItemsFooter {
-  padding: 130px;
-  width: 55%;
-  height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center; }
-
-.contItemsFooter_items {
-  margin-top: 170px;
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  position: relative;
-  border: none;
-  background: none;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color; }
-
-.contItemsFooter_items:focus,
-.contItemsFooter_items:hover {
-  color: #C3E2F8; }
-
-.contItemsFooter_items:focus:after,
-.contItemsFooter_items:hover:after {
-  width: 100%;
-  left: 0%; }
-
-.contItemsFooter_items:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #C3E2F8;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left; }
-
-#contLineaFooter {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#contLineaFooter_linea {
-  border: none;
-  height: 2px;
-  width: 90%;
-  margin: 0px 0px 50px 15px;
-  opacity: 0.7; }
-
-#footerSecciones {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  /* Distribuye las secciones a los lados */
-  padding: 0 250px; }
-
-.footerSecciones_contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* Alinea a la izquierda */ }
-
-.footerSecciones_redes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Centra la sección de redes sociales */ }
-
-.footerSecciones_cuenta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  /* Alinea a la derecha */ }
-
-.footerSecciones_titulos {
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 23px;
-  margin-bottom: 10px; }
-
-.footerSecciones_titulos_contRedes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; }
-
-.footerSecciones_titulos_contRedes_redes {
-  font-size: 2rem;
-  color: #11477a;
-  transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redes:hover {
-  color: #C3E2F8;
-  transform: translateY(-5px); }
-
-.footerSecciones_titulos_items {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_items:hover {
-  color: #C3E2F8; }
-
-.footerSecciones_titulos_items {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_items:hover {
-  color: #C3E2F8; }
-
-#contDerechosFooter {
-  margin-top: 40px;
-  text-align: center;
-  width: 100%; }
-
-#contDerechosFooter_derechos {
-  color: #11477a;
-  font-size: 14px; }
-
-/*no lo usen al final paso las cosas yo*/
+/*Epcot*/
 * {
   margin: 0;
   padding: 0; }
@@ -951,11 +820,9 @@ footer {
   margin-top: 30px;
   view-timeline-name: --text-slide;
   view-timeline-axis: block;
-  /* O puedes mantener "block" si prefieres */
   animation-timeline: --text-slide;
   animation-name: slideIn2;
   animation-duration: 1.5s;
-  /* Duración de la animación */
   animation-range: entry 10% cover 50%;
   animation-fill-mode: both;
   transition: width 3s; }
@@ -963,12 +830,10 @@ footer {
 @keyframes slideIn2 {
   from {
     opacity: 0;
-    transform: translateX(-100%);
-    /* Empieza fuera de la pantalla, en el lado izquierdo */ }
+    transform: translateX(-100%); }
   to {
     opacity: 1;
-    transform: translateX(0);
-    /* Termina en su posición original */ } }
+    transform: translateX(0); } }
 
 #contCardsAtracciones {
   display: flex;
@@ -977,7 +842,7 @@ footer {
   gap: 60px; }
 
 .contCardsAtracciones_cards {
-  width: 310px;
+  width: 305px;
   height: 400px;
   border-radius: 1rem;
   overflow: hidden;
@@ -993,29 +858,25 @@ footer {
   animation-range: entry 15% cover 40%;
   opacity: 0; }
 
-/* Añadir retraso incremental para cada tarjeta */
-#card1ep:nth-child(1) {
+#card1:nth-child(1) {
   animation-delay: 0s; }
 
-#card2ep:nth-child(2) {
+#card2:nth-child(2) {
   animation-delay: 0.4s; }
 
-#card3ep:nth-child(3) {
+#card3:nth-child(3) {
   animation-delay: 0.8s; }
 
-#card4ep:nth-child(4) {
+#card4:nth-child(4) {
   animation-delay: 1.2s; }
 
-/* Keyframes para el deslizamiento desde un poco más a la derecha */
 @keyframes slideIn3 {
   from {
     opacity: 0;
-    transform: translateX(30px);
-    /* Inicia ligeramente desplazado a la derecha */ }
+    transform: translateX(30px); }
   to {
     opacity: 1;
-    transform: translateX(0);
-    /* Termina en su posición original */ } }
+    transform: translateX(0); } }
 
 #card1ep, #card2ep, #card3ep, #card4ep {
   background-size: cover;
@@ -1080,10 +941,18 @@ footer {
   transform: scale(1.05); }
 
 #contSeparador {
-  margin: 70px 30px 70px 70px;
+  margin: 80px 50px 70px 70px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contSeparador_separador {
   width: 75%;
@@ -1199,159 +1068,6 @@ footer {
   transition: box-shadow 0.2s ease-in; }
 
 /*no lo usen al final paso las cosas yo*/
-/*colores foter magic kingdom*/
-.colorFooterMK {
-  background-color: white;
-  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
-
-.colorLineaMK {
-  background-color: #A7BFEE; }
-
-/*Footer general*/
-footer {
-  margin: 90px 0px 0px 0px;
-  width: 100%;
-  height: 480px; }
-
-.contItemsFooter {
-  padding: 130px;
-  width: 55%;
-  height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center; }
-
-.contItemsFooter_items {
-  margin-top: 170px;
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  position: relative;
-  border: none;
-  background: none;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color; }
-
-.contItemsFooter_items:focus,
-.contItemsFooter_items:hover {
-  color: #C3E2F8; }
-
-.contItemsFooter_items:focus:after,
-.contItemsFooter_items:hover:after {
-  width: 100%;
-  left: 0%; }
-
-.contItemsFooter_items:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #C3E2F8;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left; }
-
-#contLineaFooter {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#contLineaFooter_linea {
-  border: none;
-  height: 2px;
-  width: 90%;
-  margin: 0px 0px 50px 15px;
-  opacity: 0.7; }
-
-#footerSecciones {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  /* Distribuye las secciones a los lados */
-  padding: 0 250px; }
-
-.footerSecciones_contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* Alinea a la izquierda */ }
-
-.footerSecciones_redes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Centra la sección de redes sociales */ }
-
-.footerSecciones_cuenta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  /* Alinea a la derecha */ }
-
-.footerSecciones_titulos {
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 23px;
-  margin-bottom: 10px; }
-
-.footerSecciones_titulos_contRedes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; }
-
-.footerSecciones_titulos_contRedes_redes {
-  font-size: 2rem;
-  color: #11477a;
-  transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redes:hover {
-  color: #C3E2F8;
-  transform: translateY(-5px); }
-
-.footerSecciones_titulos_items {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_items:hover {
-  color: #C3E2F8; }
-
-.footerSecciones_titulos_items {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_items:hover {
-  color: #C3E2F8; }
-
-#contDerechosFooter {
-  margin-top: 40px;
-  text-align: center;
-  width: 100%; }
-
-#contDerechosFooter_derechos {
-  color: #11477a;
-  font-size: 14px; }
-
-/*no lo usen al final paso las cosas yo*/
 /*no lo usen al final paso las cosas yo*/
 /*MK colors*/
 .fondomenu_MK {
@@ -1373,6 +1089,28 @@ footer {
   .menu_navbar_itemscolorMK:hover {
     color: #C3E2F8 !important; }
   .menu_navbar_itemscolorMK::after {
+    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
+
+/*Epcot*/
+.fondomenu_ep {
+  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
+
+.color_logo_ep {
+  color: #00509D; }
+
+.star_colorep {
+  color: #1E90FF; }
+
+.menu_navbarep {
+  background-color: transparent !important; }
+  .menu_navbarep:hover {
+    background-color: #8AABE3 !important; }
+
+.menu_navbar_itemscolorep {
+  color: #376188 !important; }
+  .menu_navbar_itemscolorep:hover {
+    color: #C3E2F8 !important; }
+  .menu_navbar_itemscolorep::after {
     background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
 
 /*incio y mas*/
@@ -1644,7 +1382,7 @@ footer {
   filter: contrast(120%); }
 
 /*no lo usen al final paso las cosas yo*/
-/*colores foter magic kingdom*/
+/*colores footer magic kingdom*/
 .colorFooterMK {
   background-color: white;
   background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
@@ -1719,30 +1457,26 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* Distribuye las secciones a los lados */
   padding: 0 250px; }
 
 .footerSecciones_contacto {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* Alinea a la izquierda */ }
+  align-items: flex-start; }
 
 .footerSecciones_redes {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* Centra la sección de redes sociales */ }
+  align-items: center; }
 
 .footerSecciones_cuenta {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  /* Alinea a la derecha */ }
+  align-items: flex-end; }
 
 .footerSecciones_titulos {
   color: #11477a;
-  font-family: "Raleway", sans-serif;
+  font-family: "Faculty Glyphic", sans-serif;
   font-size: 23px;
   margin-bottom: 10px; }
 
