@@ -1,5 +1,5 @@
 
-/*Magic Kingdom*/
+
 
 
 *{
@@ -249,18 +249,17 @@
     animation-delay: 1.2s; 
 }
 
-
+/* Keyframes para el deslizamiento desde un poco más a la derecha */
 @keyframes slideIn3 {
     from {
         opacity: 0;
-        transform: translateX(30px); 
+        transform: translateX(30px); /* Inicia ligeramente desplazado a la derecha */
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0); /* Termina en su posición original */
     }
 }
-
 
 
 
