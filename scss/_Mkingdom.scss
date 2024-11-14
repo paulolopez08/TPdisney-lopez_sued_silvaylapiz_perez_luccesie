@@ -1,5 +1,5 @@
 
-@import "variables_princ";
+/*Magic Kingdom*/
 
 
 *{
@@ -187,10 +187,10 @@
     margin-top: 30px;
 
     view-timeline-name: --text-slide;
-    view-timeline-axis: block; /* O puedes mantener "block" si prefieres */
+    view-timeline-axis: block; 
     animation-timeline: --text-slide;
     animation-name: slideIn2;
-    animation-duration: 1.5s; /* Duración de la animación */
+    animation-duration: 1.5s; 
     animation-range: entry 10% cover 50%;
     animation-fill-mode: both;
     transition: width 3s;
@@ -200,11 +200,11 @@
 @keyframes slideIn2 {
     from {
         opacity: 0;
-        transform: translateX(-100%); /* Empieza fuera de la pantalla, en el lado izquierdo */
+        transform: translateX(-100%); 
     }
     to {
         opacity: 1;
-        transform: translateX(0); /* Termina en su posición original */
+        transform: translateX(0); 
     }
 }
 
@@ -217,7 +217,7 @@
 }
 
 .contCardsAtracciones_cards {
-    width: 310px;
+    width: 305px;
     height: 400px;
     border-radius: 1rem;
     overflow: hidden;
@@ -235,7 +235,7 @@
     opacity: 0;
 }
 
-/* Añadir retraso incremental para cada tarjeta */
+
 #card1:nth-child(1) {
     animation-delay: 0s;
 }
@@ -249,15 +249,15 @@
     animation-delay: 1.2s; 
 }
 
-/* Keyframes para el deslizamiento desde un poco más a la derecha */
+
 @keyframes slideIn3 {
     from {
         opacity: 0;
-        transform: translateX(30px); /* Inicia ligeramente desplazado a la derecha */
+        transform: translateX(30px); 
     }
     to {
         opacity: 1;
-        transform: translateX(0); /* Termina en su posición original */
+        transform: translateX(0);
     }
 }
 
@@ -343,12 +343,22 @@
 
 
 #contSeparador{
-    margin: 70px 30px 70px 70px;
+    margin: 80px 50px 70px 70px;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
 }
+
 
 #contSeparador_separador{
     width: 75%;
@@ -502,4 +512,3 @@
 
 
 
-@import "footer.scss";

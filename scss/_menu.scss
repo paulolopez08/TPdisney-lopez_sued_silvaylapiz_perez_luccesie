@@ -32,6 +32,37 @@
     }
 }
 
+/*Epcot*/
+.fondomenu_ep{
+    
+    background: linear-gradient( to top, $colorVioleta3, #412455, #D2B7E5);
+
+
+}
+.color_logo_ep{
+    color: $colorLogo2;
+}
+.star_colorep{
+    color: #1E90FF; 
+}
+
+.menu_navbarep{
+    background-color: transparent !important;
+    &:hover{
+        background-color: $colorVioleta2 !important; 
+    } 
+}
+
+.menu_navbar_itemscolorep{
+    color: #376188 !important;
+
+    &:hover{
+        color: #C3E2F8 !important;
+    }
+    &::after{
+        background: linear-gradient(90deg, transparent, #C3E2F8, transparent);
+    }
+}
 
 /*incio y mas*/
 .fondomenu_IN{
