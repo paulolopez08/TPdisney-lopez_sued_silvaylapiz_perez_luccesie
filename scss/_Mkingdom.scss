@@ -213,7 +213,7 @@
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 60px; 
+    gap: 60px;
 }
 
 .contCardsAtracciones_cards {
@@ -231,7 +231,7 @@
     animation-name: slideIn3;
     animation-duration: 1.2s;
     animation-fill-mode: both;
-    animation-range: entry 15% cover 40%; /* Aparece antes */
+    animation-range: entry 15% cover 40%;
     opacity: 0;
 }
 
@@ -240,24 +240,24 @@
     animation-delay: 0s;
 }
 #card2:nth-child(2) {
-    animation-delay: 0.2s; 
-}
-#card3:nth-child(3) {
     animation-delay: 0.4s; 
 }
+#card3:nth-child(3) {
+    animation-delay: 0.8s; 
+}
 #card4:nth-child(4) {
-    animation-delay: 0.6s; 
+    animation-delay: 1.2s; 
 }
 
-/* Keyframes para el deslizamiento desde la derecha */
+/* Keyframes para el deslizamiento desde un poco más a la derecha */
 @keyframes slideIn3 {
     from {
         opacity: 0;
-        transform: translateX(100%); /* Empieza desde fuera de pantalla a la derecha */
+        transform: translateX(30px); /* Inicia ligeramente desplazado a la derecha */
     }
     to {
         opacity: 1;
-        transform: translateX(0); /* En posición final */
+        transform: translateX(0); /* Termina en su posición original */
     }
 }
 

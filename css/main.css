@@ -458,7 +458,6 @@
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-range: entry 15% cover 40%;
-  /* Aparece antes */
   opacity: 0; }
 
 /* Añadir retraso incremental para cada tarjeta */
@@ -466,24 +465,24 @@
   animation-delay: 0s; }
 
 #card2:nth-child(2) {
-  animation-delay: 0.2s; }
-
-#card3:nth-child(3) {
   animation-delay: 0.4s; }
 
-#card4:nth-child(4) {
-  animation-delay: 0.6s; }
+#card3:nth-child(3) {
+  animation-delay: 0.8s; }
 
-/* Keyframes para el deslizamiento desde la derecha */
+#card4:nth-child(4) {
+  animation-delay: 1.2s; }
+
+/* Keyframes para el deslizamiento desde un poco más a la derecha */
 @keyframes slideIn3 {
   from {
     opacity: 0;
-    transform: translateX(100%);
-    /* Empieza desde fuera de pantalla a la derecha */ }
+    transform: translateX(30px);
+    /* Inicia ligeramente desplazado a la derecha */ }
   to {
     opacity: 1;
     transform: translateX(0);
-    /* En posición final */ } }
+    /* Termina en su posición original */ } }
 
 #card1, #card2, #card3, #card4 {
   background-size: cover;
