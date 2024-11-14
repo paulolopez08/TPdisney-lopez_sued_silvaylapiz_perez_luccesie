@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*no lo usen al final paso las cosas yo*/
 /*MK colors*/
 .fondomenu_MK {
   background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
@@ -24,10 +23,10 @@
 
 /*Epcot*/
 .fondomenu_ep {
-  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
+  background: linear-gradient(to top, #D2B7E5, #412455, #D2B7E5); }
 
 .color_logo_ep {
-  color: #00509D; }
+  color: #c5a2dd; }
 
 .star_colorep {
   color: #1E90FF; }
@@ -35,7 +34,7 @@
 .menu_navbarep {
   background-color: transparent !important; }
   .menu_navbarep:hover {
-    background-color: #8AABE3 !important; }
+    background-color: #815AC0 !important; }
 
 .menu_navbar_itemscolorep {
   color: #376188 !important; }
@@ -306,8 +305,8 @@
   color: white;
   text-decoration: none; }
 
-/*no lo usen al final paso las cosas yo*/
-/*Magic Kingdom*/
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
 * {
   margin: 0;
   padding: 0; }
@@ -490,13 +489,16 @@
 #card4:nth-child(4) {
   animation-delay: 1.2s; }
 
+/* Keyframes para el deslizamiento desde un poco más a la derecha */
 @keyframes slideIn3 {
   from {
     opacity: 0;
-    transform: translateX(30px); }
+    transform: translateX(30px);
+    /* Inicia ligeramente desplazado a la derecha */ }
   to {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+    /* Termina en su posición original */ } }
 
 #card1, #card2, #card3, #card4 {
   background-size: cover;
@@ -687,388 +689,47 @@
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
-/*Epcot*/
-* {
-  margin: 0;
-  padding: 0; }
-
-#bodyGeneral {
-  background-color: #FFF4E7; }
-
-#contCarouselTexto {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-  padding: 20px; }
-
-@keyframes show {
-  from {
-    opacity: 0;
-    scale: 25%; }
-  to {
-    opacity: 1;
-    scale: 100%; } }
-
-#contcarousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  margin: 0;
-  padding: 0;
-  height: 550px; }
-
-.contcarousel_carousel {
-  width: 93%;
-  margin: 0;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
-
-#contCarouselTexto_ContTitulosPrinc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 35%;
-  text-align: center;
-  margin: 0;
-  padding: 0; }
-
-#contCarouselTexto_ContTitulosPrinc_tit {
-  font-size: 60px;
-  color: #8AABE3;
-  font-family: "Mouse Memoirs", sans-serif;
-  margin: 0;
-  padding: 0;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s;
-  animation-range: entry 10% cover 50%;
-  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #3756b0);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text; }
-
-#contCarouselTexto_ContTitulosPrinc_frase {
-  font-size: 40px;
-  color: #8AABE3;
-  font-family: "Mouse Memoirs", sans-serif;
-  margin-top: 30px;
-  padding: 0;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text; }
-
-#contTexto {
-  background-color: #C3E2F8;
-  width: 93%;
-  height: 180px;
-  align-self: center;
-  justify-self: center;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
-
-#contTexto_texto {
-  font-family: "Faculty Glyphic", sans-serif;
-  text-align: justify;
-  font-size: 19px;
-  color: #00509D; }
-
-#contTitAtrac {
-  width: 100%;
-  height: 330px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#contTitAtrac_tit {
-  text-align: center;
-  color: #8AABE3;
-  font-family: 'WaltographRegular', sans-serif;
-  font-size: 70px;
-  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  margin-top: 30px;
-  view-timeline-name: --text-slide;
-  view-timeline-axis: block;
-  animation-timeline: --text-slide;
-  animation-name: slideIn2;
-  animation-duration: 1.5s;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
-
-@keyframes slideIn2 {
-  from {
-    opacity: 0;
-    transform: translateX(-100%); }
-  to {
-    opacity: 1;
-    transform: translateX(0); } }
-
-#contCardsAtracciones {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px; }
-
-.contCardsAtracciones_cards {
-  width: 305px;
-  height: 400px;
-  border-radius: 1rem;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --text-slide;
-  view-timeline-axis: block;
-  animation-timeline: --text-slide;
-  animation-name: slideIn3;
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-range: entry 15% cover 40%;
-  opacity: 0; }
-
-#card1:nth-child(1) {
+#card1ep:nth-child(1) {
   animation-delay: 0s; }
 
-#card2:nth-child(2) {
+#card2ep:nth-child(2) {
   animation-delay: 0.4s; }
 
-#card3:nth-child(3) {
+#card3ep:nth-child(3) {
   animation-delay: 0.8s; }
 
-#card4:nth-child(4) {
+#card4ep:nth-child(4) {
   animation-delay: 1.2s; }
 
+/* Keyframes para el deslizamiento desde un poco más a la derecha */
 @keyframes slideIn3 {
   from {
     opacity: 0;
-    transform: translateX(30px); }
+    transform: translateX(30px);
+    /* Inicia ligeramente desplazado a la derecha */ }
   to {
     opacity: 1;
-    transform: translateX(0); } }
+    transform: translateX(0);
+    /* Termina en su posición original */ } }
 
 #card1ep, #card2ep, #card3ep, #card4ep {
   background-size: cover;
   background-position: center; }
 
 #card1ep {
-  background-image: url("../assets/imagenes/atraccion1ep.png"); }
+  background-image: url("../assets/imagenes/atraccion1.png"); }
 
 #card2ep {
-  background-image: url("../assets/imagenes/atraccion2ep.png"); }
+  background-image: url("../assets/imagenes/atraccion2.png"); }
 
 #card3ep {
-  background-image: url("../assets/imagenes/atraccion3ep.png"); }
+  background-image: url("../assets/imagenes/atraccion3.png"); }
 
 #card4ep {
-  background-image: url("../assets/imagenes/atraccion4ep.png"); }
+  background-image: url("../assets/imagenes/atraccion4.png"); }
 
-.contCardsAtracciones_cards::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;
-  border-radius: 1.2rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
-  filter: blur(15px); }
-
-.contCardsAtracciones_cards_info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(50, 59, 98, 0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 10px;
-  text-align: center; }
-
-.contCardsAtracciones_cards_info_titulo {
-  color: #bfcffa;
-  font-family: "Mouse Memoirs", sans-serif;
-  font-size: 30px;
-  margin-bottom: 0.5em; }
-
-.contCardsAtracciones_cards_info_texto {
-  color: #e8eeff;
-  font-family: "Faculty Glyphic", sans-serif;
-  font-size: 17px;
-  padding: 0 15px; }
-
-.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_info {
-  opacity: 3; }
-
-.contCardsAtracciones_cards:hover {
-  transform: scale(1.05); }
-
-#contSeparador {
-  margin: 80px 50px 70px 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  view-timeline-name: --text-slide;
-  view-timeline-axis: block;
-  animation-timeline: --text-slide;
-  animation-name: slideIn2;
-  animation-duration: 1.5s;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
-
-#contSeparador_separador {
-  width: 75%;
-  height: 90px; }
-
-#contMapa {
-  width: 90%;
-  height: 825px;
-  background-color: #A7BFEE;
-  margin: 10px 50px 25px 50px;
-  justify-self: center;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
-
-#contMapa_contTit {
-  display: flex;
-  justify-content: left;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
-
-#contMapa_contTit_tit {
-  color: #C3E2F8;
-  font-family: 'WaltographRegular', sans-serif;
-  font-size: 70px;
-  padding: 30px 0px 15px 40px;
-  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text; }
-
-#contMapa_contMapa {
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#contMapa_contMapa_mapa {
-  padding: 10px 10px 10px 10px;
-  width: 80%;
-  height: 450px;
-  border-radius: 15px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; }
-
-.button {
-  position: relative;
-  padding: 17px 32px;
-  border-radius: 7px;
-  border: 2px solid #3e62d8;
-  font-size: 20px;
-  font-family: "Faculty Glyphic", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  background: transparent;
-  color: #e0e8ff;
-  overflow: hidden;
-  box-shadow: 0 0 0 0 transparent;
-  transition: all 0.2s ease-in;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center; }
-
-.button:hover {
-  background: #3e62d8;
-  box-shadow: 0 0 30px 5px rgba(5, 104, 170, 0.815);
-  transition: all 0.2s ease-out; }
-
-.button:hover::before {
-  animation: sh02 0.5s 0s linear; }
-
-.button::before {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  transform: skewX(-20deg); }
-
-@keyframes sh02 {
-  from {
-    opacity: 0;
-    left: 0%; }
-  50% {
-    opacity: 1; }
-  to {
-    opacity: 0;
-    left: 100%; } }
-
-.button:active {
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.2s ease-in; }
-
-/*no lo usen al final paso las cosas yo*/
-/*no lo usen al final paso las cosas yo*/
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
 /*MK colors*/
 .fondomenu_MK {
   background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
@@ -1093,10 +754,10 @@
 
 /*Epcot*/
 .fondomenu_ep {
-  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
+  background: linear-gradient(to top, #D2B7E5, #412455, #D2B7E5); }
 
 .color_logo_ep {
-  color: #00509D; }
+  color: #c5a2dd; }
 
 .star_colorep {
   color: #1E90FF; }
@@ -1104,7 +765,7 @@
 .menu_navbarep {
   background-color: transparent !important; }
   .menu_navbarep:hover {
-    background-color: #8AABE3 !important; }
+    background-color: #815AC0 !important; }
 
 .menu_navbar_itemscolorep {
   color: #376188 !important; }
@@ -1530,7 +1191,8 @@
 .contCardsPersonajes_cards:hover {
   transform: scale(1.05); }
 
-/*no lo usen al final paso las cosas yo*/
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
 /*colores footer magic kingdom*/
 .colorFooterMK {
   background-color: white;
