@@ -2,6 +2,7 @@
 /*Colores Magic Kingdom*/
 /*Colores Epcot*/
 /*Colores Hollywood Studios*/
+/*Colores Animal Kingdom*/
 /*MK colors*/
 .fondomenu_MK {
   background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
@@ -228,6 +229,81 @@
   left: 50px;
   font-size: 13px;
   color: #b44646;
+  animation-delay: 2s; }
+
+/*Animal Kingdom*/
+.fondomenu_ak {
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764); }
+
+.color_logo_ak {
+  color: #265c26; }
+
+.menu_navbarak {
+  background-color: transparent !important; }
+  .menu_navbarak:hover {
+    background-color: #78b87c !important; }
+
+.menu_navbar_itemscolorak {
+  color: #265c26 !important; }
+  .menu_navbar_itemscolorak:hover {
+    color: #adf1ad !important; }
+  .menu_navbar_itemscolorak::after {
+    background: linear-gradient(90deg, transparent, #adf1ad, transparent); }
+
+#star-1ak {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #4de455;
+  animation-delay: 0s; }
+
+#star-2ak {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #68f068;
+  animation-delay: 0.3s; }
+
+#star-3ak {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #46b460;
+  animation-delay: 0.6s; }
+
+#star-4ak {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #94e6ae;
+  animation-delay: 0.9s; }
+
+#star-5ak {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #5cee77;
+  animation-delay: 1.2s; }
+
+#star-6ak {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #63ff92;
+  animation-delay: 1.5s; }
+
+#star-7ak {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #27f657;
+  animation-delay: 1.8s; }
+
+#star-8ak {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #46b465;
   animation-delay: 2s; }
 
 /*incio y mas*/
@@ -668,6 +744,239 @@
     left: 100%; } }
 
 .buttonhs:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in; }
+
+#contCarouselTexto_ContTitulosPrinc_titak {
+  font-size: 60px;
+  color: #8AABE3;
+  font-family: "Mouse Memoirs", sans-serif;
+  margin: 0;
+  padding: 0;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
+  animation-range: entry 10% cover 50%;
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contCarouselTexto_ContTitulosPrinc_fraseak {
+  font-size: 40px;
+  color: #8AABE3;
+  font-family: "Mouse Memoirs", sans-serif;
+  margin-top: 30px;
+  padding: 0;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contTextoak {
+  background-color: #A8C26B;
+  width: 93%;
+  height: 180px;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
+
+#contTexto_textoak {
+  font-family: "Faculty Glyphic", sans-serif;
+  text-align: justify;
+  font-size: 19px;
+  color: #265c26; }
+
+#contTitAtrac_titak {
+  text-align: center;
+  color: #8AABE3;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 70px;
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 30px;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+#card1ak:nth-child(1) {
+  animation-delay: 0s; }
+
+#card2ak:nth-child(2) {
+  animation-delay: 0.4s; }
+
+#card3ak:nth-child(3) {
+  animation-delay: 0.8s; }
+
+#card4ak:nth-child(4) {
+  animation-delay: 1.2s; }
+
+@keyframes slideIn3 {
+  from {
+    opacity: 0;
+    transform: translateX(30px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+#card1ak, #card2ak, #card3ak, #card4ak {
+  background-size: cover;
+  background-position: center; }
+
+#card1ak {
+  background-image: url("../assets/imagenes/atraccion1ak.png"); }
+
+#card2ak {
+  background-image: url("../assets/imagenes/atraccion2ak.png"); }
+
+#card3ak {
+  background-image: url("../assets/imagenes/atraccion3ak.png"); }
+
+#card4ak {
+  background-image: url("../assets/imagenes/atraccion4ak.png"); }
+
+.contCardsAtracciones_cards_infoak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(123, 181, 155, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center; }
+
+.contCardsAtracciones_cards_info_tituloak {
+  color: #9ee0b8;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 30px;
+  margin-bottom: 0.5em; }
+
+.contCardsAtracciones_cards_info_textoak {
+  color: #d0f8d5;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 17px;
+  padding: 0 15px; }
+
+.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_infoak {
+  opacity: 3; }
+
+#contMapaak {
+  width: 90%;
+  height: 835px;
+  background-color: #c1d592;
+  margin: 10px 50px 25px 50px;
+  justify-self: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+#contMapa_contTit_titak {
+  color: #C3E2F8;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 70px;
+  padding: 30px 0px 15px 40px;
+  background: linear-gradient(to top, #a1cca5, #8fb996, #517957);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contMapa_contMapa_mapaak {
+  padding: 10px 10px 10px 10px;
+  width: 90%;
+  height: 485px;
+  border-radius: 15px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
+
+.buttonak {
+  position: relative;
+  padding: 17px 32px;
+  border-radius: 7px;
+  border: 2px solid #326f3d;
+  font-size: 20px;
+  font-family: "Faculty Glyphic", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #75a87b;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center; }
+
+.buttonak:hover {
+  background: #326f3d;
+  box-shadow: 0 0 30px 5px #214e29;
+  transition: all 0.2s ease-out; }
+
+.buttonak:hover::before {
+  animation: sh02 0.5s 0s linear; }
+
+.buttonak::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg); }
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%; }
+  50% {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    left: 100%; } }
+
+.buttonak:active {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
@@ -1288,6 +1597,7 @@
 /*Colores Magic Kingdom*/
 /*Colores Epcot*/
 /*Colores Hollywood Studios*/
+/*Colores Animal Kingdom*/
 /*MK colors*/
 .fondomenu_MK {
   background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
@@ -1514,6 +1824,81 @@
   left: 50px;
   font-size: 13px;
   color: #b44646;
+  animation-delay: 2s; }
+
+/*Animal Kingdom*/
+.fondomenu_ak {
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764); }
+
+.color_logo_ak {
+  color: #265c26; }
+
+.menu_navbarak {
+  background-color: transparent !important; }
+  .menu_navbarak:hover {
+    background-color: #78b87c !important; }
+
+.menu_navbar_itemscolorak {
+  color: #265c26 !important; }
+  .menu_navbar_itemscolorak:hover {
+    color: #adf1ad !important; }
+  .menu_navbar_itemscolorak::after {
+    background: linear-gradient(90deg, transparent, #adf1ad, transparent); }
+
+#star-1ak {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #4de455;
+  animation-delay: 0s; }
+
+#star-2ak {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #68f068;
+  animation-delay: 0.3s; }
+
+#star-3ak {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #46b460;
+  animation-delay: 0.6s; }
+
+#star-4ak {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #94e6ae;
+  animation-delay: 0.9s; }
+
+#star-5ak {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #5cee77;
+  animation-delay: 1.2s; }
+
+#star-6ak {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #63ff92;
+  animation-delay: 1.5s; }
+
+#star-7ak {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #27f657;
+  animation-delay: 1.8s; }
+
+#star-8ak {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #46b465;
   animation-delay: 2s; }
 
 /*incio y mas*/
@@ -1879,6 +2264,8 @@
 
 /*Colores Magic Kingdom*/
 /*Colores Epcot*/
+/*Colores Hollywood Studios*/
+/*Colores Animal Kingdom*/
 /*colores footer magic kingdom*/
 .colorFooterMK {
   background-color: white;
@@ -2035,6 +2422,81 @@
 
 #contDerechosFooter_derechoshs {
   color: #7a2e2e;
+  font-size: 14px; }
+
+/*colores footer Animal Kingdom*/
+.colorFooterak {
+  background-color: white;
+  background: linear-gradient(to top, #5f8764, #8fb996, #FFF4E7); }
+
+.colorLineaak {
+  background-color: #7c9e7c; }
+
+.contItemsFooter_itemsak {
+  margin-top: 170px;
+  text-decoration: none;
+  color: #265c26;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color; }
+
+.contItemsFooter_itemsak:focus,
+.contItemsFooter_itemsak:hover {
+  color: #a5e3a5; }
+
+.contItemsFooter_itemsak:focus:after,
+.contItemsFooter_itemsak:hover:after {
+  width: 100%;
+  left: 0%; }
+
+.contItemsFooter_itemsak:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #a5e3a5;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left; }
+
+.footerSecciones_titulosak {
+  color: #265c26;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 23px;
+  margin-bottom: 10px; }
+
+.footerSecciones_titulos_contRedes_redesak {
+  font-size: 2rem;
+  color: #265c26;
+  transition: transform 0.3s ease, color 0.3s ease; }
+
+.footerSecciones_titulos_contRedes_redesak:hover {
+  color: #a5e3a5;
+  transform: translateY(-5px); }
+
+.footerSecciones_titulos_itemsak {
+  text-decoration: none;
+  color: #265c26;
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  position: relative;
+  border: none;
+  background: none;
+  transition: color 0.3s ease; }
+
+.footerSecciones_titulos_itemsak:hover {
+  color: #a5e3a5; }
+
+#contDerechosFooter_derechosak {
+  color: #265c26;
   font-size: 14px; }
 
 /*Footer general*/

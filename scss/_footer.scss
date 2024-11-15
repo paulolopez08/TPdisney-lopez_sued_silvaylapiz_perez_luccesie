@@ -16,6 +16,20 @@ $colorVioleta2: #b98ae3;
 $colorVioleta3: #D2B7E5;
 $colorLogo2: #ac6adb;
 
+/*Colores Hollywood Studios*/
+$colorRojo1: #8C2F39;
+$colorRojo2: #d56975;
+$colorRojo3: #DC7F7F;
+$colorLogo3: #8d2c36;
+
+
+/*Colores Animal Kingdom*/
+$colorVerde1: #84AD6C;
+$colorVerde2: #add693;
+$colorVerde3: #A8C26B;
+$colorLogo4: #265c26;
+
+
 
 
 /*colores footer magic kingdom*/
@@ -227,6 +241,101 @@ $colorLogo2: #ac6adb;
 
 
 
+/*colores footer Animal Kingdom*/
+.colorFooterak{
+    background-color: white;
+    background: linear-gradient( to top, #5f8764, #8fb996, $colorbody);
+}
+
+.colorLineaak{
+    background-color: #7c9e7c ;
+}
+
+
+
+
+.contItemsFooter_itemsak{
+    margin-top: 170px;
+    text-decoration: none;
+    color: #265c26;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.contItemsFooter_itemsak:focus,
+.contItemsFooter_itemsak:hover {
+    color: #a5e3a5;
+}
+
+.contItemsFooter_itemsak:focus:after,
+.contItemsFooter_itemsak:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.contItemsFooter_itemsak:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #a5e3a5;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+
+
+
+.footerSecciones_titulosak {
+    color: #265c26;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
+.footerSecciones_titulos_contRedes_redesak {
+    font-size: 2rem;
+    color: #265c26; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footerSecciones_titulos_contRedes_redesak:hover {
+    color:#a5e3a5; 
+    transform: translateY(-5px); 
+}
+
+.footerSecciones_titulos_itemsak{
+    text-decoration: none;
+    color: #265c26;
+    font-family: "Raleway", sans-serif;
+    font-size: 19px;
+    position: relative;
+    border: none;
+    background: none;
+    transition: color 0.3s ease;
+}
+
+.footerSecciones_titulos_itemsak:hover{
+    color: #a5e3a5;
+
+}
+
+
+#contDerechosFooter_derechosak{
+    color: #265c26;
+    font-size: 14px;
+}
 
 
 

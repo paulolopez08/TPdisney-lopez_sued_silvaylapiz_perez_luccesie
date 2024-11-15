@@ -23,7 +23,11 @@ $colorRojo3: #DC7F7F;
 $colorLogo3: #8d2c36;
 
 
-
+/*Colores Animal Kingdom*/
+$colorVerde1: #84AD6C;
+$colorVerde2: #add693;
+$colorVerde3: #A8C26B;
+$colorLogo4: #265c26;
 
 
 
@@ -155,6 +159,47 @@ $colorLogo3: #8d2c36;
 #star-7hs { top: 0px; right: 50px; font-size: 12px; color: #f62727; animation-delay: 1.8s; }
 #star-8hs { bottom: 0px; left: 50px; font-size: 13px; color: #b44646; animation-delay: 2s; }
 
+
+
+/*Animal Kingdom*/
+
+.fondomenu_ak{
+    background: linear-gradient( to top, #a1cca5, #8fb996 , #5f8764);
+
+
+}
+.color_logo_ak{
+    color: $colorLogo4;
+}
+
+
+
+.menu_navbarak{
+    background-color: transparent !important;
+    &:hover{
+        background-color: #78b87c !important; 
+    } 
+}
+
+.menu_navbar_itemscolorak{
+    color: #265c26 !important;
+
+    &:hover{
+        color: #adf1ad !important;
+    }
+    &::after{
+        background: linear-gradient(90deg, transparent, #adf1ad , transparent);
+    }
+}
+
+#star-1ak { top: -15px; left: -30px; font-size: 15px; color: #4de455; animation-delay: 0s; }
+#star-2ak { top: -20px; right: -25px; font-size: 12px; color: #68f068; animation-delay: 0.3s; }
+#star-3ak { bottom: -15px; left: -20px; font-size: 18px; color: #46b460; animation-delay: 0.6s; }
+#star-4ak { bottom: -10px; right: -30px; font-size: 10px; color: #94e6ae; animation-delay: 0.9s; }
+#star-5ak { top: -5px; left: 10px; font-size: 14px; color: #5cee77; animation-delay: 1.2s; }
+#star-6ak { bottom: 5px; right: 15px; font-size: 16px; color: #63ff92; animation-delay: 1.5s; }
+#star-7ak { top: 0px; right: 50px; font-size: 12px; color: #27f657; animation-delay: 1.8s; }
+#star-8ak { bottom: 0px; left: 50px; font-size: 13px; color: #46b465; animation-delay: 2s; }
 
 
 
