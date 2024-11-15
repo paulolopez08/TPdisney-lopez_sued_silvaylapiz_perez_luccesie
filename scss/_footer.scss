@@ -128,6 +128,103 @@ $colorLogo2: #ac6adb;
 
 
 
+/*colores footer Hollywood Studios*/
+.colorFooterhs{
+    background-color: white;
+    background: linear-gradient( to top, #ba5964, #db8d94, $colorbody);
+}
+
+.colorLineahs{
+    background-color: #bf6868 ;
+}
+
+
+
+
+.contItemsFooter_itemshs{
+    margin-top: 170px;
+    text-decoration: none;
+    color: #7a2e2e;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.contItemsFooter_itemshs:focus,
+.contItemsFooter_itemshs:hover {
+    color: #d47275;
+}
+
+.contItemsFooter_itemshs:focus:after,
+.contItemsFooter_itemshs:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.contItemsFooter_itemshs:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #d47275 ;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+
+
+
+.footerSecciones_tituloshs {
+    color: #7a2e2e;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
+.footerSecciones_titulos_contRedes_redeshs {
+    font-size: 2rem;
+    color: #7a2e2e; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footerSecciones_titulos_contRedes_redeshs:hover {
+    color: #eaa0a3; 
+    transform: translateY(-5px); 
+}
+
+.footerSecciones_titulos_itemshs{
+    text-decoration: none;
+    color: #7a2e2e;
+    font-family: "Raleway", sans-serif;
+    font-size: 19px;
+    position: relative;
+    border: none;
+    background: none;
+    transition: color 0.3s ease;
+}
+
+.footerSecciones_titulos_itemshs:hover{
+    color: #eaa0a3;
+
+}
+
+
+#contDerechosFooter_derechoshs{
+    color: #7a2e2e;
+    font-size: 14px;
+}
+
+
 
 
 

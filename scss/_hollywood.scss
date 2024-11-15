@@ -1,8 +1,6 @@
 
 
 
-
-
 #contCarouselTexto_ContTitulosPrinc_tiths {
     font-size: 60px;
     color: $colorCeleste2; 
@@ -54,7 +52,7 @@
 }
 
 #contTextohs{
-    background-color: $colorVioleta3;
+    background-color: $colorRojo3;
     width: 93%;
     height: 180px;
     align-self: center;
@@ -83,7 +81,7 @@
     font-family: "Faculty Glyphic", sans-serif;
     text-align: justify;
     font-size: 19px;
-    color: #4c2e7a;
+    color: #842831;
     
 
 }
@@ -95,7 +93,7 @@
     font-family: 'WaltographRegular', sans-serif;
     font-size: 70px;
 
-    background: linear-gradient( to top, #e4c8ff, #c49de7,#9e74c3);
+    background: linear-gradient( to top, #dca1a7, #d17c83 , #e25f6f);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -171,7 +169,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(136, 102, 155, 0.6);
+    background-color: rgba(143, 84, 84, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,14 +181,14 @@
 }
 
 .contCardsAtracciones_cards_info_titulohs {
-    color: #ddbffa;
+    color: #fabfbf;
     font-family: "Mouse Memoirs", sans-serif;
     font-size: 30px;
     margin-bottom: 0.5em;
 }
 
 .contCardsAtracciones_cards_info_textohs {
-    color: #f8e8ff;
+    color: #f8d0d0;
     font-family: "Faculty Glyphic", sans-serif;
     font-size: 17px;
     padding: 0 15px;
@@ -206,7 +204,7 @@
 #contMapahs {
     width: 90%;
     height: 825px;
-    background-color: #e4c8ff;
+    background-color: $colorRojo3;
     margin: 10px 50px 25px 50px;
     justify-self: center;
     border-radius: 15px;
@@ -230,7 +228,7 @@
     font-family: 'WaltographRegular', sans-serif;
     font-size: 70px;
     padding: 30px 0px 15px 40px;
-    background: linear-gradient( to top, #b283dd, #9e6bce ,rgb(130, 83, 171));
+    background: linear-gradient( to top, #b23a48, #8c2f39 , #461220 );
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -239,7 +237,7 @@
 #contMapa_contMapa_mapahs {
     padding: 10px 10px 10px 10px;
     width: 90%;
-    height: 450px;
+    height: 470px;
     border-radius: 15px;
     filter: drop-shadow(
         0 4px 8px rgba(0, 0, 0, 0.3)
@@ -251,14 +249,14 @@
     position: relative;
     padding: 17px 32px;
     border-radius: 7px;
-    border: 2px solid rgb(124, 62, 216);
+    border: 2px solid #b23a48;
     font-size: 20px;
     font-family: "Faculty Glyphic", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
     background: transparent;
-    color: rgb(159, 117, 189);
+    color: #f5baba;
     overflow: hidden;
     box-shadow: 0 0 0 0 transparent;
     transition: all 0.2s ease-in;
@@ -269,8 +267,8 @@
 
 
 .buttonhs:hover {
-    background:  rgb(124, 62, 216);
-    box-shadow: 0 0 30px 5px rgba(82, 5, 170, 0.815);
+    background:  #b23a48;
+    box-shadow: 0 0 30px 5px rgba(131, 16, 16, 0.815);
     transition: all 0.2s ease-out;
 }
 

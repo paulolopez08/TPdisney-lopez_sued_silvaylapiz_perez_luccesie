@@ -474,7 +474,7 @@
   -webkit-background-clip: text; }
 
 #contTextohs {
-  background-color: #D2B7E5;
+  background-color: #DC7F7F;
   width: 93%;
   height: 180px;
   align-self: center;
@@ -496,14 +496,14 @@
   font-family: "Faculty Glyphic", sans-serif;
   text-align: justify;
   font-size: 19px;
-  color: #4c2e7a; }
+  color: #842831; }
 
 #contTitAtrac_tiths {
   text-align: center;
   color: #8AABE3;
   font-family: 'WaltographRegular', sans-serif;
   font-size: 70px;
-  background: linear-gradient(to top, #e4c8ff, #c49de7, #9e74c3);
+  background: linear-gradient(to top, #dca1a7, #d17c83, #e25f6f);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -559,7 +559,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(136, 102, 155, 0.6);
+  background-color: rgba(143, 84, 84, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -570,13 +570,13 @@
   text-align: center; }
 
 .contCardsAtracciones_cards_info_titulohs {
-  color: #ddbffa;
+  color: #fabfbf;
   font-family: "Mouse Memoirs", sans-serif;
   font-size: 30px;
   margin-bottom: 0.5em; }
 
 .contCardsAtracciones_cards_info_textohs {
-  color: #f8e8ff;
+  color: #f8d0d0;
   font-family: "Faculty Glyphic", sans-serif;
   font-size: 17px;
   padding: 0 15px; }
@@ -587,7 +587,7 @@
 #contMapahs {
   width: 90%;
   height: 825px;
-  background-color: #e4c8ff;
+  background-color: #DC7F7F;
   margin: 10px 50px 25px 50px;
   justify-self: center;
   border-radius: 15px;
@@ -605,7 +605,7 @@
   font-family: 'WaltographRegular', sans-serif;
   font-size: 70px;
   padding: 30px 0px 15px 40px;
-  background: linear-gradient(to top, #b283dd, #9e6bce, #8253ab);
+  background: linear-gradient(to top, #b23a48, #8c2f39, #461220);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text; }
@@ -613,7 +613,7 @@
 #contMapa_contMapa_mapahs {
   padding: 10px 10px 10px 10px;
   width: 90%;
-  height: 450px;
+  height: 470px;
   border-radius: 15px;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
 
@@ -621,14 +621,14 @@
   position: relative;
   padding: 17px 32px;
   border-radius: 7px;
-  border: 2px solid #7c3ed8;
+  border: 2px solid #b23a48;
   font-size: 20px;
   font-family: "Faculty Glyphic", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
   background: transparent;
-  color: #9f75bd;
+  color: #f5baba;
   overflow: hidden;
   box-shadow: 0 0 0 0 transparent;
   transition: all 0.2s ease-in;
@@ -637,8 +637,8 @@
   text-align: center; }
 
 .buttonhs:hover {
-  background: #7c3ed8;
-  box-shadow: 0 0 30px 5px rgba(82, 5, 170, 0.815);
+  background: #b23a48;
+  box-shadow: 0 0 30px 5px rgba(131, 16, 16, 0.815);
   transition: all 0.2s ease-out; }
 
 .buttonhs:hover::before {
@@ -1960,6 +1960,81 @@
 
 #contDerechosFooter_derechosep {
   color: #4c2e7a;
+  font-size: 14px; }
+
+/*colores footer Hollywood Studios*/
+.colorFooterhs {
+  background-color: white;
+  background: linear-gradient(to top, #ba5964, #db8d94, #FFF4E7); }
+
+.colorLineahs {
+  background-color: #bf6868; }
+
+.contItemsFooter_itemshs {
+  margin-top: 170px;
+  text-decoration: none;
+  color: #7a2e2e;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color; }
+
+.contItemsFooter_itemshs:focus,
+.contItemsFooter_itemshs:hover {
+  color: #d47275; }
+
+.contItemsFooter_itemshs:focus:after,
+.contItemsFooter_itemshs:hover:after {
+  width: 100%;
+  left: 0%; }
+
+.contItemsFooter_itemshs:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #d47275;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left; }
+
+.footerSecciones_tituloshs {
+  color: #7a2e2e;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 23px;
+  margin-bottom: 10px; }
+
+.footerSecciones_titulos_contRedes_redeshs {
+  font-size: 2rem;
+  color: #7a2e2e;
+  transition: transform 0.3s ease, color 0.3s ease; }
+
+.footerSecciones_titulos_contRedes_redeshs:hover {
+  color: #eaa0a3;
+  transform: translateY(-5px); }
+
+.footerSecciones_titulos_itemshs {
+  text-decoration: none;
+  color: #7a2e2e;
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  position: relative;
+  border: none;
+  background: none;
+  transition: color 0.3s ease; }
+
+.footerSecciones_titulos_itemshs:hover {
+  color: #eaa0a3; }
+
+#contDerechosFooter_derechoshs {
+  color: #7a2e2e;
   font-size: 14px; }
 
 /*Footer general*/
