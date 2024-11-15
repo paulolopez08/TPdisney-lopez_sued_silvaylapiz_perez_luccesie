@@ -16,6 +16,20 @@ $colorVioleta2: #b98ae3;
 $colorVioleta3: #D2B7E5;
 $colorLogo2: #ac6adb;
 
+/*Colores Hollywood Studios*/
+$colorRojo1: #8C2F39;
+$colorRojo2: #d56975;
+$colorRojo3: #DC7F7F;
+$colorLogo3: #8d2c36;
+
+
+
+
+
+
+
+
+
 /*MK colors*/
 .fondomenu_MK{
     
@@ -56,6 +70,8 @@ $colorLogo2: #ac6adb;
 #star-6 { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
 #star-7 { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
 #star-8 { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
+
+
 
 /*Epcot*/
 .fondomenu_ep{
@@ -98,6 +114,46 @@ $colorLogo2: #ac6adb;
 #star-8ep { bottom: 0px; left: 50px; font-size: 13px; color: #7246b4; animation-delay: 2s; }
 
 
+
+/*Hollywood Studios*/
+
+.fondomenu_hs{
+    background: linear-gradient( to top, #f4bac0, #db8d94 , #ba5964);
+
+
+}
+.color_logo_hs{
+    color: $colorLogo3;
+}
+
+
+
+.menu_navbarhs{
+    background-color: transparent !important;
+    &:hover{
+        background-color: $colorRojo2 !important; 
+    } 
+}
+
+.menu_navbar_itemscolorhs{
+    color: #842831 !important;
+
+    &:hover{
+        color: #f1adb1 !important;
+    }
+    &::after{
+        background: linear-gradient(90deg, transparent, #f1adb1 , transparent);
+    }
+}
+
+#star-1hs { top: -15px; left: -30px; font-size: 15px; color: #e44d55; animation-delay: 0s; }
+#star-2hs { top: -20px; right: -25px; font-size: 12px; color: #f06868; animation-delay: 0.3s; }
+#star-3hs { bottom: -15px; left: -20px; font-size: 18px; color: #b44646; animation-delay: 0.6s; }
+#star-4hs { bottom: -10px; right: -30px; font-size: 10px; color: #e69494; animation-delay: 0.9s; }
+#star-5hs { top: -5px; left: 10px; font-size: 14px; color: #ee5c5c; animation-delay: 1.2s; }
+#star-6hs { bottom: 5px; right: 15px; font-size: 16px; color: #ff6363; animation-delay: 1.5s; }
+#star-7hs { top: 0px; right: 50px; font-size: 12px; color: #f62727; animation-delay: 1.8s; }
+#star-8hs { bottom: 0px; left: 50px; font-size: 13px; color: #b44646; animation-delay: 2s; }
 
 
 
