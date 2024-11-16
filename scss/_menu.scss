@@ -1,9 +1,9 @@
 
-
+$colorbody: #FFF4E7;
 /*Colores Magic Kingdom*/
 
 $colorprinc:#809BCE;
-$colorbody: #FFF4E7;
+
 $colorCeleste1: #A7BFEE;
 $colorCeleste2: #8AABE3;
 $colorCeleste3: #C3E2F8;
@@ -66,11 +66,11 @@ $colorLogo4: #265c26;
 /* styling of whole input container */
 .form {
   --timing: 0.3s;
-  --width-of-input: 400px;
+  --width-of-input: 415px;
   --height-of-input: 40px;
   --border-height: 2px;
-  --input-bg: #fff;
-  --border-color: #2f2ee9;
+  --input-bg: #ddeaff;
+  --border-color: #4b77c2;
   --border-radius: 30px;
   --after-border-radius: 1px;
   position: relative;
