@@ -180,6 +180,21 @@ input:not(:placeholder-shown) ~ .reset {
   color: #7246b4;
   animation-delay: 2s; }
 
+.contcolorep {
+  background-color: #b98ae3; }
+
+.colorep {
+  color: #4c2e7a; }
+
+.colorep:hover {
+  background-color: #b98ae3;
+  color: #ead3ff; }
+
+.menu2_items_parquesep {
+  color: #4c2e7a !important; }
+  .menu2_items_parquesep:hover {
+    color: #ead3ff !important; }
+
 /*Hollywood Studios*/
 .fondomenu_hs {
   background: linear-gradient(to top, #f4bac0, #db8d94, #ba5964); }
@@ -254,6 +269,21 @@ input:not(:placeholder-shown) ~ .reset {
   font-size: 13px;
   color: #b44646;
   animation-delay: 2s; }
+
+.contcolorhs {
+  background-color: #d56975; }
+
+.colorhs {
+  color: #842831; }
+
+.colorhs:hover {
+  background-color: #d56975;
+  color: #f1adb1; }
+
+.menu2_items_parqueshs {
+  color: #842831 !important; }
+  .menu2_items_parqueshs:hover {
+    color: #f1adb1  !important; }
 
 /*Animal Kingdom*/
 .fondomenu_ak {
@@ -330,6 +360,21 @@ input:not(:placeholder-shown) ~ .reset {
   color: #46b465;
   animation-delay: 2s; }
 
+.contcolorak {
+  background-color: #78b87c; }
+
+.colorak {
+  color: #265c26; }
+
+.colorak:hover {
+  background-color: #78b87c;
+  color: #adf1ad; }
+
+.menu2_items_parquesak {
+  color: #265c26 !important; }
+  .menu2_items_parquesak:hover {
+    color: #adf1ad !important; }
+
 /*cosas generales del menu*/
 .fondomenu_MK {
   background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
@@ -349,9 +394,9 @@ input:not(:placeholder-shown) ~ .reset {
   .menu_navbar_itemscolorMK::after {
     background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
 
-.menu2_items_parques {
+.menu2_items_parquesmk {
   color: #376188 !important; }
-  .menu2_items_parques:hover {
+  .menu2_items_parquesmk:hover {
     color: #C3E2F8 !important; }
 
 #star-1 {
@@ -587,13 +632,13 @@ input:not(:placeholder-shown) ~ .reset {
   to {
     opacity: 1; } }
 
-.dropdown-menu {
+.contcolormk {
   background-color: #8AABE3; }
 
-.dropdown-item {
+.colormk {
   color: #376188; }
 
-.dropdown-item:hover {
+.colormk:hover {
   background-color: #8AABE3;
   color: #C3E2F8; }
 
@@ -1877,6 +1922,21 @@ input:not(:placeholder-shown) ~ .reset {
   color: #7246b4;
   animation-delay: 2s; }
 
+.contcolorep {
+  background-color: #b98ae3; }
+
+.colorep {
+  color: #4c2e7a; }
+
+.colorep:hover {
+  background-color: #b98ae3;
+  color: #ead3ff; }
+
+.menu2_items_parquesep {
+  color: #4c2e7a !important; }
+  .menu2_items_parquesep:hover {
+    color: #ead3ff !important; }
+
 /*Hollywood Studios*/
 .fondomenu_hs {
   background: linear-gradient(to top, #f4bac0, #db8d94, #ba5964); }
@@ -1951,6 +2011,21 @@ input:not(:placeholder-shown) ~ .reset {
   font-size: 13px;
   color: #b44646;
   animation-delay: 2s; }
+
+.contcolorhs {
+  background-color: #d56975; }
+
+.colorhs {
+  color: #842831; }
+
+.colorhs:hover {
+  background-color: #d56975;
+  color: #f1adb1; }
+
+.menu2_items_parqueshs {
+  color: #842831 !important; }
+  .menu2_items_parqueshs:hover {
+    color: #f1adb1  !important; }
 
 /*Animal Kingdom*/
 .fondomenu_ak {
@@ -2027,6 +2102,21 @@ input:not(:placeholder-shown) ~ .reset {
   color: #46b465;
   animation-delay: 2s; }
 
+.contcolorak {
+  background-color: #78b87c; }
+
+.colorak {
+  color: #265c26; }
+
+.colorak:hover {
+  background-color: #78b87c;
+  color: #adf1ad; }
+
+.menu2_items_parquesak {
+  color: #265c26 !important; }
+  .menu2_items_parquesak:hover {
+    color: #adf1ad !important; }
+
 /*cosas generales del menu*/
 .fondomenu_MK {
   background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
@@ -2046,9 +2136,9 @@ input:not(:placeholder-shown) ~ .reset {
   .menu_navbar_itemscolorMK::after {
     background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
 
-.menu2_items_parques {
+.menu2_items_parquesmk {
   color: #376188 !important; }
-  .menu2_items_parques:hover {
+  .menu2_items_parquesmk:hover {
     color: #C3E2F8 !important; }
 
 #star-1 {
@@ -2284,13 +2374,13 @@ input:not(:placeholder-shown) ~ .reset {
   to {
     opacity: 1; } }
 
-.dropdown-menu {
+.contcolormk {
   background-color: #8AABE3; }
 
-.dropdown-item {
+.colormk {
   color: #376188; }
 
-.dropdown-item:hover {
+.colormk:hover {
   background-color: #8AABE3;
   color: #C3E2F8; }
 

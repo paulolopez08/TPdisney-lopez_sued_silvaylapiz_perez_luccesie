@@ -189,6 +189,33 @@ input:not(:placeholder-shown) ~ .reset {
 
 
 
+.contcolorep{
+    background-color: $colorVioleta2;
+}
+
+
+.colorep{
+    color: #4c2e7a;
+}
+
+.colorep:hover{
+    background-color:  $colorVioleta2;
+    color: #ead3ff;
+}
+
+
+.menu2_items_parquesep{
+    color: #4c2e7a !important;
+
+    &:hover{
+        color: #ead3ff !important;
+    }
+}
+
+
+
+
+
 /*Hollywood Studios*/
 
 .fondomenu_hs{
@@ -228,6 +255,34 @@ input:not(:placeholder-shown) ~ .reset {
 #star-6hs { bottom: 5px; right: 15px; font-size: 16px; color: #ff6363; animation-delay: 1.5s; }
 #star-7hs { top: 0px; right: 50px; font-size: 12px; color: #f62727; animation-delay: 1.8s; }
 #star-8hs { bottom: 0px; left: 50px; font-size: 13px; color: #b44646; animation-delay: 2s; }
+
+
+.contcolorhs{
+    background-color: $colorRojo2;
+}
+
+
+.colorhs{
+    color: #842831;
+}
+
+.colorhs:hover{
+    background-color:  $colorRojo2;
+    color: #f1adb1 ;
+}
+
+
+.menu2_items_parqueshs{
+    color:  #842831 !important;
+
+    &:hover{
+        color: #f1adb1  !important;
+    }
+}
+
+
+
+
 
 
 
@@ -272,6 +327,29 @@ input:not(:placeholder-shown) ~ .reset {
 #star-8ak { bottom: 0px; left: 50px; font-size: 13px; color: #46b465; animation-delay: 2s; }
 
 
+
+.contcolorak{
+    background-color: #78b87c;
+}
+
+
+.colorak{
+    color:  #265c26 ;
+}
+
+.colorak:hover{
+    background-color:  #78b87c;
+    color: #adf1ad;
+}
+
+
+.menu2_items_parquesak{
+    color:  #265c26 !important;
+
+    &:hover{
+        color: #adf1ad !important;
+    }
+}
 
 
 
@@ -321,7 +399,7 @@ input:not(:placeholder-shown) ~ .reset {
     }
 }
 
-.menu2_items_parques{
+.menu2_items_parquesmk{
     color: #376188 !important;
 
     &:hover{
@@ -480,7 +558,6 @@ input:not(:placeholder-shown) ~ .reset {
 }
 
 .menu2_items_parques{
-
     font-size: 20px;
     transition: color 0.3s ease;
     font-family: "Faculty Glyphic", sans-serif;
@@ -549,17 +626,18 @@ input:not(:placeholder-shown) ~ .reset {
     }
 }
 
-.dropdown-menu{
+
+.contcolormk{
     background-color: $colorCeleste2 ;
 }
 
 
 
-.dropdown-item{
+.colormk{
     color: #376188;
 }
 
-.dropdown-item:hover{
+.colormk:hover{
     background-color: $colorCeleste2;
     color: #C3E2F8;
 }
