@@ -34,47 +34,6 @@ $colorLogo4: #265c26;
 
 
 
-/*MK colors*/
-.fondomenu_MK{
-    
-    background: linear-gradient( to top, $colorCeleste3, #9bb2f2, #6688e7);
-
-
-}
-.color_logo_MK{
-    color: $colorLogo;
-}
-.star_colorMK{
-    color: #1E90FF; 
-}
-
-.menu_navbarMK{
-    background-color: transparent !important;
-    &:hover{
-        background-color: $colorCeleste2 !important; 
-    } 
-}
-
-.menu_navbar_itemscolorMK{
-    color: #376188 !important;
-
-    &:hover{
-        color: #C3E2F8 !important;
-    }
-    &::after{
-        background: linear-gradient(90deg, transparent, #C3E2F8, transparent);
-    }
-}
-
-#star-1 { top: -15px; left: -30px; font-size: 15px; color: #4DA6FF; animation-delay: 0s; }
-#star-2 { top: -20px; right: -25px; font-size: 12px; color: #87CEFA; animation-delay: 0.3s; }
-#star-3 { bottom: -15px; left: -20px; font-size: 18px; color: #4682B4; animation-delay: 0.6s; }
-#star-4 { bottom: -10px; right: -30px; font-size: 10px; color: #B0E0E6; animation-delay: 0.9s; }
-#star-5 { top: -5px; left: 10px; font-size: 14px; color: #5CACEE; animation-delay: 1.2s; }
-#star-6 { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
-#star-7 { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
-#star-8 { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
-
 
 
 /*Epcot*/
@@ -219,27 +178,30 @@ $colorLogo4: #265c26;
 
 
 
+/*cosas generales del menu*/
 
-/*incio y mas*/
-.fondomenu_IN{
-    background: linear-gradient( to top, #8aa7f9 , #5a78cb, #334e97);
+
+.fondomenu_MK{
+    
+    background: linear-gradient( to top, $colorCeleste3, #9bb2f2, #6688e7);
+
+
 }
-.color_logo_IN{
-    color: $colorbody;
-}
-.star_colorIN{
-    color: #145da5; 
+.color_logo_MK{
+    color: $colorLogo;
 }
 
-.menu_navbarIN{
-    background-color: transparent !important; 
+
+.menu_navbarMK{
+    background-color: transparent !important;
     &:hover{
-        background-color: #5079C0 !important; 
-    }
+        background-color: $colorCeleste2 !important; 
+    } 
 }
 
-.menu_navbar_itemscolorIN{
-    color: #8ba8dd !important;
+.menu_navbar_itemscolorMK{
+    color: #376188 !important;
+
     &:hover{
         color: #C3E2F8 !important;
     }
@@ -248,7 +210,36 @@ $colorLogo4: #265c26;
     }
 }
 
-/*cosas generales del menu*/
+.menu2_items_parques{
+    color: #376188 !important;
+
+    &:hover{
+        color: #C3E2F8 !important;
+    }
+}
+
+
+
+
+
+#star-1 { top: -15px; left: -30px; font-size: 15px; color: #4DA6FF; animation-delay: 0s; }
+#star-2 { top: -20px; right: -25px; font-size: 12px; color: #87CEFA; animation-delay: 0.3s; }
+#star-3 { bottom: -15px; left: -20px; font-size: 18px; color: #4682B4; animation-delay: 0.6s; }
+#star-4 { bottom: -10px; right: -30px; font-size: 10px; color: #B0E0E6; animation-delay: 0.9s; }
+#star-5 { top: -5px; left: 10px; font-size: 14px; color: #5CACEE; animation-delay: 1.2s; }
+#star-6 { bottom: 5px; right: 15px; font-size: 16px; color: #63B8FF; animation-delay: 1.5s; }
+#star-7 { top: 0px; right: 50px; font-size: 12px; color: #00BFFF; animation-delay: 1.8s; }
+#star-8 { bottom: 0px; left: 50px; font-size: 13px; color: #4682B4; animation-delay: 2s; }
+
+
+
+
+
+
+
+
+
+
 #menu1 {
 
     height: 110px;
@@ -338,6 +329,10 @@ $colorLogo4: #265c26;
 }
 
 
+
+
+
+
 #menu2 {
 
     height: 55px;
@@ -372,6 +367,27 @@ $colorLogo4: #265c26;
     animation: slideIn 1s ease forwards;
     z-index: 1; 
 }
+
+.menu2_items_parques{
+
+    font-size: 20px;
+    transition: color 0.3s ease;
+    font-family: "Faculty Glyphic", sans-serif;
+    position: relative;
+    padding-bottom: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s ease forwards;
+    z-index: 1; 
+}
+
+
+
+
+
+
+
+
 
 
 .menu2_items:nth-child(1) { animation-delay: 1s}
@@ -422,3 +438,17 @@ $colorLogo4: #265c26;
     }
 }
 
+.dropdown-menu{
+    background-color: $colorCeleste2 ;
+}
+
+
+
+.dropdown-item{
+    color: #376188;
+}
+
+.dropdown-item:hover{
+    background-color: $colorCeleste2;
+    color: #C3E2F8;
+}
