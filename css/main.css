@@ -1739,6 +1739,40 @@ input:not(:placeholder-shown) ~ .reset {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
+#contFrasePrinc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 415px; }
+
+#contFrasePrinc_frase {
+  padding: 0px 300px 0px 345px;
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+  color: #8AABE3;
+  font-family: "Mouse Memoirs", sans-serif;
+  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%; }
+  to {
+    opacity: 1;
+    scale: 100%; } }
+
 /*Colores Magic Kindgdom*/
 /*Colores Epcot*/
 /*Colores Magic Kingdom*/
