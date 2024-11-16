@@ -21,7 +21,7 @@
     color: white;
 }
 .bodyindex{
-    background-color: $colorfondo;
+    background-color: $colorbody;
 }
 
 #textini_container{
@@ -53,7 +53,7 @@
     height: 250px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: $colorfondo;
+    background-color: $colorbody;
 
     .contenido{
         position: absolute;

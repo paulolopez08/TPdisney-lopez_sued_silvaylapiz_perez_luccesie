@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*no lo usen al final paso las cosas yo*/
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
 /*MK colors*/
 .fondomenu_MK {
   background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
@@ -24,10 +25,10 @@
 
 /*Epcot*/
 .fondomenu_ep {
-  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
+  background: linear-gradient(to top, #D2B7E5, #412455, #D2B7E5); }
 
 .color_logo_ep {
-  color: #00509D; }
+  color: #c5a2dd; }
 
 .star_colorep {
   color: #1E90FF; }
@@ -35,7 +36,7 @@
 .menu_navbarep {
   background-color: transparent !important; }
   .menu_navbarep:hover {
-    background-color: #8AABE3 !important; }
+    background-color: #815AC0 !important; }
 
 .menu_navbar_itemscolorep {
   color: #376188 !important; }
@@ -306,7 +307,8 @@
   color: white;
   text-decoration: none; }
 
-/*no lo usen al final paso las cosas yo*/
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
 /*Magic Kingdom*/
 * {
   margin: 0;
@@ -1067,8 +1069,10 @@
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
-/*no lo usen al final paso las cosas yo*/
-/*no lo usen al final paso las cosas yo*/
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
 /*MK colors*/
 .fondomenu_MK {
   background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
@@ -1093,10 +1097,10 @@
 
 /*Epcot*/
 .fondomenu_ep {
-  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
+  background: linear-gradient(to top, #D2B7E5, #412455, #D2B7E5); }
 
 .color_logo_ep {
-  color: #00509D; }
+  color: #c5a2dd; }
 
 .star_colorep {
   color: #1E90FF; }
@@ -1104,7 +1108,7 @@
 .menu_navbarep {
   background-color: transparent !important; }
   .menu_navbarep:hover {
-    background-color: #8AABE3 !important; }
+    background-color: #815AC0 !important; }
 
 .menu_navbar_itemscolorep {
   color: #376188 !important; }
@@ -1530,7 +1534,8 @@
 .contCardsPersonajes_cards:hover {
   transform: scale(1.05); }
 
-/*no lo usen al final paso las cosas yo*/
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
 /*colores footer magic kingdom*/
 .colorFooterMK {
   background-color: white;

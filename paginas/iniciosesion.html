@@ -6,23 +6,19 @@
   <title>Incio Sesión</title>
   <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
+<body class="bodySesion">
   <div class="login-container">
-    <h1>Login</h1>
-    <form action="#" method="post">
-        <div class="input-container">
-            <label for="username">@ Username</label>
-            <input type="text" id="username" name="username" required>
+    <form class="login-form">
+        <h1>Login</h1>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
         </div>
-        <div class="input-container">
-            <label for="password">🔒 Password</label>
-            <input type="password" id="password" name="password" required>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
         </div>
-        <div class="button-container">
-            <button type="submit" class="login-btn">Login</button>
-            <button type="button" class="signup-btn">Sign Up</button>
-            <button type="button" class="forgot-btn">Forgot Password</button>
-        </div>
+        <button type="submit">Log In</button>
     </form>
   </div>
 
