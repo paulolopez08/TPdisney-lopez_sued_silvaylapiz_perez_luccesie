@@ -65,22 +65,35 @@
     <div class="card p-4 form-container">
       <h2 class="text-left mb-4 MyDisney">MY DISNEY</h2>
         <form>
-            <div class="mb-3">
-              <label for="firstName" class="form-titulo">Nombre</label>
-              <input type="text" class="form-control" placeholder="Nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="lastName" class="form-titulo">Apellido</label>
-                <input type="text" class="form-control" placeholder="Apellido" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-titulo">Dirección de correo</label>
-                <input type="email" class="form-control" placeholder="Correo electrónico" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-titulo">Contraseña</label>
-                <input type="password" class="form-control" placeholder="Contraseña" required>
-            </div>
+
+          <div class="group">
+            <input required="" type="text" class="input">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Nombre</label>
+          </div>
+
+          <div class="group">
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Apellido</label>
+          </div>
+
+          <div class="group">
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Dirección dde correo</label>
+          </div>
+
+          <div>
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Contraseña</label>
+          </div>
+
             <div class="mb-3">
                 <label for="confirmPassword" class="form-titulo">Repita contraseña</label>
                 <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
