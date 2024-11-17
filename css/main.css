@@ -1,4 +1,381 @@
 @charset "UTF-8";
+/*Colores Magic Kingdom*/
+/*Colores Epcot*/
+/*Colores Hollywood Studios*/
+/*Colores Animal Kingdom*/
+/*Para los menu con buscador*/
+.menu1_conBuscador {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  /* Distribuye los elementos: logo a la izquierda, buscador a la derecha */
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  /* Agrega espacio horizontal */
+  animation: aparecer 1.5s 1; }
+
+.menu1_contLogo_conBuscador {
+  margin-left: 35px;
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+#menu1_search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7; }
+
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 415px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #ddeaff;
+  --border-color: #4b77c2;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff); }
+
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none; }
+
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease; }
+
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius); }
+
+input:focus {
+  outline: none; }
+
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1); }
+
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden; }
+
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible; }
+
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px; }
+
+/*Epcot*/
+.fondomenu_ep {
+  background: linear-gradient(to top, #e4c8ff, #c49de7, #9e74c3); }
+
+.color_logo_ep {
+  color: #ac6adb; }
+
+.menu_navbarep {
+  background-color: transparent !important; }
+  .menu_navbarep:hover {
+    background-color: #b98ae3 !important; }
+
+.menu_navbar_itemscolorep {
+  color: #4c2e7a !important; }
+  .menu_navbar_itemscolorep:hover {
+    color: #ead3ff !important; }
+  .menu_navbar_itemscolorep::after {
+    background: linear-gradient(90deg, transparent, #ead3ff, transparent); }
+
+#star-1ep {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #a04de4;
+  animation-delay: 0s; }
+
+#star-2ep {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #b868f0;
+  animation-delay: 0.3s; }
+
+#star-3ep {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #8846b4;
+  animation-delay: 0.6s; }
+
+#star-4ep {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #c9b0e6;
+  animation-delay: 0.9s; }
+
+#star-5ep {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #a75cee;
+  animation-delay: 1.2s; }
+
+#star-6ep {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #ae63ff;
+  animation-delay: 1.5s; }
+
+#star-7ep {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #8127f6;
+  animation-delay: 1.8s; }
+
+#star-8ep {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #7246b4;
+  animation-delay: 2s; }
+
+.contcolorep {
+  background-color: #b98ae3; }
+
+.colorep {
+  color: #4c2e7a; }
+
+.colorep:hover {
+  background-color: #b98ae3;
+  color: #ead3ff; }
+
+.menu2_items_parquesep {
+  color: #4c2e7a !important; }
+  .menu2_items_parquesep:hover {
+    color: #ead3ff !important; }
+
+/*Hollywood Studios*/
+.fondomenu_hs {
+  background: linear-gradient(to top, #f4bac0, #db8d94, #ba5964); }
+
+.color_logo_hs {
+  color: #8d2c36; }
+
+.menu_navbarhs {
+  background-color: transparent !important; }
+  .menu_navbarhs:hover {
+    background-color: #d56975 !important; }
+
+.menu_navbar_itemscolorhs {
+  color: #842831 !important; }
+  .menu_navbar_itemscolorhs:hover {
+    color: #f1adb1 !important; }
+  .menu_navbar_itemscolorhs::after {
+    background: linear-gradient(90deg, transparent, #f1adb1, transparent); }
+
+#star-1hs {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #e44d55;
+  animation-delay: 0s; }
+
+#star-2hs {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #f06868;
+  animation-delay: 0.3s; }
+
+#star-3hs {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #b44646;
+  animation-delay: 0.6s; }
+
+#star-4hs {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #e69494;
+  animation-delay: 0.9s; }
+
+#star-5hs {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #ee5c5c;
+  animation-delay: 1.2s; }
+
+#star-6hs {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #ff6363;
+  animation-delay: 1.5s; }
+
+#star-7hs {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #f62727;
+  animation-delay: 1.8s; }
+
+#star-8hs {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #b44646;
+  animation-delay: 2s; }
+
+.contcolorhs {
+  background-color: #d56975; }
+
+.colorhs {
+  color: #842831; }
+
+.colorhs:hover {
+  background-color: #d56975;
+  color: #f1adb1; }
+
+.menu2_items_parqueshs {
+  color: #842831 !important; }
+  .menu2_items_parqueshs:hover {
+    color: #f1adb1  !important; }
+
+/*Animal Kingdom*/
+.fondomenu_ak {
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764); }
+
+.color_logo_ak {
+  color: #265c26; }
+
+.menu_navbarak {
+  background-color: transparent !important; }
+  .menu_navbarak:hover {
+    background-color: #78b87c !important; }
+
+.menu_navbar_itemscolorak {
+  color: #265c26 !important; }
+  .menu_navbar_itemscolorak:hover {
+    color: #adf1ad !important; }
+  .menu_navbar_itemscolorak::after {
+    background: linear-gradient(90deg, transparent, #adf1ad, transparent); }
+
+#star-1ak {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #4de455;
+  animation-delay: 0s; }
+
+#star-2ak {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #68f068;
+  animation-delay: 0.3s; }
+
+#star-3ak {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #46b460;
+  animation-delay: 0.6s; }
+
+#star-4ak {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #94e6ae;
+  animation-delay: 0.9s; }
+
+#star-5ak {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #5cee77;
+  animation-delay: 1.2s; }
+
+#star-6ak {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #63ff92;
+  animation-delay: 1.5s; }
+
+#star-7ak {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #27f657;
+  animation-delay: 1.8s; }
+
+#star-8ak {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #46b465;
+  animation-delay: 2s; }
+
+.contcolorak {
+  background-color: #78b87c; }
+
+.colorak {
+  color: #265c26; }
+
+.colorak:hover {
+  background-color: #78b87c;
+  color: #adf1ad; }
+
+.menu2_items_parquesak {
+  color: #265c26 !important; }
+  .menu2_items_parquesak:hover {
+    color: #adf1ad !important; }
+
+/*cosas generales del menu*/
 /*Colores Magic Kindgdom*/
 /*Colores Epcot*/
 /*MK colors*/
@@ -7,9 +384,6 @@
 
 .color_logo_MK {
   color: #00509D; }
-
-.star_colorMK {
-  color: #1E90FF; }
 
 .menu_navbarMK {
   background-color: transparent !important; }
@@ -22,6 +396,67 @@
     color: #C3E2F8 !important; }
   .menu_navbar_itemscolorMK::after {
     background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
+
+.menu2_items_parquesmk {
+  color: #376188 !important; }
+  .menu2_items_parquesmk:hover {
+    color: #C3E2F8 !important; }
+
+#star-1 {
+  top: -2px;
+  left: -30px;
+  font-size: 15px;
+  color: #4DA6FF;
+  animation-delay: 0s; }
+
+#star-2 {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #87CEFA;
+  animation-delay: 0.3s; }
+
+#star-3 {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #4682B4;
+  animation-delay: 0.6s; }
+
+#star-4 {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #B0E0E6;
+  animation-delay: 0.9s; }
+
+#star-5 {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #5CACEE;
+  animation-delay: 1.2s; }
+
+#star-6 {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #63B8FF;
+  animation-delay: 1.5s; }
+
+#star-7 {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #00BFFF;
+  animation-delay: 1.8s; }
+
+#star-8 {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #4682B4;
+  animation-delay: 2s; }
 
 /*Epcot*/
 .fondomenu_ep {
@@ -138,62 +573,6 @@
   animation: sparkle 1.5s ease-in-out infinite;
   opacity: 0; }
 
-#star-1 {
-  top: -15px;
-  left: -30px;
-  font-size: 15px;
-  color: #4DA6FF;
-  animation-delay: 0s; }
-
-#star-2 {
-  top: -20px;
-  right: -25px;
-  font-size: 12px;
-  color: #87CEFA;
-  animation-delay: 0.3s; }
-
-#star-3 {
-  bottom: -15px;
-  left: -20px;
-  font-size: 18px;
-  color: #4682B4;
-  animation-delay: 0.6s; }
-
-#star-4 {
-  bottom: -10px;
-  right: -30px;
-  font-size: 10px;
-  color: #B0E0E6;
-  animation-delay: 0.9s; }
-
-#star-5 {
-  top: -5px;
-  left: 10px;
-  font-size: 14px;
-  color: #5CACEE;
-  animation-delay: 1.2s; }
-
-#star-6 {
-  bottom: 5px;
-  right: 15px;
-  font-size: 16px;
-  color: #63B8FF;
-  animation-delay: 1.5s; }
-
-#star-7 {
-  top: 0px;
-  right: 50px;
-  font-size: 12px;
-  color: #00BFFF;
-  animation-delay: 1.8s; }
-
-#star-8 {
-  bottom: 0px;
-  left: 50px;
-  font-size: 13px;
-  color: #4682B4;
-  animation-delay: 2s; }
-
 @keyframes sparkle {
   0%, 100% {
     opacity: 0;
@@ -236,6 +615,17 @@
   height: 100%; }
 
 .menu2_items {
+  font-size: 20px;
+  transition: color 0.3s ease;
+  font-family: "Faculty Glyphic", sans-serif;
+  position: relative;
+  padding-bottom: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s ease forwards;
+  z-index: 1; }
+
+.menu2_items_parques {
   font-size: 20px;
   transition: color 0.3s ease;
   font-family: "Faculty Glyphic", sans-serif;
@@ -290,6 +680,16 @@
   to {
     opacity: 1; } }
 
+.contcolormk {
+  background-color: #8AABE3; }
+
+.colormk {
+  color: #376188; }
+
+.colormk:hover {
+  background-color: #8AABE3;
+  color: #C3E2F8; }
+
 .logo_registro {
   background-color: #809BCE;
   align-items: center; }
@@ -309,7 +709,476 @@
 
 /*Colores Magic Kindgdom*/
 /*Colores Epcot*/
+#contCarouselTexto_ContTitulosPrinc_tiths {
+  font-size: 60px;
+  color: #8AABE3;
+  font-family: "Mouse Memoirs", sans-serif;
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
 /*Magic Kingdom*/
+* {
+  margin: 0;
+  padding: 0;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
+  animation-range: entry 10% cover 50%;
+  background: linear-gradient(to top, #dca1a7, #d17c83, #e25f6f);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contCarouselTexto_ContTitulosPrinc_frasehs {
+  font-size: 40px;
+  color: #8AABE3;
+  font-family: "Mouse Memoirs", sans-serif;
+  margin-top: 30px;
+  padding: 0;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  background: linear-gradient(to top, #dca1a7, #d17c83, #e25f6f);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contTextohs {
+  background-color: #DC7F7F;
+  width: 93%;
+  height: 180px;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
+
+#contTexto_textohs {
+  font-family: "Faculty Glyphic", sans-serif;
+  text-align: justify;
+  font-size: 19px;
+  color: #842831; }
+
+#contTitAtrac_tiths {
+  text-align: center;
+  color: #8AABE3;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 70px;
+  background: linear-gradient(to top, #dca1a7, #d17c83, #e25f6f);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 30px;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+#card1hs:nth-child(1) {
+  animation-delay: 0s; }
+
+#card2hs:nth-child(2) {
+  animation-delay: 0.4s; }
+
+#card3hs:nth-child(3) {
+  animation-delay: 0.8s; }
+
+#card4hs:nth-child(4) {
+  animation-delay: 1.2s; }
+
+@keyframes slideIn3 {
+  from {
+    opacity: 0;
+    transform: translateX(30px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+#card1hs, #card2hs, #card3hs, #card4hs {
+  background-size: cover;
+  background-position: center; }
+
+#card1hs {
+  background-image: url("../assets/imagenes/atraccion1hs.png"); }
+
+#card2hs {
+  background-image: url("../assets/imagenes/atraccion2hs.png"); }
+
+#card3hs {
+  background-image: url("../assets/imagenes/atraccion3hs.png"); }
+
+#card4hs {
+  background-image: url("../assets/imagenes/atraccion4hs.png"); }
+
+.contCardsAtracciones_cards_infohs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(143, 84, 84, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center; }
+
+.contCardsAtracciones_cards_info_titulohs {
+  color: #fabfbf;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 30px;
+  margin-bottom: 0.5em; }
+
+.contCardsAtracciones_cards_info_textohs {
+  color: #f8d0d0;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 17px;
+  padding: 0 15px; }
+
+.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_infohs {
+  opacity: 3; }
+
+#contMapahs {
+  width: 90%;
+  height: 825px;
+  background-color: #DC7F7F;
+  margin: 10px 50px 25px 50px;
+  justify-self: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+#contMapa_contTit_tiths {
+  color: #C3E2F8;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 70px;
+  padding: 30px 0px 15px 40px;
+  background: linear-gradient(to top, #b23a48, #8c2f39, #461220);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contMapa_contMapa_mapahs {
+  padding: 10px 10px 10px 10px;
+  width: 90%;
+  height: 470px;
+  border-radius: 15px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
+
+.buttonhs {
+  position: relative;
+  padding: 17px 32px;
+  border-radius: 7px;
+  border: 2px solid #b23a48;
+  font-size: 20px;
+  font-family: "Faculty Glyphic", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #f5baba;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center; }
+
+.buttonhs:hover {
+  background: #b23a48;
+  box-shadow: 0 0 30px 5px rgba(131, 16, 16, 0.815);
+  transition: all 0.2s ease-out; }
+
+.buttonhs:hover::before {
+  animation: sh02 0.5s 0s linear; }
+
+.buttonhs::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg); }
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%; }
+  50% {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    left: 100%; } }
+
+.buttonhs:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in; }
+
+#contCarouselTexto_ContTitulosPrinc_titak {
+  font-size: 60px;
+  color: #8AABE3;
+  font-family: "Mouse Memoirs", sans-serif;
+  margin: 0;
+  padding: 0;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
+  animation-range: entry 10% cover 50%;
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contCarouselTexto_ContTitulosPrinc_fraseak {
+  font-size: 40px;
+  color: #8AABE3;
+  font-family: "Mouse Memoirs", sans-serif;
+  margin-top: 30px;
+  padding: 0;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contTextoak {
+  background-color: #A8C26B;
+  width: 93%;
+  height: 180px;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
+
+#contTexto_textoak {
+  font-family: "Faculty Glyphic", sans-serif;
+  text-align: justify;
+  font-size: 19px;
+  color: #265c26; }
+
+#contTitAtrac_titak {
+  text-align: center;
+  color: #8AABE3;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 70px;
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 30px;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+#card1ak:nth-child(1) {
+  animation-delay: 0s; }
+
+#card2ak:nth-child(2) {
+  animation-delay: 0.4s; }
+
+#card3ak:nth-child(3) {
+  animation-delay: 0.8s; }
+
+#card4ak:nth-child(4) {
+  animation-delay: 1.2s; }
+
+@keyframes slideIn3 {
+  from {
+    opacity: 0;
+    transform: translateX(30px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+#card1ak, #card2ak, #card3ak, #card4ak {
+  background-size: cover;
+  background-position: center; }
+
+#card1ak {
+  background-image: url("../assets/imagenes/atraccion1ak.png"); }
+
+#card2ak {
+  background-image: url("../assets/imagenes/atraccion2ak.png"); }
+
+#card3ak {
+  background-image: url("../assets/imagenes/atraccion3ak.png"); }
+
+#card4ak {
+  background-image: url("../assets/imagenes/atraccion4ak.png"); }
+
+.contCardsAtracciones_cards_infoak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(123, 181, 155, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center; }
+
+.contCardsAtracciones_cards_info_tituloak {
+  color: #9ee0b8;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 30px;
+  margin-bottom: 0.5em; }
+
+.contCardsAtracciones_cards_info_textoak {
+  color: #d0f8d5;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 17px;
+  padding: 0 15px; }
+
+.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_infoak {
+  opacity: 3; }
+
+#contMapaak {
+  width: 90%;
+  height: 835px;
+  background-color: #c1d592;
+  margin: 10px 50px 25px 50px;
+  justify-self: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+#contMapa_contTit_titak {
+  color: #C3E2F8;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 70px;
+  padding: 30px 0px 15px 40px;
+  background: linear-gradient(to top, #a1cca5, #8fb996, #517957);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contMapa_contMapa_mapaak {
+  padding: 10px 10px 10px 10px;
+  width: 90%;
+  height: 485px;
+  border-radius: 15px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
+
+.buttonak {
+  position: relative;
+  padding: 17px 32px;
+  border-radius: 7px;
+  border: 2px solid #326f3d;
+  font-size: 20px;
+  font-family: "Faculty Glyphic", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #75a87b;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center; }
+
+.buttonak:hover {
+  background: #326f3d;
+  box-shadow: 0 0 30px 5px #214e29;
+  transition: all 0.2s ease-out; }
+
+.buttonak:hover::before {
+  animation: sh02 0.5s 0s linear; }
+
+.buttonak::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg); }
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%; }
+  50% {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    left: 100%; } }
+
+.buttonak:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -464,7 +1333,7 @@
   gap: 60px; }
 
 .contCardsAtracciones_cards {
-  width: 305px;
+  width: 310px;
   height: 400px;
   border-radius: 1rem;
   overflow: hidden;
@@ -474,7 +1343,7 @@
   view-timeline-name: --text-slide;
   view-timeline-axis: block;
   animation-timeline: --text-slide;
-  animation-name: slideIn3;
+  animation-name: slideIn5;
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-range: entry 15% cover 40%;
@@ -492,7 +1361,7 @@
 #card4:nth-child(4) {
   animation-delay: 1.2s; }
 
-@keyframes slideIn3 {
+@keyframes slideIn5 {
   from {
     opacity: 0;
     transform: translateX(30px); }
@@ -635,7 +1504,7 @@
   justify-content: center;
   margin-top: 20px; }
 
-.button {
+.buttonmk {
   position: relative;
   padding: 17px 32px;
   border-radius: 7px;
@@ -654,15 +1523,15 @@
   display: inline-block;
   text-align: center; }
 
-.button:hover {
+.buttonmk:hover {
   background: #3e62d8;
   box-shadow: 0 0 30px 5px rgba(5, 104, 170, 0.815);
   transition: all 0.2s ease-out; }
 
-.button:hover::before {
+.buttonmk:hover::before {
   animation: sh02 0.5s 0s linear; }
 
-.button::before {
+.buttonmk::before {
   content: '';
   display: block;
   width: 0px;
@@ -685,65 +1554,11 @@
     opacity: 0;
     left: 100%; } }
 
-.button:active {
+.buttonmk:active {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
-/*Epcot*/
-* {
-  margin: 0;
-  padding: 0; }
-
-#bodyGeneral {
-  background-color: #FFF4E7; }
-
-#contCarouselTexto {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-  padding: 20px; }
-
-@keyframes show {
-  from {
-    opacity: 0;
-    scale: 25%; }
-  to {
-    opacity: 1;
-    scale: 100%; } }
-
-#contcarousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  margin: 0;
-  padding: 0;
-  height: 550px; }
-
-.contcarousel_carousel {
-  width: 93%;
-  margin: 0;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
-
-#contCarouselTexto_ContTitulosPrinc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 35%;
-  text-align: center;
-  margin: 0;
-  padding: 0; }
-
-#contCarouselTexto_ContTitulosPrinc_tit {
+#contCarouselTexto_ContTitulosPrinc_titep {
   font-size: 60px;
   color: #8AABE3;
   font-family: "Mouse Memoirs", sans-serif;
@@ -757,12 +1572,12 @@
   animation-fill-mode: both;
   transition: width 3s;
   animation-range: entry 10% cover 50%;
-  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #3756b0);
+  background: linear-gradient(to top, #e4c8ff, #c49de7, #9e74c3);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text; }
 
-#contCarouselTexto_ContTitulosPrinc_frase {
+#contCarouselTexto_ContTitulosPrinc_fraseep {
   font-size: 40px;
   color: #8AABE3;
   font-family: "Mouse Memoirs", sans-serif;
@@ -773,13 +1588,13 @@
   animation-timeline: --image;
   animation-name: show;
   animation-range: entry 10% cover 50%;
-  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
+  background: linear-gradient(to top, #e4c8ff, #c49de7, #9e74c3);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text; }
 
-#contTexto {
-  background-color: #C3E2F8;
+#contTextoep {
+  background-color: #D2B7E5;
   width: 93%;
   height: 180px;
   align-self: center;
@@ -797,25 +1612,18 @@
   transition: width 3s;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
 
-#contTexto_texto {
+#contTexto_textoep {
   font-family: "Faculty Glyphic", sans-serif;
   text-align: justify;
   font-size: 19px;
-  color: #00509D; }
+  color: #4c2e7a; }
 
-#contTitAtrac {
-  width: 100%;
-  height: 330px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#contTitAtrac_tit {
+#contTitAtrac_titep {
   text-align: center;
   color: #8AABE3;
   font-family: 'WaltographRegular', sans-serif;
   font-size: 70px;
-  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
+  background: linear-gradient(to top, #e4c8ff, #c49de7, #9e74c3);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -829,47 +1637,16 @@
   animation-fill-mode: both;
   transition: width 3s; }
 
-@keyframes slideIn2 {
-  from {
-    opacity: 0;
-    transform: translateX(-100%); }
-  to {
-    opacity: 1;
-    transform: translateX(0); } }
-
-#contCardsAtracciones {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px; }
-
-.contCardsAtracciones_cards {
-  width: 305px;
-  height: 400px;
-  border-radius: 1rem;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --text-slide;
-  view-timeline-axis: block;
-  animation-timeline: --text-slide;
-  animation-name: slideIn3;
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-range: entry 15% cover 40%;
-  opacity: 0; }
-
-#card1:nth-child(1) {
+#card1ep:nth-child(1) {
   animation-delay: 0s; }
 
-#card2:nth-child(2) {
+#card2ep:nth-child(2) {
   animation-delay: 0.4s; }
 
-#card3:nth-child(3) {
+#card3ep:nth-child(3) {
   animation-delay: 0.8s; }
 
-#card4:nth-child(4) {
+#card4ep:nth-child(4) {
   animation-delay: 1.2s; }
 
 @keyframes slideIn3 {
@@ -896,179 +1673,13 @@
 #card4ep {
   background-image: url("../assets/imagenes/atraccion4ep.png"); }
 
-.contCardsAtracciones_cards::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;
-  border-radius: 1.2rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
-  filter: blur(15px); }
-
-.contCardsAtracciones_cards_info {
+.contCardsAtracciones_cards_infoep {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(50, 59, 98, 0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 10px;
-  text-align: center; }
-
-.contCardsAtracciones_cards_info_titulo {
-  color: #bfcffa;
-  font-family: "Mouse Memoirs", sans-serif;
-  font-size: 30px;
-  margin-bottom: 0.5em; }
-
-.contCardsAtracciones_cards_info_texto {
-  color: #e8eeff;
-  font-family: "Faculty Glyphic", sans-serif;
-  font-size: 17px;
-  padding: 0 15px; }
-
-.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_info {
-  opacity: 3; }
-
-.contCardsAtracciones_cards:hover {
-  transform: scale(1.05); }
-
-#contSeparador {
-  margin: 80px 50px 70px 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  view-timeline-name: --text-slide;
-  view-timeline-axis: block;
-  animation-timeline: --text-slide;
-  animation-name: slideIn2;
-  animation-duration: 1.5s;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
-
-#contSeparador_separador {
-  width: 75%;
-  height: 90px; }
-
-#contMapa {
-  width: 90%;
-  height: 825px;
-  background-color: #A7BFEE;
-  margin: 10px 50px 25px 50px;
-  justify-self: center;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
-
-#contMapa_contTit {
-  display: flex;
-  justify-content: left;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
-
-#contMapa_contTit_tit {
-  color: #C3E2F8;
-  font-family: 'WaltographRegular', sans-serif;
-  font-size: 70px;
-  padding: 30px 0px 15px 40px;
-  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text; }
-
-#contMapa_contMapa {
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#contMapa_contMapa_mapa {
-  padding: 10px 10px 10px 10px;
-  width: 80%;
-  height: 450px;
-  border-radius: 15px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; }
-
-.button {
-  position: relative;
-  padding: 17px 32px;
-  border-radius: 7px;
-  border: 2px solid #3e62d8;
-  font-size: 20px;
-  font-family: "Faculty Glyphic", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  background: transparent;
-  color: #e0e8ff;
-  overflow: hidden;
-  box-shadow: 0 0 0 0 transparent;
-  transition: all 0.2s ease-in;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center; }
-
-.button:hover {
-  background: #3e62d8;
-  box-shadow: 0 0 30px 5px rgba(5, 104, 170, 0.815);
-  transition: all 0.2s ease-out; }
-
-.button:hover::before {
-  animation: sh02 0.5s 0s linear; }
-
-.button::before {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  transform: skewX(-20deg); }
-
-@keyframes sh02 {
-  from {
-    opacity: 0;
-    left: 0%; }
-  50% {
-    opacity: 1; }
-  to {
-    opacity: 0;
-    left: 100%; } }
-
-.button:active {
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.2s ease-in; }
-
+  background-color: rgba(136, 102, 155, 0.6);
 /*Colores Magic Kindgdom*/
 /*Colores Epcot*/
 /*Colores Magic Kindgdom*/
@@ -1143,6 +1754,577 @@
 #menu1 {
   height: 110px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center; }
+
+.contCardsAtracciones_cards_info_tituloep {
+  color: #ddbffa;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 30px;
+  margin-bottom: 0.5em; }
+
+.contCardsAtracciones_cards_info_textoep {
+  color: #f8e8ff;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 17px;
+  padding: 0 15px; }
+
+.contCardsAtracciones_cards:hover .contCardsAtracciones_cards_infoep {
+  opacity: 3; }
+
+#contMapaep {
+  width: 90%;
+  height: 825px;
+  background-color: #e4c8ff;
+  margin: 10px 50px 25px 50px;
+  justify-self: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+#contMapa_contTit_titep {
+  color: #C3E2F8;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 70px;
+  padding: 30px 0px 15px 40px;
+  background: linear-gradient(to top, #b283dd, #9e6bce, #8253ab);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; }
+
+#contMapa_contMapa_mapaep {
+  padding: 10px 10px 10px 10px;
+  width: 90%;
+  height: 450px;
+  border-radius: 15px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
+
+.buttonep {
+  position: relative;
+  padding: 17px 32px;
+  border-radius: 7px;
+  border: 2px solid #7c3ed8;
+  font-size: 20px;
+  font-family: "Faculty Glyphic", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #9f75bd;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center; }
+
+.buttonep:hover {
+  background: #7c3ed8;
+  box-shadow: 0 0 30px 5px rgba(82, 5, 170, 0.815);
+  transition: all 0.2s ease-out; }
+
+.buttonep:hover::before {
+  animation: sh02 0.5s 0s linear; }
+
+.buttonep::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg); }
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%; }
+  50% {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    left: 100%; } }
+
+.buttonep:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in; }
+
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
+/*Colores Magic Kingdom*/
+/*Colores Epcot*/
+/*Colores Hollywood Studios*/
+/*Colores Animal Kingdom*/
+/*Para los menu con buscador*/
+.menu1_conBuscador {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  /* Distribuye los elementos: logo a la izquierda, buscador a la derecha */
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  /* Agrega espacio horizontal */
+  animation: aparecer 1.5s 1; }
+
+.menu1_contLogo_conBuscador {
+  margin-left: 35px;
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+#menu1_search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7; }
+
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 415px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #ddeaff;
+  --border-color: #4b77c2;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff); }
+
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none; }
+
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease; }
+
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius); }
+
+input:focus {
+  outline: none; }
+
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1); }
+
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden; }
+
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible; }
+
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px; }
+
+/*Epcot*/
+.fondomenu_ep {
+  background: linear-gradient(to top, #e4c8ff, #c49de7, #9e74c3); }
+
+.color_logo_ep {
+  color: #ac6adb; }
+
+.menu_navbarep {
+  background-color: transparent !important; }
+  .menu_navbarep:hover {
+    background-color: #b98ae3 !important; }
+
+.menu_navbar_itemscolorep {
+  color: #4c2e7a !important; }
+  .menu_navbar_itemscolorep:hover {
+    color: #ead3ff !important; }
+  .menu_navbar_itemscolorep::after {
+    background: linear-gradient(90deg, transparent, #ead3ff, transparent); }
+
+#star-1ep {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #a04de4;
+  animation-delay: 0s; }
+
+#star-2ep {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #b868f0;
+  animation-delay: 0.3s; }
+
+#star-3ep {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #8846b4;
+  animation-delay: 0.6s; }
+
+#star-4ep {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #c9b0e6;
+  animation-delay: 0.9s; }
+
+#star-5ep {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #a75cee;
+  animation-delay: 1.2s; }
+
+#star-6ep {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #ae63ff;
+  animation-delay: 1.5s; }
+
+#star-7ep {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #8127f6;
+  animation-delay: 1.8s; }
+
+#star-8ep {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #7246b4;
+  animation-delay: 2s; }
+
+.contcolorep {
+  background-color: #b98ae3; }
+
+.colorep {
+  color: #4c2e7a; }
+
+.colorep:hover {
+  background-color: #b98ae3;
+  color: #ead3ff; }
+
+.menu2_items_parquesep {
+  color: #4c2e7a !important; }
+  .menu2_items_parquesep:hover {
+    color: #ead3ff !important; }
+
+/*Hollywood Studios*/
+.fondomenu_hs {
+  background: linear-gradient(to top, #f4bac0, #db8d94, #ba5964); }
+
+.color_logo_hs {
+  color: #8d2c36; }
+
+.menu_navbarhs {
+  background-color: transparent !important; }
+  .menu_navbarhs:hover {
+    background-color: #d56975 !important; }
+
+.menu_navbar_itemscolorhs {
+  color: #842831 !important; }
+  .menu_navbar_itemscolorhs:hover {
+    color: #f1adb1 !important; }
+  .menu_navbar_itemscolorhs::after {
+    background: linear-gradient(90deg, transparent, #f1adb1, transparent); }
+
+#star-1hs {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #e44d55;
+  animation-delay: 0s; }
+
+#star-2hs {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #f06868;
+  animation-delay: 0.3s; }
+
+#star-3hs {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #b44646;
+  animation-delay: 0.6s; }
+
+#star-4hs {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #e69494;
+  animation-delay: 0.9s; }
+
+#star-5hs {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #ee5c5c;
+  animation-delay: 1.2s; }
+
+#star-6hs {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #ff6363;
+  animation-delay: 1.5s; }
+
+#star-7hs {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #f62727;
+  animation-delay: 1.8s; }
+
+#star-8hs {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #b44646;
+  animation-delay: 2s; }
+
+.contcolorhs {
+  background-color: #d56975; }
+
+.colorhs {
+  color: #842831; }
+
+.colorhs:hover {
+  background-color: #d56975;
+  color: #f1adb1; }
+
+.menu2_items_parqueshs {
+  color: #842831 !important; }
+  .menu2_items_parqueshs:hover {
+    color: #f1adb1  !important; }
+
+/*Animal Kingdom*/
+.fondomenu_ak {
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764); }
+
+.color_logo_ak {
+  color: #265c26; }
+
+.menu_navbarak {
+  background-color: transparent !important; }
+  .menu_navbarak:hover {
+    background-color: #78b87c !important; }
+
+.menu_navbar_itemscolorak {
+  color: #265c26 !important; }
+  .menu_navbar_itemscolorak:hover {
+    color: #adf1ad !important; }
+  .menu_navbar_itemscolorak::after {
+    background: linear-gradient(90deg, transparent, #adf1ad, transparent); }
+
+#star-1ak {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #4de455;
+  animation-delay: 0s; }
+
+#star-2ak {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #68f068;
+  animation-delay: 0.3s; }
+
+#star-3ak {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #46b460;
+  animation-delay: 0.6s; }
+
+#star-4ak {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #94e6ae;
+  animation-delay: 0.9s; }
+
+#star-5ak {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #5cee77;
+  animation-delay: 1.2s; }
+
+#star-6ak {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #63ff92;
+  animation-delay: 1.5s; }
+
+#star-7ak {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #27f657;
+  animation-delay: 1.8s; }
+
+#star-8ak {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #46b465;
+  animation-delay: 2s; }
+
+.contcolorak {
+  background-color: #78b87c; }
+
+.colorak {
+  color: #265c26; }
+
+.colorak:hover {
+  background-color: #78b87c;
+  color: #adf1ad; }
+
+.menu2_items_parquesak {
+  color: #265c26 !important; }
+  .menu2_items_parquesak:hover {
+    color: #adf1ad !important; }
+
+/*cosas generales del menu*/
+.fondomenu_MK {
+  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
+
+.color_logo_MK {
+  color: #00509D; }
+
+.menu_navbarMK {
+  background-color: transparent !important; }
+  .menu_navbarMK:hover {
+    background-color: #8AABE3 !important; }
+
+.menu_navbar_itemscolorMK {
+  color: #376188 !important; }
+  .menu_navbar_itemscolorMK:hover {
+    color: #C3E2F8 !important; }
+  .menu_navbar_itemscolorMK::after {
+    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
+
+.menu2_items_parquesmk {
+  color: #376188 !important; }
+  .menu2_items_parquesmk:hover {
+    color: #C3E2F8 !important; }
+
+#star-1 {
+  top: -2px;
+  left: -30px;
+  font-size: 15px;
+  color: #4DA6FF;
+  animation-delay: 0s; }
+
+#star-2 {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #87CEFA;
+  animation-delay: 0.3s; }
+
+#star-3 {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #4682B4;
+  animation-delay: 0.6s; }
+
+#star-4 {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #B0E0E6;
+  animation-delay: 0.9s; }
+
+#star-5 {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #5CACEE;
+  animation-delay: 1.2s; }
+
+#star-6 {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #63B8FF;
+  animation-delay: 1.5s; }
+
+#star-7 {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #00BFFF;
+  animation-delay: 1.8s; }
+
+#star-8 {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #4682B4;
+  animation-delay: 2s; }
+
+#menu1 {
+  height: 110px;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -1210,62 +2392,6 @@
   animation: sparkle 1.5s ease-in-out infinite;
   opacity: 0; }
 
-#star-1 {
-  top: -15px;
-  left: -30px;
-  font-size: 15px;
-  color: #4DA6FF;
-  animation-delay: 0s; }
-
-#star-2 {
-  top: -20px;
-  right: -25px;
-  font-size: 12px;
-  color: #87CEFA;
-  animation-delay: 0.3s; }
-
-#star-3 {
-  bottom: -15px;
-  left: -20px;
-  font-size: 18px;
-  color: #4682B4;
-  animation-delay: 0.6s; }
-
-#star-4 {
-  bottom: -10px;
-  right: -30px;
-  font-size: 10px;
-  color: #B0E0E6;
-  animation-delay: 0.9s; }
-
-#star-5 {
-  top: -5px;
-  left: 10px;
-  font-size: 14px;
-  color: #5CACEE;
-  animation-delay: 1.2s; }
-
-#star-6 {
-  bottom: 5px;
-  right: 15px;
-  font-size: 16px;
-  color: #63B8FF;
-  animation-delay: 1.5s; }
-
-#star-7 {
-  top: 0px;
-  right: 50px;
-  font-size: 12px;
-  color: #00BFFF;
-  animation-delay: 1.8s; }
-
-#star-8 {
-  bottom: 0px;
-  left: 50px;
-  font-size: 13px;
-  color: #4682B4;
-  animation-delay: 2s; }
-
 @keyframes sparkle {
   0%, 100% {
     opacity: 0;
@@ -1308,6 +2434,17 @@
   height: 100%; }
 
 .menu2_items {
+  font-size: 20px;
+  transition: color 0.3s ease;
+  font-family: "Faculty Glyphic", sans-serif;
+  position: relative;
+  padding-bottom: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s ease forwards;
+  z-index: 1; }
+
+.menu2_items_parques {
   font-size: 20px;
   transition: color 0.3s ease;
   font-family: "Faculty Glyphic", sans-serif;
@@ -1361,6 +2498,16 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+
+.contcolormk {
+  background-color: #8AABE3; }
+
+.colormk {
+  color: #376188; }
+
+.colormk:hover {
+  background-color: #8AABE3;
+  color: #C3E2F8; }
 
 * {
   margin: 0;
@@ -1534,6 +2681,10 @@
 .contCardsPersonajes_cards:hover {
   transform: scale(1.05); }
 
+/*Colores Magic Kingdom*/
+/*Colores Epcot*/
+/*Colores Hollywood Studios*/
+/*Colores Animal Kingdom*/
 /*Colores Magic Kindgdom*/
 /*Colores Epcot*/
 /*colores footer magic kingdom*/
@@ -1542,7 +2693,232 @@
   background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
 
 .colorLineaMK {
-  background-color: #A7BFEE; }
+  background-color: #C3E2F8; }
+
+/*colores footer epcot*/
+.colorFooterep {
+  background-color: white;
+  background: linear-gradient(to top, #72449a, #8d61b6, #FFF4E7); }
+
+.colorLineaep {
+  background-color: #6b499d; }
+
+.contItemsFooter_itemsep {
+  margin-top: 170px;
+  text-decoration: none;
+  color: #4c2e7a;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color; }
+
+.contItemsFooter_itemsep:focus,
+.contItemsFooter_itemsep:hover {
+  color: #b396df; }
+
+.contItemsFooter_itemsep:focus:after,
+.contItemsFooter_itemsep:hover:after {
+  width: 100%;
+  left: 0%; }
+
+.contItemsFooter_itemsep:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #b396df;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left; }
+
+.footerSecciones_titulosep {
+  color: #4c2e7a;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 23px;
+  margin-bottom: 10px; }
+
+.footerSecciones_titulos_contRedes_redesep {
+  font-size: 2rem;
+  color: #4c2e7a;
+  transition: transform 0.3s ease, color 0.3s ease; }
+
+.footerSecciones_titulos_contRedes_redesep:hover {
+  color: #b396df;
+  transform: translateY(-5px); }
+
+.footerSecciones_titulos_itemsep {
+  text-decoration: none;
+  color: #4c2e7a;
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  position: relative;
+  border: none;
+  background: none;
+  transition: color 0.3s ease; }
+
+.footerSecciones_titulos_itemsep:hover {
+  color: #b396df; }
+
+#contDerechosFooter_derechosep {
+  color: #4c2e7a;
+  font-size: 14px; }
+
+/*colores footer Hollywood Studios*/
+.colorFooterhs {
+  background-color: white;
+  background: linear-gradient(to top, #ba5964, #db8d94, #FFF4E7); }
+
+.colorLineahs {
+  background-color: #bf6868; }
+
+.contItemsFooter_itemshs {
+  margin-top: 170px;
+  text-decoration: none;
+  color: #7a2e2e;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color; }
+
+.contItemsFooter_itemshs:focus,
+.contItemsFooter_itemshs:hover {
+  color: #d47275; }
+
+.contItemsFooter_itemshs:focus:after,
+.contItemsFooter_itemshs:hover:after {
+  width: 100%;
+  left: 0%; }
+
+.contItemsFooter_itemshs:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #d47275;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left; }
+
+.footerSecciones_tituloshs {
+  color: #7a2e2e;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 23px;
+  margin-bottom: 10px; }
+
+.footerSecciones_titulos_contRedes_redeshs {
+  font-size: 2rem;
+  color: #7a2e2e;
+  transition: transform 0.3s ease, color 0.3s ease; }
+
+.footerSecciones_titulos_contRedes_redeshs:hover {
+  color: #eaa0a3;
+  transform: translateY(-5px); }
+
+.footerSecciones_titulos_itemshs {
+  text-decoration: none;
+  color: #7a2e2e;
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  position: relative;
+  border: none;
+  background: none;
+  transition: color 0.3s ease; }
+
+.footerSecciones_titulos_itemshs:hover {
+  color: #eaa0a3; }
+
+#contDerechosFooter_derechoshs {
+  color: #7a2e2e;
+  font-size: 14px; }
+
+/*colores footer Animal Kingdom*/
+.colorFooterak {
+  background-color: white;
+  background: linear-gradient(to top, #5f8764, #8fb996, #FFF4E7); }
+
+.colorLineaak {
+  background-color: #7c9e7c; }
+
+.contItemsFooter_itemsak {
+  margin-top: 170px;
+  text-decoration: none;
+  color: #265c26;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color; }
+
+.contItemsFooter_itemsak:focus,
+.contItemsFooter_itemsak:hover {
+  color: #a5e3a5; }
+
+.contItemsFooter_itemsak:focus:after,
+.contItemsFooter_itemsak:hover:after {
+  width: 100%;
+  left: 0%; }
+
+.contItemsFooter_itemsak:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #a5e3a5;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left; }
+
+.footerSecciones_titulosak {
+  color: #265c26;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 23px;
+  margin-bottom: 10px; }
+
+.footerSecciones_titulos_contRedes_redesak {
+  font-size: 2rem;
+  color: #265c26;
+  transition: transform 0.3s ease, color 0.3s ease; }
+
+.footerSecciones_titulos_contRedes_redesak:hover {
+  color: #a5e3a5;
+  transform: translateY(-5px); }
+
+.footerSecciones_titulos_itemsak {
+  text-decoration: none;
+  color: #265c26;
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  position: relative;
+  border: none;
+  background: none;
+  transition: color 0.3s ease; }
+
+.footerSecciones_titulos_itemsak:hover {
+  color: #a5e3a5; }
+
+#contDerechosFooter_derechosak {
+  color: #265c26;
+  font-size: 14px; }
 
 /*Footer general*/
 footer {
