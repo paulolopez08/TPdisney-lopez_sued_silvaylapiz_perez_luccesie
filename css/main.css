@@ -1864,6 +1864,75 @@ input:not(:placeholder-shown) ~ .reset {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
+#contFrasePrinc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px; }
+
+#contFrasePrinc_frase {
+  padding: 0px 300px 0px 345px;
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+  color: #8AABE3;
+  font-family: "Mouse Memoirs", sans-serif;
+  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%; }
+  to {
+    opacity: 1;
+    scale: 100%; } }
+
+#contTituloMK {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+#contTituloMK_titulo {
+  padding: 0px 0px 0px 70px;
+  text-align: left;
+  color: #8AABE3;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 70px;
+  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 30px;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+@keyframes slideIn2 {
+  from {
+    opacity: 0;
+    transform: translateX(-100%); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
 /*Colores Magic Kindgdom*/
 /*Colores Epcot*/
 /*Colores Magic Kingdom*/
@@ -3064,18 +3133,15 @@ footer {
   margin: 0;
   padding: 0; }
 
-#temp {
-  color: white; }
-
 .bodyindex {
   background-color: #FFF4E7; }
 
 #textini_container {
   margin: 0;
   padding: 0;
-  background-color: #95B8D1; }
+  background-color: #C3E2F8; }
   #textini_container #textini_parrafo {
-    color: white;
+    color: #00509D;
     font-size: 20px;
     text-align: justify;
     padding: 50px 90px 20px 90px; }
@@ -3084,54 +3150,144 @@ footer {
   margin: 0;
   padding: 0; }
 
-.tarjetaIN_cont {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 400px;
-  aspect-ratio: 1 / 0.7;
-  border-radius: 8px;
-  position: relative;
-  height: 250px;
+/*parques*/
+#contCardsparquesF1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px; }
+
+#contCardsparquesF2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px; }
+
+.contCardsparques_cards {
+  width: 450px;
+  height: 300px;
+  border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #FFF4E7; }
-  .tarjetaIN_cont .contenido {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    color: white;
-    text-align: center;
-    padding: 10px; }
-    .tarjetaIN_cont .contenido h2 {
-      margin: 0;
-      font-size: 24px;
-      opacity: 0; }
-  .tarjetaIN_cont .tarjetaIN_img_cont img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 0.5s ease-in-out;
-    border-radius: 8px; }
-  .tarjetaIN_cont::after {
+  position: relative;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn5;
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-range: entry 15% cover 40%;
+  opacity: 0; }
+  .contCardsparques_cards::after {
     content: "";
     position: absolute;
-    inset: 0;
-    border: 2px solid white;
-    border-radius: inherit;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    border-radius: 1.2rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+    filter: blur(15px); }
+  .contCardsparques_cards:hover {
+    transform: scale(1.05); }
+    .contCardsparques_cards:hover .contCardsparques_cards_info {
+      opacity: 3; }
+
+#card1:nth-child(1) {
+  animation-delay: 0s; }
+
+#card2:nth-child(2) {
+  animation-delay: 0.4s; }
+
+#card3:nth-child(3) {
+  animation-delay: 0.8s; }
+
+#card4:nth-child(4) {
+  animation-delay: 1.2s; }
+
+@keyframes slideIn5 {
+  from {
     opacity: 0;
-    transition: 0.4s ease-in-out; }
-  .tarjetaIN_cont:hover img {
-    filter: grayscale(1) brightness(0.4); }
-  .tarjetaIN_cont:hover .contenido h2 {
-    scale: 1;
-    opacity: 1; }
-  .tarjetaIN_cont:hover .contenido p {
+    transform: translateX(30px); }
+  to {
     opacity: 1;
-    transform: translateY(0); }
-  .tarjetaIN_cont:hover::after {
-    opacity: 1;
-    inset: 20px;
-    transition: 0.4s ease-in-out; }
+    transform: translateX(0); } }
+
+#card1, #card2, #card3, #card4 {
+  background-size: cover;
+  background-position: center; }
+
+#card1 {
+  background-image: url("../assets/imagenes/Mkingdom.png"); }
+
+#card2 {
+  background-image: url("../assets/imagenes/EpcotIN.png"); }
+
+#card3 {
+  background-image: url("../assets/imagenes/HStudiosIN.png"); }
+
+#card4 {
+  background-image: url("../assets/imagenes/AkingdomIN.png"); }
+
+.contCardsparques_cards_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 59, 98, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center; }
+
+.contCardsparques_cards_info_titulo {
+  color: #bfcffa;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 30px;
+  margin-bottom: 0.5em; }
+
+.contCardsparques_cards_info_texto {
+  color: #e8eeff;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 17px;
+  padding: 0 15px; }
+
+/*hoteles destacados*/
+#HotelesDes_cont {
+  margin: 30px 15% 20px 35%;
+  width: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center; }
+
+#HotelesDes_titulo_cont {
+  margin: 0;
+  padding: 0; }
+
+#HotelesDes_cards_cont {
+  gap: 60px;
+  width: 90%;
+  margin: 0 43% 0 57%; }
+
+#HotelesDes_cards {
+  background-color: #C3E2F8;
+  border-radius: 0 0 0 0; }
+
+/*ciclo each*/
+.parraf1 {
+  font-size: 20px; }
+
+.parraf2 {
+  font-size: 15px; }
+
+.parraf3 {
+  font-size: 10px; }

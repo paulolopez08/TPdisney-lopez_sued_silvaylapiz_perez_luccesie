@@ -17,9 +17,8 @@
     padding: 0;
 }
 
-#temp{
-    color: white;
-}
+
+
 .bodyindex{
     background-color: $colorbody;
 }
@@ -27,10 +26,10 @@
 #textini_container{
     margin: 0;
     padding: 0;
-    background-color: #95B8D1;
+    background-color: #C3E2F8;
 
     #textini_parrafo{
-        color: white;
+        color: #00509D;
         font-size: 20px;
         text-align:justify;
         padding:50px 90px 20px 90px ;
@@ -42,76 +41,182 @@
 }
 
 
+/*parques*/
+#contCardsparquesF1 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+}
 
-.tarjetaIN_cont{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 400px;
-    aspect-ratio: 1 / 0.7;
-    border-radius: 8px;
-    position: relative;
-    height: 250px;
+#contCardsparquesF2 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+
+.contCardsparques_cards {
+    width: 450px;
+    height: 300px;
+    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: $colorbody;
+    position: relative;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
 
-    .contenido{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -20%);
-        color: white;
-        text-align: center;
-        padding: 10px;
-        h2{
-            margin: 0;
-            font-size: 24px;
-            opacity: 0;
-        }
-    }
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block;
+    animation-timeline: --text-slide;
+    animation-name: slideIn5;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+    animation-range: entry 15% cover 40%;
+    opacity: 0;
 
-    .tarjetaIN_img_cont{
-        img{
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 
-            0.5s ease-in-out;
-            border-radius: 8px;
-        }
-    }
     &::after{
         content: "";
         position: absolute;
-        inset: 0;
-        border: 2px solid white;
-        border-radius: inherit;
-        opacity: 0;
-        transition: 0.4s ease-in-out;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        z-index: -1;
+        border-radius: 1.2rem;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+        filter: blur(15px);
     }
+
     &:hover{
-        img{
-            filter: 
-            grayscale(1)
-            brightness(0.4);
+        transform: scale(1.05);
+
+        .contCardsparques_cards_info{
+            opacity: 3;
         }
-        .contenido{
-            h2{
-                scale: 1;
-                opacity: 1;
-            }
-            p{
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    }
-    &:hover::after{
-        opacity: 1;
-        inset: 20px;
-        transition: 0.4s ease-in-out;
     }
 }
+
+
+#card1:nth-child(1) {
+    animation-delay: 0s;
+}
+#card2:nth-child(2) {
+    animation-delay: 0.4s; 
+}
+#card3:nth-child(3) {
+    animation-delay: 0.8s; 
+}
+#card4:nth-child(4) {
+    animation-delay: 1.2s; 
+}
+
+
+@keyframes slideIn5 {
+    from {
+        opacity: 0;
+        transform: translateX(30px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+
+
+#card1, #card2, #card3, #card4 {
+    background-size: cover;
+    background-position: center;
+}
+
+#card1 {
+    background-image: url('../assets/imagenes/Mkingdom.png');
+}
+
+#card2 {
+    background-image: url('../assets/imagenes/EpcotIN.png');
+}
+
+#card3 {
+    background-image: url('../assets/imagenes/HStudiosIN.png');
+}
+
+#card4 {
+    background-image: url('../assets/imagenes/AkingdomIN.png');
+}
+
+
+
+.contCardsparques_cards_info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 59, 98, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    text-align: center;
+}
+
+.contCardsparques_cards_info_titulo {
+    color: #bfcffa;
+    font-family: "Mouse Memoirs", sans-serif;
+    font-size: 30px;
+    margin-bottom: 0.5em;
+}
+
+.contCardsparques_cards_info_texto {
+    color: #e8eeff;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 17px;
+    padding: 0 15px;
+}
+
+/*hoteles destacados*/
+#HotelesDes_cont{
+    margin: 30px 15% 20px 35%;
+    width: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#HotelesDes_titulo_cont{
+    margin: 0;
+    padding: 0;
+
+}
+#HotelesDes_cards_cont{
+    gap: 60px;
+    width: 90%;
+    margin:0 43% 0 57%;
+}
+
+#HotelesDes_cards{
+    background-color:#C3E2F8;
+    border-radius: 0 0 0 0;
+}
+
+$tamfuenteP:(
+    1: 20px,
+    2: 15px,
+    3: 10px,
+);
+
+/*ciclo each*/
+@each $num, $tam in $tamfuenteP{
+    .parraf#{$num}{
+       font-size: $tam;
+    }
+}
+
 
