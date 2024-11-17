@@ -84,7 +84,7 @@
             <input type="text" class="input" required>
             <span class="highlight"></span>
             <span class="bar"></span>
-            <label>Dirección dde correo</label>
+            <label>Dirección de correo</label>
           </div>
 
           <div>
@@ -94,12 +94,18 @@
             <label>Contraseña</label>
           </div>
 
-            <div class="mb-3">
-                <label for="confirmPassword" class="form-titulo">Repita contraseña</label>
-                <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
-            </div>
-            <div class="mb-3">
-              <label for="select" class="form-titulo">Seleccione su pais:</label>
+          <div>
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Repita la contraseña</label>
+          </div>
+
+          <div>
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Seleccione su pais</label>
               <select class="form-select">
                   <option selected>Seleccione su pais</option>
                   <option value="AR">Argentina</option>
@@ -139,14 +145,15 @@
                   <option value="VE">Venezuela</option>
                   <option value="Otro">Otro</option>
               </select>
+          </div>
+
+          <div class="container mb-3">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" required>
+                <label class="Iniciodesesion" for="terms">He leído y acepto Términos y Condiciones</label>
             </div>
-            <div class="container mb-3">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" required>
-                    <label class="Iniciodesesion" for="terms">He leído y acepto Términos y Condiciones</label>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Continuar</button>
-            </div>
+            <button type="submit" class="btn btn-primary w-100">Continuar</button>
+          </div>
         </form>
     </div>
   </div>

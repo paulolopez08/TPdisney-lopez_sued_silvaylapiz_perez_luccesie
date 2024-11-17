@@ -3092,7 +3092,6 @@ footer {
   /* Asegura que el fondo cubra toda la altura de la ventana */
   margin: 0; }
 
-/* From Uiverse.io by G4b413l */
 .group {
   position: relative; }
 
@@ -3176,7 +3175,7 @@ label {
 .form-container {
   width: 600px;
   height: 690px;
-  background: #fff;
+  background: #172D9D;
   border-radius: 9px;
   box-shadow: 4px 8px 8px #000; }
 
@@ -3185,15 +3184,6 @@ label {
   font-weight: 600;
   font-style: normal;
   color: #000; }
-
-.form-titulo {
-  color: #000;
-  margin-bottom: 5px; }
-
-.cambiarDeForm {
-  text-align: center;
-  color: #fff;
-  margin-top: 10px; }
 
 .BotonVolver {
   position: absolute;

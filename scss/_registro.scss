@@ -17,7 +17,6 @@ $font-family-title: "Atma", serif;
 
 }
 
-/* From Uiverse.io by G4b413l */ 
 .group {
   position: relative;
  }
@@ -117,7 +116,7 @@ $font-family-title: "Atma", serif;
 .form-container {
   width: 600px;
   height: 690px;
-  background: $white;
+  background: $secondary-color;
   border-radius: 9px;
   box-shadow: 4px 8px 8px $black;
 }
@@ -127,17 +126,6 @@ $font-family-title: "Atma", serif;
   font-weight: 600;
   font-style: normal;
   color: $black;
-}
-
-.form-titulo {
-  color: $black;
-  margin-bottom: 5px;
-}
-
-.cambiarDeForm {
-  text-align: center;
-  color: $white;
-  margin-top: 10px;
 }
 
 .BotonVolver {
