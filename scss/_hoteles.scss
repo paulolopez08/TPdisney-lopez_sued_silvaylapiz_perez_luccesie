@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 415px;
+    height: 350px;
 }
 
 #contFrasePrinc_frase{
@@ -42,3 +42,45 @@
     }
 }
 
+#contTituloMK{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#contTituloMK_titulo{
+    padding: 0px 0px 0px 70px;
+    text-align: left;
+    color: $colorCeleste2;
+    font-family: 'WaltographRegular', sans-serif;
+    font-size: 70px;
+
+    background: linear-gradient( to bottom, $colorCeleste1, #4A90E2, #1E3A8A);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 30px;
+
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+}
+
+
+@keyframes slideIn2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
