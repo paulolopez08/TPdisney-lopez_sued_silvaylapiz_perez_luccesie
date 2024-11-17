@@ -12,7 +12,10 @@ $font-family-base: Arial, sans-serif;
 $font-family-title: "Atma", serif;
 
 #bodySesion {
-  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+  background: linear-gradient(to bottom, #1e90ff, #87cefa); /* Degradado de azul oscuro a azul claro */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+  margin: 0;
+
 }
 
 .container {

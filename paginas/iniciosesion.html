@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Incio Sesión</title>
-  <link rel="stylesheet" href="../css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body class="bodySesion">
-  <div class="login-container">
-    <form class="login-form">
-        <h1>Login</h1>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter your password" required>
-        </div>
-        <button type="submit">Log In</button>
-    </form>
-  </div>
 
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 margen">
+        <div class="card p-4 form-container">
+          <h2 class="text-left mb-4 MyDisney">MY DISNEY</h2>
+            <form>
+                <div class="mb-3">
+                  <label for="firstName" class="form-titulo">Nombre</label>
+                  <input type="text" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-titulo">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Apellido" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-titulo">Dirección de correo</label>
+                    <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-titulo">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña" required>
+                </div>
+                <div class="container mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" required>
+                        <label class="Iniciodesesion" for="terms">He leído y acepto Términos y Condiciones</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Continuar</button>
+                </div>
+            </form>
+        </div>
+    
 </body>
 </html>
-
