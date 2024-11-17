@@ -376,9 +376,6 @@ input:not(:placeholder-shown) ~ .reset {
     color: #adf1ad !important; }
 
 /*cosas generales del menu*/
-/*Colores Magic Kindgdom*/
-/*Colores Epcot*/
-/*MK colors*/
 .fondomenu_MK {
   background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
 
@@ -458,51 +455,6 @@ input:not(:placeholder-shown) ~ .reset {
   color: #4682B4;
   animation-delay: 2s; }
 
-/*Epcot*/
-.fondomenu_ep {
-  background: linear-gradient(to top, #D2B7E5, #412455, #D2B7E5); }
-
-.color_logo_ep {
-  color: #c5a2dd; }
-
-.star_colorep {
-  color: #1E90FF; }
-
-.menu_navbarep {
-  background-color: transparent !important; }
-  .menu_navbarep:hover {
-    background-color: #815AC0 !important; }
-
-.menu_navbar_itemscolorep {
-  color: #376188 !important; }
-  .menu_navbar_itemscolorep:hover {
-    color: #C3E2F8 !important; }
-  .menu_navbar_itemscolorep::after {
-    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
-
-/*incio y mas*/
-.fondomenu_IN {
-  background: linear-gradient(to top, #8aa7f9, #5a78cb, #334e97); }
-
-.color_logo_IN {
-  color: #FFF4E7; }
-
-.star_colorIN {
-  color: #145da5; }
-
-.menu_navbarIN {
-  background-color: transparent !important; }
-  .menu_navbarIN:hover {
-    background-color: #5079C0 !important; }
-
-.menu_navbar_itemscolorIN {
-  color: #8ba8dd !important; }
-  .menu_navbar_itemscolorIN:hover {
-    color: #C3E2F8 !important; }
-  .menu_navbar_itemscolorIN::after {
-    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
-
-/*cosas generales del menu*/
 #menu1 {
   height: 110px;
   display: flex;
@@ -713,10 +665,6 @@ input:not(:placeholder-shown) ~ .reset {
   font-size: 60px;
   color: #8AABE3;
   font-family: "Mouse Memoirs", sans-serif;
-/*Colores Magic Kindgdom*/
-/*Colores Epcot*/
-/*Magic Kingdom*/
-* {
   margin: 0;
   padding: 0;
   view-timeline-name: --image;
@@ -1680,79 +1628,6 @@ input:not(:placeholder-shown) ~ .reset {
   width: 100%;
   height: 100%;
   background-color: rgba(136, 102, 155, 0.6);
-/*Colores Magic Kindgdom*/
-/*Colores Epcot*/
-/*Colores Magic Kindgdom*/
-/*Colores Epcot*/
-/*MK colors*/
-.fondomenu_MK {
-  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
-
-.color_logo_MK {
-  color: #00509D; }
-
-.star_colorMK {
-  color: #1E90FF; }
-
-.menu_navbarMK {
-  background-color: transparent !important; }
-  .menu_navbarMK:hover {
-    background-color: #8AABE3 !important; }
-
-.menu_navbar_itemscolorMK {
-  color: #376188 !important; }
-  .menu_navbar_itemscolorMK:hover {
-    color: #C3E2F8 !important; }
-  .menu_navbar_itemscolorMK::after {
-    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
-
-/*Epcot*/
-.fondomenu_ep {
-  background: linear-gradient(to top, #D2B7E5, #412455, #D2B7E5); }
-
-.color_logo_ep {
-  color: #c5a2dd; }
-
-.star_colorep {
-  color: #1E90FF; }
-
-.menu_navbarep {
-  background-color: transparent !important; }
-  .menu_navbarep:hover {
-    background-color: #815AC0 !important; }
-
-.menu_navbar_itemscolorep {
-  color: #376188 !important; }
-  .menu_navbar_itemscolorep:hover {
-    color: #C3E2F8 !important; }
-  .menu_navbar_itemscolorep::after {
-    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
-
-/*incio y mas*/
-.fondomenu_IN {
-  background: linear-gradient(to top, #8aa7f9, #5a78cb, #334e97); }
-
-.color_logo_IN {
-  color: #FFF4E7; }
-
-.star_colorIN {
-  color: #145da5; }
-
-.menu_navbarIN {
-  background-color: transparent !important; }
-  .menu_navbarIN:hover {
-    background-color: #5079C0 !important; }
-
-.menu_navbar_itemscolorIN {
-  color: #8ba8dd !important; }
-  .menu_navbar_itemscolorIN:hover {
-    color: #C3E2F8 !important; }
-  .menu_navbar_itemscolorIN::after {
-    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
-
-/*cosas generales del menu*/
-#menu1 {
-  height: 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2754,8 +2629,6 @@ input:not(:placeholder-shown) ~ .reset {
 /*Colores Epcot*/
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
-/*Colores Magic Kindgdom*/
-/*Colores Epcot*/
 /*colores footer magic kingdom*/
 .colorFooterMK {
   background-color: white;
