@@ -1885,14 +1885,13 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px 0; }
 
 .contHoteles_contCard_texto {
-  font-size: 16px;
+  font-size: 17px;
   color: #376188; }
 
 .stars {
-  margin-top: 10px;
-  font-size: 18px;
-  color: #ffd700;
-  /* Color dorado */ }
+  margin-top: 5px;
+  font-size: 22px;
+  color: #376188; }
 
 /*Colores Magic Kindgdom*/
 /*Colores Epcot*/
