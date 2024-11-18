@@ -36,11 +36,11 @@ $colorLogo4: #265c26;
 .menu1_conBuscador{
     height: 110px;
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos: logo a la izquierda, buscador a la derecha */
+    justify-content: space-between; 
     align-items: center;
     position: relative;
     margin: 0;
-    padding: 0 20px; /* Agrega espacio horizontal */
+    padding: 0 20px; 
     animation: aparecer 1.5s 1;
 }
 
@@ -63,7 +63,7 @@ $colorLogo4: #265c26;
   background: none;
   color: #8b8ba7;
 }
-/* styling of whole input container */
+
 .form {
   --timing: 0.3s;
   --width-of-input: 415px;
@@ -83,7 +83,7 @@ $colorLogo4: #265c26;
   transition: border-radius 0.5s ease;
   background: var(--input-bg,#fff);
 }
-/* styling of Input */
+
 .input {
   font-size: 0.9rem;
   background-color: transparent;
@@ -93,7 +93,7 @@ $colorLogo4: #265c26;
   padding-block: 0.7em;
   border: none;
 }
-/* styling of animated border */
+
 .form:before {
   content: "";
   position: absolute;
@@ -107,7 +107,7 @@ $colorLogo4: #265c26;
   border-radius: 1px;
   transition: transform var(--timing) ease;
 }
-/* Hover on Input */
+
 .form:focus-within {
   border-radius: var(--after-border-radius);
 }
@@ -115,29 +115,27 @@ $colorLogo4: #265c26;
 input:focus {
   outline: none;
 }
-/* here is code of animated border */
+
 .form:focus-within:before {
   transform: scale(1);
 }
-/* styling of close button */
-/* == you can click the close button to remove text == */
+
 .reset {
   border: none;
   background: none;
   opacity: 0;
   visibility: hidden;
 }
-/* close button shown when typing */
+
 input:not(:placeholder-shown) ~ .reset {
   opacity: 1;
   visibility: visible;
 }
-/* sizing svg icons */
+
 .form svg {
   width: 17px;
   margin-top: 3px;
 }
-
 
 
 

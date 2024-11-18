@@ -8,12 +8,10 @@
   height: 110px;
   display: flex;
   justify-content: space-between;
-  /* Distribuye los elementos: logo a la izquierda, buscador a la derecha */
   align-items: center;
   position: relative;
   margin: 0;
   padding: 0 20px;
-  /* Agrega espacio horizontal */
   animation: aparecer 1.5s 1; }
 
 .menu1_contLogo_conBuscador {
@@ -32,7 +30,6 @@
   background: none;
   color: #8b8ba7; }
 
-/* styling of whole input container */
 .form {
   --timing: 0.3s;
   --width-of-input: 415px;
@@ -52,7 +49,6 @@
   transition: border-radius 0.5s ease;
   background: var(--input-bg, #fff); }
 
-/* styling of Input */
 .input {
   font-size: 0.9rem;
   background-color: transparent;
@@ -62,7 +58,6 @@
   padding-block: 0.7em;
   border: none; }
 
-/* styling of animated border */
 .form:before {
   content: "";
   position: absolute;
@@ -76,31 +71,25 @@
   border-radius: 1px;
   transition: transform var(--timing) ease; }
 
-/* Hover on Input */
 .form:focus-within {
   border-radius: var(--after-border-radius); }
 
 input:focus {
   outline: none; }
 
-/* here is code of animated border */
 .form:focus-within:before {
   transform: scale(1); }
 
-/* styling of close button */
-/* == you can click the close button to remove text == */
 .reset {
   border: none;
   background: none;
   opacity: 0;
   visibility: hidden; }
 
-/* close button shown when typing */
 input:not(:placeholder-shown) ~ .reset {
   opacity: 1;
   visibility: visible; }
 
-/* sizing svg icons */
 .form svg {
   width: 17px;
   margin-top: 3px; }
@@ -1902,12 +1891,10 @@ input:not(:placeholder-shown) ~ .reset {
   height: 110px;
   display: flex;
   justify-content: space-between;
-  /* Distribuye los elementos: logo a la izquierda, buscador a la derecha */
   align-items: center;
   position: relative;
   margin: 0;
   padding: 0 20px;
-  /* Agrega espacio horizontal */
   animation: aparecer 1.5s 1; }
 
 .menu1_contLogo_conBuscador {
@@ -1926,7 +1913,6 @@ input:not(:placeholder-shown) ~ .reset {
   background: none;
   color: #8b8ba7; }
 
-/* styling of whole input container */
 .form {
   --timing: 0.3s;
   --width-of-input: 415px;
@@ -1946,7 +1932,6 @@ input:not(:placeholder-shown) ~ .reset {
   transition: border-radius 0.5s ease;
   background: var(--input-bg, #fff); }
 
-/* styling of Input */
 .input {
   font-size: 0.9rem;
   background-color: transparent;
@@ -1956,7 +1941,6 @@ input:not(:placeholder-shown) ~ .reset {
   padding-block: 0.7em;
   border: none; }
 
-/* styling of animated border */
 .form:before {
   content: "";
   position: absolute;
@@ -1970,31 +1954,25 @@ input:not(:placeholder-shown) ~ .reset {
   border-radius: 1px;
   transition: transform var(--timing) ease; }
 
-/* Hover on Input */
 .form:focus-within {
   border-radius: var(--after-border-radius); }
 
 input:focus {
   outline: none; }
 
-/* here is code of animated border */
 .form:focus-within:before {
   transform: scale(1); }
 
-/* styling of close button */
-/* == you can click the close button to remove text == */
 .reset {
   border: none;
   background: none;
   opacity: 0;
   visibility: hidden; }
 
-/* close button shown when typing */
 input:not(:placeholder-shown) ~ .reset {
   opacity: 1;
   visibility: visible; }
 
-/* sizing svg icons */
 .form svg {
   width: 17px;
   margin-top: 3px; }
@@ -3215,12 +3193,10 @@ label {
   height: 110px;
   display: flex;
   justify-content: space-between;
-  /* Distribuye los elementos: logo a la izquierda, buscador a la derecha */
   align-items: center;
   position: relative;
   margin: 0;
   padding: 0 20px;
-  /* Agrega espacio horizontal */
   animation: aparecer 1.5s 1; }
 
 .menu1_contLogo_conBuscador {
@@ -3239,7 +3215,6 @@ label {
   background: none;
   color: #8b8ba7; }
 
-/* styling of whole input container */
 .form {
   --timing: 0.3s;
   --width-of-input: 415px;
@@ -3259,7 +3234,6 @@ label {
   transition: border-radius 0.5s ease;
   background: var(--input-bg, #fff); }
 
-/* styling of Input */
 .input {
   font-size: 0.9rem;
   background-color: transparent;
@@ -3269,7 +3243,6 @@ label {
   padding-block: 0.7em;
   border: none; }
 
-/* styling of animated border */
 .form:before {
   content: "";
   position: absolute;
@@ -3283,31 +3256,25 @@ label {
   border-radius: 1px;
   transition: transform var(--timing) ease; }
 
-/* Hover on Input */
 .form:focus-within {
   border-radius: var(--after-border-radius); }
 
 input:focus {
   outline: none; }
 
-/* here is code of animated border */
 .form:focus-within:before {
   transform: scale(1); }
 
-/* styling of close button */
-/* == you can click the close button to remove text == */
 .reset {
   border: none;
   background: none;
   opacity: 0;
   visibility: hidden; }
 
-/* close button shown when typing */
 input:not(:placeholder-shown) ~ .reset {
   opacity: 1;
   visibility: visible; }
 
-/* sizing svg icons */
 .form svg {
   width: 17px;
   margin-top: 3px; }
