@@ -1880,6 +1880,11 @@ input:not(:placeholder-shown) ~ .reset {
   animation-fill-mode: both;
   transition: width 3s; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Variables*/
 /*Colores Magic Kindgdom*/
 /*Colores Epcot*/
 /*Colores Magic Kingdom*/
