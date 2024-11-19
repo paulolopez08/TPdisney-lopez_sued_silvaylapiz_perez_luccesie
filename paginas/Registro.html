@@ -27,63 +27,85 @@
     
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../assets/logos/favicon.png">
     <title>Registro</title>
 </head>
 
 <body id="bodySesion">
+
   <nav class="navbar fondomenu_IN" id="menu1">
     <div id="menu1_contLogo">
-        <h1 class="color_logo_IN" id="menu1_contLogo_logo">
-            <span class="char">W</span>
-            <span class="char">a</span>
-            <span class="char">l</span>
-            <span class="char">t</span>
-            <span class="char">D</span>
-            <span class="char">i</span>
-            <span class="char">s</span>
-            <span class="char">n</span>
-            <span class="char">e</span>
-            <span class="char">y</span>
-        </h1>
+      <h1 class="color_logo_IN" id="menu1_contLogo_logo">
+        <span class="char">W</span>
+        <span class="char">a</span>
+        <span class="char">l</span>
+        <span class="char">t</span>
+        <span class="char">D</span>
+        <span class="char">i</span>
+        <span class="char">s</span>
+        <span class="char">n</span>
+        <span class="char">e</span>
+        <span class="char">y</span>
+      </h1>
 
-    
-        <div class="star star_colorIN" id="star-1">✦</div>
-        <div class="star star_colorIN" id="star-2">✧</div>
-        <div class="star star_colorIN" id="star-3">✦</div>
-        <div class="star star_colorIN" id="star-4">✧</div>
-        <div class="star star_colorIN" id="star-5">✦</div>
-        <div class="star star_colorIN" id="star-6">✧</div>
-        <div class="star star_colorIN" id="star-7">✦</div>
-        <div class="star star_colorIN" id="star-8">✧</div>
+      <div class="star star_colorIN" id="star-1">✦</div>
+      <div class="star star_colorIN" id="star-2">✧</div>
+      <div class="star star_colorIN" id="star-3">✦</div>
+      <div class="star star_colorIN" id="star-4">✧</div>
+      <div class="star star_colorIN" id="star-5">✦</div>
+      <div class="star star_colorIN" id="star-6">✧</div>
+      <div class="star star_colorIN" id="star-7">✦</div>
+      <div class="star star_colorIN" id="star-8">✧</div>
     </div>
   </nav>
+  
+
   <a href="../index.html" class="btn btn-outline-light BotonVolver">Volver al Inicio</a>
   <div class="container d-flex justify-content-center align-items-center min-vh-100 margen">
     <div class="card p-4 form-container">
       <h2 class="text-left mb-4 MyDisney">MY DISNEY</h2>
         <form>
-            <div class="mb-3">
-              <label for="firstName" class="form-titulo">Nombre</label>
-              <input type="text" class="form-control" placeholder="Nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="lastName" class="form-titulo">Apellido</label>
-                <input type="text" class="form-control" placeholder="Apellido" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-titulo">Dirección de correo</label>
-                <input type="email" class="form-control" placeholder="Correo electrónico" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-titulo">Contraseña</label>
-                <input type="password" class="form-control" placeholder="Contraseña" required>
-            </div>
-            <div class="mb-3">
-                <label for="confirmPassword" class="form-titulo">Repita contraseña</label>
-                <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
-            </div>
-            <div class="mb-3">
-              <label for="select" class="form-titulo">Seleccione su pais:</label>
+
+          <div class="group">
+            <input required="" type="text" class="input">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Nombre</label>
+          </div>
+
+          <div class="group">
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Apellido</label>
+          </div>
+
+          <div class="group">
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Dirección de correo</label>
+          </div>
+
+          <div>
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Contraseña</label>
+          </div>
+
+          <div>
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Repita la contraseña</label>
+          </div>
+
+          <div>
+            <input type="text" class="input" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Seleccione su pais</label>
               <select class="form-select">
                   <option selected>Seleccione su pais</option>
                   <option value="AR">Argentina</option>
@@ -123,14 +145,15 @@
                   <option value="VE">Venezuela</option>
                   <option value="Otro">Otro</option>
               </select>
+          </div>
+
+          <div class="container mb-3">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" required>
+                <label class="Iniciodesesion" for="terms">He leído y acepto Términos y Condiciones</label>
             </div>
-            <div class="container mb-3">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" required>
-                    <label class="Iniciodesesion" for="terms">He leído y acepto Términos y Condiciones</label>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Continuar</button>
-            </div>
+            <button type="submit" class="btn btn-primary w-100">Continuar</button>
+          </div>
         </form>
     </div>
   </div>

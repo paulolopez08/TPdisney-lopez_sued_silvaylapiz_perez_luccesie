@@ -1,0 +1,152 @@
+
+
+$footer-bg-color: #5c92cc;
+$footer-text-color: #ffffff;
+$footer-link-color: #ffffff;
+$primary-color: #00a9f2;
+$secondary-color: #172D9D;
+$white: #fff;
+$black: #000;
+$font-family-base: Arial, sans-serif;
+$font-family-title: "Atma", serif;
+
+#bodySesion {
+  background: linear-gradient(to bottom, #1e90ff, #87cefa); /* Degradado de azul oscuro a azul claro */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+  margin: 0;
+
+}
+
+.group {
+  position: relative;
+ }
+ 
+ .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+ }
+ 
+ .input:focus {
+  outline: none;
+ }
+ 
+ label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+ }
+ 
+ .input:focus ~ label, .input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE;
+ }
+ 
+ .bar {
+  position: relative;
+  display: block;
+  width: 200px;
+ }
+ 
+ .bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+ }
+ 
+ .bar:before {
+  left: 50%;
+ }
+ 
+ .bar:after {
+  right: 50%;
+ }
+ 
+ .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+  width: 50%;
+ }
+ 
+ .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+ }
+ 
+ .input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+ }
+ 
+ @keyframes inputHighlighter {
+  from {
+   background: #5264AE;
+  }
+ 
+  to {
+   width: 0;
+   background: transparent;
+  }
+ }
+.container {
+  align-items: center;
+  font-family: $font-family-base;
+}
+
+.form-container {
+  width: 600px;
+  height: 690px;
+  background: $secondary-color;
+  border-radius: 9px;
+  box-shadow: 4px 8px 8px $black;
+}
+
+.MyDisney {
+  font-family: $font-family-title;
+  font-weight: 600;
+  font-style: normal;
+  color: $black;
+}
+
+.BotonVolver {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.footer-Login {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  .footer-Login-link {
+      color: $footer-link-color;
+      margin-right: 15px;
+      text-decoration: none;
+      &:hover {
+          text-decoration: underline;
+          color: lighten($footer-link-color, 10%);
+      }
+  }
+}
+.text-muted {
+  color: lighten($footer-text-color, 20%);
+}

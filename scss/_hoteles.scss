@@ -1,0 +1,282 @@
+#contFrasePrinc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+}
+
+#contFrasePrinc_frase{
+    padding: 0px 300px 0px 345px;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color: $colorCeleste2; 
+    font-family: "Mouse Memoirs", sans-serif;
+    background: linear-gradient( to bottom, $colorCeleste1, #4A90E2, #1E3A8A);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+
+
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+#contTituloMK{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#contTituloMK_titulo{
+    padding: 0px 0px 0px 70px;
+    text-align: left;
+    color: $colorCeleste2;
+    font-family: 'WaltographRegular', sans-serif;
+    font-size: 80px;
+
+    background: linear-gradient( to bottom, $colorCeleste1, #4A90E2, #1E3A8A);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 30px;
+
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+}
+
+#contTituloHL{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#contTituloHL_titulo{
+    padding: 0px 0px 0px 70px;
+    text-align: left;
+    color: $colorCeleste2;
+    font-family: 'WaltographRegular', sans-serif;
+    font-size: 80px;
+
+    background: linear-gradient( to top, #dca1a7, #d17c83, #e25f6f);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 30px;
+
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+}
+
+#contTituloA{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#contTituloA_titulo{
+    padding: 0px 0px 0px 70px;
+    text-align: left;
+    color: $colorCeleste2;
+    font-family: 'WaltographRegular', sans-serif;
+    font-size: 80px;
+
+    background: linear-gradient( to top, #a1cca5, #8fb996, #5f8764);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 30px;
+
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+}
+
+
+@keyframes slideIn2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+
+
+
+
+.contHoteles {
+    margin: 0px 0px 30px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.contHoteles_contCard {
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: $colorCeleste3;
+    transition: transform 0.3s ease;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+
+}
+
+.MK{
+    background-color: $colorCeleste3;
+    color: #00509D;
+}
+
+.EP{
+    background-color: #D2B7E5 ;
+    color: #815AC0;
+}
+
+.HL{
+    background-color: #FD9F9F ;
+    color: #7A2E2E;
+}
+
+.A{
+    background-color:#CBE294 ;
+    color: #265C26;
+}
+
+
+.contHoteles_contCard:hover {
+    transform: translateY(-15px) ;
+}
+
+
+
+
+.contHoteles_contCard_contImg {
+    overflow: hidden;
+}
+
+
+.contHoteles_contCard_contImg_img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.contHoteles_contCard_contImg_img:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+.contHoteles_contCard_info {
+    padding: 15px;
+    text-align: center;
+}
+
+.contHoteles_contCard_info_titulo{
+    
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contHoteles_contCard_texto{
+    font-size: 17px;
+    
+}
+
+.stars {
+    margin-top: 5px;
+    font-size: 22px;
+     
+}
+
+
+#contTituloEP{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#contTituloEP_titulo{
+    padding: 0px 0px 0px 70px;
+    text-align: left;
+    color: $colorCeleste2;
+    font-family: 'WaltographRegular', sans-serif;
+    font-size: 80px;
+
+    background: linear-gradient( to top, #e4c8ff, #c49de7,#9e74c3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 30px;
+
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+}

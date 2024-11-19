@@ -1,52 +1,357 @@
-@import "variables_princ";
-@import "menu";
 
-$purple: #7d5ab5;
-$red: #e74c3c;
-$blue: #3498db;
-$green: #2ecc71;
-$orange: #f39c12;
-$pink: #ff6b81;
-$brown: #8d6e63;
-$gray: #bdc3c7;
-
-// Variables
-$primary-color: #3498db;
-$button-hover-color: #2980b9;
-$input-border-color: #ddd;
-$input-focus-color: #3498db;
-$button-color: #ffffff;
-
-// Estilos generales
 * {
     margin: 0;
     padding: 0;
 }
 
-#bodyPersonajes {
-    background-color: $colorbody;
-}
 
 .sectionGaleria {
+    padding: 0;
+    margin: 0;
     display: flex;
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    width: 100%; 
     height: 500px;
 }
 
-.sectionGaleria .imgGaleria {
+.sectionGaleria .sectionGaleria_img {
+    margin: 0;
+    padding: 0;
     flex-grow: 1;
     object-fit: cover;
     width: 0px;
     transition: 0.5s ease;
 }
 
-.sectionGaleria .imgGaleria:hover {
-    cursor: crosshair;
-    width: 10%; /* Se expande al 100% del contenedor en hover */
-    filter: contrast(120%);
+
+.sectionGaleria .sectionGaleria_img:hover {
+    width: 10%;
 }
 
-#contCardsPersonajes {
+
+
+
+
+
+#contCardPersonajes_color1 {
+    margin-right: 20px ;
+    background-color: #f0d1fa;
+    transition: background-color 0.3s ease;
+
+
+}
+
+#contCardPersonajes_color1:hover {
+    background-color: #BC80CE;
+}
+
+
+
+
+.contCardPersonajes {
+    margin-top: 70px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 33%;
+    animation-fill-mode: both;
+    transition: width 3s;
+}
+
+
+.contCardPersonajes_contImg_img {
+    width: 175px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_contImg_img {
+    transform: scale(1.3) translateY(-30px); 
+
+}
+
+.contCardPersonajes_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#contCardPersonajes_info_titulo {
+    margin: 0px 30px 10px ;
+    font-size: 60px;
+    font-family: "Mouse Memoirs", sans-serif;
+}
+
+.contCardPersonajes_info_color1 {
+    color:#BC80CE;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color1 {
+    color: #f0d1fa;
+
+
+}
+
+#contCardPersonajes_info_pelicula{
+    margin: 0px 30px 10px ;
+    font-family: "Faculty Glyphic", sans-serif;
+    text-align: justify;
+    font-size: 17px;
+
+}
+
+#contCardPersonajes_info_desc {
+    margin: 0px 30px 10px ;
+    font-family: "Faculty Glyphic", sans-serif;
+    text-align: justify;
+    font-size: 15px;
+
+}
+
+
+.contCardPersonajes_derecha .contCardPersonajes_contImg {
+    order: 1; 
+}
+  
+
+#contCardPersonajes_color2 {
+    margin-left: 20px ;
+    background-color: #FFA98F;
+    transition: background-color 0.3s ease;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+#contCardPersonajes_color2:hover {
+    background-color: #f17a55;
+}
+
+.contCardPersonajes_info_color2 {
+    color:#f17a55;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color2 {
+    color: #FFA98F;
+
+
+}
+
+
+#contCardPersonajes_color3 {
+    margin-right: 20px ;
+    background-color: #F96363;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color3:hover {
+    background-color: #c13939;
+}
+
+.contCardPersonajes_info_color3 {
+    color:#c13939;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color3 {
+    color: #F96363;
+
+
+}
+
+
+
+
+#contCardPersonajes_color4 {
+    margin-left: 20px ;
+    background-color: #A4CBE4;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color4:hover {
+    background-color: #6698b7;
+}
+
+.contCardPersonajes_info_color4 {
+    color:#6698b7;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color4 {
+    color: #A4CBE4;
+
+
+}
+
+
+
+#contCardPersonajes_color5 {
+    margin-right: 20px ;
+    background-color: #A0CD9B;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color5:hover {
+    background-color: #60925a;
+}
+
+.contCardPersonajes_info_color5 {
+    color:#60925a;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color5 {
+    color: #A0CD9B;
+
+
+}
+
+
+
+
+#contCardPersonajes_color6 {
+    margin-left: 20px ;
+    background-color: #FBC281;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color6:hover {
+    background-color: #f3972e;
+}
+
+.contCardPersonajes_info_color6 {
+    color:#f3972e;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color6 {
+    color: #FBC281;
+
+
+}
+
+
+#contCardPersonajes_color7 {
+    margin-right: 20px ;
+    background-color: #F29371;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color7:hover {
+    background-color: #CC6A46;
+}
+
+.contCardPersonajes_info_color7 {
+    color:#CC6A46;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color7 {
+    color: #F29371;
+
+
+}
+
+#contCardPersonajes_color8 {
+    margin-right: 20px ;
+    background-color: #FF827A;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color8:hover {
+    background-color: #d35047;
+}
+
+.contCardPersonajes_info_color8 {
+    color:#d35047;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color8 {
+    color: #FF827A;
+
+
+}
+
+
+#contCardPersonajes_color9{
+    margin-right: 20px ;
+    background-color: #C1D6F5;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color9:hover {
+    background-color: #6a9be5;
+}
+
+.contCardPersonajes_info_color9 {
+    color: #6a9be5;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color9 {
+    color: #C1D6F5;
+
+
+}
+
+
+#contCardPersonajes_color10{
+    margin-right: 20px ;
+    background-color: #BAE7D1;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color10:hover {
+    background-color: #7dbf9f;
+}
+
+.contCardPersonajes_info_color10 {
+    color: #7dbf9f;
+    transition: background-color 0.3s ease;
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_info_color10 {
+    color: #BAE7D1;
+
+
+}
+
+
+#contTitEstrenos{
     width: 100%;
     height: 330px;
     display: flex;
@@ -54,11 +359,11 @@ $button-color: #ffffff;
     align-items: center;
 }
 
-#contCardsPersonajes_tit{
+#contTitEstrenos_tit{
     text-align: center;
     color: $colorCeleste2;
     font-family: 'WaltographRegular', sans-serif;
-    font-size: 70px;
+    font-size: 90px;
 
     background: linear-gradient( to bottom, $colorCeleste1, #4A90E2, #1E3A8A);
     color: transparent;
@@ -67,156 +372,25 @@ $button-color: #ffffff;
     margin-top: 30px;
 
     view-timeline-name: --text-slide;
-    view-timeline-axis: block; /* O puedes mantener "block" si prefieres */
+    view-timeline-axis: block; 
     animation-timeline: --text-slide;
     animation-name: slideIn2;
-    animation-duration: 1.5s; /* Duración de la animación */
+    animation-duration: 1.5s; 
     animation-range: entry 10% cover 50%;
     animation-fill-mode: both;
     transition: width 3s;
 }
 
-
-@keyframes slideIn2 {
-    from {
-        opacity: 0;
-        transform: translateX(-100%); /* Empieza fuera de la pantalla, en el lado izquierdo */
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0); /* Termina en su posición original */
-    }
-}
-
-
-#contCardsPersonajes {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 60px; 
-}
-
-.contCardsPersonajes_cards {
-    width: 310px;
-    height: 400px;
-    border-radius: 1rem;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-
+.carouselEstrenos{
     view-timeline-name: --text-slide;
-    view-timeline-axis: block;
+    view-timeline-axis: block; 
     animation-timeline: --text-slide;
-    animation-name: slideIn3;
-    animation-duration: 1.2s;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; 
+    animation-range: entry 30% cover 50%;
     animation-fill-mode: both;
-    animation-range: entry 15% cover 40%; /* Aparece antes */
-    opacity: 0;
-}
+    transition: width 3s;
 
 
-#card1Personajes:nth-child(1) {
-    animation-delay: 0s;
-}
-#card2:nth-child(2) {
-    animation-delay: 0.2s; 
-}
-#card3:nth-child(3) {
-    animation-delay: 0.4s; 
-}
-#card4:nth-child(4) {
-    animation-delay: 0.6s; 
-}
-
-/* Keyframes para el deslizamiento desde la derecha */
-@keyframes slideIn3 {
-    from {
-        opacity: 0;
-        transform: translateX(100%); /* Empieza desde fuera de pantalla a la derecha */
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0); /* En posición final */
-    }
-}
-
-
-
-
-
-#card1Personajes, #card2, #card3, #card4 {
-    background-size: cover;
-    background-position: center;
-}
-
-#card1Personajes {
-    background-image: url('../assets/imagenes/woody.png');
-}
-
-#card2 {
-    background-image: url('../assets/imagenes/atraccion2.png');
-}
-
-#card3 {
-    background-image: url('../assets/imagenes/atraccion3.png');
-}
-
-#card4 {
-    background-image: url('../assets/imagenes/atraccion4.png');
-}
-
-.contCardsPersonajes_cards::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    z-index: -1;
-    border-radius: 1.2rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
-    filter: blur(15px);
-}
-
-.contCardsPersonajes_cards_info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(50, 59, 98, 0.6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    padding: 10px;
-    text-align: center;
-}
-
-.contCardsPersonajes_cards_info_titulo {
-    color: #bfcffa;
-    font-family: "Mouse Memoirs", sans-serif;
-    font-size: 30px;
-    margin-bottom: 0.5em;
-}
-
-.contCardsPersonajes_cards_info_texto {
-    color: #e8eeff;
-    font-family: "Faculty Glyphic", sans-serif;
-    font-size: 17px;
-    padding: 0 15px;
-}
-
-
-.contCardsPersonajes_cards:hover .contCardsPersonajes_cards_info {
-    
-    opacity: 3;
-}
-
-.contCardsPersonajes_cards:hover {
-    transform: scale(1.05);
 }
 

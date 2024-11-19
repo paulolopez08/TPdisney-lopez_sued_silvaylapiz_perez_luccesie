@@ -8,12 +8,10 @@
   height: 110px;
   display: flex;
   justify-content: space-between;
-  /* Distribuye los elementos: logo a la izquierda, buscador a la derecha */
   align-items: center;
   position: relative;
   margin: 0;
   padding: 0 20px;
-  /* Agrega espacio horizontal */
   animation: aparecer 1.5s 1; }
 
 .menu1_contLogo_conBuscador {
@@ -32,7 +30,6 @@
   background: none;
   color: #8b8ba7; }
 
-/* styling of whole input container */
 .form {
   --timing: 0.3s;
   --width-of-input: 415px;
@@ -52,7 +49,6 @@
   transition: border-radius 0.5s ease;
   background: var(--input-bg, #fff); }
 
-/* styling of Input */
 .input {
   font-size: 0.9rem;
   background-color: transparent;
@@ -62,7 +58,6 @@
   padding-block: 0.7em;
   border: none; }
 
-/* styling of animated border */
 .form:before {
   content: "";
   position: absolute;
@@ -76,31 +71,25 @@
   border-radius: 1px;
   transition: transform var(--timing) ease; }
 
-/* Hover on Input */
 .form:focus-within {
   border-radius: var(--after-border-radius); }
 
 input:focus {
   outline: none; }
 
-/* here is code of animated border */
 .form:focus-within:before {
   transform: scale(1); }
 
-/* styling of close button */
-/* == you can click the close button to remove text == */
 .reset {
   border: none;
   background: none;
   opacity: 0;
   visibility: hidden; }
 
-/* close button shown when typing */
 input:not(:placeholder-shown) ~ .reset {
   opacity: 1;
   visibility: visible; }
 
-/* sizing svg icons */
 .form svg {
   width: 17px;
   margin-top: 3px; }
@@ -374,6 +363,10 @@ input:not(:placeholder-shown) ~ .reset {
   color: #265c26 !important; }
   .menu2_items_parquesak:hover {
     color: #adf1ad !important; }
+
+/*Para el de los personajes*/
+.menu_navbar_personajes {
+  background-color: #8AABE3 !important; }
 
 /*cosas generales del menu*/
 .fondomenu_MK {
@@ -1739,688 +1732,53 @@ input:not(:placeholder-shown) ~ .reset {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
-/*Colores Magic Kindgdom*/
-/*Colores Epcot*/
-/*Colores Magic Kingdom*/
-/*Colores Epcot*/
-/*Colores Hollywood Studios*/
-/*Colores Animal Kingdom*/
-/*Para los menu con buscador*/
-.menu1_conBuscador {
-  height: 110px;
-  display: flex;
-  justify-content: space-between;
-  /* Distribuye los elementos: logo a la izquierda, buscador a la derecha */
-  align-items: center;
-  position: relative;
-  margin: 0;
-  padding: 0 20px;
-  /* Agrega espacio horizontal */
-  animation: aparecer 1.5s 1; }
-
-.menu1_contLogo_conBuscador {
-  margin-left: 35px;
-  display: flex;
-  align-items: center;
-  position: relative; }
-
-#menu1_search {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; }
-
-.form button {
-  border: none;
-  background: none;
-  color: #8b8ba7; }
-
-/* styling of whole input container */
-.form {
-  --timing: 0.3s;
-  --width-of-input: 415px;
-  --height-of-input: 40px;
-  --border-height: 2px;
-  --input-bg: #ddeaff;
-  --border-color: #4b77c2;
-  --border-radius: 30px;
-  --after-border-radius: 1px;
-  position: relative;
-  width: var(--width-of-input);
-  height: var(--height-of-input);
-  display: flex;
-  align-items: center;
-  padding-inline: 0.8em;
-  border-radius: var(--border-radius);
-  transition: border-radius 0.5s ease;
-  background: var(--input-bg, #fff); }
-
-/* styling of Input */
-.input {
-  font-size: 0.9rem;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  padding-inline: 0.5em;
-  padding-block: 0.7em;
-  border: none; }
-
-/* styling of animated border */
-.form:before {
-  content: "";
-  position: absolute;
-  background: var(--border-color);
-  transform: scaleX(0);
-  transform-origin: center;
-  width: 100%;
-  height: var(--border-height);
-  left: 0;
-  bottom: 0;
-  border-radius: 1px;
-  transition: transform var(--timing) ease; }
-
-/* Hover on Input */
-.form:focus-within {
-  border-radius: var(--after-border-radius); }
-
-input:focus {
-  outline: none; }
-
-/* here is code of animated border */
-.form:focus-within:before {
-  transform: scale(1); }
-
-/* styling of close button */
-/* == you can click the close button to remove text == */
-.reset {
-  border: none;
-  background: none;
-  opacity: 0;
-  visibility: hidden; }
-
-/* close button shown when typing */
-input:not(:placeholder-shown) ~ .reset {
-  opacity: 1;
-  visibility: visible; }
-
-/* sizing svg icons */
-.form svg {
-  width: 17px;
-  margin-top: 3px; }
-
-/*Epcot*/
-.fondomenu_ep {
-  background: linear-gradient(to top, #e4c8ff, #c49de7, #9e74c3); }
-
-.color_logo_ep {
-  color: #ac6adb; }
-
-.menu_navbarep {
-  background-color: transparent !important; }
-  .menu_navbarep:hover {
-    background-color: #b98ae3 !important; }
-
-.menu_navbar_itemscolorep {
-  color: #4c2e7a !important; }
-  .menu_navbar_itemscolorep:hover {
-    color: #ead3ff !important; }
-  .menu_navbar_itemscolorep::after {
-    background: linear-gradient(90deg, transparent, #ead3ff, transparent); }
-
-#star-1ep {
-  top: -15px;
-  left: -30px;
-  font-size: 15px;
-  color: #a04de4;
-  animation-delay: 0s; }
-
-#star-2ep {
-  top: -20px;
-  right: -25px;
-  font-size: 12px;
-  color: #b868f0;
-  animation-delay: 0.3s; }
-
-#star-3ep {
-  bottom: -15px;
-  left: -20px;
-  font-size: 18px;
-  color: #8846b4;
-  animation-delay: 0.6s; }
-
-#star-4ep {
-  bottom: -10px;
-  right: -30px;
-  font-size: 10px;
-  color: #c9b0e6;
-  animation-delay: 0.9s; }
-
-#star-5ep {
-  top: -5px;
-  left: 10px;
-  font-size: 14px;
-  color: #a75cee;
-  animation-delay: 1.2s; }
-
-#star-6ep {
-  bottom: 5px;
-  right: 15px;
-  font-size: 16px;
-  color: #ae63ff;
-  animation-delay: 1.5s; }
-
-#star-7ep {
-  top: 0px;
-  right: 50px;
-  font-size: 12px;
-  color: #8127f6;
-  animation-delay: 1.8s; }
-
-#star-8ep {
-  bottom: 0px;
-  left: 50px;
-  font-size: 13px;
-  color: #7246b4;
-  animation-delay: 2s; }
-
-.contcolorep {
-  background-color: #b98ae3; }
-
-.colorep {
-  color: #4c2e7a; }
-
-.colorep:hover {
-  background-color: #b98ae3;
-  color: #ead3ff; }
-
-.menu2_items_parquesep {
-  color: #4c2e7a !important; }
-  .menu2_items_parquesep:hover {
-    color: #ead3ff !important; }
-
-/*Hollywood Studios*/
-.fondomenu_hs {
-  background: linear-gradient(to top, #f4bac0, #db8d94, #ba5964); }
-
-.color_logo_hs {
-  color: #8d2c36; }
-
-.menu_navbarhs {
-  background-color: transparent !important; }
-  .menu_navbarhs:hover {
-    background-color: #d56975 !important; }
-
-.menu_navbar_itemscolorhs {
-  color: #842831 !important; }
-  .menu_navbar_itemscolorhs:hover {
-    color: #f1adb1 !important; }
-  .menu_navbar_itemscolorhs::after {
-    background: linear-gradient(90deg, transparent, #f1adb1, transparent); }
-
-#star-1hs {
-  top: -15px;
-  left: -30px;
-  font-size: 15px;
-  color: #e44d55;
-  animation-delay: 0s; }
-
-#star-2hs {
-  top: -20px;
-  right: -25px;
-  font-size: 12px;
-  color: #f06868;
-  animation-delay: 0.3s; }
-
-#star-3hs {
-  bottom: -15px;
-  left: -20px;
-  font-size: 18px;
-  color: #b44646;
-  animation-delay: 0.6s; }
-
-#star-4hs {
-  bottom: -10px;
-  right: -30px;
-  font-size: 10px;
-  color: #e69494;
-  animation-delay: 0.9s; }
-
-#star-5hs {
-  top: -5px;
-  left: 10px;
-  font-size: 14px;
-  color: #ee5c5c;
-  animation-delay: 1.2s; }
-
-#star-6hs {
-  bottom: 5px;
-  right: 15px;
-  font-size: 16px;
-  color: #ff6363;
-  animation-delay: 1.5s; }
-
-#star-7hs {
-  top: 0px;
-  right: 50px;
-  font-size: 12px;
-  color: #f62727;
-  animation-delay: 1.8s; }
-
-#star-8hs {
-  bottom: 0px;
-  left: 50px;
-  font-size: 13px;
-  color: #b44646;
-  animation-delay: 2s; }
-
-.contcolorhs {
-  background-color: #d56975; }
-
-.colorhs {
-  color: #842831; }
-
-.colorhs:hover {
-  background-color: #d56975;
-  color: #f1adb1; }
-
-.menu2_items_parqueshs {
-  color: #842831 !important; }
-  .menu2_items_parqueshs:hover {
-    color: #f1adb1  !important; }
-
-/*Animal Kingdom*/
-.fondomenu_ak {
-  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764); }
-
-.color_logo_ak {
-  color: #265c26; }
-
-.menu_navbarak {
-  background-color: transparent !important; }
-  .menu_navbarak:hover {
-    background-color: #78b87c !important; }
-
-.menu_navbar_itemscolorak {
-  color: #265c26 !important; }
-  .menu_navbar_itemscolorak:hover {
-    color: #adf1ad !important; }
-  .menu_navbar_itemscolorak::after {
-    background: linear-gradient(90deg, transparent, #adf1ad, transparent); }
-
-#star-1ak {
-  top: -15px;
-  left: -30px;
-  font-size: 15px;
-  color: #4de455;
-  animation-delay: 0s; }
-
-#star-2ak {
-  top: -20px;
-  right: -25px;
-  font-size: 12px;
-  color: #68f068;
-  animation-delay: 0.3s; }
-
-#star-3ak {
-  bottom: -15px;
-  left: -20px;
-  font-size: 18px;
-  color: #46b460;
-  animation-delay: 0.6s; }
-
-#star-4ak {
-  bottom: -10px;
-  right: -30px;
-  font-size: 10px;
-  color: #94e6ae;
-  animation-delay: 0.9s; }
-
-#star-5ak {
-  top: -5px;
-  left: 10px;
-  font-size: 14px;
-  color: #5cee77;
-  animation-delay: 1.2s; }
-
-#star-6ak {
-  bottom: 5px;
-  right: 15px;
-  font-size: 16px;
-  color: #63ff92;
-  animation-delay: 1.5s; }
-
-#star-7ak {
-  top: 0px;
-  right: 50px;
-  font-size: 12px;
-  color: #27f657;
-  animation-delay: 1.8s; }
-
-#star-8ak {
-  bottom: 0px;
-  left: 50px;
-  font-size: 13px;
-  color: #46b465;
-  animation-delay: 2s; }
-
-.contcolorak {
-  background-color: #78b87c; }
-
-.colorak {
-  color: #265c26; }
-
-.colorak:hover {
-  background-color: #78b87c;
-  color: #adf1ad; }
-
-.menu2_items_parquesak {
-  color: #265c26 !important; }
-  .menu2_items_parquesak:hover {
-    color: #adf1ad !important; }
-
-/*cosas generales del menu*/
-.fondomenu_MK {
-  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
-
-.color_logo_MK {
-  color: #00509D; }
-
-.menu_navbarMK {
-  background-color: transparent !important; }
-  .menu_navbarMK:hover {
-    background-color: #8AABE3 !important; }
-
-.menu_navbar_itemscolorMK {
-  color: #376188 !important; }
-  .menu_navbar_itemscolorMK:hover {
-    color: #C3E2F8 !important; }
-  .menu_navbar_itemscolorMK::after {
-    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
-
-.menu2_items_parquesmk {
-  color: #376188 !important; }
-  .menu2_items_parquesmk:hover {
-    color: #C3E2F8 !important; }
-
-#star-1 {
-  top: -2px;
-  left: -30px;
-  font-size: 15px;
-  color: #4DA6FF;
-  animation-delay: 0s; }
-
-#star-2 {
-  top: -20px;
-  right: -25px;
-  font-size: 12px;
-  color: #87CEFA;
-  animation-delay: 0.3s; }
-
-#star-3 {
-  bottom: -15px;
-  left: -20px;
-  font-size: 18px;
-  color: #4682B4;
-  animation-delay: 0.6s; }
-
-#star-4 {
-  bottom: -10px;
-  right: -30px;
-  font-size: 10px;
-  color: #B0E0E6;
-  animation-delay: 0.9s; }
-
-#star-5 {
-  top: -5px;
-  left: 10px;
-  font-size: 14px;
-  color: #5CACEE;
-  animation-delay: 1.2s; }
-
-#star-6 {
-  bottom: 5px;
-  right: 15px;
-  font-size: 16px;
-  color: #63B8FF;
-  animation-delay: 1.5s; }
-
-#star-7 {
-  top: 0px;
-  right: 50px;
-  font-size: 12px;
-  color: #00BFFF;
-  animation-delay: 1.8s; }
-
-#star-8 {
-  bottom: 0px;
-  left: 50px;
-  font-size: 13px;
-  color: #4682B4;
-  animation-delay: 2s; }
-
-#menu1 {
-  height: 110px;
+#contFrasePrinc {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  animation: aparecer 1.5s 1; }
+  width: 100%;
+  height: 350px; }
 
-#menu1_contLogo {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+#contFrasePrinc_frase {
+  padding: 0px 300px 0px 345px;
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+  color: #8AABE3;
+  font-family: "Mouse Memoirs", sans-serif;
+  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
-#menu1_contLogo_logo {
-  font-family: 'WaltographRegular', sans-serif;
-  font-size: 75px;
-  display: flex; }
-
-.char {
-  opacity: 0;
-  animation: fadeIn 1.5s ease forwards; }
-
-/* Aplica un retraso diferente a cada letra para el efecto de aparición */
-.char:nth-child(1) {
-  animation-delay: 0.1s; }
-
-.char:nth-child(2) {
-  animation-delay: 0.2s; }
-
-.char:nth-child(3) {
-  animation-delay: 0.3s; }
-
-.char:nth-child(4) {
-  animation-delay: 0.4s; }
-
-.char:nth-child(5) {
-  animation-delay: 0.5s; }
-
-.char:nth-child(6) {
-  animation-delay: 0.6s; }
-
-.char:nth-child(7) {
-  animation-delay: 0.7s; }
-
-.char:nth-child(8) {
-  animation-delay: 0.8s; }
-
-.char:nth-child(9) {
-  animation-delay: 0.9s; }
-
-.char:nth-child(10) {
-  animation-delay: 1s; }
-
-@keyframes fadeIn {
+@keyframes show {
   from {
     opacity: 0;
-    transform: translateY(20px); }
+    scale: 25%; }
   to {
     opacity: 1;
-    transform: translateY(0); } }
+    scale: 100%; } }
 
-.star {
-  position: absolute;
-  font-size: 18px;
-  animation: sparkle 1.5s ease-in-out infinite;
-  opacity: 0; }
-
-@keyframes sparkle {
-  0%, 100% {
-    opacity: 0;
-    transform: scale(0.8); }
-  50% {
-    opacity: 1;
-    transform: scale(1.2); } }
-
-#contImgPrinc {
-  padding: 0;
-  width: 100%;
-  height: 600px;
-  position: relative;
-  margin: 0;
-  padding: 0; }
-
-#contImgPrinc_imgPrinc {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: 0;
-  padding: 0;
-  animation: aparecer 5s 1; }
-
-#menu2 {
-  height: 55px;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  animation: aparecer 4s 1;
-  transition: background-color 0.3s ease; }
-
-#menu2_contItems {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%; }
-
-.menu2_items {
-  font-size: 20px;
-  transition: color 0.3s ease;
-  font-family: "Faculty Glyphic", sans-serif;
-  position: relative;
-  padding-bottom: 5px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideIn 1s ease forwards;
-  z-index: 1; }
-
-.menu2_items_parques {
-  font-size: 20px;
-  transition: color 0.3s ease;
-  font-family: "Faculty Glyphic", sans-serif;
-  position: relative;
-  padding-bottom: 5px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideIn 1s ease forwards;
-  z-index: 1; }
-
-.menu2_items:nth-child(1) {
-  animation-delay: 1s; }
-
-.menu2_items:nth-child(2) {
-  animation-delay: 1.5s; }
-
-.menu2_items:nth-child(3) {
-  animation-delay: 2s; }
-
-.menu2_items:nth-child(4) {
-  animation-delay: 2.5s; }
-
-.menu2_items:nth-child(5) {
-  animation-delay: 3s; }
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px); }
-  to {
-    opacity: 1;
-    transform: translateY(0); } }
-
-.menu2_items::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-  transform-origin: right; }
-
-.menu2_items:hover::after {
-  transform: scaleX(1);
-  transform-origin: left; }
-
-@keyframes aparecer {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-.contcolormk {
-  background-color: #8AABE3; }
-
-.colormk {
-  color: #376188; }
-
-.colormk:hover {
-  background-color: #8AABE3;
-  color: #C3E2F8; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-#bodyPersonajes {
-  background-color: #FFF4E7; }
-
-.sectionGaleria {
-  display: flex;
-  width: 100%;
-  /* Ocupa todo el ancho de la pantalla */
-  height: 500px; }
-
-.sectionGaleria .imgGaleria {
-  flex-grow: 1;
-  object-fit: cover;
-  width: 0px;
-  transition: 0.5s ease; }
-
-.sectionGaleria .imgGaleria:hover {
-  cursor: crosshair;
-  width: 10%;
-  /* Se expande al 100% del contenedor en hover */
-  filter: contrast(120%); }
-
-#contCardsPersonajes {
+#contTituloMK {
   width: 100%;
   height: 330px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center; }
 
-#contCardsPersonajes_tit {
-  text-align: center;
+#contTituloMK_titulo {
+  padding: 0px 0px 0px 70px;
+  text-align: left;
   color: #8AABE3;
   font-family: 'WaltographRegular', sans-serif;
-  font-size: 70px;
+  font-size: 80px;
   background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
   color: transparent;
   background-clip: text;
@@ -2428,11 +1786,63 @@ input:not(:placeholder-shown) ~ .reset {
   margin-top: 30px;
   view-timeline-name: --text-slide;
   view-timeline-axis: block;
-  /* O puedes mantener "block" si prefieres */
   animation-timeline: --text-slide;
   animation-name: slideIn2;
   animation-duration: 1.5s;
-  /* Duración de la animación */
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+#contTituloHL {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+#contTituloHL_titulo {
+  padding: 0px 0px 0px 70px;
+  text-align: left;
+  color: #8AABE3;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 80px;
+  background: linear-gradient(to top, #dca1a7, #d17c83, #e25f6f);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 30px;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+#contTituloA {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+#contTituloA_titulo {
+  padding: 0px 0px 0px 70px;
+  text-align: left;
+  color: #8AABE3;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 80px;
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 30px;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
   animation-range: entry 10% cover 50%;
   animation-fill-mode: both;
   transition: width 3s; }
@@ -2440,121 +1850,368 @@ input:not(:placeholder-shown) ~ .reset {
 @keyframes slideIn2 {
   from {
     opacity: 0;
-    transform: translateX(-100%);
-    /* Empieza fuera de la pantalla, en el lado izquierdo */ }
+    transform: translateX(-100%); }
   to {
     opacity: 1;
-    transform: translateX(0);
-    /* Termina en su posición original */ } }
+    transform: translateX(0); } }
 
-#contCardsPersonajes {
+.contHoteles {
+  margin: 0px 0px 30px 0px;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px; }
+  padding: 20px;
+  gap: 20px; }
 
-.contCardsPersonajes_cards {
-  width: 310px;
-  height: 400px;
-  border-radius: 1rem;
+.contHoteles_contCard {
+  width: 400px;
+  border-radius: 10px;
   overflow: hidden;
-  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #C3E2F8;
   transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both; }
+
+.MK {
+  background-color: #C3E2F8;
+  color: #00509D; }
+
+.EP {
+  background-color: #D2B7E5;
+  color: #815AC0; }
+
+.HL {
+  background-color: #FD9F9F;
+  color: #7A2E2E; }
+
+.A {
+  background-color: #CBE294;
+  color: #265C26; }
+
+.contHoteles_contCard:hover {
+  transform: translateY(-15px); }
+
+.contHoteles_contCard_contImg {
+  overflow: hidden; }
+
+.contHoteles_contCard_contImg_img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease; }
+
+.contHoteles_contCard_contImg_img:hover {
+  transform: scale(1.1); }
+
+.contHoteles_contCard_info {
+  padding: 15px;
+  text-align: center; }
+
+.contHoteles_contCard_info_titulo {
+  font-size: 20px;
+  margin: 10px 0; }
+
+.contHoteles_contCard_texto {
+  font-size: 17px; }
+
+.stars {
+  margin-top: 5px;
+  font-size: 22px; }
+
+#contTituloEP {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+#contTituloEP_titulo {
+  padding: 0px 0px 0px 70px;
+  text-align: left;
+  color: #8AABE3;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 80px;
+  background: linear-gradient(to top, #e4c8ff, #c49de7, #9e74c3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 30px;
   view-timeline-name: --text-slide;
   view-timeline-axis: block;
   animation-timeline: --text-slide;
-  animation-name: slideIn3;
-  animation-duration: 1.2s;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
   animation-fill-mode: both;
-  animation-range: entry 15% cover 40%;
-  /* Aparece antes */
-  opacity: 0; }
+  transition: width 3s; }
 
-#card1Personajes:nth-child(1) {
-  animation-delay: 0s; }
+* {
+  margin: 0;
+  padding: 0; }
 
-#card2:nth-child(2) {
-  animation-delay: 0.2s; }
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0; }
 
-#card3:nth-child(3) {
-  animation-delay: 0.4s; }
-
-#card4:nth-child(4) {
-  animation-delay: 0.6s; }
-
-/* Keyframes para el deslizamiento desde la derecha */
-@keyframes slideIn3 {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-    /* Empieza desde fuera de pantalla a la derecha */ }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-    /* En posición final */ } }
-
-#card1Personajes, #card2, #card3, #card4 {
-  background-size: cover;
-  background-position: center; }
-
-#card1Personajes {
-  background-image: url("../assets/imagenes/woody.png"); }
-
-#card2 {
-  background-image: url("../assets/imagenes/atraccion2.png"); }
-
-#card3 {
-  background-image: url("../assets/imagenes/atraccion3.png"); }
-
-#card4 {
-  background-image: url("../assets/imagenes/atraccion4.png"); }
-
-.contCardsPersonajes_cards::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;
-  border-radius: 1.2rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
-  filter: blur(15px); }
-
-.contCardsPersonajes_cards_info {
-  position: absolute;
-  top: 0;
-  left: 0;
+.sectionGaleria {
+  padding: 0;
+  margin: 0;
+  display: flex;
   width: 100%;
-  height: 100%;
-  background-color: rgba(50, 59, 98, 0.6);
+  height: 500px; }
+
+.sectionGaleria .sectionGaleria_img {
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  width: 0px;
+  transition: 0.5s ease; }
+
+.sectionGaleria .sectionGaleria_img:hover {
+  width: 10%; }
+
+#contCardPersonajes_color1 {
+  margin-right: 20px;
+  background-color: #f0d1fa;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color1:hover {
+  background-color: #BC80CE; }
+
+.contCardPersonajes {
+  margin-top: 70px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 33%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+.contCardPersonajes_contImg_img {
+  width: 175px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_contImg_img {
+  transform: scale(1.3) translateY(-30px); }
+
+.contCardPersonajes_info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 10px;
-  text-align: center; }
+  justify-content: center; }
 
-.contCardsPersonajes_cards_info_titulo {
-  color: #bfcffa;
-  font-family: "Mouse Memoirs", sans-serif;
-  font-size: 30px;
-  margin-bottom: 0.5em; }
+#contCardPersonajes_info_titulo {
+  margin: 0px 30px 10px;
+  font-size: 60px;
+  font-family: "Mouse Memoirs", sans-serif; }
 
-.contCardsPersonajes_cards_info_texto {
-  color: #e8eeff;
+.contCardPersonajes_info_color1 {
+  color: #BC80CE;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color1 {
+  color: #f0d1fa; }
+
+#contCardPersonajes_info_pelicula {
+  margin: 0px 30px 10px;
   font-family: "Faculty Glyphic", sans-serif;
-  font-size: 17px;
-  padding: 0 15px; }
+  text-align: justify;
+  font-size: 17px; }
 
-.contCardsPersonajes_cards:hover .contCardsPersonajes_cards_info {
-  opacity: 3; }
+#contCardPersonajes_info_desc {
+  margin: 0px 30px 10px;
+  font-family: "Faculty Glyphic", sans-serif;
+  text-align: justify;
+  font-size: 15px; }
 
-.contCardsPersonajes_cards:hover {
-  transform: scale(1.05); }
+.contCardPersonajes_derecha .contCardPersonajes_contImg {
+  order: 1; }
+
+#contCardPersonajes_color2 {
+  margin-left: 20px;
+  background-color: #FFA98F;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color2:hover {
+  background-color: #f17a55; }
+
+.contCardPersonajes_info_color2 {
+  color: #f17a55;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color2 {
+  color: #FFA98F; }
+
+#contCardPersonajes_color3 {
+  margin-right: 20px;
+  background-color: #F96363;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color3:hover {
+  background-color: #c13939; }
+
+.contCardPersonajes_info_color3 {
+  color: #c13939;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color3 {
+  color: #F96363; }
+
+#contCardPersonajes_color4 {
+  margin-left: 20px;
+  background-color: #A4CBE4;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color4:hover {
+  background-color: #6698b7; }
+
+.contCardPersonajes_info_color4 {
+  color: #6698b7;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color4 {
+  color: #A4CBE4; }
+
+#contCardPersonajes_color5 {
+  margin-right: 20px;
+  background-color: #A0CD9B;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color5:hover {
+  background-color: #60925a; }
+
+.contCardPersonajes_info_color5 {
+  color: #60925a;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color5 {
+  color: #A0CD9B; }
+
+#contCardPersonajes_color6 {
+  margin-left: 20px;
+  background-color: #FBC281;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color6:hover {
+  background-color: #f3972e; }
+
+.contCardPersonajes_info_color6 {
+  color: #f3972e;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color6 {
+  color: #FBC281; }
+
+#contCardPersonajes_color7 {
+  margin-right: 20px;
+  background-color: #F29371;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color7:hover {
+  background-color: #CC6A46; }
+
+.contCardPersonajes_info_color7 {
+  color: #CC6A46;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color7 {
+  color: #F29371; }
+
+#contCardPersonajes_color8 {
+  margin-right: 20px;
+  background-color: #FF827A;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color8:hover {
+  background-color: #d35047; }
+
+.contCardPersonajes_info_color8 {
+  color: #d35047;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color8 {
+  color: #FF827A; }
+
+#contCardPersonajes_color9 {
+  margin-right: 20px;
+  background-color: #C1D6F5;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color9:hover {
+  background-color: #6a9be5; }
+
+.contCardPersonajes_info_color9 {
+  color: #6a9be5;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color9 {
+  color: #C1D6F5; }
+
+#contCardPersonajes_color10 {
+  margin-right: 20px;
+  background-color: #BAE7D1;
+  transition: background-color 0.3s ease; }
+
+#contCardPersonajes_color10:hover {
+  background-color: #7dbf9f; }
+
+.contCardPersonajes_info_color10 {
+  color: #7dbf9f;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color10 {
+  color: #BAE7D1; }
+
+#contTitEstrenos {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#contTitEstrenos_tit {
+  text-align: center;
+  color: #8AABE3;
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 90px;
+  background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 30px;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+
+.carouselEstrenos {
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 30% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 /*Colores Magic Kingdom*/
 /*Colores Epcot*/
@@ -2932,6 +2589,998 @@ footer {
 #contDerechosFooter_derechos {
   color: #11477a;
   font-size: 14px; }
+
+#bodySesion {
+  background: linear-gradient(to bottom, #1e90ff, #87cefa);
+  /* Degradado de azul oscuro a azul claro */
+  min-height: 100vh;
+  /* Asegura que el fondo cubra toda la altura de la ventana */
+  margin: 0; }
+
+.group {
+  position: relative; }
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent; }
+
+.input:focus {
+  outline: none; }
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all; }
+
+.input:focus ~ label, .input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE; }
+
+.bar {
+  position: relative;
+  display: block;
+  width: 200px; }
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all; }
+
+.bar:before {
+  left: 50%; }
+
+.bar:after {
+  right: 50%; }
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+  width: 50%; }
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5; }
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease; }
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
+
+.container {
+  align-items: center;
+  font-family: Arial, sans-serif; }
+
+.form-container {
+  width: 600px;
+  height: 690px;
+  background: #172D9D;
+  border-radius: 9px;
+  box-shadow: 4px 8px 8px #000; }
+
+.MyDisney {
+  font-family: "Atma", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #000; }
+
+.BotonVolver {
+  position: absolute;
+  right: 30px;
+  top: 30px; }
+
+.footer-Login {
+  background-color: #5c92cc;
+  color: #ffffff; }
+  .footer-Login .footer-Login-link {
+    color: #ffffff;
+    margin-right: 15px;
+    text-decoration: none; }
+    .footer-Login .footer-Login-link:hover {
+      text-decoration: underline;
+      color: white; }
+
+.text-muted {
+  color: white; }
+
+/*Colores Magic Kindgdom*/
+/*Colores Epcot*/
+/*Colores Magic Kingdom*/
+/*Colores Epcot*/
+/*Colores Hollywood Studios*/
+/*Colores Animal Kingdom*/
+/*Para los menu con buscador*/
+.menu1_conBuscador {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  animation: aparecer 1.5s 1; }
+
+.menu1_contLogo_conBuscador {
+  margin-left: 35px;
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+#menu1_search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7; }
+
+.form {
+  --timing: 0.3s;
+  --width-of-input: 415px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #ddeaff;
+  --border-color: #4b77c2;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff); }
+
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none; }
+
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease; }
+
+.form:focus-within {
+  border-radius: var(--after-border-radius); }
+
+input:focus {
+  outline: none; }
+
+.form:focus-within:before {
+  transform: scale(1); }
+
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden; }
+
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible; }
+
+.form svg {
+  width: 17px;
+  margin-top: 3px; }
+
+/*Epcot*/
+.fondomenu_ep {
+  background: linear-gradient(to top, #e4c8ff, #c49de7, #9e74c3); }
+
+.color_logo_ep {
+  color: #ac6adb; }
+
+.menu_navbarep {
+  background-color: transparent !important; }
+  .menu_navbarep:hover {
+    background-color: #b98ae3 !important; }
+
+.menu_navbar_itemscolorep {
+  color: #4c2e7a !important; }
+  .menu_navbar_itemscolorep:hover {
+    color: #ead3ff !important; }
+  .menu_navbar_itemscolorep::after {
+    background: linear-gradient(90deg, transparent, #ead3ff, transparent); }
+
+#star-1ep {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #a04de4;
+  animation-delay: 0s; }
+
+#star-2ep {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #b868f0;
+  animation-delay: 0.3s; }
+
+#star-3ep {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #8846b4;
+  animation-delay: 0.6s; }
+
+#star-4ep {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #c9b0e6;
+  animation-delay: 0.9s; }
+
+#star-5ep {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #a75cee;
+  animation-delay: 1.2s; }
+
+#star-6ep {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #ae63ff;
+  animation-delay: 1.5s; }
+
+#star-7ep {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #8127f6;
+  animation-delay: 1.8s; }
+
+#star-8ep {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #7246b4;
+  animation-delay: 2s; }
+
+.contcolorep {
+  background-color: #b98ae3; }
+
+.colorep {
+  color: #4c2e7a; }
+
+.colorep:hover {
+  background-color: #b98ae3;
+  color: #ead3ff; }
+
+.menu2_items_parquesep {
+  color: #4c2e7a !important; }
+  .menu2_items_parquesep:hover {
+    color: #ead3ff !important; }
+
+/*Hollywood Studios*/
+.fondomenu_hs {
+  background: linear-gradient(to top, #f4bac0, #db8d94, #ba5964); }
+
+.color_logo_hs {
+  color: #8d2c36; }
+
+.menu_navbarhs {
+  background-color: transparent !important; }
+  .menu_navbarhs:hover {
+    background-color: #d56975 !important; }
+
+.menu_navbar_itemscolorhs {
+  color: #842831 !important; }
+  .menu_navbar_itemscolorhs:hover {
+    color: #f1adb1 !important; }
+  .menu_navbar_itemscolorhs::after {
+    background: linear-gradient(90deg, transparent, #f1adb1, transparent); }
+
+#star-1hs {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #e44d55;
+  animation-delay: 0s; }
+
+#star-2hs {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #f06868;
+  animation-delay: 0.3s; }
+
+#star-3hs {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #b44646;
+  animation-delay: 0.6s; }
+
+#star-4hs {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #e69494;
+  animation-delay: 0.9s; }
+
+#star-5hs {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #ee5c5c;
+  animation-delay: 1.2s; }
+
+#star-6hs {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #ff6363;
+  animation-delay: 1.5s; }
+
+#star-7hs {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #f62727;
+  animation-delay: 1.8s; }
+
+#star-8hs {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #b44646;
+  animation-delay: 2s; }
+
+.contcolorhs {
+  background-color: #d56975; }
+
+.colorhs {
+  color: #842831; }
+
+.colorhs:hover {
+  background-color: #d56975;
+  color: #f1adb1; }
+
+.menu2_items_parqueshs {
+  color: #842831 !important; }
+  .menu2_items_parqueshs:hover {
+    color: #f1adb1  !important; }
+
+/*Animal Kingdom*/
+.fondomenu_ak {
+  background: linear-gradient(to top, #a1cca5, #8fb996, #5f8764); }
+
+.color_logo_ak {
+  color: #265c26; }
+
+.menu_navbarak {
+  background-color: transparent !important; }
+  .menu_navbarak:hover {
+    background-color: #78b87c !important; }
+
+.menu_navbar_itemscolorak {
+  color: #265c26 !important; }
+  .menu_navbar_itemscolorak:hover {
+    color: #adf1ad !important; }
+  .menu_navbar_itemscolorak::after {
+    background: linear-gradient(90deg, transparent, #adf1ad, transparent); }
+
+#star-1ak {
+  top: -15px;
+  left: -30px;
+  font-size: 15px;
+  color: #4de455;
+  animation-delay: 0s; }
+
+#star-2ak {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #68f068;
+  animation-delay: 0.3s; }
+
+#star-3ak {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #46b460;
+  animation-delay: 0.6s; }
+
+#star-4ak {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #94e6ae;
+  animation-delay: 0.9s; }
+
+#star-5ak {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #5cee77;
+  animation-delay: 1.2s; }
+
+#star-6ak {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #63ff92;
+  animation-delay: 1.5s; }
+
+#star-7ak {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #27f657;
+  animation-delay: 1.8s; }
+
+#star-8ak {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #46b465;
+  animation-delay: 2s; }
+
+.contcolorak {
+  background-color: #78b87c; }
+
+.colorak {
+  color: #265c26; }
+
+.colorak:hover {
+  background-color: #78b87c;
+  color: #adf1ad; }
+
+.menu2_items_parquesak {
+  color: #265c26 !important; }
+  .menu2_items_parquesak:hover {
+    color: #adf1ad !important; }
+
+/*Para el de los personajes*/
+.menu_navbar_personajes {
+  background-color: #8AABE3 !important; }
+
+/*cosas generales del menu*/
+.fondomenu_MK {
+  background: linear-gradient(to top, #C3E2F8, #9bb2f2, #6688e7); }
+
+.color_logo_MK {
+  color: #00509D; }
+
+.menu_navbarMK {
+  background-color: transparent !important; }
+  .menu_navbarMK:hover {
+    background-color: #8AABE3 !important; }
+
+.menu_navbar_itemscolorMK {
+  color: #376188 !important; }
+  .menu_navbar_itemscolorMK:hover {
+    color: #C3E2F8 !important; }
+  .menu_navbar_itemscolorMK::after {
+    background: linear-gradient(90deg, transparent, #C3E2F8, transparent); }
+
+.menu2_items_parquesmk {
+  color: #376188 !important; }
+  .menu2_items_parquesmk:hover {
+    color: #C3E2F8 !important; }
+
+#star-1 {
+  top: -2px;
+  left: -30px;
+  font-size: 15px;
+  color: #4DA6FF;
+  animation-delay: 0s; }
+
+#star-2 {
+  top: -20px;
+  right: -25px;
+  font-size: 12px;
+  color: #87CEFA;
+  animation-delay: 0.3s; }
+
+#star-3 {
+  bottom: -15px;
+  left: -20px;
+  font-size: 18px;
+  color: #4682B4;
+  animation-delay: 0.6s; }
+
+#star-4 {
+  bottom: -10px;
+  right: -30px;
+  font-size: 10px;
+  color: #B0E0E6;
+  animation-delay: 0.9s; }
+
+#star-5 {
+  top: -5px;
+  left: 10px;
+  font-size: 14px;
+  color: #5CACEE;
+  animation-delay: 1.2s; }
+
+#star-6 {
+  bottom: 5px;
+  right: 15px;
+  font-size: 16px;
+  color: #63B8FF;
+  animation-delay: 1.5s; }
+
+#star-7 {
+  top: 0px;
+  right: 50px;
+  font-size: 12px;
+  color: #00BFFF;
+  animation-delay: 1.8s; }
+
+#star-8 {
+  bottom: 0px;
+  left: 50px;
+  font-size: 13px;
+  color: #4682B4;
+  animation-delay: 2s; }
+
+#menu1 {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  animation: aparecer 1.5s 1; }
+
+#menu1_contLogo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#menu1_contLogo_logo {
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 75px;
+  display: flex; }
+
+.char {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards; }
+
+/* Aplica un retraso diferente a cada letra para el efecto de aparición */
+.char:nth-child(1) {
+  animation-delay: 0.1s; }
+
+.char:nth-child(2) {
+  animation-delay: 0.2s; }
+
+.char:nth-child(3) {
+  animation-delay: 0.3s; }
+
+.char:nth-child(4) {
+  animation-delay: 0.4s; }
+
+.char:nth-child(5) {
+  animation-delay: 0.5s; }
+
+.char:nth-child(6) {
+  animation-delay: 0.6s; }
+
+.char:nth-child(7) {
+  animation-delay: 0.7s; }
+
+.char:nth-child(8) {
+  animation-delay: 0.8s; }
+
+.char:nth-child(9) {
+  animation-delay: 0.9s; }
+
+.char:nth-child(10) {
+  animation-delay: 1s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.star {
+  position: absolute;
+  font-size: 18px;
+  animation: sparkle 1.5s ease-in-out infinite;
+  opacity: 0; }
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.8); }
+  50% {
+    opacity: 1;
+    transform: scale(1.2); } }
+
+#contImgPrinc {
+  padding: 0;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+#contImgPrinc_imgPrinc {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  animation: aparecer 5s 1; }
+
+#menu2 {
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: aparecer 4s 1;
+  transition: background-color 0.3s ease; }
+
+#menu2_contItems {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%; }
+
+.menu2_items {
+  font-size: 20px;
+  transition: color 0.3s ease;
+  font-family: "Faculty Glyphic", sans-serif;
+  position: relative;
+  padding-bottom: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s ease forwards;
+  z-index: 1; }
+
+.menu2_items_parques {
+  font-size: 20px;
+  transition: color 0.3s ease;
+  font-family: "Faculty Glyphic", sans-serif;
+  position: relative;
+  padding-bottom: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s ease forwards;
+  z-index: 1; }
+
+.menu2_items:nth-child(1) {
+  animation-delay: 1s; }
+
+.menu2_items:nth-child(2) {
+  animation-delay: 1.5s; }
+
+.menu2_items:nth-child(3) {
+  animation-delay: 2s; }
+
+.menu2_items:nth-child(4) {
+  animation-delay: 2.5s; }
+
+.menu2_items:nth-child(5) {
+  animation-delay: 3s; }
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.menu2_items::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right; }
+
+.menu2_items:hover::after {
+  transform: scaleX(1);
+  transform-origin: left; }
+
+@keyframes aparecer {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.contcolormk {
+  background-color: #8AABE3; }
+
+.colormk {
+  color: #376188; }
+
+.colormk:hover {
+  background-color: #8AABE3;
+  color: #C3E2F8; }
+
+.bodySesion {
+  background: linear-gradient(to bottom, #00a9f2, #172D9D); }
+
+.buttonLogin {
+  display: flex;
+  text-align: right;
+  position: relative;
+  padding: 12px 35px;
+  background: #00a9f2;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  border: 3px solid #172D9D;
+  border-radius: 8px;
+  box-shadow: 0 0 0 #172D9D;
+  transition: all 0.3s ease-in-out; }
+
+.star-1Login {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 0 white);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96); }
+
+.star-2Login {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 white);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01); }
+
+.star-3Login {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fff);
+  z-index: -5;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01); }
+
+.star-4Login {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fff);
+  z-index: -5;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01); }
+
+.star-5Login {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fff);
+  z-index: -5;
+  transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01); }
+
+.star-6Login {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 0 #fff);
+  z-index: -5;
+  transition: all 0.8s ease; }
+
+.buttonLogin:hover {
+  background: transparent;
+  color: #fff;
+  box-shadow: 0 0 25px #fff; }
+
+.buttonLogin:hover .star-1Login {
+  position: absolute;
+  top: -80%;
+  left: -30%;
+  width: 25px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fff);
+  z-index: 2; }
+
+.buttonLogin:hover .star-2Login {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fff);
+  z-index: 2; }
+
+.buttonLogin:hover .star-3Login {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fff);
+  z-index: 2; }
+
+.buttonLogin:hover .star-4Login {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 8px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fff);
+  z-index: 2; }
+
+.buttonLogin:hover .star-5Login {
+  position: absolute;
+  top: 25%;
+  left: 115%;
+  width: 15px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fff);
+  z-index: 2; }
+
+.buttonLogin:hover .star-6Login {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  width: 5px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #fff);
+  z-index: 2; }
+
+.fil0Login {
+  fill: #fff; }
+
+.container-login {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.card-login {
+  width: 400px;
+  height: 450px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 22px;
+  transition: all 0.3s; }
+
+.card-login:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3); }
+
+.card2-login {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  transition: all 0.2s; }
+
+.card2-login:hover {
+  transform: scale(0.98);
+  border-radius: 20px; }
+
+.form-login {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2em;
+  background-color: #171717;
+  border-radius: 20px; }
+
+#heading-login {
+  text-align: center;
+  color: #00ffc8;
+  font-size: 1.2em; }
+
+.field-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px #050505; }
+
+.input-icon-login {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #00ffc8; }
+
+.input-field-login {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #00ffc8; }
+
+.btn-login {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em; }
+
+.button1-login,
+.button2-login,
+.button3-login {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  color: black; }
+
+.button1-login:hover,
+.button2-login:hover {
+  background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
+  color: #00ffc8; }
+
+.button3-login:hover {
+  background-image: linear-gradient(163deg, #a00000fa 0%, #d10050 100%);
+  color: white; }
 
 * {
   margin: 0;
