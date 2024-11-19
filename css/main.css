@@ -3674,16 +3674,16 @@ input:not(:placeholder-shown) ~ .reset {
   background-size: cover;
   background-position: center; }
 
-#card1 {
+#cardIN1 {
   background-image: url("../assets/imagenes/Mkingdom.png"); }
 
-#card2 {
+#cardIN2 {
   background-image: url("../assets/imagenes/EpcotIN.png"); }
 
-#card3 {
+#cardIN3 {
   background-image: url("../assets/imagenes/HStudiosIN.png"); }
 
-#card4 {
+#cardIN4 {
   background-image: url("../assets/imagenes/AkingdomIN.png"); }
 
 .contCardsparques_cards_info {
