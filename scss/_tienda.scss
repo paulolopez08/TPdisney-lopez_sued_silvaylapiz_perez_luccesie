@@ -1,4 +1,4 @@
-// General
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -6,7 +6,7 @@ body {
     padding: 0;
   }
   
-  // Secciones principales
+
   .container-fluid {
     padding: 2rem;
   }
@@ -26,7 +26,7 @@ body {
     }
   }
   
-  // Tienda de productos
+ 
   .contTienda {
     margin-bottom: 2rem;
   
@@ -89,20 +89,20 @@ body {
     }
   }
   
-  // Categorías específicas
+
   .contTienda:nth-of-type(1) {
-    background-color: #A1C9E6; // Azul claro
+    background-color: #A1C9E6; 
   }
   
   .contTienda:nth-of-type(2) {
-    background-color: #FF827A; // Rosa claro
+    background-color: #FF827A; 
   }
   
   .contTienda:nth-of-type(3) {
-    background-color: #94B741; // Verde claro
+    background-color: #94B741; 
   }
   
-  // Imágenes destacadas por sección
+
   #tienda,
   #diadema,
   #navidad {
