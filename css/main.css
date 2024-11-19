@@ -1991,7 +1991,14 @@ input:not(:placeholder-shown) ~ .reset {
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  transition: transform 0.3s ease; }
+  transition: transform 0.3s ease;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 33%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 .contCardPersonajes_contImg_img {
   width: 175px;
@@ -2197,11 +2204,12 @@ input:not(:placeholder-shown) ~ .reset {
   transition: width 3s; }
 
 .carouselEstrenos {
-  view-timeline-name: --image;
+  view-timeline-name: --text-slide;
   view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 33%;
+  animation-timeline: --text-slide;
+  animation-name: slideIn2;
+  animation-duration: 1.5s;
+  animation-range: entry 30% cover 50%;
   animation-fill-mode: both;
   transition: width 3s; }
 

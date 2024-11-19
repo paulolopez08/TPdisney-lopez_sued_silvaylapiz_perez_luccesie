@@ -55,6 +55,15 @@
     padding: 30px;
     transition: transform 0.3s ease;
 
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 33%;
+    animation-fill-mode: both;
+    transition: width 3s;
 }
 
 
@@ -373,15 +382,15 @@
 }
 
 .carouselEstrenos{
-    
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 10% cover 33%;
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: slideIn2;
+    animation-duration: 1.5s; 
+    animation-range: entry 30% cover 50%;
     animation-fill-mode: both;
     transition: width 3s;
+
+
 }
 
