@@ -1978,7 +1978,7 @@ input:not(:placeholder-shown) ~ .reset {
   width: 10%; }
 
 #contCardPersonajes_color1 {
-  margin-right: 10px;
+  margin-right: 20px;
   background-color: #f0d1fa;
   transition: background-color 0.3s ease; }
 
@@ -2009,23 +2009,47 @@ input:not(:placeholder-shown) ~ .reset {
   flex-direction: column;
   justify-content: center; }
 
-.contCardPersonajes_info_titulo {
+#contCardPersonajes_info_titulo {
   margin: 0px 30px 10px;
-  font-size: 1.5rem;
-  color: #333; }
+  font-size: 60px;
+  font-family: "Mouse Memoirs", sans-serif; }
 
-.contCardPersonajes_info_pelicula,
-.contCardPersonajes_info_desc {
+.contCardPersonajes_info_color1 {
+  color: #BC80CE;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color1 {
+  color: #f0d1fa; }
+
+#contCardPersonajes_info_pelicula {
   margin: 0px 30px 10px;
-  color: #666; }
+  font-family: "Faculty Glyphic", sans-serif;
+  text-align: justify;
+  font-size: 17px; }
+
+#contCardPersonajes_info_desc {
+  margin: 0px 30px 10px;
+  font-family: "Faculty Glyphic", sans-serif;
+  text-align: justify;
+  font-size: 15px; }
+
+.contCardPersonajes_derecha .contCardPersonajes_contImg {
+  order: 1; }
 
 #contCardPersonajes_color2 {
-  margin-left: 60px;
-  background-color: #C3E2F8;
+  margin-left: 20px;
+  background-color: #FFA98F;
   transition: background-color 0.3s ease; }
 
 #contCardPersonajes_color2:hover {
-  background-color: #BC80CE; }
+  background-color: #f17a55; }
+
+.contCardPersonajes_info_color2 {
+  color: #f17a55;
+  transition: background-color 0.3s ease; }
+
+.contCardPersonajes:hover .contCardPersonajes_info_color2 {
+  color: #FFA98F; }
 
 /*Colores Magic Kingdom*/
 /*Colores Epcot*/
