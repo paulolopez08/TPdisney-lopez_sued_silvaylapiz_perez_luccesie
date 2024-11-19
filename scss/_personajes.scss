@@ -5,7 +5,6 @@
 }
 
 
-
 .sectionGaleria {
     padding: 0;
     margin: 0;
@@ -29,3 +28,69 @@
 }
 
 
+
+#contCardPersonajes_color1 {
+    margin-right: 10px;
+    background-color: #f0d1fa;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color1:hover {
+    background-color: #BC80CE;
+}
+
+.contCardPersonajes {
+    margin-top: 70px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+
+}
+
+
+.contCardPersonajes_contImg_img {
+    width: 175px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.contCardPersonajes:hover .contCardPersonajes_contImg_img {
+    transform: scale(1.3) translateY(-30px); 
+
+}
+
+.contCardPersonajes_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.contCardPersonajes_info_titulo {
+    margin: 0px 30px 10px ;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+.contCardPersonajes_info_pelicula,
+.contCardPersonajes_info_desc {
+    margin: 0px 30px 10px ;
+    color: #666;
+}
+
+#contCardPersonajes_color2 {
+    margin-left: 60px;
+    background-color: #C3E2F8;
+    transition: background-color 0.3s ease;
+}
+
+#contCardPersonajes_color2:hover {
+    background-color: #BC80CE;
+}
