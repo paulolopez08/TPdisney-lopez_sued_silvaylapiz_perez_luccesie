@@ -2133,7 +2133,7 @@ input:not(:placeholder-shown) ~ .reset {
   color: #F29371; }
 
 #contCardPersonajes_color8 {
-  margin-right: 20px;
+  margin-left: 20px;
   background-color: #FF827A;
   transition: background-color 0.3s ease; }
 
@@ -2163,7 +2163,7 @@ input:not(:placeholder-shown) ~ .reset {
   color: #C1D6F5; }
 
 #contCardPersonajes_color10 {
-  margin-right: 20px;
+  margin-left: 20px;
   background-color: #BAE7D1;
   transition: background-color 0.3s ease; }
 
