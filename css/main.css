@@ -2312,14 +2312,6 @@ body {
 /*Colores Epcot*/
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
-/*colores footer magic kingdom*/
-.colorFooterMK {
-  background-color: white;
-  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
-
-.colorLineaMK {
-  background-color: #C3E2F8; }
-
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
@@ -2546,6 +2538,13 @@ body {
   font-size: 14px; }
 
 /*Footer general*/
+.colorFooterMK {
+  background-color: white;
+  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
+
+.colorLineaMK {
+  background-color: #C3E2F8; }
+
 footer {
   margin: 90px 0px 0px 0px;
   width: 100%;

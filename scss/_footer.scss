@@ -32,15 +32,6 @@ $colorLogo4: #265c26;
 
 
 
-/*colores footer magic kingdom*/
-.colorFooterMK{
-    background-color: white;
-    background: linear-gradient(to bottom, $colorbody, $colorCeleste2, #3879b7); 
-}
-
-.colorLineaMK{
-    background-color: $colorCeleste3 ;
-}
 
 
 /*colores footer epcot*/
@@ -341,8 +332,16 @@ $colorLogo4: #265c26;
 
 
 
-
 /*Footer general*/
+
+.colorFooterMK{
+    background-color: white;
+    background: linear-gradient(to bottom, $colorbody, $colorCeleste2, #3879b7); 
+}
+
+.colorLineaMK{
+    background-color: $colorCeleste3 ;
+}
 
 footer{
     margin: 90px 0px 0px 0px;
