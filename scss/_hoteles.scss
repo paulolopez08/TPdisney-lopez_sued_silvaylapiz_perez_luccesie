@@ -166,7 +166,6 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: $colorCeleste3;
     transition: transform 0.3s ease;
 
     view-timeline-name: --image;
@@ -186,18 +185,18 @@
 }
 
 .EP{
-    background-color: #D2B7E5 ;
-    color: #815AC0;
+    background-color: #D2B7E5 !important;
+    color: #815AC0 !important;
 }
 
 .HL{
-    background-color: #FD9F9F ;
-    color: #7A2E2E;
+    background-color: #FD9F9F !important;
+    color: #7A2E2E !important;
 }
 
 .A{
-    background-color:#CBE294 ;
-    color: #265C26;
+    background-color:#CBE294 !important;
+    color: #265C26 !important;
 }
 
 
