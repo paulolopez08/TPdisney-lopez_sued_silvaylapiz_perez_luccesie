@@ -1,6 +1,3 @@
-
-
-
 #contFrasePrinc{
     display: flex;
     justify-content: center;
@@ -282,4 +279,34 @@
     animation-range: entry 10% cover 50%;
     animation-fill-mode: both;
     transition: width 3s;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    #contFrasePrinc_frase{
+        padding: 0px 0px 0px 0px;
+        font-size: 30px;
+    }
+    
+    #contFrasePrinc{
+        height: 350px;
+    }
+
+    .contHoteles {
+        margin: 0px 0px 10px 0px; 
+    
+    }
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1093px){
+    #contFrasePrinc_frase{
+        padding: 0px 150px 0px 150px
+      
+    }
+
+    .contHoteles_contCard {
+        width: 300px;
+        justify-content:none;
+    }
+
 }
