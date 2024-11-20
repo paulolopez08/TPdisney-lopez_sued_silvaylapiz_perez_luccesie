@@ -1,6 +1,3 @@
-
-
-
 #contFrasePrinc{
     display: flex;
     justify-content: center;
@@ -169,7 +166,6 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: $colorCeleste3;
     transition: transform 0.3s ease;
 
     view-timeline-name: --image;
@@ -189,18 +185,18 @@
 }
 
 .EP{
-    background-color: #D2B7E5 ;
-    color: #815AC0;
+    background-color: #D2B7E5 !important;
+    color: #815AC0 !important;
 }
 
 .HL{
-    background-color: #FD9F9F ;
-    color: #7A2E2E;
+    background-color: #FD9F9F !important;
+    color: #7A2E2E !important;
 }
 
 .A{
-    background-color:#CBE294 ;
-    color: #265C26;
+    background-color:#CBE294 !important;
+    color: #265C26 !important;
 }
 
 
@@ -282,4 +278,34 @@
     animation-range: entry 10% cover 50%;
     animation-fill-mode: both;
     transition: width 3s;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    #contFrasePrinc_frase{
+        padding: 0px 0px 0px 0px;
+        font-size: 30px;
+    }
+    
+    #contFrasePrinc{
+        height: 350px;
+    }
+
+    .contHoteles {
+        margin: 0px 0px 10px 0px; 
+    
+    }
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1093px){
+    #contFrasePrinc_frase{
+        padding: 0px 150px 0px 150px
+      
+    }
+
+    .contHoteles_contCard {
+        width: 300px;
+        justify-content:none;
+    }
+
 }
