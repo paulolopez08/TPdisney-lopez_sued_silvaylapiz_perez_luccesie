@@ -1125,7 +1125,7 @@ input:not(:placeholder-shown) ~ .reset {
   padding: 0; }
 
 #bodyGeneral {
-  background-color: #FFF4E7; }
+  background: linear-gradient(to bottom, #bfcffa, #e8eeff); }
 
 #contCarouselTexto {
   display: flex;
@@ -2315,7 +2315,7 @@ body {
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
-  background: linear-gradient(to top, #72449a, #8d61b6, #FFF4E7); }
+  background: linear-gradient(to top, #72449a, #8d61b6, #e8eeff); }
 
 .colorLineaep {
   background-color: #6b499d; }
@@ -2391,7 +2391,7 @@ body {
 /*colores footer Hollywood Studios*/
 .colorFooterhs {
   background-color: white;
-  background: linear-gradient(to top, #ba5964, #db8d94, #FFF4E7); }
+  background: linear-gradient(to top, #ba5964, #db8d94, #e8eeff); }
 
 .colorLineahs {
   background-color: #bf6868; }
@@ -2466,7 +2466,7 @@ body {
 /*colores footer Animal Kingdom*/
 .colorFooterak {
   background-color: white;
-  background: linear-gradient(to top, #5f8764, #8fb996, #FFF4E7); }
+  background: linear-gradient(to top, #5f8764, #8fb996, #e8eeff); }
 
 .colorLineaak {
   background-color: #7c9e7c; }
@@ -2541,7 +2541,7 @@ body {
 /*Footer general*/
 .colorFooterMK {
   background-color: white;
-  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
+  background: linear-gradient(to bottom, #e8eeff, #8AABE3, #3879b7); }
 
 .colorLineaMK {
   background-color: #C3E2F8; }
@@ -2747,6 +2747,43 @@ footer {
 #bodySesion {
   background: linear-gradient(to bottom, #00a9f2, #172D9D); }
 
+.Volver {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: #a1a1a1;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, inset 5px 5px 10px #212121, inset -5px -5px 10px #212121; }
+
+.Volver:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+.Volver:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms; }
+
 .group {
   position: relative;
   margin: 18px; }
@@ -2824,14 +2861,14 @@ label {
     width: 0;
     background: transparent; } }
 
-.container {
+.containerLogin {
   align-items: center;
   font-family: Arial, sans-serif;
   gap: 10px; }
 
-.form-container {
-  width: 600px;
-  height: 690px;
+.form-containerLogin {
+  width: 650px;
+  height: 730px;
   background: #172D9D;
   border-radius: 9px;
   box-shadow: 4px 8px 8px #000;
@@ -3510,7 +3547,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
-  background: linear-gradient(to top, #72449a, #8d61b6, #FFF4E7); }
+  background: linear-gradient(to top, #72449a, #8d61b6, #e8eeff); }
 
 .colorLineaep {
   background-color: #6b499d; }
@@ -3586,7 +3623,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer Hollywood Studios*/
 .colorFooterhs {
   background-color: white;
-  background: linear-gradient(to top, #ba5964, #db8d94, #FFF4E7); }
+  background: linear-gradient(to top, #ba5964, #db8d94, #e8eeff); }
 
 .colorLineahs {
   background-color: #bf6868; }
@@ -3661,7 +3698,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer Animal Kingdom*/
 .colorFooterak {
   background-color: white;
-  background: linear-gradient(to top, #5f8764, #8fb996, #FFF4E7); }
+  background: linear-gradient(to top, #5f8764, #8fb996, #e8eeff); }
 
 .colorLineaak {
   background-color: #7c9e7c; }
@@ -3736,7 +3773,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*Footer general*/
 .colorFooterMK {
   background-color: white;
-  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
+  background: linear-gradient(to bottom, #e8eeff, #8AABE3, #3879b7); }
 
 .colorLineaMK {
   background-color: #C3E2F8; }
@@ -4088,8 +4125,8 @@ footer {
 
 .form-container {
   background: #172D9D;
-  height: 550px;
-  width: 500px;
+  height: 710px;
+  width: 600px;
   margin: 15px;
   flex-direction: column;
   /* Alinea elementos verticalmente */
@@ -4184,7 +4221,7 @@ label {
   padding: 0; }
 
 .bodyindex {
-  background-color: #FFF4E7; }
+  background-color: #e8eeff; }
 
 #textini_container {
   margin: 0;
