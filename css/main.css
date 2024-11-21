@@ -2415,6 +2415,7 @@ body {
 /*Colores Epcot*/
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
+/*colores Login*/
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
@@ -2423,7 +2424,6 @@ body {
 .colorLineaep {
   background-color: #6b499d; }
 
-/*colores footer Login*/
 .contItemsFooter_itemsep {
   margin-top: 170px;
   text-decoration: none;
@@ -3647,6 +3647,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*Colores Epcot*/
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
+/*colores Login*/
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
@@ -3655,7 +3656,6 @@ input:not(:placeholder-shown) ~ .reset {
 .colorLineaep {
   background-color: #6b499d; }
 
-/*colores footer Login*/
 .contItemsFooter_itemsep {
   margin-top: 170px;
   text-decoration: none;
