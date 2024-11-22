@@ -250,16 +250,35 @@
     
     font-size: 20px;
     margin: 10px 0;
+    font-family: "Arima", system-ui;
+
 }
 
 .contHoteles_contCard_texto{
     font-size: 17px;
+    font-family: "Arima", system-ui;
+
     
 }
 
 #btnHoteles{
     background-color: $colorCeleste3;
     font-size: 20px;
+
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: show;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+
+    a{
+        text-decoration: none;
+        color: #00509D;
+        font-family: "Arima", system-ui;
+    }
 }
 
 /*separador*/
@@ -300,10 +319,13 @@
 
 /*karaoke*/
 #karaoke_cont{
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
     background-color: #8DADE3;
     height: 400px;
+
+
+
 }
 
 #karaoke_cont_titulo{
@@ -313,6 +335,7 @@
 
     h2{
         font-size: 20px;
+        font-family: "Arima", system-ui;
     }
     img{
         height: 80px;
@@ -334,12 +357,84 @@
             width: 300px;
         }
     }
+    p{
+        margin-left: 60px;
+        width: 100%;
+        font-family: "Arima", system-ui;
+    }
 
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: show;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
 }
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     #karaoke_cont{
         height: 2000px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+
+    #HotelesDes_cont{
+        margin: 30px 23% 20px 27%;
+    }
+
+    #contCardsparquesF1{
+        margin: 0px 0px 30px 0px;
+    }
+
+    #contCardsparquesF2{
+        margin: 0px 0px 30px 0px;
+    }
+
+    #contSeparadorIN_separador{
+        width: 95%;
+        margin: 80px 1% 70px 4%;
+    }
+
+    #karaoke_cont{
+        height: 1000px;
+    }
+
+    #karaoke_cont_titulo{
+        width: 70%;
+        margin: 0 80% 0 20% ;
+    
+        h2{
+            font-size: 20px;
+        }
+        img{
+            height: 0px;
+            width: 5px;
+        }
+    }
+    
+    #karaoke_cont_canciones{
+        gap: 0px;
+        display: block;
+        margin: 10px 34% 0 29%;
+    }
+    .karaoke_canciones{
+        text-align: center;
+        width: 20%;
+        a{
+            img{
+                height: 200px;
+                width: 300px;
+            }
+        }
+        p{
+            margin-left: 100px;
+            width: 100%;
+        }
+    
     }
 }
