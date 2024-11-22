@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../assets/logos/favicon.png">
     <title>Registro</title>
+    <script defer src="https://app.embed.im/snow.js"></script>
 </head>
 
 <body id="bodySesion">
@@ -60,103 +61,140 @@
   </nav>
   
 
-  <a href="../index.html" class="btn btn-outline-light BotonVolver">Volver al Inicio</a>
-  <div class="container d-flex justify-content-center align-items-center min-vh-100 margen">
-    <div class="card p-4 form-container">
+  <button class="Volver">Volver al Inicio</button>
+  <div class="containerLogin d-flex justify-content-center align-items-center min-vh-100 margen">
+    <div class="card p-4 form-containerLogin">
       <h2 class="text-left mb-4 MyDisney">MY DISNEY</h2>
-        <form>
-
-          <div class="group">
-            <input required="" type="text" class="input">
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Nombre</label>
-          </div>
-
-          <div class="group">
-            <input type="text" class="input" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Apellido</label>
-          </div>
-
-          <div class="group">
-            <input type="text" class="input" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Dirección de correo</label>
-          </div>
-
-          <div>
-            <input type="text" class="input" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Contraseña</label>
-          </div>
-
-          <div>
-            <input type="text" class="input" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Repita la contraseña</label>
-          </div>
-
-          <div>
-            <input type="text" class="input" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Seleccione su pais</label>
-              <select class="form-select">
-                  <option selected>Seleccione su pais</option>
-                  <option value="AR">Argentina</option>
-                  <option value="BO">Bolivia</option>
-                  <option value="BR">Brasil</option>
-                  <option value="CA">Canadá</option>
-                  <option value="CL">Chile</option>
-                  <option value="CO">Colombia</option>
-                  <option value="CR">Costa Rica</option>
-                  <option value="CU">Cuba</option>
-                  <option value="DK">Dinamarca</option>
-                  <option value="EC">Ecuador</option>
-                  <option value="SV">El Salvador</option>
-                  <option value="US">Estados Unidos</option>
-                  <option value="FI">Finlandia</option>
-                  <option value="FR">Francia</option>
-                  <option value="GF">Guayana Francesa</option>
-                  <option value="GT">Guatemala</option>
-                  <option value="GY">Guyana</option>
-                  <option value="HN">Honduras</option>
-                  <option value="HT">Haití</option>
-                  <option value="IE">Irlanda</option>
-                  <option value="IT">Italia</option>
-                  <option value="JM">Jamaica</option>
-                  <option value="LU">Luxemburgo</option>
-                  <option value="MX">México</option>
-                  <option value="NI">Nicaragua</option>
-                  <option value="PA">Panamá</option>
-                  <option value="PY">Paraguay</option>
-                  <option value="PE">Perú</option>
-                  <option value="PR">Puerto Rico</option>
-                  <option value="GB">Reino Unido</option>
-                  <option value="RD">República Dominicana</option>
-                  <option value="SR">Surinam</option>
-                  <option value="TT">Trinidad y Tobago</option>
-                  <option value="UY">Uruguay</option>
-                  <option value="VE">Venezuela</option>
-                  <option value="Otro">Otro</option>
-              </select>
-          </div>
-
-          <div class="container mb-3">
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" required>
-                <label class="Iniciodesesion" for="terms">He leído y acepto Términos y Condiciones</label>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Continuar</button>
-          </div>
-        </form>
+      <div class="group">
+        <input required="" type="text" class="input">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Nombre</label>
+      </div>
+      <div class="group">
+        <input required="" type="text" class="input">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Apellido</label>
+      </div>
+      <div class="group">
+        <input required="" type="text" class="input">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Dirección de correo</label>
+      </div>
+      <div class="group">
+        <input required="" type="text" class="input">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Ingrese una contraseña</label>
+      </div>
+      <div class="group">
+        <input required="" type="text" class="input">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Repita la contraseña</label>
+      </div>
+      <div>
+        <select class="form-select">
+          <option selected>Seleccione su pais</option>
+          <option value="AR">Argentina</option>
+          <option value="BO">Bolivia</option>
+          <option value="BR">Brasil</option>
+          <option value="CA">Canadá</option>
+          <option value="CL">Chile</option>
+          <option value="CO">Colombia</option>
+          <option value="CR">Costa Rica</option>
+          <option value="CU">Cuba</option>
+          <option value="DK">Dinamarca</option>
+          <option value="EC">Ecuador</option>
+          <option value="SV">El Salvador</option>
+          <option value="US">Estados Unidos</option>
+          <option value="FI">Finlandia</option>
+          <option value="FR">Francia</option>
+          <option value="GF">Guayana Francesa</option>
+          <option value="GT">Guatemala</option>
+          <option value="GY">Guyana</option>
+          <option value="HN">Honduras</option>
+          <option value="HT">Haití</option>
+          <option value="IE">Irlanda</option>
+          <option value="IT">Italia</option>
+          <option value="JM">Jamaica</option>
+          <option value="LU">Luxemburgo</option>
+          <option value="MX">México</option>
+          <option value="NI">Nicaragua</option>
+          <option value="PA">Panamá</option>
+          <option value="PY">Paraguay</option>
+          <option value="PE">Perú</option>
+          <option value="PR">Puerto Rico</option>
+          <option value="GB">Reino Unido</option>
+          <option value="RD">República Dominicana</option>
+          <option value="SR">Surinam</option>
+          <option value="TT">Trinidad y Tobago</option>
+          <option value="UY">Uruguay</option>
+          <option value="VE">Venezuela</option>
+          <option value="Otro">Otro</option>
+      </select>
+      </div>
+      <div class="container mb-3">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" required>
+            <h1 class="checkLogin">He leído y acepto Términos y Condiciones</h1>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Continuar</button>
     </div>
   </div>
+
+  <footer class="colorFooterLogin">
+    <nav class="container-fluid  contItemsFooter">
+        <a class="contItemsFooter_items" href="../index.html">Inicio</a>
+        <a class="contItemsFooter_items" href="../paginas/hoteles.html">Hoteles</a>
+        <a class="contItemsFooter_items" href="../paginas/tienda.html">Tienda</a>
+        <a class="contItemsFooter_items" href="../paginas/personajes.html">Personajes</a>
+    </nav>
+
+    <div class="row container-fluid col-lg-12" id="contLineaFooter">
+        <hr class="colorLineaMK" id="contLineaFooter_linea">
+    </div>
+    
+    <div id="footerSecciones">
+        <div class="footerSecciones_contacto col-lg-4">
+            <h3 class="footerSecciones_titulos">CONTACTO</h3>
+            <a class="footerSecciones_titulos_items" href="Walt.Disney@gmail.com">Walt.Disney@gmail.com</a>
+            <a class="footerSecciones_titulos_items"  href="tel:+54 3627 3824">+54 3627 3824</a>
+        </div>
+        <div class="footerSecciones_redes col-lg-4">
+            <h3 class="footerSecciones_titulos">REDES SOCIALES</h3>
+
+            <div class="footerSecciones_titulos_contRedes">
+                <a href="https://facebook.com" class="footerSecciones_titulos_contRedes_redes facebook" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" class="footerSecciones_titulos_contRedes_redes twitter" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" class="footerSecciones_titulos_contRedes_redes instagram" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com" class="footerSecciones_titulos_contRedes_redes youtube" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footerSecciones_cuenta col-lg-4">
+            <h3 class="footerSecciones_titulos">CUENTA</h3>
+            <a class="footerSecciones_titulos_items" href="../paginas/iniciosesion.html">Iniciar Sesión</a>
+            <a class="footerSecciones_titulos_items" href="../paginas/Registro.html">Registrarse</a>
+        </div>
+    </div>
+
+
+    <div id="contDerechosFooter">
+        <p id="contDerechosFooter_derechos">&copy; 2024 WaltDisney. Todos los derechos reservados.</p>
+    </div>
+  
+  </footer>
 
 </body>
 </html>

@@ -1,8 +1,8 @@
 
-/*Colores Magic Kingdom*/
 
+/*Colores Magic Kingdom*/
 $colorprinc:#809BCE;
-$colorbody: #FFF4E7;
+$colorbody: #e8eeff;
 $colorCeleste1: #A7BFEE;
 $colorCeleste2: #8AABE3;
 $colorCeleste3: #C3E2F8;
@@ -28,18 +28,17 @@ $colorVerde2: #add693;
 $colorVerde3: #A8C26B;
 $colorLogo4: #265c26;
 
+/*colores Login*/
+$colorprinc:#809BCE;
+$colorbody: #e8eeff;
+$colorCeleste1: #A7BFEE;
+$colorCeleste2: #8AABE3;
+$colorCeleste3: #C3E2F8;
+$colorLogo: #00509D;
 
 
 
-/*colores footer magic kingdom*/
-.colorFooterMK{
-    background-color: white;
-    background: linear-gradient(to bottom, $colorbody, $colorCeleste2, #3879b7); 
-}
 
-.colorLineaMK{
-    background-color: $colorCeleste3 ;
-}
 
 
 /*colores footer epcot*/
@@ -51,7 +50,6 @@ $colorLogo4: #265c26;
 .colorLineaep{
     background-color: #6b499d ;
 }
-
 
 
 
@@ -340,13 +338,21 @@ $colorLogo4: #265c26;
 
 
 
-
 /*Footer general*/
+
+.colorFooterMK{
+    background-color: white;
+    background: linear-gradient(to bottom, $colorbody, $colorCeleste2, #3879b7); 
+}
+
+.colorLineaMK{
+    background-color: $colorCeleste3 ;
+}
 
 footer{
     margin: 90px 0px 0px 0px;
     width: 100%;
-    height: 480px;
+    height: 550px;
 }
 
 .contItemsFooter{
@@ -516,5 +522,108 @@ footer{
     color: #11477a;
     font-size: 14px;
 }
-@media screen and (min-width: 320px) and (max-width: 480px){
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    footer{
+        height: 450px;
+    }
+
+    
+    .contItemsFooter, .contItemsFooterep, .contItemsFooterhs, .contItemsFooterak {
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+
+
+    #footerSecciones, #footerSeccionesep, #footerSeccioneshs, #footerSeccionesak {
+
+        padding: 0 20px;
+    }
+
+    .footerSecciones_contacto,
+    .footerSecciones_redes,
+    .footerSecciones_cuenta {
+        width: 45%; 
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .footerSecciones_titulos, .footerSecciones_titulosep, .footerSecciones_tituloshs, .footerSecciones_titulosak {
+        font-size: 18px;
+    }
+
+    .footerSecciones_titulos_contRedes_redes, .footerSecciones_titulos_contRedes_redesep .footerSecciones_titulos_contRedes_redeshs .footerSecciones_titulos_contRedes_redesak {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+
+    .contItemsFooter, .contItemsFooterep, .contItemsFooterhs, .contItemsFooterak {
+
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        gap: 20px;
+    }
+
+
+    
+    .contItemsFooter_items, .contItemsFooter_itemsep, .contItemsFooter_itemshs, .contItemsFooter_itemsak {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    #footerSecciones, #footerSeccionesep, #footerSeccioneshs, #footerSeccionesak {
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 20px;
+
+    }
+
+
+    .footerSecciones_cuenta {
+        width: 100%; 
+        align-items: center;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .footerSecciones_contacto{
+        width: 100%; 
+        text-align: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .footerSecciones_redes {
+        width: 100%; 
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footerSecciones_titulos, .footerSecciones_titulosep, .footerSecciones_tituloshs, .footerSecciones_titulosak  {
+        font-size: 16px;
+    }
+
+    .footerSecciones_titulos_contRedes_redes, .footerSecciones_titulos_contRedes_redesep .footerSecciones_titulos_contRedes_redeshs .footerSecciones_titulos_contRedes_redesak {
+        font-size: 1.4rem;
+    }
+
+    #contDerechosFooter_derechos, #contDerechosFooter_derechosep, #contDerechosFooter_derechoshs, #contDerechosFooter_derechosak {
+        font-size: 10px;
+    }
+
+    #contLineaFooter, #contLineaFooterep, #contLineaFooterhs, #contLineaFooterak{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
 }

@@ -1,9 +1,7 @@
 @import "variables_princ";
 @import "menu";
+@import "footer";
 
-$footer-bg-color: #5c92cc;
-$footer-text-color: #ffffff;
-$footer-link-color: #ffffff;
 $primary-color: #00a9f2;
 $secondary-color: #172D9D;
 $white: #fff;
@@ -12,26 +10,27 @@ $font-family-base: Arial, sans-serif;
 $font-family-title: "Atma", serif;
 
 .bodySesion {
-    background: linear-gradient(to bottom, $primary-color, $secondary-color);
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
 }
 
 .buttonLogin {
-    display: flex;
-    text-align: right;
-    position: relative;
-    padding: 12px 35px;
-    background: $primary-color;
-    font-size: 17px;
-    font-weight: 500;
-    color: #000;
-    border: 3px solid #172D9D;
-    border-radius: 8px;
-    box-shadow: 0 0 0 #172D9D;
-    transition: all 0.3s ease-in-out;
-  }
+  height: 60px;
+  width: 200px;
+  padding: 15px 30px;
+  margin-right: 15px;
+  background: $primary-color;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  border: 3px solid #172D9D;
+  border-radius: 8px;
+  box-shadow: 0 0 0 #172D9D;
+  transition: all 0.3s ease-in-out;
+  float: right;
+}
   
   .star-1Login {
-    position: absolute;
+    position: relative;
     top: 20%;
     left: 20%;
     width: 25px;
@@ -42,7 +41,7 @@ $font-family-title: "Atma", serif;
   }
   
   .star-2Login {
-    position: absolute;
+    position: relative;
     top: 45%;
     left: 45%;
     width: 15px;
@@ -53,7 +52,7 @@ $font-family-title: "Atma", serif;
   }
   
   .star-3Login {
-    position: absolute;
+    position: relative;
     top: 40%;
     left: 40%;
     width: 5px;
@@ -64,7 +63,7 @@ $font-family-title: "Atma", serif;
   }
   
   .star-4Login {
-    position: absolute;
+    position: relative;
     top: 20%;
     left: 40%;
     width: 8px;
@@ -75,7 +74,7 @@ $font-family-title: "Atma", serif;
   }
   
   .star-5Login {
-    position: absolute;
+    position: relative;
     top: 25%;
     left: 45%;
     width: 15px;
@@ -86,7 +85,7 @@ $font-family-title: "Atma", serif;
   }
   
   .star-6Login {
-    position: absolute;
+    position: relative;
     top: 5%;
     left: 50%;
     width: 5px;
@@ -103,7 +102,7 @@ $font-family-title: "Atma", serif;
   }
   
   .buttonLogin:hover .star-1Login {
-    position: absolute;
+    position: relative;
     top: -80%;
     left: -30%;
     width: 25px;
@@ -113,7 +112,7 @@ $font-family-title: "Atma", serif;
   }
   
  .buttonLogin:hover .star-2Login {
-    position: absolute;
+    position: relative;
     top: -25%;
     left: 10%;
     width: 15px;
@@ -123,7 +122,7 @@ $font-family-title: "Atma", serif;
   }
   
   .buttonLogin:hover .star-3Login {
-    position: absolute;
+    position: relative;
     top: 55%;
     left: 25%;
     width: 5px;
@@ -133,7 +132,7 @@ $font-family-title: "Atma", serif;
   }
   
   .buttonLogin:hover .star-4Login {
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 80%;
     width: 8px;
@@ -143,7 +142,7 @@ $font-family-title: "Atma", serif;
   }
   
   .buttonLogin:hover .star-5Login {
-    position: absolute;
+    position: relative;
     top: 25%;
     left: 115%;
     width: 15px;
@@ -153,7 +152,7 @@ $font-family-title: "Atma", serif;
   }
   
   .buttonLogin:hover .star-6Login {
-    position: absolute;
+    position: relative;
     top: 5%;
     left: 60%;
     width: 5px;
@@ -165,114 +164,115 @@ $font-family-title: "Atma", serif;
   .fil0Login {
     fill: #fff;
   }
+
+  .MyDisney {
+    font-family: $font-family-title;
+    font-weight: 600;
+    font-style: normal;
+    color: $black;
+    margin: 30px;
+  }
+
+  .form-container {
+    background: $secondary-color;
+    height: 710px;
+    width: 600px;
+    margin: 15px;
+    flex-direction: column; /* Alinea elementos verticalmente */
+    gap: 10px; /* Espaciado entre los campos */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  }
   
-
-.container-login {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  .group {
+    position: relative; /* Necesario para posicionar correctamente las etiquetas flotantes */
   }
-
-  .card-login {
-    width: 400px;
-    height: 450px;
-    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-    border-radius: 22px;
-    transition: all 0.3s;
-  }
-
-  .card-login:hover {
-    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
-  }
-
-  .card2-login {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    transition: all 0.2s;
-  }
-
-  .card2-login:hover {
-    transform: scale(0.98);
-    border-radius: 20px;
-  }
-
-  .form-login {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 2em;
-    background-color: #171717;
-    border-radius: 20px;
-  }
-
-  #heading-login {
-    text-align: center;
-    color: rgb(0, 255, 200);
-    font-size: 1.2em;
-  }
-
-  .field-login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
-    border-radius: 25px;
-    padding: 0.6em;
+  
+  .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%; /* Ajustar al ancho del contenedor */
     border: none;
-    outline: none;
-    color: white;
-    background-color: #171717;
-    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    border-bottom: 1px solid #515151;
+    background: transparent;
+  }
+  
+  label {
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+  }
+  
+  .input:focus ~ label,
+  .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+  }
+  
+  .bar {
+    position: relative;
+    display: block;
+    width: 100%; /* Ajustar al ancho del input */
+  }
+  
+  .bar:before,
+  .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+  }
+  
+  .bar:before {
+    left: 50%;
+  }
+  
+  .bar:after {
+    right: 50%;
+  }
+  
+  .input:focus ~ .bar:before,
+  .input:focus ~ .bar:after {
+    width: 50%;
+  }
+  
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+  }
+  
+  @keyframes inputHighlighter {
+    from {
+      background: #5264AE;
+    }
+  
+    to {
+      width: 0;
+      background: transparent;
+    }
   }
 
-  .input-icon-login {
-    height: 1.3em;
-    width: 1.3em;
-    fill: rgb(0, 255, 200);
+  .checkLogin{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 16px;
   }
-
-  .input-field-login {
-    background: none;
-    border: none;
-    outline: none;
-    width: 100%;
-    color: rgb(0, 255, 200);
-  }
-
-  .btn-login {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
-  }
-
-  .button1-login,
-  .button2-login,
-  .button3-login {
-    padding: 0.5em;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    transition: 0.4s ease-in-out;
-    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-    color: rgb(0, 0, 0);
-  }
-
-  .button1-login:hover,
-  .button2-login:hover {
-    background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
-    color: rgb(0, 255, 200);
-  }
-
-  .button3-login:hover {
-    background-image: linear-gradient(163deg, #a00000fa 0%, #d10050 100%);
-    color: rgb(255, 255, 255);
-  }
+  
