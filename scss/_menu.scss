@@ -639,3 +639,48 @@ input:not(:placeholder-shown) ~ .reset {
     background-color: $colorCeleste2;
     color: #C3E2F8;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    #menu2{
+        height: 220px;
+
+    }
+
+    #contImgPrinc{
+        height: 300px;
+    }
+
+    #contImgPrinc_imgPrinc{
+
+        object-fit:fill;
+    }
+
+    #menu1_contLogo_logo{
+        font-size: 50px;
+    }
+
+    #menu1_search{
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #menu2{
+        height: 220px;
+
+    }
+
+    #contImgPrinc_imgPrinc{
+
+        object-fit:fill;
+    }
+
+    #menu1_contLogo_logo{
+        font-size: 70px;
+    }
+
+    #menu1_search{
+        width: 300px;
+    }
+}
