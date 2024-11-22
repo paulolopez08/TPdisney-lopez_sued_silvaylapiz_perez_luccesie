@@ -174,10 +174,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorep {
   color: #4c2e7a; }
-
-.colorep:hover {
-  background-color: #b98ae3;
-  color: #ead3ff; }
+  .colorep:hover {
+    background-color: #b98ae3;
+    color: #ead3ff; }
 
 .menu2_items_parquesep {
   color: #4c2e7a !important; }
@@ -264,10 +263,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorhs {
   color: #842831; }
-
-.colorhs:hover {
-  background-color: #d56975;
-  color: #f1adb1; }
+  .colorhs:hover {
+    background-color: #d56975;
+    color: #f1adb1; }
 
 .menu2_items_parqueshs {
   color: #842831 !important; }
@@ -354,10 +352,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorak {
   color: #265c26; }
-
-.colorak:hover {
-  background-color: #78b87c;
-  color: #adf1ad; }
+  .colorak:hover {
+    background-color: #78b87c;
+    color: #adf1ad; }
 
 .menu2_items_parquesak {
   color: #265c26 !important; }
@@ -630,10 +627,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colormk {
   color: #376188; }
-
-.colormk:hover {
-  background-color: #8AABE3;
-  color: #C3E2F8; }
+  .colormk:hover {
+    background-color: #8AABE3;
+    color: #C3E2F8; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   #menu2 {
@@ -3204,10 +3200,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorep {
   color: #4c2e7a; }
-
-.colorep:hover {
-  background-color: #b98ae3;
-  color: #ead3ff; }
+  .colorep:hover {
+    background-color: #b98ae3;
+    color: #ead3ff; }
 
 .menu2_items_parquesep {
   color: #4c2e7a !important; }
@@ -3294,10 +3289,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorhs {
   color: #842831; }
-
-.colorhs:hover {
-  background-color: #d56975;
-  color: #f1adb1; }
+  .colorhs:hover {
+    background-color: #d56975;
+    color: #f1adb1; }
 
 .menu2_items_parqueshs {
   color: #842831 !important; }
@@ -3384,10 +3378,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorak {
   color: #265c26; }
-
-.colorak:hover {
-  background-color: #78b87c;
-  color: #adf1ad; }
+  .colorak:hover {
+    background-color: #78b87c;
+    color: #adf1ad; }
 
 .menu2_items_parquesak {
   color: #265c26 !important; }
@@ -3660,10 +3653,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colormk {
   color: #376188; }
-
-.colormk:hover {
-  background-color: #8AABE3;
-  color: #C3E2F8; }
+  .colormk:hover {
+    background-color: #8AABE3;
+    color: #C3E2F8; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   #menu2 {
@@ -4599,15 +4591,7 @@ label {
   margin: 0 0 20px 0;
   padding: 0;
   background-color: #8DADE3;
-  height: 400px;
-  view-timeline-name: --text-slide;
-  view-timeline-axis: block;
-  animation-timeline: --text-slide;
-  animation-name: show;
-  animation-duration: 1.5s;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  height: 400px; }
 
 #karaoke_cont_titulo {
   align-items: center;
@@ -4627,7 +4611,15 @@ label {
 
 .karaoke_canciones {
   text-align: center;
-  width: 20%; }
+  width: 20%;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: show;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
   .karaoke_canciones a img {
     height: 200px;
     width: 300px; }

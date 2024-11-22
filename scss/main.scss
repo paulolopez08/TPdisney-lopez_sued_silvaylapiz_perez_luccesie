@@ -324,14 +324,7 @@
     background-color: #8DADE3;
     height: 400px;
 
-    view-timeline-name: --text-slide;
-    view-timeline-axis: block; 
-    animation-timeline: --text-slide;
-    animation-name: show;
-    animation-duration: 1.5s; 
-    animation-range: entry 10% cover 50%;
-    animation-fill-mode: both;
-    transition: width 3s;
+
 
 }
 
@@ -370,6 +363,14 @@
         font-family: "Arima", system-ui;
     }
 
+    view-timeline-name: --text-slide;
+    view-timeline-axis: block; 
+    animation-timeline: --text-slide;
+    animation-name: show;
+    animation-duration: 1.5s; 
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
 }
 
 
