@@ -373,15 +373,7 @@
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
 
-    view-timeline-name: --image;
-    view-timeline-axis: block;
 
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 10% cover 50%;
-    animation-fill-mode: both;
-    transition: width 3s;
 
 }
 
@@ -389,15 +381,7 @@
     display: flex;
     justify-content: left;
 
-    view-timeline-name: --image;
-    view-timeline-axis: block;
 
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 10% cover 50%;
-    animation-fill-mode: both;
-    transition: width 3s;
 
 }
 
@@ -410,6 +394,17 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+
+    
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
 }
 
 #contMapa_contMapa {
@@ -427,9 +422,22 @@
     width: 80%;
     height: 450px;
     border-radius: 15px;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+
     filter: drop-shadow(
         0 4px 8px rgba(0, 0, 0, 0.3)
     )
+
+
+    
 }
 
 
@@ -439,6 +447,16 @@
     display: flex;
     justify-content: center;
     margin-top: 20px; 
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 10%;
+    animation-fill-mode: both;
+    transition: width 3s;
 }
 
 .buttonmk {

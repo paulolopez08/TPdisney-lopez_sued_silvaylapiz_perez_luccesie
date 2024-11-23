@@ -825,14 +825,7 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px 50px 25px 50px;
   justify-self: center;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2); }
 
 #contMapa_contTit_tiths {
   color: #C3E2F8;
@@ -842,13 +835,27 @@ input:not(:placeholder-shown) ~ .reset {
   background: linear-gradient(to top, #b23a48, #8c2f39, #461220);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contMapa_contMapa_mapahs {
   padding: 10px 10px 10px 10px;
   width: 90%;
   height: 470px;
   border-radius: 15px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
 
 .buttonhs {
@@ -868,7 +875,14 @@ input:not(:placeholder-shown) ~ .reset {
   transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 10%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 .buttonhs:hover {
   background: #b23a48;
@@ -1058,14 +1072,7 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px 50px 25px 50px;
   justify-self: center;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2); }
 
 #contMapa_contTit_titak {
   color: #C3E2F8;
@@ -1075,13 +1082,27 @@ input:not(:placeholder-shown) ~ .reset {
   background: linear-gradient(to top, #a1cca5, #8fb996, #517957);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contMapa_contMapa_mapaak {
   padding: 10px 10px 10px 10px;
   width: 90%;
   height: 485px;
   border-radius: 15px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
 
 .buttonak {
@@ -1101,7 +1122,14 @@ input:not(:placeholder-shown) ~ .reset {
   transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 10%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 .buttonak:hover {
   background: #326f3d;
@@ -1415,25 +1443,11 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px 50px 25px 50px;
   justify-self: center;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2); }
 
 #contMapa_contTit {
   display: flex;
-  justify-content: left;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  justify-content: left; }
 
 #contMapa_contTit_tit {
   color: #C3E2F8;
@@ -1443,7 +1457,14 @@ input:not(:placeholder-shown) ~ .reset {
   background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contMapa_contMapa {
   padding: 40px;
@@ -1456,12 +1477,26 @@ input:not(:placeholder-shown) ~ .reset {
   width: 80%;
   height: 450px;
   border-radius: 15px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
 
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 10%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 .buttonmk {
   position: relative;
@@ -1670,14 +1705,7 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px 50px 25px 50px;
   justify-self: center;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2); }
 
 #contMapa_contTit_titep {
   color: #C3E2F8;
@@ -1687,13 +1715,27 @@ input:not(:placeholder-shown) ~ .reset {
   background: linear-gradient(to top, #b283dd, #9e6bce, #8253ab);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contMapa_contMapa_mapaep {
   padding: 10px 10px 10px 10px;
   width: 90%;
   height: 450px;
   border-radius: 15px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
 
 .buttonep {
@@ -1713,7 +1755,14 @@ input:not(:placeholder-shown) ~ .reset {
   transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 10%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 .buttonep:hover {
   background: #7c3ed8;
