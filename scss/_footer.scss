@@ -2,7 +2,7 @@
 
 /*Colores Magic Kingdom*/
 $colorprinc:#809BCE;
-$colorbody: #e8eeff;
+$colorbody: #FFF4E7;
 $colorCeleste1: #A7BFEE;
 $colorCeleste2: #8AABE3;
 $colorCeleste3: #C3E2F8;
@@ -44,11 +44,12 @@ $colorLogo: #00509D;
 /*colores footer epcot*/
 .colorFooterep{
     background-color: white;
-    background: linear-gradient( to top, #72449a, #8d61b6, $colorbody);
+    background: linear-gradient( to top, #72449a, #8d61b6, #FFF4E7);
 }
 
 .colorLineaep{
     background-color: #6b499d ;
+
 }
 
 
@@ -141,8 +142,8 @@ $colorLogo: #00509D;
 
 /*colores footer Hollywood Studios*/
 .colorFooterhs{
-    background-color: white;
-    background: linear-gradient( to top, #ba5964, #db8d94, $colorbody);
+
+    background: linear-gradient( to top, #ba5964, #db8d94, #FFF4E7);
 }
 
 .colorLineahs{
@@ -241,7 +242,7 @@ $colorLogo: #00509D;
 /*colores footer Animal Kingdom*/
 .colorFooterak{
     background-color: white;
-    background: linear-gradient( to top, #5f8764, #8fb996, $colorbody);
+    background: linear-gradient( to top, #5f8764, #8fb996, #FFF4E7);
 }
 
 .colorLineaak{
@@ -341,13 +342,14 @@ $colorLogo: #00509D;
 /*Footer general*/
 
 .colorFooterMK{
-    background-color: white;
-    background: linear-gradient(to bottom, $colorbody, $colorCeleste2, #3879b7); 
+
+    background: linear-gradient(to bottom, #FFF4E7, $colorCeleste2, #3879b7); 
 }
 
 .colorLineaMK{
     background-color: $colorCeleste3 ;
 }
+
 
 footer{
     margin: 90px 0px 0px 0px;

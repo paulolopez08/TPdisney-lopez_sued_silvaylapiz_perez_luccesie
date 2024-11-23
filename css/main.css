@@ -1143,7 +1143,7 @@ input:not(:placeholder-shown) ~ .reset {
   padding: 0; }
 
 #bodyGeneral {
-  background: linear-gradient(to bottom, #bfcffa, #e8eeff); }
+  background-color: #FFF4E7; }
 
 #contCarouselTexto {
   display: flex;
@@ -2437,7 +2437,7 @@ body {
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
-  background: linear-gradient(to top, #72449a, #8d61b6, #e8eeff); }
+  background: linear-gradient(to top, #72449a, #8d61b6, #FFF4E7); }
 
 .colorLineaep {
   background-color: #6b499d; }
@@ -2511,8 +2511,7 @@ body {
 
 /*colores footer Hollywood Studios*/
 .colorFooterhs {
-  background-color: white;
-  background: linear-gradient(to top, #ba5964, #db8d94, #e8eeff); }
+  background: linear-gradient(to top, #ba5964, #db8d94, #FFF4E7); }
 
 .colorLineahs {
   background-color: #bf6868; }
@@ -2587,7 +2586,7 @@ body {
 /*colores footer Animal Kingdom*/
 .colorFooterak {
   background-color: white;
-  background: linear-gradient(to top, #5f8764, #8fb996, #e8eeff); }
+  background: linear-gradient(to top, #5f8764, #8fb996, #FFF4E7); }
 
 .colorLineaak {
   background-color: #7c9e7c; }
@@ -2661,8 +2660,7 @@ body {
 
 /*Footer general*/
 .colorFooterMK {
-  background-color: white;
-  background: linear-gradient(to bottom, #e8eeff, #8AABE3, #3879b7); }
+  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
 
 .colorLineaMK {
   background-color: #C3E2F8; }
@@ -3687,7 +3685,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
-  background: linear-gradient(to top, #72449a, #8d61b6, #e8eeff); }
+  background: linear-gradient(to top, #72449a, #8d61b6, #FFF4E7); }
 
 .colorLineaep {
   background-color: #6b499d; }
@@ -3761,8 +3759,7 @@ input:not(:placeholder-shown) ~ .reset {
 
 /*colores footer Hollywood Studios*/
 .colorFooterhs {
-  background-color: white;
-  background: linear-gradient(to top, #ba5964, #db8d94, #e8eeff); }
+  background: linear-gradient(to top, #ba5964, #db8d94, #FFF4E7); }
 
 .colorLineahs {
   background-color: #bf6868; }
@@ -3837,7 +3834,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer Animal Kingdom*/
 .colorFooterak {
   background-color: white;
-  background: linear-gradient(to top, #5f8764, #8fb996, #e8eeff); }
+  background: linear-gradient(to top, #5f8764, #8fb996, #FFF4E7); }
 
 .colorLineaak {
   background-color: #7c9e7c; }
@@ -3911,8 +3908,7 @@ input:not(:placeholder-shown) ~ .reset {
 
 /*Footer general*/
 .colorFooterMK {
-  background-color: white;
-  background: linear-gradient(to bottom, #e8eeff, #8AABE3, #3879b7); }
+  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
 
 .colorLineaMK {
   background-color: #C3E2F8; }
@@ -4360,7 +4356,7 @@ label {
   padding: 0; }
 
 .bodyindex {
-  background-color: #e8eeff; }
+  background-color: #FFF4E7; }
 
 #textini_container {
   margin: 0;
