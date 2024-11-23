@@ -919,6 +919,47 @@ input:not(:placeholder-shown) ~ .reset {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contCarouselTexto_ContTitulosPrinc_tiths {
+    font-size: 60px; }
+  #contCarouselTexto_ContTitulosPrinc_frasehs {
+    font-size: 40px; }
+  #contTexto_textohs {
+    font-size: 15px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #contcarousel {
+    margin-left: 12px;
+    height: 200px;
+    width: 500px; }
+  #contCarouselTexto_ContTitulosPrinc_titehs {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 45px; }
+  #contCarouselTexto_ContTitulosPrinc_frasehs {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 19px; }
+  #contTexto_textohs {
+    font-size: 10px; }
+  #ontTitAtrac {
+    height: 300px; }
+  #contTitAtrac_tiths {
+    margin-left: 12px;
+    font-size: 55px; }
+  #contMapa_contTit_tiths {
+    font-size: 30px; }
+  #contMapa_contMapa {
+    height: 200px; }
+  #contMapa_contMapa_mapahs {
+    width: 270px;
+    height: 190px; }
+  #button-container {
+    height: 100px;
+    width: 100px; }
+  #contMapahs {
+    height: 500px; } }
+
 #contCarouselTexto_ContTitulosPrinc_titak {
   font-size: 60px;
   color: #8AABE3;
@@ -1165,6 +1206,47 @@ input:not(:placeholder-shown) ~ .reset {
 .buttonak:active {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contCarouselTexto_ContTitulosPrinc_titak {
+    font-size: 60px; }
+  #contCarouselTexto_ContTitulosPrinc_fraseak {
+    font-size: 40px; }
+  #contTexto_textoak {
+    font-size: 15px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #contcarousel {
+    margin-left: 12px;
+    height: 200px;
+    width: 500px; }
+  #contCarouselTexto_ContTitulosPrinc_titeak {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 45px; }
+  #contCarouselTexto_ContTitulosPrinc_fraseak {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 19px; }
+  #contTexto_textoak {
+    font-size: 10px; }
+  #ontTitAtrac {
+    height: 300px; }
+  #contTitAtrac_titak {
+    margin-left: 12px;
+    font-size: 55px; }
+  #contMapa_contTit_titak {
+    font-size: 30px; }
+  #contMapa_contMapa {
+    height: 200px; }
+  #contMapa_contMapa_mapaak {
+    width: 270px;
+    height: 190px; }
+  #button-container {
+    height: 100px;
+    width: 100px; }
+  #contMapaak {
+    height: 500px; } }
 
 * {
   margin: 0;
@@ -1552,6 +1634,50 @@ input:not(:placeholder-shown) ~ .reset {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contCarouselTexto_ContTitulosPrinc_tit {
+    font-size: 60px; }
+  #contCarouselTexto_ContTitulosPrinc_frase {
+    font-size: 40px; }
+  #contTexto_texto {
+    font-size: 19px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #contcarousel {
+    margin-left: 12px;
+    height: 200px;
+    width: 500px; }
+  #contCarouselTexto_ContTitulosPrinc_tit {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 50px; }
+  #contCarouselTexto_ContTitulosPrinc_frase {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 23px; }
+  #contTexto_texto {
+    font-size: 9px; }
+  #ontTitAtrac {
+    height: 300px; }
+  #contTitAtrac_tit {
+    margin-left: 12px;
+    font-size: 55px; }
+  #contSeparador_separador {
+    width: 350px;
+    height: 60px; }
+  #contMapa_contTit_tit {
+    font-size: 30px; }
+  #contMapa_contMapa {
+    height: 200px; }
+  #contMapa_contMapa_mapa {
+    width: 270px;
+    height: 190px; }
+  #button-container {
+    height: 100px;
+    width: 100px; }
+  #contMapa {
+    height: 400px; } }
+
 #contCarouselTexto_ContTitulosPrinc_titep {
   font-size: 60px;
   color: #8AABE3;
@@ -1798,6 +1924,47 @@ input:not(:placeholder-shown) ~ .reset {
 .buttonep:active {
   box-shadow: 0 0 0 0 transparent;
   transition: box-shadow 0.2s ease-in; }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contCarouselTexto_ContTitulosPrinc_titep {
+    font-size: 60px; }
+  #contCarouselTexto_ContTitulosPrinc_fraseep {
+    font-size: 40px; }
+  #contTexto_textoep {
+    font-size: 15px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #contcarousel {
+    margin-left: 12px;
+    height: 200px;
+    width: 500px; }
+  #contCarouselTexto_ContTitulosPrinc_titep {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 45px; }
+  #contCarouselTexto_ContTitulosPrinc_fraseep {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 17px; }
+  #contTexto_textoep {
+    font-size: 10px; }
+  #ontTitAtrac {
+    height: 300px; }
+  #contTitAtrac_titep {
+    margin-left: 12px;
+    font-size: 55px; }
+  #contMapa_contTit_titep {
+    font-size: 30px; }
+  #contMapa_contMapa {
+    height: 200px; }
+  #contMapa_contMapa_mapaep {
+    width: 270px;
+    height: 190px; }
+  #button-container {
+    height: 100px;
+    width: 100px; }
+  #contMapaep {
+    height: 500px; } }
 
 #contFrasePrinc {
   display: flex;

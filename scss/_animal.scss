@@ -332,3 +332,78 @@
 
 
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #contCarouselTexto_ContTitulosPrinc_titak{
+        font-size: 60px;
+    }
+
+    #contCarouselTexto_ContTitulosPrinc_fraseak{ 
+        font-size: 40px;
+    }
+
+    #contTexto_textoak{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    #contcarousel{
+        margin-left: 12px;
+        height: 200px;
+        width: 500px;
+    }
+
+    #contCarouselTexto_ContTitulosPrinc_titeak{
+        margin-left: 12px;
+        width: 500px;
+        font-size: 45px;
+    }
+
+    #contCarouselTexto_ContTitulosPrinc_fraseak{ 
+        margin-left: 12px;
+        width: 500px;
+        font-size: 19px;
+    }
+
+
+    #contTexto_textoak{
+        font-size: 10px;
+    }
+
+    #ontTitAtrac{
+        height: 300px;
+    }
+
+    #contTitAtrac_titak{
+        margin-left: 12px;
+        font-size: 55px; 
+    }
+
+
+    #contMapa_contTit_titak{
+        font-size: 30px;
+    }
+
+    #contMapa_contMapa{
+        height: 200px;
+    }
+
+    #contMapa_contMapa_mapaak{
+        width: 270px;
+        height: 190px;
+    }
+
+    #button-container{
+        height: 100px;
+        width: 100px;
+    }
+
+    #contMapaak{
+        height: 500px;
+    }
+    
+
+}
