@@ -4734,10 +4734,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorep {
   color: #4c2e7a; }
-
-.colorep:hover {
-  background-color: #b98ae3;
-  color: #ead3ff; }
+  .colorep:hover {
+    background-color: #b98ae3;
+    color: #ead3ff; }
 
 .menu2_items_parquesep {
   color: #4c2e7a !important; }
@@ -4824,10 +4823,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorhs {
   color: #842831; }
-
-.colorhs:hover {
-  background-color: #d56975;
-  color: #f1adb1; }
+  .colorhs:hover {
+    background-color: #d56975;
+    color: #f1adb1; }
 
 .menu2_items_parqueshs {
   color: #842831 !important; }
@@ -4914,10 +4912,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorak {
   color: #265c26; }
-
-.colorak:hover {
-  background-color: #78b87c;
-  color: #adf1ad; }
+  .colorak:hover {
+    background-color: #78b87c;
+    color: #adf1ad; }
 
 .menu2_items_parquesak {
   color: #265c26 !important; }
@@ -5097,7 +5094,6 @@ input:not(:placeholder-shown) ~ .reset {
 #contImgPrinc_imgPrinc {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   margin: 0;
   padding: 0;
   animation: aparecer 5s 1; }
@@ -5190,10 +5186,31 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colormk {
   color: #376188; }
+  .colormk:hover {
+    background-color: #8AABE3;
+    color: #C3E2F8; }
 
-.colormk:hover {
-  background-color: #8AABE3;
-  color: #C3E2F8; }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #menu2 {
+    height: 220px; }
+  #contImgPrinc {
+    height: 300px; }
+  #contImgPrinc_imgPrinc {
+    object-fit: fill; }
+  #menu1_contLogo_logo {
+    font-size: 50px; }
+  #menu1_search {
+    width: 240px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #menu2 {
+    height: 220px; }
+  #contImgPrinc_imgPrinc {
+    object-fit: fill; }
+  #menu1_contLogo_logo {
+    font-size: 70px; }
+  #menu1_search {
+    width: 300px; } }
 
 /*Colores Magic Kingdom*/
 /*Colores Epcot*/
@@ -5203,7 +5220,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
-  background: linear-gradient(to top, #72449a, #8d61b6, #e8eeff); }
+  background: linear-gradient(to top, #72449a, #8d61b6, #FFF4E7); }
 
 .colorLineaep {
   background-color: #6b499d; }
@@ -5277,8 +5294,7 @@ input:not(:placeholder-shown) ~ .reset {
 
 /*colores footer Hollywood Studios*/
 .colorFooterhs {
-  background-color: white;
-  background: linear-gradient(to top, #ba5964, #db8d94, #e8eeff); }
+  background: linear-gradient(to top, #ba5964, #db8d94, #FFF4E7); }
 
 .colorLineahs {
   background-color: #bf6868; }
@@ -5494,7 +5510,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer Animal Kingdom*/
 .colorFooterak {
   background-color: white;
-  background: linear-gradient(to top, #5f8764, #8fb996, #e8eeff); }
+  background: linear-gradient(to top, #5f8764, #8fb996, #FFF4E7); }
 
 .colorLineaak {
   background-color: #7c9e7c; }
@@ -5568,8 +5584,7 @@ input:not(:placeholder-shown) ~ .reset {
 
 /*Footer general*/
 .colorFooterMK {
-  background-color: white;
-  background: linear-gradient(to bottom, #e8eeff, #8AABE3, #3879b7); }
+  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
 
 .colorLineaMK {
   background-color: #C3E2F8; }
