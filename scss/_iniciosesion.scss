@@ -2,277 +2,177 @@
 @import "menu";
 @import "footer";
 
+$footer-bg-color: #5c92cc;
+$footer-text-color: #ffffff;
+$footer-link-color: #ffffff;
 $primary-color: #00a9f2;
 $secondary-color: #172D9D;
+$color-form:#add8e6;
 $white: #fff;
 $black: #000;
 $font-family-base: Arial, sans-serif;
 $font-family-title: "Atma", serif;
 
-.bodySesion {
-  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+#bodySesion {
+  background: linear-gradient(to bottom, $secondary-color, $primary-color);
 }
 
-.buttonLogin {
-  height: 60px;
+.group {
+  position: relative;
+  margin: 18px;
+ }
+ 
+ .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+ }
+ 
+ .input:focus {
+  outline: none;
+ }
+ 
+ label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+ }
+ 
+ .input:focus ~ label, .input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE;
+ }
+ 
+ .bar {
+  position: relative;
+  display: block;
   width: 200px;
-  padding: 15px 30px;
-  margin-right: 15px;
-  background: $primary-color;
-  font-size: 17px;
-  font-weight: 500;
-  color: #000;
-  border: 3px solid #172D9D;
-  border-radius: 8px;
-  box-shadow: 0 0 0 #172D9D;
-  transition: all 0.3s ease-in-out;
-  float: right;
+ }
+ 
+ .bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+ }
+ 
+ .bar:before {
+  left: 50%;
+ }
+ 
+ .bar:after {
+  right: 50%;
+ }
+ 
+ .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+  width: 50%;
+ }
+ 
+ .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+ }
+ 
+ .input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+ }
+ 
+ @keyframes inputHighlighter {
+  from {
+   background: #5264AE;
+  }
+ 
+  to {
+   width: 0;
+   background: transparent;
+  }
+ }
+
+.containerLogin {
+  align-items: center;
+  font-family: $font-family-base;
+  gap: 10px;
 }
-  
-  .star-1Login {
-    position: relative;
-    top: 20%;
-    left: 20%;
-    width: 25px;
-    height: auto;
-    filter: drop-shadow(0 0 0 white);
-    z-index: -5;
-    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
-  }
-  
-  .star-2Login {
-    position: relative;
-    top: 45%;
-    left: 45%;
-    width: 15px;
-    height: auto;
-    filter: drop-shadow(0 0 0 white);
-    z-index: -5;
-    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
-  }
-  
-  .star-3Login {
-    position: relative;
-    top: 40%;
-    left: 40%;
-    width: 5px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fff);
-    z-index: -5;
-    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
-  }
-  
-  .star-4Login {
-    position: relative;
-    top: 20%;
-    left: 40%;
-    width: 8px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fff);
-    z-index: -5;
-    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
-  }
-  
-  .star-5Login {
-    position: relative;
-    top: 25%;
-    left: 45%;
-    width: 15px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fff);
-    z-index: -5;
-    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
-  }
-  
-  .star-6Login {
-    position: relative;
-    top: 5%;
-    left: 50%;
-    width: 5px;
-    height: auto;
-    filter: drop-shadow(0 0 0 #fff);
-    z-index: -5;
-    transition: all 0.8s ease;
-  }
-  
-  .buttonLogin:hover {
-    background: transparent;
-    color: #fff;
-    box-shadow: 0 0 25px #fff;
-  }
-  
-  .buttonLogin:hover .star-1Login {
-    position: relative;
-    top: -80%;
-    left: -30%;
-    width: 25px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fff);
-    z-index: 2;
-  }
-  
- .buttonLogin:hover .star-2Login {
-    position: relative;
-    top: -25%;
-    left: 10%;
-    width: 15px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fff);
-    z-index: 2;
-  }
-  
-  .buttonLogin:hover .star-3Login {
-    position: relative;
-    top: 55%;
-    left: 25%;
-    width: 5px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fff);
-    z-index: 2;
-  }
-  
-  .buttonLogin:hover .star-4Login {
-    position: relative;
-    top: 30%;
-    left: 80%;
-    width: 8px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fff);
-    z-index: 2;
-  }
-  
-  .buttonLogin:hover .star-5Login {
-    position: relative;
-    top: 25%;
-    left: 115%;
-    width: 15px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fff);
-    z-index: 2;
-  }
-  
-  .buttonLogin:hover .star-6Login {
-    position: relative;
-    top: 5%;
-    left: 60%;
-    width: 5px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #fff);
-    z-index: 2;
-  }
-  
-  .fil0Login {
-    fill: #fff;
-  }
 
-  .MyDisney {
-    font-family: $font-family-title;
-    font-weight: 600;
-    font-style: normal;
-    color: $black;
-    margin: 30px;
-  }
 
-  .form-container {
-    background: $secondary-color;
-    height: 710px;
-    width: 600px;
-    margin: 15px;
-    flex-direction: column; /* Alinea elementos verticalmente */
-    gap: 10px; /* Espaciado entre los campos */
-    border-radius: 8px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra opcional */
-  }
-  
-  .group {
-    position: relative; /* Necesario para posicionar correctamente las etiquetas flotantes */
-  }
-  
-  .input {
-    font-size: 16px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%; /* Ajustar al ancho del contenedor */
-    border: none;
-    border-bottom: 1px solid #515151;
-    background: transparent;
-  }
-  
-  label {
-    color: #999;
-    font-size: 18px;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 0.2s ease all;
-  }
-  
-  .input:focus ~ label,
-  .input:valid ~ label {
-    top: -20px;
-    font-size: 14px;
-    color: #5264AE;
-  }
-  
-  .bar {
-    position: relative;
-    display: block;
-    width: 100%; /* Ajustar al ancho del input */
-  }
-  
-  .bar:before,
-  .bar:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #5264AE;
-    transition: 0.2s ease all;
-  }
-  
-  .bar:before {
-    left: 50%;
-  }
-  
-  .bar:after {
-    right: 50%;
-  }
-  
-  .input:focus ~ .bar:before,
-  .input:focus ~ .bar:after {
-    width: 50%;
-  }
-  
-  .highlight {
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
-  }
-  
-  .input:focus ~ .highlight {
-    animation: inputHighlighter 0.3s ease;
-  }
-  
-  @keyframes inputHighlighter {
-    from {
-      background: #5264AE;
-    }
-  
-    to {
-      width: 0;
-      background: transparent;
-    }
-  }
+.form-containerLogin {
+  width: 350px;
+  height: 350px;
+  margin-top: 5px;
+  background: $color-form;
+  border-radius: 9px;
+  box-shadow: 4px 8px 8px $black;
+  flex-direction: column; 
+  gap: 10px; 
+}
 
-  .checkLogin{
-    font-family: 'Roboto', sans-serif;
-    color: #000;
-    font-size: 16px;
+.MyDisney {
+  font-family: $font-family-title;
+  font-weight: 600;
+  font-style: normal;
+  color: #052535;
+}
+
+.BotonVolver {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.help-text {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  margin-top: 30px;
+  font-size: medium;
+
+  .aLogin {
+    color: #052535;
+    text-decoration: none;
   }
-  
+}
+
+.form-check{
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+}
+
+
+.footer-Login {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  .footer-Login-link {
+      color: $footer-link-color;
+      margin-right: 15px;
+      text-decoration: none;
+      &:hover {
+          text-decoration: underline;
+          color: lighten($footer-link-color, 10%);
+      }
+  }
+}
+.text-muted {
+  color: lighten($footer-text-color, 20%);
+}
