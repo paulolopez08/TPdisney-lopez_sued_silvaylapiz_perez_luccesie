@@ -283,32 +283,40 @@
     animation-range: entry 10% cover 10%;
     animation-fill-mode: both;
     transition: width 3s;
+
+    &:hover {
+        background:  #326f3d;
+        box-shadow: 0 0 30px 5px #214e29;
+        transition: all 0.2s ease-out;
+    }
+    
+    &:hover::before {
+        animation: sh02 0.5s 0s linear;
+    }
+    
+    &::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        transform: skewX(-20deg);
+    }
+
+    &:active {
+        box-shadow: 0 0 0 0 transparent;
+        transition: box-shadow 0.2s ease-in;
+    }
+    
 }
 
 
-.buttonak:hover {
-    background:  #326f3d;
-    box-shadow: 0 0 30px 5px #214e29;
-    transition: all 0.2s ease-out;
-}
 
-.buttonak:hover::before {
-    animation: sh02 0.5s 0s linear;
-}
-
-.buttonak::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    transform: skewX(-20deg);
-}
 
 @keyframes sh02 {
     from {
@@ -324,10 +332,6 @@
     }
 }
 
-.buttonak:active {
-    box-shadow: 0 0 0 0 transparent;
-    transition: box-shadow 0.2s ease-in;
-}
 
 
 

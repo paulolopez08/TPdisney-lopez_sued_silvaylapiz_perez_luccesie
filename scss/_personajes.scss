@@ -37,12 +37,13 @@
     background-color: #f0d1fa;
     transition: background-color 0.3s ease;
 
+    &:hover {
+        background-color: #BC80CE;
+    }
 
 }
 
-#contCardPersonajes_color1:hover {
-    background-color: #BC80CE;
-}
+
 
 
 
@@ -133,15 +134,14 @@
     background-color: #FFA98F;
     transition: background-color 0.3s ease;
 
-
+    &:hover {
+        background-color: #f17a55;
+    }
 }
 
 
 
 
-#contCardPersonajes_color2:hover {
-    background-color: #f17a55;
-}
 
 .contCardPersonajes_info_color2 {
     color:#f17a55;
@@ -160,11 +160,13 @@
     margin-right: 20px ;
     background-color: #F96363;
     transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #c13939;
+    }
 }
 
-#contCardPersonajes_color3:hover {
-    background-color: #c13939;
-}
+
 
 .contCardPersonajes_info_color3 {
     color:#c13939;
@@ -185,11 +187,13 @@
     margin-left: 20px ;
     background-color: #A4CBE4;
     transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #6698b7;
+    }
 }
 
-#contCardPersonajes_color4:hover {
-    background-color: #6698b7;
-}
+
 
 .contCardPersonajes_info_color4 {
     color:#6698b7;
@@ -209,11 +213,13 @@
     margin-right: 20px ;
     background-color: #A0CD9B;
     transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #60925a;
+    }
 }
 
-#contCardPersonajes_color5:hover {
-    background-color: #60925a;
-}
+
 
 .contCardPersonajes_info_color5 {
     color:#60925a;
@@ -234,11 +240,13 @@
     margin-left: 20px ;
     background-color: #FBC281;
     transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #f3972e;
+    }
 }
 
-#contCardPersonajes_color6:hover {
-    background-color: #f3972e;
-}
+
 
 .contCardPersonajes_info_color6 {
     color:#f3972e;
@@ -257,11 +265,13 @@
     margin-right: 20px ;
     background-color: #F29371;
     transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #CC6A46;
+    }
 }
 
-#contCardPersonajes_color7:hover {
-    background-color: #CC6A46;
-}
+
 
 .contCardPersonajes_info_color7 {
     color:#CC6A46;
@@ -279,11 +289,13 @@
     margin-left: 20px ;
     background-color: #FF827A;
     transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #d35047;
+    }
 }
 
-#contCardPersonajes_color8:hover {
-    background-color: #d35047;
-}
+
 
 .contCardPersonajes_info_color8 {
     color:#d35047;
@@ -302,11 +314,13 @@
     margin-right: 20px ;
     background-color: #C1D6F5;
     transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #6a9be5;
+    }
 }
 
-#contCardPersonajes_color9:hover {
-    background-color: #6a9be5;
-}
+
 
 .contCardPersonajes_info_color9 {
     color: #6a9be5;
@@ -325,11 +339,13 @@
     margin-left: 20px ;
     background-color: #BAE7D1;
     transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #7dbf9f;
+    }
 }
 
-#contCardPersonajes_color10:hover {
-    background-color: #7dbf9f;
-}
+
 
 .contCardPersonajes_info_color10 {
     color: #7dbf9f;
@@ -387,120 +403,3 @@
 
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container .card {
-    position: relative;
-    width: 500px;
-    height: 230px;
-    padding: 15px;
-    background: linear-gradient(60deg, #151516 0%, #1d2229 100%);
-    overflow: hidden;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-.container .card h2 {
-    z-index: 99;
-    position: absolute;
-    bottom: 25px;
-    right: 130px;
-    font-size: 50px;
-    font-weight: 700;
-    color: #fff;
-    pointer-events: none;
-    transition: 0.2s ease;
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
-.container .card p {
-    z-index: 99;
-    position: absolute;
-    bottom: 30px;
-    right: 130px;
-    width: 150px;
-    color: #fff;
-    opacity: 0;
-    font-size: 12px;
-    text-align: right;
-    letter-spacing: 1px;
-    transition: 0.2s ease;
-}
-
-.container .card span{
-    z-index: 99;
-    position: absolute;
-    top: 60px;
-    right: 35px;
-    color: #fff;
-    font-size: 12px;
-    letter-spacing: 1px;
-    writing-mode: vertical-lr;
-    transition: 0.2s ease;
-    opacity: 0.7;
-}
-
-.container .card .pic {
-    z-index: 100;
-    width: 395px;
-    height: 200px;
-    background-image: url(../assets/imagenes/personajes/personaje1.png);
-    background-size: cover;
-    border-radius: 12px;
-    filter: grayscale(100%);
-    transition: 0.3s ease;
-}
-
-.container .card button {
-    position: absolute;
-    right: 30px;
-    bottom: 40px;
-    width: 30px;
-    height: 30px;
-    background-color: #772a9b;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    outline: none;
-    opacity: 1;
-    transition: o.3s ease;
-}
-
-.container .card:hover button {
-    transform: scale(16.5);
-    opacity: 0.5;
-}
-
-.container .card:hover h2 {
-    bottom: 80px;
-    right: 50px;
-}
-
-.container .card:hover p {
-    opacity: 1;
-    right: 60px;
-}
-
-.container .card:hover .pic {
-    filter: grayscale(0);
-    width: 470px;
-}
-
-
-
-.container .card2 .pic {
-    background-image: url(../assets/imagenes/personajes/personaje2.png);
-    transition: 0.3s ease;
-}
-
-.container.car2 button {
-    background-color: #26c3a1;
-}

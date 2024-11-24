@@ -1,60 +1,22 @@
+@import "variables_princ";
+@import "menu";
+@import "footer";
+
 $footer-bg-color: #5c92cc;
 $footer-text-color: #ffffff;
 $footer-link-color: #ffffff;
 $primary-color: #00a9f2;
 $secondary-color: #172D9D;
+$color:#92C7F9;
+$color-form:#add8e6;
 $white: #fff;
 $black: #000;
 $font-family-base: Arial, sans-serif;
 $font-family-title: "Atma", serif;
 
 #bodySesion {
-  background: linear-gradient(to bottom, $primary-color, $secondary-color); 
-
+  background: linear-gradient(to bottom, $secondary-color, $primary-color);
 }
-
-.Volver {
-  height: 50px;
-  margin: 5px;
-  width: 120px;
-  background: #333;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-family: Consolas, Courier New, monospace;
-  border: solid #404c5d 1px;
-  font-size: 16px;
-  color: rgb(161, 161, 161);
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  border-radius: 5px;
-  background: linear-gradient(145deg, #2e2d2d, #212121);
-  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
-    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
-  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
-    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
-}
-
-.Volver:hover {
-  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
-  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
-  color: #d6d6d6;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-}
-
-.Volver:active {
-  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
-  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
-  color: #d6d6d6;
-  -webkit-transition: 100ms;
-  transition: 100ms;
-}
-
 
 .group {
   position: relative;
@@ -65,7 +27,6 @@ $font-family-title: "Atma", serif;
   font-size: 16px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 200px;
   border: none;
   border-bottom: 1px solid #515151;
   background: transparent;
@@ -149,16 +110,18 @@ $font-family-title: "Atma", serif;
   }
  }
 
-.containerLogin {
+.containerRegistro {
   align-items: center;
   font-family: $font-family-base;
   gap: 10px;
 }
 
-.form-containerLogin {
+
+.form-containerRegistro {
   width: 650px;
   height: 730px;
-  background: $secondary-color;
+  margin-top: 25px;
+  background: $color-form;
   border-radius: 9px;
   box-shadow: 4px 8px 8px $black;
   flex-direction: column; /* Alinea elementos verticalmente */
@@ -169,7 +132,7 @@ $font-family-title: "Atma", serif;
   font-family: $font-family-title;
   font-weight: 600;
   font-style: normal;
-  color: $black;
+  color: #052535;
 }
 
 .BotonVolver {
@@ -177,6 +140,13 @@ $font-family-title: "Atma", serif;
   right: 30px;
   top: 30px;
 }
+
+.form-check{
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+}
+
 
 .footer-Login {
   background-color: $footer-bg-color;
@@ -193,4 +163,17 @@ $font-family-title: "Atma", serif;
 }
 .text-muted {
   color: lighten($footer-text-color, 20%);
+}
+
+.help-text {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  margin-top: 30px;
+  font-size: medium;
+
+  .aLogin {
+    color: #052535;
+    text-decoration: none;
+  }
 }
