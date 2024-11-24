@@ -33,6 +33,7 @@
         font-size: 20px;
         text-align:justify;
         padding:50px 90px 20px 90px ;
+        font-family: "Faculty Glyphic", sans-serif;
     }
 }
 #cont_parquesT{
@@ -42,7 +43,7 @@
 
 
 /*parques*/
-#contCardsparquesF1 {
+.contCardsparques{
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -50,13 +51,6 @@
     margin-top: 30px;
 }
 
-#contCardsparquesF2 {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 80px;
-    margin-top: 30px;
-}
 
 .contCardsparques_cards {
     width: 450px;
@@ -153,6 +147,10 @@
     transition: opacity 0.3s ease;
     padding: 10px;
     text-align: center;
+
+    a{
+        text-decoration: none;
+    }
 }
 
 .contCardsparques_cards_info_titulo {
