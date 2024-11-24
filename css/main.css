@@ -2670,7 +2670,7 @@ body {
 /*colores footer Login*/
 .colorFooterSR {
   background-color: white;
-  background: linear-gradient(to bottom, #92C7F9, #00a9f2); }
+  background: linear-gradient(to bottom, #0979D1, #92C7F9); }
 
 .colorLineaSR {
   background-color: #C3E2F8; }
@@ -3900,7 +3900,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer Login*/
 .colorFooterSR {
   background-color: white;
-  background: linear-gradient(to bottom, #92C7F9, #00a9f2); }
+  background: linear-gradient(to bottom, #0979D1, #92C7F9); }
 
 .colorLineaSR {
   background-color: #C3E2F8; }
@@ -5266,7 +5266,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer Login*/
 .colorFooterSR {
   background-color: white;
-  background: linear-gradient(to bottom, #92C7F9, #00a9f2); }
+  background: linear-gradient(to bottom, #0979D1, #92C7F9); }
 
 .colorLineaSR {
   background-color: #C3E2F8; }
