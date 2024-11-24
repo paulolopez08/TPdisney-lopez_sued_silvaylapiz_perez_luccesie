@@ -230,6 +230,24 @@
     animation-fill-mode: both;
     animation-range: entry 15% cover 40%;
     opacity: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        z-index: -1;
+        border-radius: 1.2rem;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+        filter: blur(15px);
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+    
 }
 
 
@@ -282,18 +300,7 @@
     background-image: url('../assets/imagenes/atraccion4.png');
 }
 
-.contCardsAtracciones_cards::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    z-index: -1;
-    border-radius: 1.2rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
-    filter: blur(15px);
-}
+
 
 .contCardsAtracciones_cards_info {
     position: absolute;
@@ -332,9 +339,6 @@
     opacity: 3;
 }
 
-.contCardsAtracciones_cards:hover {
-    transform: scale(1.05);
-}
 
 
 
@@ -477,32 +481,42 @@
     text-decoration: none;
     display: inline-block;
     text-align: center;
+
+    &:hover {
+        background: rgb(62, 98, 216);
+        box-shadow: 0 0 30px 5px rgba(5, 104, 170, 0.815);
+        transition: all 0.2s ease-out;
+    }
+
+    &:hover::before {
+        animation: sh02 0.5s 0s linear;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        transform: skewX(-20deg);
+    }
+
+    &:active {
+        box-shadow: 0 0 0 0 transparent;
+        transition: box-shadow 0.2s ease-in;
+    }
 }
 
 
-.buttonmk:hover {
-    background: rgb(62, 98, 216);
-    box-shadow: 0 0 30px 5px rgba(5, 104, 170, 0.815);
-    transition: all 0.2s ease-out;
-}
 
-.buttonmk:hover::before {
-    animation: sh02 0.5s 0s linear;
-}
 
-.buttonmk::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    transform: skewX(-20deg);
-}
+
+
 
 @keyframes sh02 {
     from {
@@ -518,10 +532,7 @@
     }
 }
 
-.buttonmk:active {
-    box-shadow: 0 0 0 0 transparent;
-    transition: box-shadow 0.2s ease-in;
-}
+
 
 
 
