@@ -212,15 +212,7 @@
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
 
-    view-timeline-name: --image;
-    view-timeline-axis: block;
 
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 10% cover 50%;
-    animation-fill-mode: both;
-    transition: width 3s;
 
 }
 
@@ -234,6 +226,16 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
 }
 
 #contMapa_contMapa_mapaep {
@@ -241,6 +243,17 @@
     width: 90%;
     height: 450px;
     border-radius: 15px;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 50%;
+    animation-fill-mode: both;
+    transition: width 3s;
+
     filter: drop-shadow(
         0 4px 8px rgba(0, 0, 0, 0.3)
     )
@@ -265,32 +278,50 @@
     text-decoration: none;
     display: inline-block;
     text-align: center;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 10%;
+    animation-fill-mode: both;
+    transition: width 3s;
+
+
+    &:hover {
+        background:  rgb(124, 62, 216);
+        box-shadow: 0 0 30px 5px rgba(82, 5, 170, 0.815);
+        transition: all 0.2s ease-out;
+    }
+    
+    &:hover::before {
+        animation: sh02 0.5s 0s linear;
+    }
+    
+    &::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        transform: skewX(-20deg);
+    }
+
+    &:active {
+        box-shadow: 0 0 0 0 transparent;
+        transition: box-shadow 0.2s ease-in;
+    }
 }
 
 
-.buttonep:hover {
-    background:  rgb(124, 62, 216);
-    box-shadow: 0 0 30px 5px rgba(82, 5, 170, 0.815);
-    transition: all 0.2s ease-out;
-}
 
-.buttonep:hover::before {
-    animation: sh02 0.5s 0s linear;
-}
-
-.buttonep::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    transform: skewX(-20deg);
-}
 
 @keyframes sh02 {
     from {
@@ -306,11 +337,83 @@
     }
 }
 
-.buttonep:active {
-    box-shadow: 0 0 0 0 transparent;
-    transition: box-shadow 0.2s ease-in;
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #contCarouselTexto_ContTitulosPrinc_titep{
+        font-size: 60px;
+    }
+
+    #contCarouselTexto_ContTitulosPrinc_fraseep{ 
+        font-size: 40px;
+    }
+
+    #contTexto_textoep{
+        font-size: 15px;
+    }
 }
 
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    #contcarousel{
+        margin-left: 12px;
+        height: 200px;
+        width: 500px;
+    }
+
+    #contCarouselTexto_ContTitulosPrinc_titep{
+        margin-left: 12px;
+        width: 500px;
+        font-size: 45px;
+    }
+
+    #contCarouselTexto_ContTitulosPrinc_fraseep{ 
+        margin-left: 12px;
+        width: 500px;
+        font-size: 17px;
+    }
 
 
+    #contTexto_textoep{
+        font-size: 10px;
+    }
+
+    #ontTitAtrac{
+        height: 300px;
+    }
+
+    #contTitAtrac_titep{
+        margin-left: 12px;
+        font-size: 55px; 
+    }
+
+
+    #contMapa_contTit_titep{
+        font-size: 30px;
+    }
+
+    #contMapa_contMapa{
+        height: 200px;
+    }
+
+    #contMapa_contMapa_mapaep{
+        width: 270px;
+        height: 190px;
+    }
+
+    #button-container{
+        height: 100px;
+        width: 100px;
+    }
+
+    #contMapaep{
+        height: 500px;
+    }
+    
+
+}

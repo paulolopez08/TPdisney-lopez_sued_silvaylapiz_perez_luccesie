@@ -192,12 +192,13 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorep{
     color: #4c2e7a;
+
+    &:hover{
+        background-color:  $colorVioleta2;
+        color: #ead3ff;
+    }
 }
 
-.colorep:hover{
-    background-color:  $colorVioleta2;
-    color: #ead3ff;
-}
 
 
 .menu2_items_parquesep{
@@ -260,12 +261,13 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorhs{
     color: #842831;
+
+    &:hover{
+        background-color:  $colorRojo2;
+        color: #f1adb1 ;     
+    }
 }
 
-.colorhs:hover{
-    background-color:  $colorRojo2;
-    color: #f1adb1 ;
-}
 
 
 .menu2_items_parqueshs{
@@ -331,13 +333,12 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorak{
     color:  #265c26 ;
-}
 
-.colorak:hover{
-    background-color:  #78b87c;
-    color: #adf1ad;
+    &:hover{
+        background-color:  #78b87c;
+        color: #adf1ad;    
+    }
 }
-
 
 .menu2_items_parquesak{
     color:  #265c26 !important;
@@ -509,7 +510,6 @@ input:not(:placeholder-shown) ~ .reset {
 #contImgPrinc_imgPrinc {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     margin: 0;
     padding: 0;
     animation: aparecer 5s 1;
@@ -633,9 +633,55 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colormk{
     color: #376188;
+
+    &:hover{
+        background-color: $colorCeleste2;
+        color: #C3E2F8;
+    }
 }
 
-.colormk:hover{
-    background-color: $colorCeleste2;
-    color: #C3E2F8;
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    #menu2{
+        height: 220px;
+
+    }
+
+    #contImgPrinc{
+        height: 300px;
+    }
+
+    #contImgPrinc_imgPrinc{
+
+        object-fit:fill;
+    }
+
+    #menu1_contLogo_logo{
+        font-size: 50px;
+    }
+
+    #menu1_search{
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #menu2{
+        height: 220px;
+
+    }
+
+    #contImgPrinc_imgPrinc{
+
+        object-fit:fill;
+    }
+
+    #menu1_contLogo_logo{
+        font-size: 70px;
+    }
+
+    #menu1_search{
+        width: 300px;
+    }
 }

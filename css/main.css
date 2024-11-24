@@ -174,10 +174,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorep {
   color: #4c2e7a; }
-
-.colorep:hover {
-  background-color: #b98ae3;
-  color: #ead3ff; }
+  .colorep:hover {
+    background-color: #b98ae3;
+    color: #ead3ff; }
 
 .menu2_items_parquesep {
   color: #4c2e7a !important; }
@@ -264,10 +263,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorhs {
   color: #842831; }
-
-.colorhs:hover {
-  background-color: #d56975;
-  color: #f1adb1; }
+  .colorhs:hover {
+    background-color: #d56975;
+    color: #f1adb1; }
 
 .menu2_items_parqueshs {
   color: #842831 !important; }
@@ -354,10 +352,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorak {
   color: #265c26; }
-
-.colorak:hover {
-  background-color: #78b87c;
-  color: #adf1ad; }
+  .colorak:hover {
+    background-color: #78b87c;
+    color: #adf1ad; }
 
 .menu2_items_parquesak {
   color: #265c26 !important; }
@@ -537,7 +534,6 @@ input:not(:placeholder-shown) ~ .reset {
 #contImgPrinc_imgPrinc {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   margin: 0;
   padding: 0;
   animation: aparecer 5s 1; }
@@ -630,10 +626,31 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colormk {
   color: #376188; }
+  .colormk:hover {
+    background-color: #8AABE3;
+    color: #C3E2F8; }
 
-.colormk:hover {
-  background-color: #8AABE3;
-  color: #C3E2F8; }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #menu2 {
+    height: 220px; }
+  #contImgPrinc {
+    height: 300px; }
+  #contImgPrinc_imgPrinc {
+    object-fit: fill; }
+  #menu1_contLogo_logo {
+    font-size: 50px; }
+  #menu1_search {
+    width: 240px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #menu2 {
+    height: 220px; }
+  #contImgPrinc_imgPrinc {
+    object-fit: fill; }
+  #menu1_contLogo_logo {
+    font-size: 70px; }
+  #menu1_search {
+    width: 300px; } }
 
 .logo_registro {
   background-color: #809BCE;
@@ -807,14 +824,7 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px 50px 25px 50px;
   justify-self: center;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2); }
 
 #contMapa_contTit_tiths {
   color: #C3E2F8;
@@ -824,13 +834,27 @@ input:not(:placeholder-shown) ~ .reset {
   background: linear-gradient(to top, #b23a48, #8c2f39, #461220);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contMapa_contMapa_mapahs {
   padding: 10px 10px 10px 10px;
   width: 90%;
   height: 470px;
   border-radius: 15px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
 
 .buttonhs {
@@ -850,28 +874,35 @@ input:not(:placeholder-shown) ~ .reset {
   transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline-block;
-  text-align: center; }
-
-.buttonhs:hover {
-  background: #b23a48;
-  box-shadow: 0 0 30px 5px rgba(131, 16, 16, 0.815);
-  transition: all 0.2s ease-out; }
-
-.buttonhs:hover::before {
-  animation: sh02 0.5s 0s linear; }
-
-.buttonhs::before {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  transform: skewX(-20deg); }
+  text-align: center;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 10%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+  .buttonhs:hover {
+    background: #b23a48;
+    box-shadow: 0 0 30px 5px rgba(131, 16, 16, 0.815);
+    transition: all 0.2s ease-out; }
+  .buttonhs:hover::before {
+    animation: sh02 0.5s 0s linear; }
+  .buttonhs::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg); }
+  .buttonhs:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in; }
 
 @keyframes sh02 {
   from {
@@ -883,9 +914,46 @@ input:not(:placeholder-shown) ~ .reset {
     opacity: 0;
     left: 100%; } }
 
-.buttonhs:active {
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.2s ease-in; }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contCarouselTexto_ContTitulosPrinc_tiths {
+    font-size: 60px; }
+  #contCarouselTexto_ContTitulosPrinc_frasehs {
+    font-size: 40px; }
+  #contTexto_textohs {
+    font-size: 15px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #contcarousel {
+    margin-left: 12px;
+    height: 200px;
+    width: 500px; }
+  #contCarouselTexto_ContTitulosPrinc_titehs {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 45px; }
+  #contCarouselTexto_ContTitulosPrinc_frasehs {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 19px; }
+  #contTexto_textohs {
+    font-size: 10px; }
+  #ontTitAtrac {
+    height: 300px; }
+  #contTitAtrac_tiths {
+    margin-left: 12px;
+    font-size: 55px; }
+  #contMapa_contTit_tiths {
+    font-size: 30px; }
+  #contMapa_contMapa {
+    height: 200px; }
+  #contMapa_contMapa_mapahs {
+    width: 270px;
+    height: 190px; }
+  #button-container {
+    height: 100px;
+    width: 100px; }
+  #contMapahs {
+    height: 500px; } }
 
 #contCarouselTexto_ContTitulosPrinc_titak {
   font-size: 60px;
@@ -1040,14 +1108,7 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px 50px 25px 50px;
   justify-self: center;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2); }
 
 #contMapa_contTit_titak {
   color: #C3E2F8;
@@ -1057,13 +1118,27 @@ input:not(:placeholder-shown) ~ .reset {
   background: linear-gradient(to top, #a1cca5, #8fb996, #517957);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contMapa_contMapa_mapaak {
   padding: 10px 10px 10px 10px;
   width: 90%;
   height: 485px;
   border-radius: 15px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
 
 .buttonak {
@@ -1083,28 +1158,35 @@ input:not(:placeholder-shown) ~ .reset {
   transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline-block;
-  text-align: center; }
-
-.buttonak:hover {
-  background: #326f3d;
-  box-shadow: 0 0 30px 5px #214e29;
-  transition: all 0.2s ease-out; }
-
-.buttonak:hover::before {
-  animation: sh02 0.5s 0s linear; }
-
-.buttonak::before {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  transform: skewX(-20deg); }
+  text-align: center;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 10%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+  .buttonak:hover {
+    background: #326f3d;
+    box-shadow: 0 0 30px 5px #214e29;
+    transition: all 0.2s ease-out; }
+  .buttonak:hover::before {
+    animation: sh02 0.5s 0s linear; }
+  .buttonak::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg); }
+  .buttonak:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in; }
 
 @keyframes sh02 {
   from {
@@ -1116,16 +1198,53 @@ input:not(:placeholder-shown) ~ .reset {
     opacity: 0;
     left: 100%; } }
 
-.buttonak:active {
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.2s ease-in; }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contCarouselTexto_ContTitulosPrinc_titak {
+    font-size: 60px; }
+  #contCarouselTexto_ContTitulosPrinc_fraseak {
+    font-size: 40px; }
+  #contTexto_textoak {
+    font-size: 15px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #contcarousel {
+    margin-left: 12px;
+    height: 200px;
+    width: 500px; }
+  #contCarouselTexto_ContTitulosPrinc_titeak {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 45px; }
+  #contCarouselTexto_ContTitulosPrinc_fraseak {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 19px; }
+  #contTexto_textoak {
+    font-size: 10px; }
+  #ontTitAtrac {
+    height: 300px; }
+  #contTitAtrac_titak {
+    margin-left: 12px;
+    font-size: 55px; }
+  #contMapa_contTit_titak {
+    font-size: 30px; }
+  #contMapa_contMapa {
+    height: 200px; }
+  #contMapa_contMapa_mapaak {
+    width: 270px;
+    height: 190px; }
+  #button-container {
+    height: 100px;
+    width: 100px; }
+  #contMapaak {
+    height: 500px; } }
 
 * {
   margin: 0;
   padding: 0; }
 
 #bodyGeneral {
-  background: linear-gradient(to bottom, #bfcffa, #e8eeff); }
+  background-color: #FFF4E7; }
 
 #contCarouselTexto {
   display: flex;
@@ -1289,6 +1408,19 @@ input:not(:placeholder-shown) ~ .reset {
   animation-fill-mode: both;
   animation-range: entry 15% cover 40%;
   opacity: 0; }
+  .contCardsAtracciones_cards::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+    border-radius: 1.2rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+    filter: blur(15px); }
+  .contCardsAtracciones_cards:hover {
+    transform: scale(1.05); }
 
 #card1:nth-child(1) {
   animation-delay: 0s; }
@@ -1326,18 +1458,6 @@ input:not(:placeholder-shown) ~ .reset {
 #card4 {
   background-image: url("../assets/imagenes/atraccion4.png"); }
 
-.contCardsAtracciones_cards::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  z-index: -1;
-  border-radius: 1.2rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
-  filter: blur(15px); }
-
 .contCardsAtracciones_cards_info {
   position: absolute;
   top: 0;
@@ -1369,9 +1489,6 @@ input:not(:placeholder-shown) ~ .reset {
 .contCardsAtracciones_cards:hover .contCardsAtracciones_cards_info {
   opacity: 3; }
 
-.contCardsAtracciones_cards:hover {
-  transform: scale(1.05); }
-
 #contSeparador {
   margin: 80px 50px 70px 70px;
   display: flex;
@@ -1397,25 +1514,11 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px 50px 25px 50px;
   justify-self: center;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2); }
 
 #contMapa_contTit {
   display: flex;
-  justify-content: left;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  justify-content: left; }
 
 #contMapa_contTit_tit {
   color: #C3E2F8;
@@ -1425,7 +1528,14 @@ input:not(:placeholder-shown) ~ .reset {
   background: linear-gradient(to bottom, #A7BFEE, #4A90E2, #1E3A8A);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contMapa_contMapa {
   padding: 40px;
@@ -1438,12 +1548,26 @@ input:not(:placeholder-shown) ~ .reset {
   width: 80%;
   height: 450px;
   border-radius: 15px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
 
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 10%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 .buttonmk {
   position: relative;
@@ -1463,27 +1587,27 @@ input:not(:placeholder-shown) ~ .reset {
   text-decoration: none;
   display: inline-block;
   text-align: center; }
-
-.buttonmk:hover {
-  background: #3e62d8;
-  box-shadow: 0 0 30px 5px rgba(5, 104, 170, 0.815);
-  transition: all 0.2s ease-out; }
-
-.buttonmk:hover::before {
-  animation: sh02 0.5s 0s linear; }
-
-.buttonmk::before {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  transform: skewX(-20deg); }
+  .buttonmk:hover {
+    background: #3e62d8;
+    box-shadow: 0 0 30px 5px rgba(5, 104, 170, 0.815);
+    transition: all 0.2s ease-out; }
+  .buttonmk:hover::before {
+    animation: sh02 0.5s 0s linear; }
+  .buttonmk::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg); }
+  .buttonmk:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in; }
 
 @keyframes sh02 {
   from {
@@ -1495,9 +1619,49 @@ input:not(:placeholder-shown) ~ .reset {
     opacity: 0;
     left: 100%; } }
 
-.buttonmk:active {
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.2s ease-in; }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contCarouselTexto_ContTitulosPrinc_tit {
+    font-size: 60px; }
+  #contCarouselTexto_ContTitulosPrinc_frase {
+    font-size: 40px; }
+  #contTexto_texto {
+    font-size: 19px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #contcarousel {
+    margin-left: 12px;
+    height: 200px;
+    width: 500px; }
+  #contCarouselTexto_ContTitulosPrinc_tit {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 50px; }
+  #contCarouselTexto_ContTitulosPrinc_frase {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 23px; }
+  #contTexto_texto {
+    font-size: 9px; }
+  #ontTitAtrac {
+    height: 300px; }
+  #contTitAtrac_tit {
+    margin-left: 12px;
+    font-size: 55px; }
+  #contSeparador_separador {
+    width: 350px;
+    height: 60px; }
+  #contMapa_contTit_tit {
+    font-size: 30px; }
+  #contMapa_contMapa {
+    height: 200px; }
+  #contMapa_contMapa_mapa {
+    width: 270px;
+    height: 190px; }
+  #button-container {
+    height: 100px;
+    width: 100px; }
+  #contMapa {
+    height: 400px; } }
 
 #contCarouselTexto_ContTitulosPrinc_titep {
   font-size: 60px;
@@ -1652,14 +1816,7 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 10px 50px 25px 50px;
   justify-self: center;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 10% cover 50%;
-  animation-fill-mode: both;
-  transition: width 3s; }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2); }
 
 #contMapa_contTit_titep {
   color: #C3E2F8;
@@ -1669,13 +1826,27 @@ input:not(:placeholder-shown) ~ .reset {
   background: linear-gradient(to top, #b283dd, #9e6bce, #8253ab);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text; }
+  -webkit-background-clip: text;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
 
 #contMapa_contMapa_mapaep {
   padding: 10px 10px 10px 10px;
   width: 90%;
   height: 450px;
   border-radius: 15px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); }
 
 .buttonep {
@@ -1695,28 +1866,35 @@ input:not(:placeholder-shown) ~ .reset {
   transition: all 0.2s ease-in;
   text-decoration: none;
   display: inline-block;
-  text-align: center; }
-
-.buttonep:hover {
-  background: #7c3ed8;
-  box-shadow: 0 0 30px 5px rgba(82, 5, 170, 0.815);
-  transition: all 0.2s ease-out; }
-
-.buttonep:hover::before {
-  animation: sh02 0.5s 0s linear; }
-
-.buttonep::before {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  transform: skewX(-20deg); }
+  text-align: center;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 10%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+  .buttonep:hover {
+    background: #7c3ed8;
+    box-shadow: 0 0 30px 5px rgba(82, 5, 170, 0.815);
+    transition: all 0.2s ease-out; }
+  .buttonep:hover::before {
+    animation: sh02 0.5s 0s linear; }
+  .buttonep::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    transform: skewX(-20deg); }
+  .buttonep:active {
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.2s ease-in; }
 
 @keyframes sh02 {
   from {
@@ -1728,9 +1906,46 @@ input:not(:placeholder-shown) ~ .reset {
     opacity: 0;
     left: 100%; } }
 
-.buttonep:active {
-  box-shadow: 0 0 0 0 transparent;
-  transition: box-shadow 0.2s ease-in; }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contCarouselTexto_ContTitulosPrinc_titep {
+    font-size: 60px; }
+  #contCarouselTexto_ContTitulosPrinc_fraseep {
+    font-size: 40px; }
+  #contTexto_textoep {
+    font-size: 15px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #contcarousel {
+    margin-left: 12px;
+    height: 200px;
+    width: 500px; }
+  #contCarouselTexto_ContTitulosPrinc_titep {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 45px; }
+  #contCarouselTexto_ContTitulosPrinc_fraseep {
+    margin-left: 12px;
+    width: 500px;
+    font-size: 17px; }
+  #contTexto_textoep {
+    font-size: 10px; }
+  #ontTitAtrac {
+    height: 300px; }
+  #contTitAtrac_titep {
+    margin-left: 12px;
+    font-size: 55px; }
+  #contMapa_contTit_titep {
+    font-size: 30px; }
+  #contMapa_contMapa {
+    height: 200px; }
+  #contMapa_contMapa_mapaep {
+    width: 270px;
+    height: 190px; }
+  #button-container {
+    height: 100px;
+    width: 100px; }
+  #contMapaep {
+    height: 500px; } }
 
 #contFrasePrinc {
   display: flex;
@@ -2076,9 +2291,8 @@ body {
   margin-right: 20px;
   background-color: #f0d1fa;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color1:hover {
-  background-color: #BC80CE; }
+  #contCardPersonajes_color1:hover {
+    background-color: #BC80CE; }
 
 .contCardPersonajes {
   margin-top: 70px;
@@ -2141,9 +2355,8 @@ body {
   margin-left: 20px;
   background-color: #FFA98F;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color2:hover {
-  background-color: #f17a55; }
+  #contCardPersonajes_color2:hover {
+    background-color: #f17a55; }
 
 .contCardPersonajes_info_color2 {
   color: #f17a55;
@@ -2156,9 +2369,8 @@ body {
   margin-right: 20px;
   background-color: #F96363;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color3:hover {
-  background-color: #c13939; }
+  #contCardPersonajes_color3:hover {
+    background-color: #c13939; }
 
 .contCardPersonajes_info_color3 {
   color: #c13939;
@@ -2171,9 +2383,8 @@ body {
   margin-left: 20px;
   background-color: #A4CBE4;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color4:hover {
-  background-color: #6698b7; }
+  #contCardPersonajes_color4:hover {
+    background-color: #6698b7; }
 
 .contCardPersonajes_info_color4 {
   color: #6698b7;
@@ -2186,9 +2397,8 @@ body {
   margin-right: 20px;
   background-color: #A0CD9B;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color5:hover {
-  background-color: #60925a; }
+  #contCardPersonajes_color5:hover {
+    background-color: #60925a; }
 
 .contCardPersonajes_info_color5 {
   color: #60925a;
@@ -2201,9 +2411,8 @@ body {
   margin-left: 20px;
   background-color: #FBC281;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color6:hover {
-  background-color: #f3972e; }
+  #contCardPersonajes_color6:hover {
+    background-color: #f3972e; }
 
 .contCardPersonajes_info_color6 {
   color: #f3972e;
@@ -2216,9 +2425,8 @@ body {
   margin-right: 20px;
   background-color: #F29371;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color7:hover {
-  background-color: #CC6A46; }
+  #contCardPersonajes_color7:hover {
+    background-color: #CC6A46; }
 
 .contCardPersonajes_info_color7 {
   color: #CC6A46;
@@ -2231,9 +2439,8 @@ body {
   margin-left: 20px;
   background-color: #FF827A;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color8:hover {
-  background-color: #d35047; }
+  #contCardPersonajes_color8:hover {
+    background-color: #d35047; }
 
 .contCardPersonajes_info_color8 {
   color: #d35047;
@@ -2246,9 +2453,8 @@ body {
   margin-right: 20px;
   background-color: #C1D6F5;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color9:hover {
-  background-color: #6a9be5; }
+  #contCardPersonajes_color9:hover {
+    background-color: #6a9be5; }
 
 .contCardPersonajes_info_color9 {
   color: #6a9be5;
@@ -2261,9 +2467,8 @@ body {
   margin-left: 20px;
   background-color: #BAE7D1;
   transition: background-color 0.3s ease; }
-
-#contCardPersonajes_color10:hover {
-  background-color: #7dbf9f; }
+  #contCardPersonajes_color10:hover {
+    background-color: #7dbf9f; }
 
 .contCardPersonajes_info_color10 {
   color: #7dbf9f;
@@ -2419,7 +2624,7 @@ body {
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
-  background: linear-gradient(to top, #72449a, #8d61b6, #e8eeff); }
+  background: linear-gradient(to top, #72449a, #8d61b6, #FFF4E7); }
 
 .colorLineaep {
   background-color: #6b499d; }
@@ -2493,8 +2698,7 @@ body {
 
 /*colores footer Hollywood Studios*/
 .colorFooterhs {
-  background-color: white;
-  background: linear-gradient(to top, #ba5964, #db8d94, #e8eeff); }
+  background: linear-gradient(to top, #ba5964, #db8d94, #FFF4E7); }
 
 .colorLineahs {
   background-color: #bf6868; }
@@ -2710,7 +2914,7 @@ body {
 /*colores footer Animal Kingdom*/
 .colorFooterak {
   background-color: white;
-  background: linear-gradient(to top, #5f8764, #8fb996, #e8eeff); }
+  background: linear-gradient(to top, #5f8764, #8fb996, #FFF4E7); }
 
 .colorLineaak {
   background-color: #7c9e7c; }
@@ -2784,8 +2988,7 @@ body {
 
 /*Footer general*/
 .colorFooterMK {
-  background-color: white;
-  background: linear-gradient(to bottom, #e8eeff, #8AABE3, #3879b7); }
+  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
 
 .colorLineaMK {
   background-color: #C3E2F8; }
@@ -3165,10 +3368,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorep {
   color: #4c2e7a; }
-
-.colorep:hover {
-  background-color: #b98ae3;
-  color: #ead3ff; }
+  .colorep:hover {
+    background-color: #b98ae3;
+    color: #ead3ff; }
 
 .menu2_items_parquesep {
   color: #4c2e7a !important; }
@@ -3255,10 +3457,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorhs {
   color: #842831; }
-
-.colorhs:hover {
-  background-color: #d56975;
-  color: #f1adb1; }
+  .colorhs:hover {
+    background-color: #d56975;
+    color: #f1adb1; }
 
 .menu2_items_parqueshs {
   color: #842831 !important; }
@@ -3345,10 +3546,9 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colorak {
   color: #265c26; }
-
-.colorak:hover {
-  background-color: #78b87c;
-  color: #adf1ad; }
+  .colorak:hover {
+    background-color: #78b87c;
+    color: #adf1ad; }
 
 .menu2_items_parquesak {
   color: #265c26 !important; }
@@ -3528,7 +3728,6 @@ input:not(:placeholder-shown) ~ .reset {
 #contImgPrinc_imgPrinc {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   margin: 0;
   padding: 0;
   animation: aparecer 5s 1; }
@@ -3621,10 +3820,31 @@ input:not(:placeholder-shown) ~ .reset {
 
 .colormk {
   color: #376188; }
+  .colormk:hover {
+    background-color: #8AABE3;
+    color: #C3E2F8; }
 
-.colormk:hover {
-  background-color: #8AABE3;
-  color: #C3E2F8; }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #menu2 {
+    height: 220px; }
+  #contImgPrinc {
+    height: 300px; }
+  #contImgPrinc_imgPrinc {
+    object-fit: fill; }
+  #menu1_contLogo_logo {
+    font-size: 50px; }
+  #menu1_search {
+    width: 240px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #menu2 {
+    height: 220px; }
+  #contImgPrinc_imgPrinc {
+    object-fit: fill; }
+  #menu1_contLogo_logo {
+    font-size: 70px; }
+  #menu1_search {
+    width: 300px; } }
 
 /*Colores Magic Kingdom*/
 /*Colores Epcot*/
@@ -3634,7 +3854,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
-  background: linear-gradient(to top, #72449a, #8d61b6, #e8eeff); }
+  background: linear-gradient(to top, #72449a, #8d61b6, #FFF4E7); }
 
 .colorLineaep {
   background-color: #6b499d; }
@@ -3708,8 +3928,7 @@ input:not(:placeholder-shown) ~ .reset {
 
 /*colores footer Hollywood Studios*/
 .colorFooterhs {
-  background-color: white;
-  background: linear-gradient(to top, #ba5964, #db8d94, #e8eeff); }
+  background: linear-gradient(to top, #ba5964, #db8d94, #FFF4E7); }
 
 .colorLineahs {
   background-color: #bf6868; }
@@ -3925,7 +4144,7 @@ input:not(:placeholder-shown) ~ .reset {
 /*colores footer Animal Kingdom*/
 .colorFooterak {
   background-color: white;
-  background: linear-gradient(to top, #5f8764, #8fb996, #e8eeff); }
+  background: linear-gradient(to top, #5f8764, #8fb996, #FFF4E7); }
 
 .colorLineaak {
   background-color: #7c9e7c; }
@@ -3999,8 +4218,7 @@ input:not(:placeholder-shown) ~ .reset {
 
 /*Footer general*/
 .colorFooterMK {
-  background-color: white;
-  background: linear-gradient(to bottom, #e8eeff, #8AABE3, #3879b7); }
+  background: linear-gradient(to bottom, #FFF4E7, #8AABE3, #3879b7); }
 
 .colorLineaMK {
   background-color: #C3E2F8; }
@@ -5693,7 +5911,7 @@ label {
   padding: 0; }
 
 .bodyindex {
-  background-color: #e8eeff; }
+  background-color: #FFF4E7; }
 
 #textini_container {
   margin: 0;
@@ -5703,21 +5921,15 @@ label {
     color: #00509D;
     font-size: 20px;
     text-align: justify;
-    padding: 50px 90px 20px 90px; }
+    padding: 50px 90px 20px 90px;
+    font-family: "Faculty Glyphic", sans-serif; }
 
 #cont_parquesT {
   margin: 0;
   padding: 0; }
 
 /*parques*/
-#contCardsparquesF1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 80px;
-  margin-top: 30px; }
-
-#contCardsparquesF2 {
+.contCardsparques {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -5799,6 +6011,8 @@ label {
   transition: opacity 0.3s ease;
   padding: 10px;
   text-align: center; }
+  .contCardsparques_cards_info a {
+    text-decoration: none; }
 
 .contCardsparques_cards_info_titulo {
   color: #bfcffa;
@@ -5869,14 +6083,28 @@ label {
 
 .contHoteles_contCard_info_titulo {
   font-size: 20px;
-  margin: 10px 0; }
+  margin: 10px 0;
+  font-family: "Arima", system-ui; }
 
 .contHoteles_contCard_texto {
-  font-size: 17px; }
+  font-size: 17px;
+  font-family: "Arima", system-ui; }
 
 #btnHoteles {
   background-color: #C3E2F8;
-  font-size: 20px; }
+  font-size: 20px;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: show;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
+  #btnHoteles a {
+    text-decoration: none;
+    color: #00509D;
+    font-family: "Arima", system-ui; }
 
 /*separador*/
 #contSeparadorIN {
@@ -5907,7 +6135,7 @@ label {
 
 /*karaoke*/
 #karaoke_cont {
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
   background-color: #8DADE3;
   height: 400px; }
@@ -5917,7 +6145,8 @@ label {
   width: 70%;
   margin: 0 80% 0 20%; }
   #karaoke_cont_titulo h2 {
-    font-size: 20px; }
+    font-size: 20px;
+    font-family: "Arima", system-ui; }
   #karaoke_cont_titulo img {
     height: 80px;
     width: 100px; }
@@ -5929,11 +6158,101 @@ label {
 
 .karaoke_canciones {
   text-align: center;
-  width: 20%; }
+  width: 20%;
+  view-timeline-name: --text-slide;
+  view-timeline-axis: block;
+  animation-timeline: --text-slide;
+  animation-name: show;
+  animation-duration: 1.5s;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  transition: width 3s; }
   .karaoke_canciones a img {
     height: 200px;
     width: 300px; }
+  .karaoke_canciones p {
+    margin-left: 60px;
+    width: 100%;
+    font-family: "Arima", system-ui; }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  #textini_container {
+    margin: 0;
+    padding: 0;
+    background-color: #C3E2F8; }
+    #textini_container #textini_parrafo {
+      color: #00509D;
+      font-size: 10px;
+      text-align: justify;
+      padding: 15px 15px 15px 15px; }
+  #HotelesDes_cont {
+    margin: 30px 23% 20px 17%; }
+  #btnHoteles a {
+    font-size: 15px; }
+  #contCardsparquesF1 {
+    margin: 0px 0px 30px 0px; }
+  #contCardsparquesF2 {
+    margin: 0px 0px 30px 0px; }
+  #contSeparadorIN {
+    width: 100%; }
+  #contSeparadorIN_separador {
+    width: 99%;
+    height: 50px;
+    margin: 80px 0% 70px 1%; }
   #karaoke_cont {
-    height: 2000px; } }
+    height: 800px; }
+  #karaoke_cont_titulo {
+    width: 80%;
+    margin: 0 50% 0 10%; }
+    #karaoke_cont_titulo h2 {
+      font-size: 14px; }
+    #karaoke_cont_titulo img {
+      height: 0px;
+      width: 5px; }
+  #karaoke_cont_canciones {
+    gap: 0px;
+    display: block;
+    margin: 10px 34% 0 15%; }
+  .karaoke_canciones {
+    text-align: center;
+    width: 20%; }
+    .karaoke_canciones a img {
+      height: 150px;
+      width: 200px; }
+    .karaoke_canciones p {
+      margin-left: 0;
+      width: 1000%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #HotelesDes_cont {
+    margin: 30px 23% 20px 27%; }
+  #contCardsparquesF1 {
+    margin: 0px 0px 30px 0px; }
+  #contCardsparquesF2 {
+    margin: 0px 0px 30px 0px; }
+  #contSeparadorIN_separador {
+    width: 95%;
+    margin: 80px 1% 70px 4%; }
+  #karaoke_cont {
+    height: 1000px; }
+  #karaoke_cont_titulo {
+    width: 70%;
+    margin: 0 80% 0 20%; }
+    #karaoke_cont_titulo h2 {
+      font-size: 20px; }
+    #karaoke_cont_titulo img {
+      height: 0px;
+      width: 5px; }
+  #karaoke_cont_canciones {
+    gap: 0px;
+    display: block;
+    margin: 10px 34% 0 29%; }
+  .karaoke_canciones {
+    text-align: center;
+    width: 20%; }
+    .karaoke_canciones a img {
+      height: 200px;
+      width: 300px; }
+    .karaoke_canciones p {
+      margin-left: 100px;
+      width: 100%; } }
