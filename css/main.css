@@ -2731,78 +2731,6 @@ body {
   margin: 0px 0px 50px 15px;
   opacity: 0.7; }
 
-#footerSeccionesSR {
-  margin: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 250px; }
-
-.footerSecciones_contactoSR {
-  margin-right: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-
-.footerSecciones_redesSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.footerSecciones_cuentaSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
-
-.footerSecciones_titulosSR {
-  color: #11477a;
-  font-family: "Faculty Glyphic", sans-serif;
-  font-size: 23px;
-  margin-bottom: 10px; }
-
-.footerSecciones_titulos_contRedesSR {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; }
-
-.footerSecciones_titulos_contRedes_redesSR {
-  font-size: 2rem;
-  color: #11477a;
-  transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redesSR:hover {
-  color: #C3E2F8;
-  transform: translateY(-5px); }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
-
 #contDerechosFooterSR {
   margin-top: 40px;
   text-align: center;
@@ -3961,78 +3889,6 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 0px 0px 50px 15px;
   opacity: 0.7; }
 
-#footerSeccionesSR {
-  margin: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 250px; }
-
-.footerSecciones_contactoSR {
-  margin-right: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-
-.footerSecciones_redesSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.footerSecciones_cuentaSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
-
-.footerSecciones_titulosSR {
-  color: #11477a;
-  font-family: "Faculty Glyphic", sans-serif;
-  font-size: 23px;
-  margin-bottom: 10px; }
-
-.footerSecciones_titulos_contRedesSR {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; }
-
-.footerSecciones_titulos_contRedes_redesSR {
-  font-size: 2rem;
-  color: #11477a;
-  transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redesSR:hover {
-  color: #C3E2F8;
-  transform: translateY(-5px); }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
-
 #contDerechosFooterSR {
   margin-top: 40px;
   text-align: center;
@@ -4404,7 +4260,7 @@ label {
 
 .form-containerRegistro {
   width: 650px;
-  height: 730px;
+  height: 650px;
   margin-top: 25px;
   background: #add8e6;
   border-radius: 9px;
@@ -4427,7 +4283,6 @@ label {
 
 .form-check {
   display: inline-flex;
-  align-items: center;
   font-family: 'Merriweather', serif; }
 
 .footer-Login {
@@ -5327,78 +5182,6 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 0px 0px 50px 15px;
   opacity: 0.7; }
 
-#footerSeccionesSR {
-  margin: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 250px; }
-
-.footerSecciones_contactoSR {
-  margin-right: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-
-.footerSecciones_redesSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.footerSecciones_cuentaSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
-
-.footerSecciones_titulosSR {
-  color: #11477a;
-  font-family: "Faculty Glyphic", sans-serif;
-  font-size: 23px;
-  margin-bottom: 10px; }
-
-.footerSecciones_titulos_contRedesSR {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; }
-
-.footerSecciones_titulos_contRedes_redesSR {
-  font-size: 2rem;
-  color: #11477a;
-  transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redesSR:hover {
-  color: #C3E2F8;
-  transform: translateY(-5px); }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
-
 #contDerechosFooterSR {
   margin-top: 40px;
   text-align: center;
@@ -5771,7 +5554,6 @@ label {
 .form-containerLogin {
   width: 350px;
   height: 350px;
-  margin-top: 5px;
   background: #add8e6;
   border-radius: 9px;
   box-shadow: 4px 8px 8px #000;
