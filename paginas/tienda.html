@@ -36,378 +36,201 @@
     
     
     
-    
-    
-    
-
-    
-    
-    
     <link rel="icon" href="../assets/logos/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <meta name="description" content="Tienda De Productos De Walt Disney">
+    <meta name="keywords" content="disney, producto, princesas, tienda, compras, peluches, souvenir, vinchas, ropa">
+    
     
     <title>WaltDisney | Tienda</title>
 
     <link rel="stylesheet" href="../css/main.css">
-</head>
-<body id="bodyGeneral">
-    
+<body class="bodyGeneral">
+
+  <header>
+    <nav class="navbar fondomenu_MK menu1_conBuscador" >
+        <div  class="menu1_contLogo_conBuscador">
+            <h1 class="color_logo_MK" id="menu1_contLogo_logo">
+                <span class="char">W</span>
+                <span class="char">a</span>
+                <span class="char">l</span>
+                <span class="char">t</span>
+                <span class="char">D</span>
+                <span class="char">i</span>
+                <span class="char">s</span>
+                <span class="char">n</span>
+                <span class="char">e</span>
+                <span class="char">y</span>
+            </h1>
 
     
-    <header>
-        <nav class="navbar fondomenu_MK menu1_conBuscador" >
-            <div  class="menu1_contLogo_conBuscador">
-                <h1 class="color_logo_MK" id="menu1_contLogo_logo">
-                    <span class="char">W</span>
-                    <span class="char">a</span>
-                    <span class="char">l</span>
-                    <span class="char">t</span>
-                    <span class="char">D</span>
-                    <span class="char">i</span>
-                    <span class="char">s</span>
-                    <span class="char">n</span>
-                    <span class="char">e</span>
-                    <span class="char">y</span>
-                </h1>
-
             
-                <div class="star star_colorMK" id="star-1">✦</div>
-                <div class="star star_colorMK" id="star-2">✧</div>
-                <div class="star star_colorMK" id="star-3">✦</div>
-                <div class="star star_colorMK" id="star-4">✧</div>
-                <div class="star star_colorMK" id="star-5">✦</div>
-                <div class="star star_colorMK" id="star-6">✧</div>
-                <div class="star star_colorMK" id="star-7">✦</div>
-                <div class="star star_colorMK" id="star-8">✧</div>
-            </div>
+            <div class="star star_colorMK" id="star-1">✦</div>
+            <div class="star star_colorMK" id="star-2">✧</div>
+            <div class="star star_colorMK" id="star-3">✦</div>
+            <div class="star star_colorMK" id="star-4">✧</div>
+            <div class="star star_colorMK" id="star-5">✦</div>
+            <div class="star star_colorMK" id="star-6">✧</div>
+            <div class="star star_colorMK" id="star-7">✦</div>
+            <div class="star star_colorMK" id="star-8">✧</div>
+        </div>
 
-            <div id="menu1_search">
-                <form class="form">
-                    <button>
-                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </button>
-                    <input class="input" placeholder="Buscar..." required="" type="text">
-                    <button class="reset" type="reset">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </form>
+        <div id="menu1_search">
+            <form class="form">
+                <button>
+                    <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                        <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <input class="input" placeholder="Buscar..." required="" type="text">
+                <button class="reset" type="reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <div class="position-relative row container-fluid" id="contImgPrinc" >
+      <img id="contImgPrinc_imgPrinc" class="img-fluid col-lg-12 col-md-12 col-sm-12" src="../assets/imagenes/tienda.png" alt="">
+    
+        <nav class="navbar navbar-expand-lg bg-body-tertiary row container-fluid menu_navbar_personajes" id="menu2">
+            <div class="navbar-nav col-lg-12" id="menu2_contItems">
+                <a class="nav-link active menu2_items menu_navbar_itemscolorMK" aria-current="page" href="../index.html">INICIO</a>
+
+                <li class="nav-item dropdown menu2_items menu_navbar_itemscolorMK">
+                <a class="nav-link dropdown-toggle menu2_items_parquesmk" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PARQUES
+                </a>
+                <ul class="dropdown-menu contcolormk">
+                    <li><a class="dropdown-item colormk" href="../paginas/magicKingdom.html">Magic Kingdom</a></li>
+                    <li><a class="dropdown-item colormk" href="../paginas/epcot.html">Epcot</a></li>
+                    <li><a class="dropdown-item colormk" href="../paginas/hollywood.html">Hollywood Studios</a></li>
+                    <li><a class="dropdown-item colormk" href="../paginas/AnimalKingdom.html">Animal Kingdom</a></li>
+                </ul>
+                </li>
+
+                <a class="nav-link active menu2_items menu_navbar_itemscolorMK" aria-current="page" href="../paginas/hoteles.html">HOTELES</a>
+                <a class="nav-link active menu2_items menu_navbar_itemscolorMK" aria-current="page" href="../paginas/tienda.html">PERSONAJES</a>
             </div>
         </nav>
+    </div>
+  </header>
+
+  <section class="cards-container">
+    <div class="cardProducto">
+      <div class="card-img">
+        <img src="../assets/imagenes/tienda/producto1.png" alt="Producto 1">
+      </div>
+      <div class="card-info">
+        <h3 class="text-title">Producto 1</h3>
+        <p class="text-body">Descripción del producto 1.</p>
+      </div>
+      <div class="card-footer">
+        <span class="text-title">$199.99</span>
+      </div>
+    </div>
+
+    <div class="cardProducto">
+      <div class="card-img">
+        <img src="imagenes/image1.png" alt="Producto 1">
+      </div>
+      <div class="card-info">
+        <h3 class="text-title">Producto 1</h3>
+        <p class="text-body">Descripción del producto 1.</p>
+      </div>
+      <div class="card-footer">
+        <span class="text-title">$199.99</span>
+      </div>
+    </div>
+
+    <div class="cardProducto">
+      <div class="card-img">
+        <img src="imagenes/image1.png" alt="Producto 1">
+      </div>
+      <div class="card-info">
+        <h3 class="text-title">Producto 1</h3>
+        <p class="text-body">Descripción del producto 1.</p>
+      </div>
+      <div class="card-footer">
+        <span class="text-title">$199.99</span>
+      </div>
+    </div>
+  </section>
 
 
 
-        <div class="position-relative row container-fluid" id="contImgPrinc">
-            <img id="contImgPrinc_imgPrinc" class="img-fluid col-lg-12" src="../assets/imagenes/tienda.png" alt="">
-        
-            <nav class="navbar navbar-expand-lg bg-body-tertiary row container-fluid menu_navbarMK" id="menu2">
-                <div class="navbar-nav col-lg-12" id="menu2_contItems">
-                    <a class="nav-link active menu2_items menu_navbar_itemscolorMK" aria-current="page" href="../index.html">INICIO</a>
 
-                    <li class="nav-item dropdown menu2_items menu_navbar_itemscolorMK">
-                    <a class="nav-link dropdown-toggle menu2_items_parquesmk" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        PARQUES
-                    </a>
-                    <ul class="dropdown-menu contcolormk">
-                        <li><a class="dropdown-item colormk" href="../paginas/magicKingdom.html">Magic Kingdom</a></li>
-                        <li><a class="dropdown-item colormk" href="../paginas/epcot.html">Epcot</a></li>
-                        <li><a class="dropdown-item colormk" href="../paginas/hollywood.html">Hollywood Studios</a></li>
-                        <li><a class="dropdown-item colormk" href="../paginas/AnimalKingdom.html">Animal Kingdom</a></li>
-                    </ul>
-                    </li>
 
-                    <a class="nav-link active menu2_items menu_navbar_itemscolorMK" aria-current="page" href="../paginas/hoteles.html">HOTELES</a>
-                    <a class="nav-link active menu2_items menu_navbar_itemscolorMK" aria-current="page" href="../paginas/personajes.html">PERSONAJES</a>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <main>
 
-        <div class="row container-fluid contImgs1" id="tienda">
-          <img class="img" src="../assets/imagenes/tienda1.png" alt="">
-          <img class="img" src="../assets/imagenes/tienda2.png" alt="">
-        </div>
-      </main>
-  
-      <section class="row container-fluid contTienda">
-  
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img src="../assets/imagenes/shop1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Adorno Copa Pistón</h5>
-                    <a href="#" class="btn btn2">Comprar</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img src="../assets/imagenes/shop2.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Mascara Stard-Lord</h5>
-                    <p class="card-text">$75usd</p>
-                    <a href="#" class="btn btn2">Comprar</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img src="../assets/imagenes/shop3.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Peluche Rayo McQueen</h5>
-                    <p class="card-text">$27usd</p>
-                    <a href="#" class="btn btn2">Comprar</a>
-                  </div>
-                </div>
-              </div>
-      </section>
-  
-      <section class="row container-fluid contTienda">
-  
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img src="../assets/imagenes/shop4.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Mochila de peluche de Winnie the Pooh</h5>
-                    <p class="card-text">$70usd</p>
-                    <a href="#" class="btn btn2">Comprar</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img src="../assets/imagenes/shop5.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Pijama con capucha y disfraz de Sulley</h5>
-                    <p class="card-text">$50usd</p>
-                    <a href="#" class="btn btn2">Comprar</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card text-center h-100">
-                  <img src="../assets/imagenes/shop6.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Enfriador de botellas Chewbacca</h5>
-                    <p class="card-text">$25usd</p>
-                    <a href="#" class="btn btn2">Comprar</a>
-                  </div>
-                </div>
-              </div>
-      </section>
-      <section class="row container-fluid contImgs2" id="diadema"> 
 
-        <img class="img" src="../assets/imagenes/tienda3.png" alt="">
-        <img class="img" src="../assets/imagenes/tienda4.png" alt="">
 
-    </section>
 
-    <section class="row container-fluid contTienda">
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop7.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Diadema con orejas Minnie Mouse Blanco</h5>
-                  <p class="card-text">$45usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop8.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Diadema con orejas de Star Wars</h5>
-                  <p class="card-text">$30usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop9.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Diadema con orejas de lentejuelas de Minnie Mouse</h5>
-                  <p class="card-text">$20usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-    </section>
 
-    <section class="row container-fluid contTienda">
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop10.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Gorro con orejas de Mickey Mouse “Feliz cumpleaños”</h5>
-                  <p class="card-text">$30usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop11.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Diadema con orejas de Moana</h5>
-                  <p class="card-text">$20usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop12.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Diadema con orejas de Moana</h5>
-                  <p class="card-text">$25usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-    </section>
 
-    <section class="row container-fluid contImgs3" id="navidad">
 
-        <img class="img" src="../assets/imagenes/tienda5.png" alt="">
-        <img class="img" src="../assets/imagenes/tienda6.png" alt="">
 
-    </section>
 
-    <section class="row container-fluid contTienda">
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop13.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Peluche navideño de Jabba el Hutt</h5>
-                  <p class="card-text">$25usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop14.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Peluche navideño de Stitch</h5>
-                  <p class="card-text">$30usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop15.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Pantuflas navideñas de Mickey Mouse</h5>
-                  <p class="card-text">$25usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-    </section>
 
-    <section class="row container-fluid contTienda">
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop16.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Juego de pantuflas navideñas</h5>
-                  <p class="card-text">$30usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop17.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Camiseta navideña de Groot y Rocket</h5>
-                  <p class="card-text">$20usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card text-center h-100">
-                <img src="../assets/imagenes/shop18.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Figura navideña de Mickey Mouse</h5>
-                  <p class="card-text">$130usd</p>
-                  <a href="#" class="btn btn2">Comprar</a>
-                </div>
-              </div>
-            </div>
-    </section>
+
 
     <footer class="colorFooterMK">
-        <nav class="container-fluid col-lg-12 contItemsFooter">
-            <a class="contItemsFooter_items" href="../index.html">Inicio</a>
-            <a class="contItemsFooter_items" href="../paginas/hoteles.html">Hoteles</a>
-            <a class="contItemsFooter_items" href="../paginas/tienda.html">Tienda</a>
-            <a class="contItemsFooter_items" href="../paginas/personajes.html">Personajes</a>
-        </nav>
+      <nav class="container-fluid col-lg-12 col-md-12 col-sm-12 contItemsFooter">
+          <a class="contItemsFooter_items" href="../index.html">Inicio</a>
+          <a class="contItemsFooter_items" href="../paginas/hoteles.html">Hoteles</a>
+          <a class="contItemsFooter_items" href="../paginas/tienda.html">Tienda</a>
+          <a class="contItemsFooter_items" href="../paginas/personajes.html">Personajes</a>
+      </nav>
 
-        <div class="row container-fluid col-lg-12" id="contLineaFooter">
-            <hr class="colorLineaMK" id="contLineaFooter_linea">
-        </div>
-        
-        <div id="footerSecciones">
-            <div class="footerSecciones_contacto col-lg-4">
-                <h3 class="footerSecciones_titulos">CONTACTO</h3>
-                <a class="footerSecciones_titulos_items" href="Walt.Disney@gmail.com">Walt.Disney@gmail.com</a>
-                <a class="footerSecciones_titulos_items"  href="tel:+54 3627 3824">+54 3627 3824</a>
-            </div>
-            <div class="footerSecciones_redes col-lg-4">
-                <h3 class="footerSecciones_titulos">REDES SOCIALES</h3>
-
-                <div class="footerSecciones_titulos_contRedes">
-                    <a href="https://facebook.com" class="footerSecciones_titulos_contRedes_redes facebook" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://twitter.com" class="footerSecciones_titulos_contRedes_redes twitter" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://instagram.com" class="footerSecciones_titulos_contRedes_redes instagram" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://youtube.com" class="footerSecciones_titulos_contRedes_redes youtube" target="_blank" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="footerSecciones_cuenta col-lg-4">
-                <h3 class="footerSecciones_titulos">CUENTA</h3>
-                <a class="footerSecciones_titulos_items" href="../paginas/iniciosesion.html">Iniciar Sesión</a>
-                <a class="footerSecciones_titulos_items" href="../paginas/Registro.html">Registrarse</a>
-            </div>
-        </div>
-
-
-        <div id="contDerechosFooter">
-            <p id="contDerechosFooter_derechos">&copy; 2024 WaltDisney. Todos los derechos reservados.</p>
-        </div>
+      <div class="row container-fluid col-lg-12" id="contLineaFooter">
+          <hr class="colorLineaMK" id="contLineaFooter_linea">
+      </div>
       
-    </footer>
- 
+      <div id="footerSecciones">
+          <div class="footerSecciones_contacto col-lg-4">
+              <h3 class="footerSecciones_titulos">CONTACTO</h3>
+              <a class="footerSecciones_titulos_items" href="Walt.Disney@gmail.com">Walt.Disney@gmail.com</a>
+              <a class="footerSecciones_titulos_items"  href="tel:+54 3627 3824">+54 3627 3824</a>
+          </div>
+          <div class="footerSecciones_redes col-lg-4">
+              <h3 class="footerSecciones_titulos">REDES SOCIALES</h3>
+
+              <div class="footerSecciones_titulos_contRedes">
+                  <a href="https://facebook.com" class="footerSecciones_titulos_contRedes_redes facebook" target="_blank" aria-label="Facebook">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com" class="footerSecciones_titulos_contRedes_redes twitter" target="_blank" aria-label="Twitter">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://instagram.com" class="footerSecciones_titulos_contRedes_redes instagram" target="_blank" aria-label="Instagram">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://youtube.com" class="footerSecciones_titulos_contRedes_redes youtube" target="_blank" aria-label="YouTube">
+                      <i class="fab fa-youtube"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="footerSecciones_cuenta col-lg-4">
+              <h3 class="footerSecciones_titulos">CUENTA</h3>
+              <a class="footerSecciones_titulos_items" href="../paginas/iniciosesion.html">Iniciar Sesión</a>
+              <a class="footerSecciones_titulos_items" href="../paginas/Registro.html">Registrarse</a>
+          </div>
+      </div>
 
 
-
+      <div id="contDerechosFooter">
+          <p id="contDerechosFooter_derechos">&copy; 2024 WaltDisney. Todos los derechos reservados.</p>
+      </div>
+    
+  </footer>
 </body>
 </html>

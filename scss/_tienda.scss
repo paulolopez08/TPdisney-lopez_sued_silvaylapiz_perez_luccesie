@@ -1,115 +1,68 @@
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-  }
-  
+* {
+  margin: 0;
+  padding: 0; }
 
-  .container-fluid {
-    padding: 2rem;
-  }
-  
-  .contImgs1,
-  .contImgs2,
-  .contImgs3 {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  
-    .img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-  }
-  
- 
-  .contTienda {
-    margin-bottom: 2rem;
-  
-    .row {
-      display: flex;
-      justify-content: space-around;
-      gap: 1.5rem;
-  
-      .card {
-        background-color: white;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-        }
-  
-        .card-img-top {
-          max-width: 100%;
-          height: auto;
-          border-top-left-radius: 10px;
-          border-top-right-radius: 10px;
-        }
-  
-        .card-body {
-          padding: 1rem;
-  
-          .card-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-          }
-  
-          .card-text {
-            font-size: 0.9rem;
-            color: #6c757d;
-            margin-bottom: 1rem;
-          }
-  
-          .btn2 {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-  
-            &:hover {
-              background-color: #0056b3;
-            }
-          }
-        }
-      }
-    }
-  }
-  
 
-  .contTienda:nth-of-type(1) {
-    background-color: #A1C9E6; 
-  }
-  
-  .contTienda:nth-of-type(2) {
-    background-color: #FF827A; 
-  }
-  
-  .contTienda:nth-of-type(3) {
-    background-color: #94B741; 
-  }
-  
+.bodyGeneral{
+    background-color: $colorbody;
+}
+.cardProducto {
+  width: 200px;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  #tienda,
-  #diadema,
-  #navidad {
-    margin: 2rem 0;
-  
-    .img {
-      max-height: 200px;
-      object-fit: cover;
-    }
-  }
+.card-img {
+  background-color: #ffcaa6;
+  height: 60%;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-info {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.text-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.text-body {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-button {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #ffcaa6;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+  background-color: #e0b084;
+}
