@@ -30,6 +30,11 @@ $colorVerde3: #A8C26B;
 $colorLogo4: #265c26;
 
 
+#menu1_contLogo_logoLogin{
+    font-family: 'WaltographRegular', sans-serif;
+    font-size: 75px;
+    display: flex;
+}
 /*Para los menu con buscador*/
 
 
@@ -664,6 +669,10 @@ input:not(:placeholder-shown) ~ .reset {
 
     #menu1_search{
         width: 240px;
+    }
+
+    #menu1_contLogo_logoLogin{
+        font-size: 20px;
     }
 }
 
