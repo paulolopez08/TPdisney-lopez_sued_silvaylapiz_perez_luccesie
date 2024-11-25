@@ -2185,6 +2185,60 @@ input:not(:placeholder-shown) ~ .reset {
   margin: 0;
   padding: 0; }
 
+.bodyGeneral {
+  background-color: #FFF4E7; }
+
+.cardProducto {
+  width: 200px;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.card-img {
+  background-color: #ffcaa6;
+  height: 60%;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.card-info {
+  text-align: center;
+  margin-bottom: 1em; }
+
+.text-title {
+  font-size: 1.2em;
+  font-weight: bold; }
+
+.text-body {
+  font-size: 0.9em;
+  color: #555; }
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.card-button {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #ffcaa6;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; }
+
+.card-img:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px; }
+
+.card-button:hover {
+  background-color: #e0b084; }
+
 * {
   margin: 0;
   padding: 0; }
