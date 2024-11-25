@@ -7,7 +7,6 @@ $footer-text-color: #ffffff;
 $footer-link-color: #ffffff;
 $primary-color: #00a9f2;
 $secondary-color: #172D9D;
-$color-form:#add8e6;
 $white: #fff;
 $black: #000;
 $font-family-base: Arial, sans-serif;
@@ -117,9 +116,9 @@ $font-family-title: "Atma", serif;
 
 
 .form-containerLogin {
-  width: 350px;
-  height: 350px;
-  background: $color-form;
+  width: 540px;
+  height: 470px;
+  background: $colorbody;
   border-radius: 9px;
   box-shadow: 4px 8px 8px $black;
   flex-direction: column; 
