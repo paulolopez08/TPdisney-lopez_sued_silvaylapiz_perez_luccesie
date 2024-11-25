@@ -41,6 +41,15 @@ $colorLogo: #00509D;
 
 
 
+
+#footerLogin{
+    background: linear-gradient(to bottom, #172D9D, $colorCeleste2, #3879b7);
+    
+    a{
+        text-decoration: none;
+    }
+}
+
 /*colores footer epcot*/
 .colorFooterep{
     background-color: white;

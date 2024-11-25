@@ -3,6 +3,11 @@
 /*Colores Epcot*/
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
+#menu1_contLogo_logoLogin {
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 75px;
+  display: flex; }
+
 /*Para los menu con buscador*/
 .menu1_conBuscador {
   height: 110px;
@@ -641,7 +646,9 @@ input:not(:placeholder-shown) ~ .reset {
   #menu1_contLogo_logo {
     font-size: 50px; }
   #menu1_search {
-    width: 240px; } }
+    width: 240px; }
+  #menu1_contLogo_logoLogin {
+    font-size: 20px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #menu2 {
@@ -2472,6 +2479,11 @@ input:not(:placeholder-shown) ~ .reset {
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
 /*colores Login*/
+#footerLogin {
+  background: linear-gradient(to bottom, #172D9D, #8AABE3, #3879b7); }
+  #footerLogin a {
+    text-decoration: none; }
+
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
@@ -2944,6 +2956,11 @@ footer {
 /*Colores Epcot*/
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
+#menu1_contLogo_logoLogin {
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 75px;
+  display: flex; }
+
 /*Para los menu con buscador*/
 .menu1_conBuscador {
   height: 110px;
@@ -3582,7 +3599,9 @@ input:not(:placeholder-shown) ~ .reset {
   #menu1_contLogo_logo {
     font-size: 50px; }
   #menu1_search {
-    width: 240px; } }
+    width: 240px; }
+  #menu1_contLogo_logoLogin {
+    font-size: 20px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #menu2 {
@@ -3599,6 +3618,11 @@ input:not(:placeholder-shown) ~ .reset {
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
 /*colores Login*/
+#footerLogin {
+  background: linear-gradient(to bottom, #172D9D, #8AABE3, #3879b7); }
+  #footerLogin a {
+    text-decoration: none; }
+
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
@@ -4209,6 +4233,11 @@ label {
 /*Colores Epcot*/
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
+#menu1_contLogo_logoLogin {
+  font-family: 'WaltographRegular', sans-serif;
+  font-size: 75px;
+  display: flex; }
+
 /*Para los menu con buscador*/
 .menu1_conBuscador {
   height: 110px;
@@ -4847,7 +4876,9 @@ input:not(:placeholder-shown) ~ .reset {
   #menu1_contLogo_logo {
     font-size: 50px; }
   #menu1_search {
-    width: 240px; } }
+    width: 240px; }
+  #menu1_contLogo_logoLogin {
+    font-size: 20px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #menu2 {
@@ -4864,6 +4895,11 @@ input:not(:placeholder-shown) ~ .reset {
 /*Colores Hollywood Studios*/
 /*Colores Animal Kingdom*/
 /*colores Login*/
+#footerLogin {
+  background: linear-gradient(to bottom, #172D9D, #8AABE3, #3879b7); }
+  #footerLogin a {
+    text-decoration: none; }
+
 /*colores footer epcot*/
 .colorFooterep {
   background-color: white;
