@@ -21,6 +21,9 @@ $font-family-title: "Atma", serif;
   background: linear-gradient(to bottom, $secondary-color, $primary-color);
 }
 
+
+
+
 .group {
   position: relative;
   margin: 18px;
@@ -169,12 +172,12 @@ $font-family-title: "Atma", serif;
 
 .help-text {
   font-size: 14px;
-  color: #000;
+  color: $colorLogo;;
   text-align: center;
   margin-top: 30px;
   font-size: medium;
 
-  .aLogin {
+  &:hover{
     color: #052535;
     text-decoration: none;
   }

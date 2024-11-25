@@ -4245,11 +4245,11 @@ label {
 
 .help-text {
   font-size: 14px;
-  color: #000;
+  color: #00509D;
   text-align: center;
   margin-top: 30px;
   font-size: medium; }
-  .help-text .aLogin {
+  .help-text:hover {
     color: #052535;
     text-decoration: none; }
 
