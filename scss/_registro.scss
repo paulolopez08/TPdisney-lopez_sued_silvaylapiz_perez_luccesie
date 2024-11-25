@@ -8,11 +8,14 @@ $footer-link-color: #ffffff;
 $primary-color: #00a9f2;
 $secondary-color: #172D9D;
 $color:#92C7F9;
-$color-form:#add8e6;
 $white: #fff;
 $black: #000;
 $font-family-base: Arial, sans-serif;
 $font-family-title: "Atma", serif;
+
+.color_logo_rs{
+  color: #7cb0e8;
+}
 
 #bodySesion {
   background: linear-gradient(to bottom, $secondary-color, $primary-color);
@@ -121,7 +124,7 @@ $font-family-title: "Atma", serif;
   width: 650px;
   height: 650px;
   margin-top: 25px;
-  background: $color-form;
+  background: $colorbody;
   border-radius: 9px;
   box-shadow: 4px 8px 8px $black;
   flex-direction: column; /* Alinea elementos verticalmente */

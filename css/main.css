@@ -653,23 +653,6 @@ input:not(:placeholder-shown) ~ .reset {
   #menu1_search {
     width: 300px; } }
 
-.logo_registro {
-  background-color: #809BCE;
-  align-items: center; }
-
-#head {
-  padding: 0;
-  margin: 0; }
-
-.logo img {
-  height: 60px;
-  width: 200px;
-  margin-left: 400px; }
-
-.linkregister a {
-  color: white;
-  text-decoration: none; }
-
 /*Colores Magic Kindgdom*/
 /*Colores Epcot*/
 #contCarouselTexto_ContTitulosPrinc_tiths {
@@ -4135,6 +4118,9 @@ footer {
     justify-content: center;
     align-items: center; } }
 
+.color_logo_rs {
+  color: #7cb0e8; }
+
 #bodySesion {
   background: linear-gradient(to bottom, #172D9D, #00a9f2); }
 
@@ -4223,7 +4209,7 @@ label {
   width: 650px;
   height: 650px;
   margin-top: 25px;
-  background: #add8e6;
+  background: #e8eeff;
   border-radius: 9px;
   box-shadow: 4px 8px 8px #000;
   flex-direction: column;
