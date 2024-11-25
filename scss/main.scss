@@ -179,8 +179,16 @@
     margin: 0;
     padding: 0;
     font-family: 'WaltographRegular', sans-serif;
+
+    background: linear-gradient( to top, $colorCeleste1, #4A90E2, #1E3A8A);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 90px;
+
     h1{
         font-size: 50px;
+
     }
 
 }
