@@ -29,12 +29,13 @@ $colorVerde2: #add693;
 $colorVerde3: #A8C26B;
 $colorLogo4: #265c26;
 
-
 #menu1_contLogo_logoLogin{
     font-family: 'WaltographRegular', sans-serif;
     font-size: 75px;
     display: flex;
+
 }
+
 /*Para los menu con buscador*/
 
 
@@ -672,8 +673,14 @@ input:not(:placeholder-shown) ~ .reset {
     }
 
     #menu1_contLogo_logoLogin{
-        font-size: 20px;
+        width: 240px;
+        font-size: 50px;
     }
+
+    .BotonVolver{
+        margin-top: 55px;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
