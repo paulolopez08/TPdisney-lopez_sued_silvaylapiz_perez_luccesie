@@ -66,34 +66,32 @@ $colorLogo: #00509D;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: color;
+
+    &:focus,
+    &:hover{
+        color: #b396df;
+    }
+
+    &:focus:after,
+    &:hover:after{
+        width: 100%;
+        left: 0%;
+    }
+
+    &:after{
+        content: "";
+        pointer-events: none;
+        bottom: -2px;
+        left: 50%;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: #b396df ;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: width, left;
+    }
 }
-
-.contItemsFooter_itemsep:focus,
-.contItemsFooter_itemsep:hover {
-    color: #b396df;
-}
-
-.contItemsFooter_itemsep:focus:after,
-.contItemsFooter_itemsep:hover:after {
-    width: 100%;
-    left: 0%;
-}
-
-.contItemsFooter_itemsep:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #b396df ;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-}
-
-
 
 
 .footerSecciones_titulosep {
@@ -108,12 +106,13 @@ $colorLogo: #00509D;
     font-size: 2rem;
     color: #4c2e7a; 
     transition: transform 0.3s ease, color 0.3s ease;
+
+    &:hover{
+        color: #b396df; 
+        transform: translateY(-5px); 
+    }
 }
 
-.footerSecciones_titulos_contRedes_redesep:hover {
-    color: #b396df; 
-    transform: translateY(-5px); 
-}
 
 .footerSecciones_titulos_itemsep{
     text-decoration: none;
@@ -124,13 +123,11 @@ $colorLogo: #00509D;
     border: none;
     background: none;
     transition: color 0.3s ease;
+
+    &:hover{
+        color: #b396df;
+    }
 }
-
-.footerSecciones_titulos_itemsep:hover{
-    color: #b396df;
-
-}
-
 
 #contDerechosFooter_derechosep{
     color: #4c2e7a;
@@ -309,93 +306,6 @@ $colorLogo: #00509D;
     width: 90%; 
     margin: 0px 0px 50px 15px; 
     opacity: 0.7; 
-}
-
-#footerSeccionesSR {
-    margin: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    padding: 0 250px;
-}
-
-.footerSecciones_contactoSR {
-    margin-right: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-}
-
-.footerSecciones_redesSR {
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-.footerSecciones_cuentaSR {
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; 
-}
-
-.footerSecciones_titulosSR {
-    color: #11477a;
-    font-family: "Faculty Glyphic", sans-serif;
-    font-size: 23px;
-    margin-bottom: 10px;
-}
-
-.footerSecciones_titulos_contRedesSR {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.footerSecciones_titulos_contRedes_redesSR {
-    font-size: 2rem;
-    color: #11477a; 
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.footerSecciones_titulos_contRedes_redesSR:hover {
-    color: $colorCeleste3; 
-    transform: translateY(-5px); 
-}
-
-.footerSecciones_titulos_itemsSR{
-    text-decoration: none;
-    color: #11477a;
-    font-family: "Raleway", sans-serif;
-    font-size: 19px;
-    position: relative;
-    border: none;
-    background: none;
-    transition: color 0.3s ease;
-}
-
-.footerSecciones_titulos_itemsSR:hover{
-    color: $colorCeleste3;
-
-}
-
-
-.footerSecciones_titulos_itemsSR{
-    text-decoration: none;
-    color: #11477a;
-    font-family: "Raleway", sans-serif;
-    font-size: 19px;
-    position: relative;
-    border: none;
-    background: none;
-    transition: color 0.3s ease;
-}
-
-.footerSecciones_titulos_itemsSR:hover{
-    color: $colorCeleste3;
-
 }
 
 #contDerechosFooterSR{

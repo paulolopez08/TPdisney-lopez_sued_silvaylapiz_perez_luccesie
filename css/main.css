@@ -534,6 +534,7 @@ input:not(:placeholder-shown) ~ .reset {
 #contImgPrinc_imgPrinc {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   margin: 0;
   padding: 0;
   animation: aparecer 5s 1; }
@@ -2598,28 +2599,23 @@ body {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color; }
-
-.contItemsFooter_itemsep:focus,
-.contItemsFooter_itemsep:hover {
-  color: #b396df; }
-
-.contItemsFooter_itemsep:focus:after,
-.contItemsFooter_itemsep:hover:after {
-  width: 100%;
-  left: 0%; }
-
-.contItemsFooter_itemsep:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #b396df;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left; }
+  .contItemsFooter_itemsep:focus, .contItemsFooter_itemsep:hover {
+    color: #b396df; }
+  .contItemsFooter_itemsep:focus:after, .contItemsFooter_itemsep:hover:after {
+    width: 100%;
+    left: 0%; }
+  .contItemsFooter_itemsep:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #b396df;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left; }
 
 .footerSecciones_titulosep {
   color: #4c2e7a;
@@ -2631,10 +2627,9 @@ body {
   font-size: 2rem;
   color: #4c2e7a;
   transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redesep:hover {
-  color: #b396df;
-  transform: translateY(-5px); }
+  .footerSecciones_titulos_contRedes_redesep:hover {
+    color: #b396df;
+    transform: translateY(-5px); }
 
 .footerSecciones_titulos_itemsep {
   text-decoration: none;
@@ -2645,9 +2640,8 @@ body {
   border: none;
   background: none;
   transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsep:hover {
-  color: #b396df; }
+  .footerSecciones_titulos_itemsep:hover {
+    color: #b396df; }
 
 #contDerechosFooter_derechosep {
   color: #4c2e7a;
@@ -2790,78 +2784,6 @@ body {
   width: 90%;
   margin: 0px 0px 50px 15px;
   opacity: 0.7; }
-
-#footerSeccionesSR {
-  margin: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 250px; }
-
-.footerSecciones_contactoSR {
-  margin-right: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-
-.footerSecciones_redesSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.footerSecciones_cuentaSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
-
-.footerSecciones_titulosSR {
-  color: #11477a;
-  font-family: "Faculty Glyphic", sans-serif;
-  font-size: 23px;
-  margin-bottom: 10px; }
-
-.footerSecciones_titulos_contRedesSR {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; }
-
-.footerSecciones_titulos_contRedes_redesSR {
-  font-size: 2rem;
-  color: #11477a;
-  transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redesSR:hover {
-  color: #C3E2F8;
-  transform: translateY(-5px); }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
 
 #contDerechosFooterSR {
   margin-top: 40px;
@@ -3685,6 +3607,7 @@ input:not(:placeholder-shown) ~ .reset {
 #contImgPrinc_imgPrinc {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   margin: 0;
   padding: 0;
   animation: aparecer 5s 1; }
@@ -3828,28 +3751,23 @@ input:not(:placeholder-shown) ~ .reset {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color; }
-
-.contItemsFooter_itemsep:focus,
-.contItemsFooter_itemsep:hover {
-  color: #b396df; }
-
-.contItemsFooter_itemsep:focus:after,
-.contItemsFooter_itemsep:hover:after {
-  width: 100%;
-  left: 0%; }
-
-.contItemsFooter_itemsep:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #b396df;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left; }
+  .contItemsFooter_itemsep:focus, .contItemsFooter_itemsep:hover {
+    color: #b396df; }
+  .contItemsFooter_itemsep:focus:after, .contItemsFooter_itemsep:hover:after {
+    width: 100%;
+    left: 0%; }
+  .contItemsFooter_itemsep:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #b396df;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left; }
 
 .footerSecciones_titulosep {
   color: #4c2e7a;
@@ -3861,10 +3779,9 @@ input:not(:placeholder-shown) ~ .reset {
   font-size: 2rem;
   color: #4c2e7a;
   transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redesep:hover {
-  color: #b396df;
-  transform: translateY(-5px); }
+  .footerSecciones_titulos_contRedes_redesep:hover {
+    color: #b396df;
+    transform: translateY(-5px); }
 
 .footerSecciones_titulos_itemsep {
   text-decoration: none;
@@ -3875,9 +3792,8 @@ input:not(:placeholder-shown) ~ .reset {
   border: none;
   background: none;
   transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsep:hover {
-  color: #b396df; }
+  .footerSecciones_titulos_itemsep:hover {
+    color: #b396df; }
 
 #contDerechosFooter_derechosep {
   color: #4c2e7a;
@@ -4020,78 +3936,6 @@ input:not(:placeholder-shown) ~ .reset {
   width: 90%;
   margin: 0px 0px 50px 15px;
   opacity: 0.7; }
-
-#footerSeccionesSR {
-  margin: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 250px; }
-
-.footerSecciones_contactoSR {
-  margin-right: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-
-.footerSecciones_redesSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.footerSecciones_cuentaSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
-
-.footerSecciones_titulosSR {
-  color: #11477a;
-  font-family: "Faculty Glyphic", sans-serif;
-  font-size: 23px;
-  margin-bottom: 10px; }
-
-.footerSecciones_titulos_contRedesSR {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; }
-
-.footerSecciones_titulos_contRedes_redesSR {
-  font-size: 2rem;
-  color: #11477a;
-  transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redesSR:hover {
-  color: #C3E2F8;
-  transform: translateY(-5px); }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
 
 #contDerechosFooterSR {
   margin-top: 40px;
@@ -4464,7 +4308,7 @@ label {
 
 .form-containerRegistro {
   width: 650px;
-  height: 730px;
+  height: 650px;
   margin-top: 25px;
   background: #add8e6;
   border-radius: 9px;
@@ -4487,7 +4331,6 @@ label {
 
 .form-check {
   display: inline-flex;
-  align-items: center;
   font-family: 'Merriweather', serif; }
 
 .footer-Login {
@@ -5051,6 +4894,7 @@ input:not(:placeholder-shown) ~ .reset {
 #contImgPrinc_imgPrinc {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   margin: 0;
   padding: 0;
   animation: aparecer 5s 1; }
@@ -5194,28 +5038,23 @@ input:not(:placeholder-shown) ~ .reset {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: color; }
-
-.contItemsFooter_itemsep:focus,
-.contItemsFooter_itemsep:hover {
-  color: #b396df; }
-
-.contItemsFooter_itemsep:focus:after,
-.contItemsFooter_itemsep:hover:after {
-  width: 100%;
-  left: 0%; }
-
-.contItemsFooter_itemsep:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #b396df;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left; }
+  .contItemsFooter_itemsep:focus, .contItemsFooter_itemsep:hover {
+    color: #b396df; }
+  .contItemsFooter_itemsep:focus:after, .contItemsFooter_itemsep:hover:after {
+    width: 100%;
+    left: 0%; }
+  .contItemsFooter_itemsep:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #b396df;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left; }
 
 .footerSecciones_titulosep {
   color: #4c2e7a;
@@ -5227,10 +5066,9 @@ input:not(:placeholder-shown) ~ .reset {
   font-size: 2rem;
   color: #4c2e7a;
   transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redesep:hover {
-  color: #b396df;
-  transform: translateY(-5px); }
+  .footerSecciones_titulos_contRedes_redesep:hover {
+    color: #b396df;
+    transform: translateY(-5px); }
 
 .footerSecciones_titulos_itemsep {
   text-decoration: none;
@@ -5241,9 +5079,8 @@ input:not(:placeholder-shown) ~ .reset {
   border: none;
   background: none;
   transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsep:hover {
-  color: #b396df; }
+  .footerSecciones_titulos_itemsep:hover {
+    color: #b396df; }
 
 #contDerechosFooter_derechosep {
   color: #4c2e7a;
@@ -5386,78 +5223,6 @@ input:not(:placeholder-shown) ~ .reset {
   width: 90%;
   margin: 0px 0px 50px 15px;
   opacity: 0.7; }
-
-#footerSeccionesSR {
-  margin: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 250px; }
-
-.footerSecciones_contactoSR {
-  margin-right: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-
-.footerSecciones_redesSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.footerSecciones_cuentaSR {
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; }
-
-.footerSecciones_titulosSR {
-  color: #11477a;
-  font-family: "Faculty Glyphic", sans-serif;
-  font-size: 23px;
-  margin-bottom: 10px; }
-
-.footerSecciones_titulos_contRedesSR {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px; }
-
-.footerSecciones_titulos_contRedes_redesSR {
-  font-size: 2rem;
-  color: #11477a;
-  transition: transform 0.3s ease, color 0.3s ease; }
-
-.footerSecciones_titulos_contRedes_redesSR:hover {
-  color: #C3E2F8;
-  transform: translateY(-5px); }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
-
-.footerSecciones_titulos_itemsSR {
-  text-decoration: none;
-  color: #11477a;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  position: relative;
-  border: none;
-  background: none;
-  transition: color 0.3s ease; }
-
-.footerSecciones_titulos_itemsSR:hover {
-  color: #C3E2F8; }
 
 #contDerechosFooterSR {
   margin-top: 40px;
@@ -5831,7 +5596,6 @@ label {
 .form-containerLogin {
   width: 350px;
   height: 350px;
-  margin-top: 5px;
   background: #add8e6;
   border-radius: 9px;
   box-shadow: 4px 8px 8px #000;
