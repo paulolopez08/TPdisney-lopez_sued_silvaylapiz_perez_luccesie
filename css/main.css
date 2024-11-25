@@ -4203,8 +4203,8 @@ label {
   gap: 10px; }
 
 .form-containerRegistro {
-  width: 650px;
-  height: 650px;
+  width: 680px;
+  height: 690px;
   margin-top: 25px;
   background: #e8eeff;
   border-radius: 9px;
@@ -5490,9 +5490,9 @@ label {
   gap: 10px; }
 
 .form-containerLogin {
-  width: 350px;
-  height: 350px;
-  background: #add8e6;
+  width: 540px;
+  height: 470px;
+  background: #e8eeff;
   border-radius: 9px;
   box-shadow: 4px 8px 8px #000;
   flex-direction: column;
